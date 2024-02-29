@@ -50,10 +50,28 @@
         </nav>
 
         <div class="container-fluid" style="padding: 50px;">
-          <h1 class="title" style="text-align: center;">Gli Statuti di Ascoli</h1>
+           <h1 class="title" style="text-align: center;">Gli Statuti di Ascoli</h1>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="volume-select" class="form-label">Seleziona Statuti:</label>
+                    <select id="volume-select" class="form-select"></select>
+                </div>
+                <div class="col-md-4">
+                    <label for="book-select" class="form-label">Seleziona Libro:</label>
+                    <select id="book-select" class="form-select"></select>
+                </div>
+                <div class="col-md-4">
+                    <label for="statute-select" class="form-label">Seleziona Rubrica:</label>
+                    <select id="statute-select" class="form-select"></select>
+                </div>
+            </div>
 
-          
-
+            <div class="card">
+                <div class="card-body">
+                    <div id="content"></div>
+                </div>
+            </div>
         </div>
     </body>
+    <script src="assets/statuti.js"</script>
 </html>
