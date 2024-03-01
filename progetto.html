@@ -27,7 +27,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html" style="font-weight: bold;">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="statuti.html">Statuti</a>
@@ -39,7 +39,7 @@
                     <a class="nav-link" href="analisi.html">Analisi</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="progetto.html">Progetto</a>
+                    <a class="nav-link" href="progetto.html" style="font-weight: bold;">Progetto</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="team.html">Team</a>
@@ -56,12 +56,177 @@
             <h6 class="mt-5">Credits</h6>
             <p>Gli Statuti presenti in questa piattaforma sono stati digitalizzati utilizzando l’edizione <i>Statuti di Ascoli Piceno dell’anno MCCCLXXVII</i>, a cura di L. Zdekauer e P. Sella, Roma, Istituto storico italiano, 1910. L’edizione riproduce integralmente il testo in volgare contenuto nell’incunabulo del 1496, conservato attualmente presso la Biblioteca del Senato a Roma. Le immagini degli Statuti sono state fornite ad uso esclusivo di questo sito dalla <a href="https://www.senato.it/relazioni-con-i-cittadini/biblioteca/la-biblioteca-del-senato-della-repubblica-giovanni-spadolini" target="_blank">Biblioteca del Senato “Giovanni Spadolini”</a>.</p>
 
-            <h6 class="mt-5">Motivazioni di ricerca</h6>
+            <h6 class="mt-5">Motivazioni di ricerca e obiettivi</h6>
             <p>Intendiamo qui descrivere i motivi che ci hanno spinto a intraprendere la realizzazione di un'edizione digitale degli Statuti di Ascoli. Così come il comune di Ascoli decise di trarre beneficio dalla recente invenzione della stampa a caratteri mobili, pubblicando nel 1496 un'edizione in volgare a stampa degli Statuti del Comune e del Popolo, similmente noi, seguendo lo slancio della comunità scientifica e gli attuali temi di ricerca dell'ambito umanistico-digitale, riteniamo opportuno valorizzare gli Statuti di Ascoli offrendo una nuova veste digitale, che potremmo definire Statuti 3.0. <br/>
             La digitalizzazione degli Statuti può apportare benefici a diversi settori e ambiti, sia all’interno della città che all’esterno. Riteniamo opportuno soffermarci per primo sulla finalità scientifica del prodotto. La digitalizzazione di un testo antico è un'impresa che coinvolge un settore di ricerca giovane, cioè l’informatica umanistica, il cui scopo principe è quello di fornire nuovi strumenti digitali a supporto della ricerca prettamente umanistica, senza dimenticare il rigore scientifico e la metodologia della ricerca tradizionale. La digitalizzazione di un testo richiede l’utilizzo di principi e standard condivisi all’interno dell’ambito scientifico per poter ottenere un testo digitalizzato conforme alle pratiche attuali. Utilizzando standard condivisi per la gestione dei dati scientifici rispondiamo alle esigenze dei principi <a href="https://www.go-fair.org/fair-principles/" target="_blank">FAIR</a>: reperibilità (Findability), accessibilità (Accessibility), interoperabilità (Interoperability) e riutilizzo (Reusability) delle risorse digitali. Per questo motivo, il testo degli Statuti del comune di Ascoli Piceno è stato digitalizzato in formato XML (Extensible Markup Language) utilizzando le attuali linee guida proposte da <a href="https://tei-c.org/" target="_blank">TEI</a> (Text Encoding Initiative) nella più recente versione <a href="https://tei-c.org/guidelines/p5/ " target="_blank">P5</a>. Le Linee guida TEI sono ampiamente utilizzate da biblioteche, musei, editori e studiosi per digitalizzare testi per la ricerca, la riproduzione e la conservazione online.</p>
+          
+            <h6 class="mt-3">Struttura e schema XML-TEI</h6>
+            <p>Gli Statuti di Ascoli includono l’introduzione, il volume degli Statuti del Comune, il volume degli Statuti del Popolo e la conclusione. Questa macrostruttura è stata riprodotta nello schema XML per la codifica del testo. <br/>
+              Al loro interno, i volumi degli Statuti del Comune e quelli del Popolo hanno una struttura analoga. Essi cominciano con l’introduzione al volume, seguita dai libri (4 per gli Statuti del Comune e 5 per quelli del Popolo). Ogni libro è composto dall’indice, seguito da una breve introduzione che annuncia l’inizio effettivo del contenuto del libro (fatta eccezione per i libri 4 e 5 degli Statuti del Popolo) e dal contenuto, cioè le rubriche. Il numero di rubriche varia per ogni libro, da un minimo di 14 a un massimo di 116. Ogni rubrica contiene il titolo, il numero progressivo e il testo. Inoltre, il volume degli Statuti del Popolo presenta una breve frase conclusiva per decretare la fine del volume. 
+              </p>
+              <p>Di seguito, la macro-struttura degli Statuti di Ascoli utilizzata nel file XML-TEI.</p>
 
-            <h6 class="mt-5">Documentazione tecnica</h6>
-            <p></p>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <ul>
+                      <li style="font-weight: bold;">Introduzione</li>
+                      <li><span style="font-weight: bold;">Statuti del Comune</span>
+                        <ul>
+                          <li>Introduzione</li>
+                          <li>Libro I
+                            <ul>
+                              <li>indice</li>
+                              <li>introduzione</li>
+                              <li>contenuto</li>
+                            </ul>
+                          </li>
+                          <li>Libro II
+                            <ul>
+                              <li>indice</li>
+                              <li>introduzione</li>
+                              <li>contenuto</li>
+                            </ul>
+                          </li>
+                          <li>Libro III
+                            <ul>
+                              <li>indice</li>
+                              <li>introduzione</li>
+                              <li>contenuto</li>
+                            </ul>
+                          </li>
+                          <li>Libro IV
+                            <ul>
+                              <li>indice</li>
+                              <li>introduzione</li>
+                              <li>contenuto</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><span style="font-weight: bold;">Statuti del Popolo</span>
+                        <ul>
+                          <li>Introduzione</li>
+                          <li>Libro I
+                            <ul>
+                              <li>indice</li>
+                              <li>introduzione</li>
+                              <li>contenuto</li>
+                            </ul>
+                          </li>
+                          <li>Libro II
+                            <ul>
+                              <li>indice</li>
+                              <li>introduzione</li>
+                              <li>contenuto</li>
+                            </ul>
+                          </li>
+                          <li>Libro III
+                            <ul>
+                              <li>indice</li>
+                              <li>introduzione</li>
+                              <li>contenuto</li>
+                            </ul>
+                          </li>
+                          <li>Libro IV
+                            <ul>
+                              <li>indice</li>
+                              <li>contenuto</li>
+                            </ul>
+                          </li>
+                          <li>Libro V
+                            <ul>
+                              <li>indice</li>
+                              <li>contenuto</li>
+                            </ul>
+                          </li>
+                          <li>Conclusione</li>
+                        </ul>
+                      </li>
+                      <li span style="font-weight: bold;">Conclusione</li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <pre style="background-color: #eee; border: 1px solid #999; padding: 20px;">
+                     
+&lt;body&gt;
+  &lt;div xml:id="statutiAscoli"&gt;
+      &lt;div type="intro" xml:id="statutiAscoli_intro"&gt;&lt;/div&gt;
+
+      &lt;div type="volume" xml:id="statCom"&gt;
+          &lt;div type="intro" xml:id="statCom_intro"&gt;&lt;/div&gt;
+          &lt;div n="1" type="libro" xml:id="statCom_libro1"&gt;
+              &lt;div type="indice" xml:id="statCom_libro1_indice"&gt;&lt;/div&gt;
+              &lt;div type="intro" xml:id="statCom_libro1_intro"&gt;&lt;/div&gt;
+              &lt;div type="content" xml:id="statCom_libro1_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div n="2" type="libro" xml:id="statCom_libro2"&gt;
+              &lt;div type="indice" xml:id="statCom_libro2_indice"&gt;&lt;/div&gt;
+              &lt;div type="intro" xml:id="statCom_libro2_intro"&gt;&lt;/div&gt;
+              &lt;div type="content" xml:id="statCom_libro2_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div n="3" type="libro" xml:id="statCom_libro3"&gt;
+              &lt;div type="indice"&gt;&lt;/div&gt;
+              &lt;div type="intro" xml:id="statCom_libro3_intro"&gt;&lt;/div&gt;
+              &lt;div type="content" xml:id="statCom_libro3_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div n="4" type="libro" xml:id="statCom_libro4"&gt;
+              &lt;div type="indice" xml:id="statCom_libro4_indice"&gt;&lt;/div&gt;
+              &lt;div type="intro" xml:id="statCom_libro4_intro"&gt;&lt;/div&gt;
+              &lt;div type="content" corresp="#statCom_libro4_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;div type="volume" xml:id="statPop"&gt;
+          &lt;div type="intro" xml:id="statPop_intro"&gt;&lt;/div&gt;
+          
+          &lt;div n="1" type="libro" xml:id="statPop_libro1"&gt;
+              &lt;div type="indice" xml:id="statPop_libro1_indice"&gt;&lt;/div&gt;
+              &lt;div type="intro" xml:id="statPop_libro1_intro"&gt;&lt;/div&gt;
+              &lt;div type="content" xml:id="statPop_libro1_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div n="2" type="libro" xml:id="statPop_libro2"&gt;
+              &lt;div type="indice" xml:id="statPop_libro2_indice"&gt;&lt;/div&gt;
+              &lt;div type="intro" xml:id="statPop_libro2_intro"&gt;&lt;/div&gt;
+              &lt;div type="content" corresp="#statPop_libro2_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div n="3" type="libro" xml:id="statPop_libro3"&gt;
+              &lt;div type="indice" xml:id="statPop_libro3_indice"&gt;&lt;/div&gt;
+              &lt;div type="intro" xml:id="statPop_libro3_intro"&gt;&lt;/div&gt;
+              &lt;div type="content" corresp="#statPop_libro3_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div n="4" type="libro" xml:id="statPop_libro4"&gt;
+              &lt;div type="indice" xml:id="statPop_libro4_indice"&gt;&lt;/div&gt;
+              &lt;div type="content" corresp="#statPop_libro4_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div n="5" type="libro" xml:id="statPop_libro5"&gt;
+              &lt;div type="indice" xml:id="statPop_libro5_indice"&gt;&lt;/div&gt;
+              &lt;div type="content" corresp="#statPop_libro5_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div type="conclusione" xml:id="statPop_conclusione"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;div type="conclusione" xml:id="StatutiAscoli_conclusione"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+                    </pre>
+                  </div>
+                  
+                </div>
+              </div>
+                
+              <p>Il testo dell’edizione digitale coincide con la trascrizione dell’edizione di Zdekauer-Sella. Pertanto sono state applicate le seguenti scelte editoriali:
+                <ul>
+                  <li>il testo è composto di continuo, senza le interruzioni di linea e la divisione in colonne dell’originale;</li>
+                  <li>tutte le abbreviazioni sono risolte in maniera silenziosa;</li>
+                  <li>la forma “&c.” significa “eccetera”. Nell’originale è espressa tramite “[simbolo-et] ceta”;</li>
+                  <li>sono state apportate correzioni così come segnalate nell’edizione di Zdekauer-Sella. Gli errori e le proposte di correzione vengono segnalati attraverso l’elemento <code>&lt;choice&gt;</code> che include <code>&lt;sic&gt;</code> (contiene il testo apparentemente errato o impreciso) e <code>&lt;corr&gt;</code> (mostra la forma corretta di un passaggio apparentemente errato nel testo)</li>
+                  <li>le lettere iniziali delle rubriche sono rappresentate in maiuscolo anche se nell’originale queste mancano poiché sarebbero dovute essere miniate e sono segnalate dall’elemento <code>&lt;hi&gt;</code>.</li>
+                  <li>Le date sono incluse nell’elemento <code>&lt;date&gt;</code> che consente la rappresentazione della data in cifre arabe attraverso l’attributo @when= “anno-mese-giorno”. <code>&lt;date when="03-15"&gt;dì quindici de lu mese de marzo&lt;/date&gt;</code></li>
+                  <li>Le informazioni numeriche sono segnalate dall'elemento <code>&lt;num&gt;</code> che specifica il valore tramite l'attributo @value. <code>&lt;num value="3"&gt;III&lt;/num&gt;</code></li>
+                  <li>Liste di persone, luoghi ed eventi specificati nel testo sono state utilizzate nel teiHeader per raccogliere tali informazioni nel teiHeader.</li>
+                </ul>
+              </p>
           
           </div>
 
