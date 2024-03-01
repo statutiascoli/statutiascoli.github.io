@@ -115,21 +115,21 @@ fetch('assets/statuti_web.json')
         function updateURLParams(volume, book, statute) {
             console.log(volume, book, statute)
             const params = new URLSearchParams(window.location.search);
-            params.delete('volume'); // Clear existing volume param
-            params.delete('book'); // Clear existing book param
-            params.delete('statute'); // Clear existing statute param
-            params.set('volume', volume);
-            if (book) params.set('book', book);
-            if (statute) params.set('statute', statute);
+            params.delete('s'); // Clear existing volume param
+            params.delete('l'); // Clear existing book param
+            params.delete('r'); // Clear existing statute param
+            params.set('s', volume);
+            if (book) params.set('l', book);
+            if (statute) params.set('r', statute);
             window.history.replaceState({}, '', `${location.pathname}?${params}`);
         }
 
         // Function to get URL parameters
         function getURLParams() {
             const params = new URLSearchParams(window.location.search);
-            const volume = params.get('volume');
-            const book = params.get('book');
-            const statute = params.get('statute');
+            const volume = params.get('s');
+            const book = params.get('l');
+            const statute = params.get('r');
             return { volume, book, statute };
         }
 
