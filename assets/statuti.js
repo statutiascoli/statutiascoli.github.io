@@ -119,25 +119,29 @@ fetch('assets/statuti_web.json')
         }
 
         // Function to update URL parameters
-        function updateURLParams(volume, book, statute) {
-            console.log(volume, book, statute);
-
-            let url = '/';
-            if (volume) url += volume + '/';
-            if (book) url += book + '/';
-            if (statute) url += statute + '/';
-
-            // Rimuovi l'ultimo '/' se presente
-            if (url.endsWith('/')) {
-                url = url.slice(0, -1);
+        function updateURLParams(volume, book, rubric) {
+            console.log(volume, book, rubric)
+            params = new URLSearchParams(window.location.search);
+            params.delete('id'); // Clear existing volume param
+            id_p = ""
+            if (volume){
+                id_p += volume
+                if (book){
+                    id_p += '_'+book
+                }
+                 if (rubric){
+                     id_p += '_'+rubric
+                 }
             }
-
-            window.history.replaceState({}, '', url);
+            params.set('id', id_p);
+            window.history.replaceState({}, '', `${location.pathname}?${params}`);
         }
 
         // Function to get URL parameters
         function getURLParams() {
-            pathSegments = window.location.pathname.split('/').filter(segment => segment !== '');
+            params = new URLSearchParams(window.location.search);
+            id_p = params.get('id');
+            pathSegments = id_p.split('_')
             let volume = null;
             let book = null;
             let rubric = null;
