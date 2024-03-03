@@ -16,6 +16,9 @@
         
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+
+        <!-- Google reCAPTCHA Script -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
     <body>
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
@@ -42,7 +45,7 @@
                     <a class="nav-link" href="progetto.html">Progetto</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="team.html" style="font-weight: bold;">Team</a>
+                    <a class="nav-link" href="form.html" style="font-weight: bold;">Contattaci</a>
                   </li>
                 </ul>
               </div>
@@ -53,44 +56,26 @@
           <h1 class="title">Contattaci</h1>
           
 
-          <form class="form-contatti" action="contatti.php" method="POST">
+          <form id="contactForm" method="post" action="process_form.php">
             <div class="mb-3">
-                <label for="nome" class="form-label">Nome:</label>
-                <input type="text" class="form-control" id="nome" name="nome" required>
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" name="name" required>
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label">Email:</label>
+                <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" name="email" required>
             </div>
             <div class="mb-3">
-                <label for="messaggio" class="form-label">Messaggio:</label>
-                <textarea class="form-control" id="messaggio" name="messaggio" rows="4" required></textarea>
+                <label for="message" class="form-label">Messaggio</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <!-- Google reCAPTCHA -->
+            <div class="mb-3">
+                <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
             </div>
             <button type="submit" class="btn btn-primary">Invia</button>
         </form>
 
-          
-         
-          <!--<div class="container">
-            <div class="row">
-              <div class="col-md">
-                <div class="text-center">
-                  <img src="img/MichelaParma.jpg" style="border-radius: 50%; width:40%;" alt="Michela Parma">
-                </div>
-                <h5 class="team-name" style="color: #6c1433;">Michela Parma</h5>
-                <p class="p-2"><a href="https://mittelalter.geschichte.uni-mainz.de/michela-parma/" target="_blank">Michela Parma</a> è una ricercatrice laureata in Storia con una specializzazione in Digital Humanities. Si occupa principalmente di manoscritti medievali, edizioni digitali e sviluppo web. Dal 2021 è coinvolta in un progetto di ricerca presso la Johannes Gutenberg Universität Mainz, in Germania.</p>
-              </div>
-              
-              <div class="col-md">
-                <div class="text-center">
-                  <img src="img/FabioMariani.jpg"  style="border-radius: 50%; width:40%" alt="Fabio Mariani">
-                </div>
-                    <h5 class="team-name" style="color: #6c1433;">Fabio Mariani</h5>
-                    <p class="p-2"><a href="https://www.leuphana.de/en/institutes/ipk/members/fabio-mariani.html" target="_blank">Fabio Mariani</a> è ricercatore associato e dottorando presso la Leuphana University Lüneburg (Germania) dal 2020. Dopo una laurea in Storia, ha conseguito il Master in Digital Humanities presso l'Università di Bologna. Durante i suoi studi ha collaborato a diversi progetti di ricerca presso il Digital Humanities Advanced Research Centre (DH.arc), OpenCitations e l'Istituto di Scienze e Tecnologie Cognitive (ISTC).</p>
-                </div>
-              </div>
-              
-            </div>-->
         </div> 
     </body>
 
