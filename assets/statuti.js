@@ -139,17 +139,14 @@ fetch('assets/statuti_web.json')
 
         // Function to get URL parameters
         function getURLParams() {
-            volume = null
-            book = null
-            rubric = null
+            let volume = null;
+            let book = null;
+            let rubric = null;
+
             params = new URLSearchParams(window.location.search);
             id_p = params.get('id');
             if (id_p){
                 pathSegments = id_p.split('_')
-                let volume = null;
-                let book = null;
-                let rubric = null;
-
                 if (pathSegments.length >= 1) {
                     volume = pathSegments[0];
                 }
