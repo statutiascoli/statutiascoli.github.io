@@ -76,7 +76,18 @@
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="citymap" role="tabpanel" aria-labelledby="citymap-tab">
               <h6 class="mt-5">Mappa della città</h6>
-              
+                    <div class="row">
+                        <div class="col-md-6">
+                          <div id="map" style="height: 500px;"></div>
+                        </div>
+                        <div class="col-md-6">
+                             <div class="">
+                                <h2 id="result_title"> </h2>
+                                <hr>
+                                <div id="results"> </div>
+                             </div>
+                        </div>
+                    </div>
             </div>
 
             <div class="tab-pane fade" id="regionmap" role="tabpanel" aria-labelledby="regionmap-tab">
@@ -104,4 +115,7 @@
           </div>
         </footer>
     </body>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="assets/map.js"></script>
 </html>
