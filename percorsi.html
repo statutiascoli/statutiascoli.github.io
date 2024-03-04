@@ -18,7 +18,7 @@
         <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
     </head>
     <body>
-        <nav class="navbar navbar-dark bg-dark  navbar-expand-lg fixed-top" id="navbar">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="img/stap.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
                     <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="percorsi.html">Percorsi</a>
+                    <a class="nav-link" href="percorsi.html" style="font-weight: bold;">Percorsi</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="statuti.html">Statuti</a>
@@ -39,7 +39,7 @@
                     <a class="nav-link" href="storia.html">Storia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="analisi.html" style="font-weight: bold;">Analisi</a>
+                    <a class="nav-link" href="analisi.html">Analisi</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="progetto.html">Progetto</a>
@@ -56,10 +56,44 @@
         </nav>
 
         <div class="container-fluid html-page">
-          <h1 class="title">Analisi</h1>
+          <h1 class="title">Percorsi</h1>
 
-          
+          <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="citymap-tab" data-bs-toggle="tab" data-bs-target="#citymap" type="button" role="tab" aria-controls="home" aria-selected="true">Mappa della città</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="regionmap-tab" data-bs-toggle="tab" data-bs-target="#regionmap" type="button" role="tab" aria-controls="profile" aria-selected="false">Mappa del territorio</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="category-tab" data-bs-toggle="tab" data-bs-target="#category" type="button" role="tab" aria-controls="contact" aria-selected="false">Categorie</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="calendar-tab" data-bs-toggle="tab" data-bs-target="#calendar" type="button" role="tab" aria-controls="contact" aria-selected="false">Calendario delle feste</button>
+            </li>
+          </ul>
+          <!-- Contenuto delle tabs -->
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="citymap" role="tabpanel" aria-labelledby="citymap-tab">
+              <h6 class="mt-5">Mappa della città</h6>
+              
+            </div>
 
+            <div class="tab-pane fade" id="regionmap" role="tabpanel" aria-labelledby="regionmap-tab">
+              <h6 class="mt-5">Mappa del territorio</h6>
+            
+            </div>
+
+            <div class="tab-pane fade" id="category" role="tabpanel" aria-labelledby="category-tab">
+              <h6 class="mt-5">Categorie</h6>
+            
+            </div>
+
+            <div class="tab-pane fade" id="calendar" role="tabpanel" aria-labelledby="calendar-tab">
+              <h6 class="mt-5">Calendario delle feste</h6>
+              
+            </div>
+          </div>
         </div>
 
         <footer class="bg-light text-center py-4 border-top">
