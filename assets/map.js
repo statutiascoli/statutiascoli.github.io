@@ -6,83 +6,6 @@ fetch('assets/statuti_web.json')
     .then(response => response.json())
     .then(data => {
 
-   function populateResults(feature_id){
-        contentElement.innerHTML = ""
-        contentTitle.innerHTML = feature_id
-       results = []
-       if (feature_id){
-           for (v_i in Object.keys(data)){
-                v_key = Object.keys(data)[v_i]
-                volume_content = data[v_key];
-                if (typeof volume_content === "string") {
-                    if(volume_content.includes(feature_id)){
-                        results.push([volume_content, [v_i]])
-                    }
-                } else {
-                    books = Object.keys(volume_content);
-                    for (b_i in books) {
-                        b_key = Object.keys(data[v_key])[b_i]
-                        book_content = data[v_key][b_key];
-                        if (typeof book_content === "string") {
-                            if(book_content.includes(feature_id)){
-                                results.push([book_content, [v_i,b_i]])
-                            }
-                        } else {
-                            rubrics = Object.keys(data[v_key][b_key]);
-                            for (r_i in rubrics) {
-                                r_key = rubrics[r_i]
-                                rubric_content = data[v_key][b_key][r_key];
-                                if(rubric_content.includes(feature_id)){
-                                    results.push([rubric_content, [v_i,b_i,r_i]])
-                                }
-                            }
-                        }
-                    }
-                }
-           }
-       }
-       results.forEach((doc)=>{
-            const xmlDoc = parser.parseFromString(doc[0], 'text/xml');
-            const headElement = xmlDoc.getElementsByTagName('head')[0];
-            const pElement = xmlDoc.getElementsByTagName('p')[0];
-            if (headElement){
-            card = document.createElement('div');
-            card.classList.add('card');
-
-            cardHeader = document.createElement('div');
-            cardHeader.classList.add('card-header');
-
-            cardBody = document.createElement('div');
-            cardBody.classList.add('card-body');
-
-            const cardTitle = document.createElement('h5');
-            cardTitle.classList.add('card-title');
-            console.log(headElement)
-            cardLink = document.createElement('a');
-            cardLink.href = "https://statutiascoli.github.io/statuti.html?id=" + doc[1].join("_");
-            cardLink.textContent = headElement.textContent;
-            cardLink.target = "_blank";
-            cardTitle.appendChild(cardLink)
-
-            cardDescription = document.createElement('p');
-            cardDescription.classList.add('card-text');
-            cardDescription.textContent = pElement.textContent.split(" ").slice(0, 25).join(" ") + " [...] "
-            readLink = document.createElement('a');
-            readLink.href = "https://statutiascoli.github.io/statuti.html?id=" + doc[1].join("_");
-            readLink.textContent = "(Continua)"
-            readLink.target = "_blank";
-            cardDescription.appendChild(readLink)
-
-
-            cardHeader.appendChild(cardTitle);
-            cardBody.appendChild(cardDescription);
-            card.appendChild(cardHeader);
-            card.appendChild(cardBody);
-            contentElement.appendChild(card)
-            }
-       })
-   }
-
 
 
   var bounds = [[42.84455370395206, 13.556849956512453], [42.86343017090419,13.593156337738039]];
@@ -107,7 +30,7 @@ fetch('assets/statuti_web.json')
     // Load GeoJSON data from file
     fetch('assets/comune.json')
       .then(response => response.json())
-      .then(data => {
+      .then(geoJSONdata => {
 
         function getColor(variable) {
             switch (variable) {
@@ -127,6 +50,23 @@ fetch('assets/statuti_web.json')
         var selectedMarker = null
         var clickedOnFeature = true;
 
+        function resetSestiere(layer){
+            layer.setStyle({
+                weight: 2,
+                color: 'white',
+                dashArray: '3',
+                fillOpacity: 0.5,
+        });
+        }
+        function selectSestiere(layer){
+            layer.setStyle({
+                weight: 2,
+                color: 'black',
+                dashArray: '',
+                fillOpacity: 0.7,
+            });
+        }
+
 
         function markerSelector(layer, feature) {
             if (selectedMarker !== layer) {
@@ -135,36 +75,31 @@ fetch('assets/statuti_web.json')
                         selectedMarker = null;
                     }
                     selectedMarker = layer;
-                    populateResults(feature.properties.id);
+                    populateResults(feature);
                     L.DomUtil.addClass(selectedMarker._icon, 'selectedMarker');
 
                     // Deselect the polygon if it's selected
                     if (selectedLayer) {
                         // Reset style of the selected polygon
-                        sestieriLayer.resetStyle(selectedLayer);
+                        resetSestiere(selectedLayer)
                         selectedLayer = null;
                     }
                 }
         }
 
-        var sestieriLayer = L.geoJSON(data.sestieri, {
+        var sestieriLayer = L.geoJSON(geoJSONdata.sestieri, {
             onEachFeature: function(feature, layer) {
                 layer.on('click', function(e) {
                     // Check if the clicked layer is different from the currently selected layer
                     if (selectedLayer !== layer) {
                         // Reset style of the previously selected layer, if exists
                         if (selectedLayer) {
-                            sestieriLayer.resetStyle(selectedLayer);
+                            resetSestiere(selectedLayer)
                             selectedLayer.bringToBack();
                         }
                         selectedLayer = layer; // Update the selected layer
-                        populateResults(feature.properties.id);
-                        layer.setStyle({ // Apply selected style
-                            weight: 2,
-                            color: 'black',
-                            dashArray: '',
-                            fillOpacity: 0.7,
-                        });
+                        populateResults(feature)
+                        selectSestiere(layer)
                         e.target.bringToFront();
                     }
                     // Deselect the marker if it's selected
@@ -177,19 +112,14 @@ fetch('assets/statuti_web.json')
                 layer.on('mouseover', function(e) {
                     // Apply hover style only if the layer is not selected
                     if (layer !== selectedLayer) {
-                        e.target.setStyle({
-                            weight: 2,
-                            color: 'black',
-                            dashArray: '',
-                            fillOpacity: 0.7,
-                        });
-                        e.target.bringToFront();
+                        selectSestiere(layer)
+                        layer.bringToFront();
                     }
                 });
                 layer.on('mouseout', function(e) {
                     // Reset style only if the layer is not selected
                     if (layer !== selectedLayer) {
-                        sestieriLayer.resetStyle(e.target);
+                        resetSestiere(layer)
                         e.target.bringToBack();
                     }
                 });
@@ -208,11 +138,11 @@ fetch('assets/statuti_web.json')
         }).addTo(map);
 
 
-        var porteLayer = L.geoJSON(data.porte, {
+        var porteLayer = L.geoJSON(geoJSONdata.porte, {
          pointToLayer: function (feature, latlng) {
                 return L.marker(latlng, {
                     icon: L.divIcon({
-                        html: data.porte.properties.icon,
+                        html: geoJSONdata.porte.properties.icon,
                         iconSize: L.point(30, 30),
                     })
                 })
@@ -225,11 +155,11 @@ fetch('assets/statuti_web.json')
           }
         }).addTo(map);
 
-        var piazzeLayer = L.geoJSON(data.piazze, {
+        var piazzeLayer = L.geoJSON(geoJSONdata.piazze, {
             pointToLayer: function (feature, latlng) {
                 return L.marker(latlng, {
                     icon: L.divIcon({
-                        html: data.piazze.properties.icon,
+                        html: geoJSONdata.piazze.properties.icon,
                         iconSize: L.point(30, 30),
                     })
                 })
@@ -242,11 +172,11 @@ fetch('assets/statuti_web.json')
           }
         }).addTo(map);
 
-        var chieseLayer = L.geoJSON(data.chiese, {
+        var chieseLayer = L.geoJSON(geoJSONdata.chiese, {
           pointToLayer: function (feature, latlng) {
                 return L.marker(latlng, {
                     icon: L.divIcon({
-                        html: data.chiese.properties.icon,
+                        html: geoJSONdata.chiese.properties.icon,
                         iconSize: L.point(30, 30),
                     })
                 })
@@ -259,11 +189,11 @@ fetch('assets/statuti_web.json')
           }
         }).addTo(map);
 
-        var palazziLayer = L.geoJSON(data.palazzi, {
+        var palazziLayer = L.geoJSON(geoJSONdata.palazzi, {
           pointToLayer: function (feature, latlng) {
                 return L.marker(latlng, {
                     icon: L.divIcon({
-                        html: data.palazzi.properties.icon,
+                        html: geoJSONdata.palazzi.properties.icon,
                         iconSize: L.point(30, 30),
                     })
                 })
@@ -277,12 +207,11 @@ fetch('assets/statuti_web.json')
         }).addTo(map);
 
         map.on('click', function(event) {
-            console.log(event.originalEvent.target.nodeName)
             if (event.originalEvent.target.nodeName == 'path')
                 return;
             else {
                 if (selectedLayer) {
-                    sestieriLayer.resetStyle(selectedLayer);
+                    resetSestiere(selectedLayer)
                     selectedLayer = null;
                 }
                 if (selectedMarker) {
@@ -293,16 +222,247 @@ fetch('assets/statuti_web.json')
              }
         });
 
-        // Define layer control
-        var overlays = {
-          "Sestieri": sestieriLayer,
-          "Porte": porteLayer,
-          "Piazze": piazzeLayer,
-          "Chiese": sestieriLayer,
-          "Palazzi": porteLayer
-        };
+        var colorModified = false;
 
-        //L.control.layers(overlays).addTo(map);
+
+        // Custom control to modify polygon layer colors
+        var customControl = L.Control.extend({
+            onAdd: function(map) {
+                var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control p-1 bg-light');
+
+                // Create first radio button: Quartieri
+                var quartieriDiv = L.DomUtil.create('div', 'form-check', container);
+                var quartieriCheckbox = L.DomUtil.create('input', 'form-check-input', quartieriDiv);
+                quartieriCheckbox.type = 'radio';
+                quartieriCheckbox.name = 'customRadio';
+                quartieriCheckbox.id = 'quartieriRadio';
+                quartieriCheckbox.value = 'quartieri';
+                var quartieriLabel = L.DomUtil.create('label', 'form-check-label', quartieriDiv);
+                quartieriLabel.setAttribute('for', 'quartieriRadio');
+                quartieriLabel.innerHTML = 'Quartieri';
+
+                // Create second radio button: Proprietari
+                var proprietariDiv = L.DomUtil.create('div', 'form-check', container);
+                var proprietariCheckbox = L.DomUtil.create('input', 'form-check-input', proprietariDiv);
+                proprietariCheckbox.type = 'radio';
+                proprietariCheckbox.name = 'customRadio';
+                proprietariCheckbox.id = 'proprietariRadio';
+                proprietariCheckbox.value = 'proprietari';
+                var proprietariLabel = L.DomUtil.create('label', 'form-check-label', proprietariDiv);
+                proprietariLabel.setAttribute('for', 'proprietariRadio');
+                proprietariLabel.innerHTML = 'Proprietari';
+
+                // Create third radio button: Ricchezza
+                var ricchezzaDiv = L.DomUtil.create('div', 'form-check', container);
+                var ricchezzaCheckbox = L.DomUtil.create('input', 'form-check-input', ricchezzaDiv);
+                ricchezzaCheckbox.type = 'radio';
+                ricchezzaCheckbox.name = 'customRadio';
+                ricchezzaCheckbox.id = 'ricchezzaRadio';
+                ricchezzaCheckbox.value = 'ricchezza';
+                var ricchezzaLabel = L.DomUtil.create('label', 'form-check-label', ricchezzaDiv);
+                ricchezzaLabel.setAttribute('for', 'ricchezzaRadio');
+                ricchezzaLabel.innerHTML = 'Ricchezza';
+
+                // Attach change event listener to radio buttons
+                L.DomEvent.on(container, 'change', function(e) {
+                    var selectedValue = e.target.value;
+                    if (selectedValue === 'quartieri') {
+                        // Reset colors of the polygon layer to quartieri
+                        sestieriLayer.eachLayer(function(layer) {
+                            layer.setStyle({
+                                fillColor: getColor(layer.feature.properties.quartiere)
+                            });
+                        });
+                    } else if (selectedValue === 'proprietari') {
+                        // Modify the colors of the polygon layer to proprietari
+                        sestieriLayer.eachLayer(function(layer) {
+                            layer.setStyle({
+                                fillColor: getPopColor(layer.feature.properties.proprietari)
+                            });
+                        });
+                    } else if (selectedValue === 'ricchezza') {
+                        sestieriLayer.eachLayer(function(layer) {
+                            layer.setStyle({
+                                fillColor: getMoneyColor(layer.feature.properties.summa, layer.feature.properties.proprietari)
+                            });
+                        });
+                    }
+                });
+
+                return container;
+            }
+        });
+        // Add the custom control to the map
+        new customControl().addTo(map);
+
+
+        // Function to generate a random color
+        function getPopColor(variable) {
+            if (150 < variable && variable <= 200) {
+                return '#330033'; // Fill color for variable 1
+            } else if (100 < variable && variable <= 150) {
+                return '#660066'; // Fill color for variable 2
+            } else if (50 < variable && variable <= 100) {
+                return '#990099'; // Fill color for variable 3
+            } else if (20 < variable && variable <= 50) {
+                return '#cc00cc'; // Fill color for variable 4
+            } else if (0 < variable && variable <= 20) {
+                return '#ff99ff'; // Fill color for variable 5
+            } else {
+                return 'white'; // Default fill color
+            }
+        }
+        function getMoneyColor(money, pop) {
+            summa = calcolaValoreMedievale(money)
+            variable = (summa/pop).toFixed(2)
+            if (variable <= 100) {
+                return '#FF0000'; // Orange color for range 0 - 100
+            } else if (variable <= 200) {
+                return '#FF3300'; // Orange color for range 101 - 200
+            } else if (variable <= 300) {
+                return '#FF6600'; // Orange color for range 201 - 300
+            } else if (variable <= 400) {
+                return '#FF9900'; // Orange color for range 301 - 400
+            } else if (variable <= 500) {
+                return '#FFCC00'; // Orange color for range 401 - 500
+            } else if (variable <= 600) {
+                return '#FFFF00'; // Orange color for range 501 - 600
+            } else if (variable <= 700) {
+                return '#CCFF00'; // Orange color for range 601 - 700
+            } else if (variable <= 800) {
+                return '#99FF00'; // Orange color for range 701 - 800
+            } else if (variable <= 900) {
+                return '#66FF00'; // Orange color for range 801 - 900
+            } else if (variable <= 1000) {
+                return '#33CC00'; // Orange color for range 901 - 1000
+            } else if (variable <= 1200) {
+                return '#009900'; // Orange color for range 901 - 1000
+            } else if (variable <= 1400) {
+                return '#006600'; // Orange color for range 901 - 1000
+            }
+             else {
+                return '#FFFFFF'; // Default fill color
+            }
+        }
+
+        function getMoney(money, pop) {
+            summa = calcolaValoreMedievale(money)
+            variable = (summa/pop).toFixed(0)
+            return variable
+        }
+
+        function calcolaValoreMedievale(money) {
+            var totaleDenari = (money[0] * 240) + (money[1] * 12) + money[2];
+            var valoreLibra = totaleDenari / 240;
+            return valoreLibra.toFixed(0);
+        }
+
+       function populateResults(feature){
+            feature_id = feature.properties.id
+            contentElement.innerHTML = ""
+            contentTitle.innerHTML = feature_id
+            if (feature_id.includes("sestiere")){
+                sezione_quartiere = document.createElement('p');
+                sezione_quartiere.textContent = "Quartiere: " + feature.properties.quartiere
+                sezione_desc = document.createElement('p');
+                sezione_desc.textContent = "Il sestiere sorgeva presumibilmente da X a Y e conteneva..."
+                contentElement.appendChild(sezione_quartiere)
+                contentElement.appendChild(sezione_desc)
+                if (feature.properties.proprietari){
+                    sezione_prop = document.createElement('p');
+                    sezione_prop.textContent = "Proprietari Censiti (Catasto del 1381): " + feature.properties.proprietari
+                    sezione_val = document.createElement('p');
+                    sezione_val.textContent = "Valore Totale (Catasto del 1381): Libbre " + feature.properties.summa[0] + ", Soldi " + feature.properties.summa[1] + ", Denari " + + feature.properties.summa[2]
+                    sezione_procap = document.createElement('p');
+                    sezione_procap.textContent = "Valore Pro Capite (Catasto 1381): Libbre " + getMoney(feature.properties.summa, feature.properties.proprietari)
+                    contentElement.appendChild(sezione_prop)
+                    contentElement.appendChild(sezione_val)
+                    contentElement.appendChild(sezione_procap)
+                }
+                else{
+                    sezione_prop = document.createElement('p');
+                    sezione_prop.textContent = "Proprietari Censiti (Catasto del 1381): Non Disponibile"
+                    sezione_val = document.createElement('p');
+                    sezione_val.textContent = "Valore Totale (Catasto del 1381): Non Disponibile"
+                    sezione_procap = document.createElement('p');
+                    sezione_procap.textContent = "Valore Pro Capite (Catasto 1381): Non Disponibile"
+                    contentElement.appendChild(sezione_prop)
+                    contentElement.appendChild(sezione_val)
+                    contentElement.appendChild(sezione_procap)
+                }
+            }
+           results = []
+           if (feature_id){
+               for (v_i in Object.keys(data)){
+                    v_key = Object.keys(data)[v_i]
+                    volume_content = data[v_key];
+                    if (typeof volume_content === "string") {
+                        if(volume_content.includes(feature_id)){
+                            results.push([volume_content, [v_i]])
+                        }
+                    } else {
+                        books = Object.keys(volume_content);
+                        for (b_i in books) {
+                            b_key = Object.keys(data[v_key])[b_i]
+                            book_content = data[v_key][b_key];
+                            if (typeof book_content === "string") {
+                                if(book_content.includes(feature_id)){
+                                    results.push([book_content, [v_i,b_i]])
+                                }
+                            } else {
+                                rubrics = Object.keys(data[v_key][b_key]);
+                                for (r_i in rubrics) {
+                                    r_key = rubrics[r_i]
+                                    rubric_content = data[v_key][b_key][r_key];
+                                    if(rubric_content.includes(feature_id)){
+                                        results.push([rubric_content, [v_i,b_i,r_i]])
+                                    }
+                                }
+                            }
+                        }
+                    }
+               }
+           }
+           results.forEach((doc)=>{
+                const xmlDoc = parser.parseFromString(doc[0], 'text/xml');
+                const headElement = xmlDoc.getElementsByTagName('head')[0];
+                const pElement = xmlDoc.getElementsByTagName('p')[0];
+                if (headElement){
+                card = document.createElement('div');
+                card.classList.add('card');
+
+                cardHeader = document.createElement('div');
+                cardHeader.classList.add('card-header');
+
+                cardBody = document.createElement('div');
+                cardBody.classList.add('card-body');
+
+                const cardTitle = document.createElement('h5');
+                cardTitle.classList.add('card-title');
+                cardLink = document.createElement('a');
+                cardLink.href = "https://statutiascoli.github.io/statuti.html?id=" + doc[1].join("_");
+                cardLink.textContent = headElement.textContent;
+                cardLink.target = "_blank";
+                cardTitle.appendChild(cardLink)
+
+                cardDescription = document.createElement('p');
+                cardDescription.classList.add('card-text');
+                cardDescription.textContent = pElement.textContent.split(" ").slice(0, 25).join(" ") + " [...] "
+                readLink = document.createElement('a');
+                readLink.href = "https://statutiascoli.github.io/statuti.html?id=" + doc[1].join("_");
+                readLink.textContent = "(Continua)"
+                readLink.target = "_blank";
+                cardDescription.appendChild(readLink)
+
+
+                cardHeader.appendChild(cardTitle);
+                cardBody.appendChild(cardDescription);
+                card.appendChild(cardHeader);
+                card.appendChild(cardBody);
+                contentElement.appendChild(card)
+                }
+           })
+        }
       })
 
 })
