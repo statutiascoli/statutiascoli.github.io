@@ -1,5 +1,4 @@
  .leaflet-marker-icon {
-    background: white
     color: black;
     font-size: 20px;
     line-height: 20px;
@@ -15,3 +14,27 @@
     width:70%;
     hieght:70%
  }
+
+.leaflet-marker-icon:hover {
+   background-color: black;
+   border: 2px solid white;
+}
+.leaflet-marker-icon:hover svg {
+   fill: white;
+}
+
+.leaflet-marker-icon.selectedMarker {
+   background-color: black;
+   border: 2px solid white;
+}
+.leaflet-marker-icon.selectedMarker svg {
+   fill: white;
+}
+
+g:focus {
+  outline: none;
+}
+
+path:focus {
+  outline: none;
+}

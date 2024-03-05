@@ -10,38 +10,41 @@ fetch('assets/statuti_web.json')
         contentElement.innerHTML = ""
         contentTitle.innerHTML = feature_id
        results = []
-       for (v_i in Object.keys(data)){
-            v_key = Object.keys(data)[v_i]
-            volume_content = data[v_key];
-            if (typeof volume_content === "string") {
-                if(volume_content.includes(feature_id)){
-                    results.push([volume_content, [v_i]])
-                }
-            } else {
-                books = Object.keys(volume_content);
-                for (b_i in books) {
-                    b_key = Object.keys(data[v_key])[b_i]
-                    book_content = data[v_key][b_key];
-                    if (typeof book_content === "string") {
-                        if(book_content.includes(feature_id)){
-                            results.push([book_content, [v_i,b_i]])
-                        }
-                    } else {
-                        rubrics = Object.keys(data[v_key][b_key]);
-                        for (r_i in rubrics) {
-                            r_key = rubrics[r_i]
-                            rubric_content = data[v_key][b_key][r_key];
-                            if(rubric_content.includes(feature_id)){
-                                results.push([rubric_content, [v_i,b_i,r_i]])
+       if (feature_id){
+           for (v_i in Object.keys(data)){
+                v_key = Object.keys(data)[v_i]
+                volume_content = data[v_key];
+                if (typeof volume_content === "string") {
+                    if(volume_content.includes(feature_id)){
+                        results.push([volume_content, [v_i]])
+                    }
+                } else {
+                    books = Object.keys(volume_content);
+                    for (b_i in books) {
+                        b_key = Object.keys(data[v_key])[b_i]
+                        book_content = data[v_key][b_key];
+                        if (typeof book_content === "string") {
+                            if(book_content.includes(feature_id)){
+                                results.push([book_content, [v_i,b_i]])
+                            }
+                        } else {
+                            rubrics = Object.keys(data[v_key][b_key]);
+                            for (r_i in rubrics) {
+                                r_key = rubrics[r_i]
+                                rubric_content = data[v_key][b_key][r_key];
+                                if(rubric_content.includes(feature_id)){
+                                    results.push([rubric_content, [v_i,b_i,r_i]])
+                                }
                             }
                         }
                     }
                 }
-            }
+           }
        }
        results.forEach((doc)=>{
             const xmlDoc = parser.parseFromString(doc[0], 'text/xml');
             const headElement = xmlDoc.getElementsByTagName('head')[0];
+            const pElement = xmlDoc.getElementsByTagName('p')[0];
             if (headElement){
             card = document.createElement('div');
             card.classList.add('card');
@@ -63,7 +66,13 @@ fetch('assets/statuti_web.json')
 
             cardDescription = document.createElement('p');
             cardDescription.classList.add('card-text');
-            cardDescription.textContent = "SUMMARY";
+            cardDescription.textContent = pElement.textContent.split(" ").slice(0, 25).join(" ") + " [...] "
+            readLink = document.createElement('a');
+            readLink.href = "https://statutiascoli.github.io/statuti.html?id=" + doc[1].join("_");
+            readLink.textContent = "(Continua)"
+            readLink.target = "_blank";
+            cardDescription.appendChild(readLink)
+
 
             cardHeader.appendChild(cardTitle);
             cardBody.appendChild(cardDescription);
@@ -114,24 +123,90 @@ fetch('assets/statuti_web.json')
                     return 'gray'; // Default fill color
             }
         }
+        var selectedLayer = null
+        var selectedMarker = null
+        var clickedOnFeature = true;
 
-        // Define GeoJSON layers
+
+        function markerSelector(layer, feature) {
+            if (selectedMarker !== layer) {
+                    if (selectedMarker) {
+                        L.DomUtil.removeClass(selectedMarker._icon, 'selectedMarker');
+                        selectedMarker = null;
+                    }
+                    selectedMarker = layer;
+                    populateResults(feature.properties.id);
+                    L.DomUtil.addClass(selectedMarker._icon, 'selectedMarker');
+
+                    // Deselect the polygon if it's selected
+                    if (selectedLayer) {
+                        // Reset style of the selected polygon
+                        sestieriLayer.resetStyle(selectedLayer);
+                        selectedLayer = null;
+                    }
+                }
+        }
+
         var sestieriLayer = L.geoJSON(data.sestieri, {
-          onEachFeature: function(feature, layer) {
-            layer.on('click', function(event) {
-                populateResults(feature.properties.id)
-            });
-            layer.bindPopup(feature.properties.id);
-          },
-          style: function(feature) {
+            onEachFeature: function(feature, layer) {
+                layer.on('click', function(e) {
+                    // Check if the clicked layer is different from the currently selected layer
+                    if (selectedLayer !== layer) {
+                        // Reset style of the previously selected layer, if exists
+                        if (selectedLayer) {
+                            sestieriLayer.resetStyle(selectedLayer);
+                            selectedLayer.bringToBack();
+                        }
+                        selectedLayer = layer; // Update the selected layer
+                        populateResults(feature.properties.id);
+                        layer.setStyle({ // Apply selected style
+                            weight: 2,
+                            color: 'black',
+                            dashArray: '',
+                            fillOpacity: 0.7,
+                        });
+                        e.target.bringToFront();
+                    }
+                    // Deselect the marker if it's selected
+                    if (selectedMarker) {
+                        L.DomUtil.removeClass(selectedMarker._icon, 'selectedMarker');
+                        selectedMarker = null;
+                    }
+                });
+                layer.bindTooltip(feature.properties.id);
+                layer.on('mouseover', function(e) {
+                    // Apply hover style only if the layer is not selected
+                    if (layer !== selectedLayer) {
+                        e.target.setStyle({
+                            weight: 2,
+                            color: 'black',
+                            dashArray: '',
+                            fillOpacity: 0.7,
+                        });
+                        e.target.bringToFront();
+                    }
+                });
+                layer.on('mouseout', function(e) {
+                    // Reset style only if the layer is not selected
+                    if (layer !== selectedLayer) {
+                        sestieriLayer.resetStyle(e.target);
+                        e.target.bringToBack();
+                    }
+                });
+            },
+            className: 'sestiere-polygon',
+            style: function(feature) {
                 return {
-                fillColor: getColor(feature.properties.quartiere),
-                fillOpacity: 0.5,
-                color: 'black',
-                weight: 2
-            };
-          }
+                    fillColor: getColor(feature.properties.quartiere),
+                    weight: 2,
+                    opacity: 1,
+                    color: 'white',
+                    dashArray: '3',
+                    fillOpacity: 0.5,
+                };
+            }
         }).addTo(map);
+
 
         var porteLayer = L.geoJSON(data.porte, {
          pointToLayer: function (feature, latlng) {
@@ -144,9 +219,9 @@ fetch('assets/statuti_web.json')
            },
           onEachFeature: function(feature, layer) {
             layer.on('click', function(event) {
-                populateResults(feature.properties.id)
+                markerSelector(layer, feature)
             });
-            layer.bindPopup(feature.properties.id);
+            layer.bindTooltip(feature.properties.id);
           }
         }).addTo(map);
 
@@ -161,9 +236,9 @@ fetch('assets/statuti_web.json')
            },
          onEachFeature: function(feature, layer) {
             layer.on('click', function(event) {
-                populateResults(feature.properties.id)
+                markerSelector(layer, feature)
             });
-            layer.bindPopup(feature.properties.id);
+            layer.bindTooltip(feature.properties.id);
           }
         }).addTo(map);
 
@@ -178,9 +253,9 @@ fetch('assets/statuti_web.json')
            },
           onEachFeature: function(feature, layer) {
             layer.on('click', function(event) {
-                populateResults(feature.properties.id)
+                markerSelector(layer, feature)
             });
-            layer.bindPopup(feature.properties.id);
+            layer.bindTooltip(feature.properties.id);
           }
         }).addTo(map);
 
@@ -195,11 +270,28 @@ fetch('assets/statuti_web.json')
            },
           onEachFeature: function(feature, layer) {
             layer.on('click', function(event) {
-                populateResults(feature.properties.id)
+                markerSelector(layer, feature)
             });
-            layer.bindPopup(feature.properties.id);
+            layer.bindTooltip(feature.properties.id);
           }
         }).addTo(map);
+
+        map.on('click', function(event) {
+            console.log(event.originalEvent.target.nodeName)
+            if (event.originalEvent.target.nodeName == 'path')
+                return;
+            else {
+                if (selectedLayer) {
+                    sestieriLayer.resetStyle(selectedLayer);
+                    selectedLayer = null;
+                }
+                if (selectedMarker) {
+                    L.DomUtil.removeClass(selectedMarker._icon, 'selectedMarker');
+                    selectedMarker = null;
+                }
+                populateResults(null);
+             }
+        });
 
         // Define layer control
         var overlays = {
