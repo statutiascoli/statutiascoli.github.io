@@ -17,7 +17,6 @@
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="statuti.css" media="screen"/>
-
     </head>
     <body>
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
@@ -32,44 +31,45 @@
                     <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="percorsi.html">Percorsi</a>
+                    <a class="nav-link it-content" href="percorsi.html"><span class="it">Percorsi</span><span class="en d-none">Tours</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="statuti.html" style="font-weight: bold;">Statuti</a>
+                    <a class="nav-link it-content" href="statuti.html" style="font-weight: bold;"><span class="it">Statuti</span><span class="en d-none">Statutes</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="storia.html">Storia</a>
+                    <a class="nav-link it-content" href="catasto.html"><span class="it">Catasto</span><span class="en d-none">Land registry</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="analisi.html">Analisi</a>
+                    <a class="nav-link it-content" href="storia.html"><span class="it">Storia</span><span class="en d-none">History</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="progetto.html">Progetto</a>
+                    <a class="nav-link it-content" href="analisi.html"><span class="it">Analisi</span><span class="en d-none">Analysis</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="download.html">Download</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="form.html">Contattaci</a>
+                    <a class="nav-link it-content" href="progetto.html"><span class="it">Progetto</span><span class="en d-none">Project</span></a>
                   </li>
                 </ul>
               </div>
+              <div class="lang-btns">
+                <button type="button" id="it-btn" class="btn btn-outline-primary mx-2 btn-sm">IT</button>
+                <button type="button" id="en-btn" class="btn btn-outline-primary btn-sm">EN</button>
+              </div> 
             </div>
         </nav>
 
         <div class="container-fluid html-page">
-           <h1 class="title">Gli Statuti di Ascoli</h1>
+           <h1 class="title"><span class="it">Gli Statuti di Ascoli</span><span class="en d-none">The Statutes of Ascoli</span></h1>
             <div class="row mb-3">
                 <div class="col-md-4">
-                    <label for="volume-select" class="form-label">Seleziona Statuti:</label>
+                    <label for="volume-select" class="form-label"><span class="it">Seleziona Statuti:</span><span class="en d-none">Select Statutes:</span></label>
                     <select id="volume-select" class="form-select"></select>
                 </div>
                 <div class="col-md-4">
-                    <label for="book-select" class="form-label">Seleziona Libro:</label>
+                    <label for="book-select" class="form-label"><span class="it">Seleziona Libro:</span><span class="en d-none">Select Book:</span></label>
                     <select id="book-select" class="form-select"></select>
                 </div>
                 <div class="col-md-4">
-                    <label for="rubric-select" class="form-label">Seleziona Rubrica:</label>
+                    <label for="rubric-select" class="form-label"><span class="it">Seleziona Rubrica:</span><span class="en d-none">Select Rubric:</span></label>
                     <select id="rubric-select" class="form-select"></select>
                 </div>
             </div>
@@ -90,4 +90,5 @@
         </footer>
     </body>
     <script src="assets/statuti.js"></script>
+    <script src="lang.js"></script>
 </html>

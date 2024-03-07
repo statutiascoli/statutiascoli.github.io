@@ -38,6 +38,18 @@ height:auto;
     color: white !important;
 }
 
+
+
+.en-content {
+  display: none;
+}
+.lang-btn.active {
+  background-color: white !important;
+  color: #6c1433 !important;
+  border-color: white!important;
+}
+
+
 .footer {
   position: fixed;
   bottom: 0;
