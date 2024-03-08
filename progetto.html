@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Statuti di Ascoli</title>
+        <link rel="icon" type="image/png" href="img/stap.png" sizes="32x32">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no"/>
+        <meta name="google" content="notranslate"/>
+
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/stap.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link it-content" href="percorsi.html"><span class="it">Percorsi</span><span class="en d-none">Tours</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link it-content" href="statuti.html" style="font-weight: bold;"><span class="it">Statuti</span><span class="en d-none">Statutes</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link it-content" href="catasto.html"><span class="it">Catasto</span><span class="en d-none">Land registry</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link it-content" href="storia.html"><span class="it">Storia</span><span class="en d-none">History</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link it-content" href="analisi.html"><span class="it">Analisi</span><span class="en d-none">Analysis</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link it-content" href="progetto.html" style="font-weight: bold;"><span class="it">Progetto</span><span class="en d-none">Project</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="lang-btns">
+                <button type="button" id="it-btn" class="btn btn-outline-primary mx-2 btn-sm">IT</button>
+                <button type="button" id="en-btn" class="btn btn-outline-primary btn-sm">EN</button>
+              </div> 
+            </div>
+        </nav>
+
+        <div class="container-fluid html-page">
+          <h1 class="title"><span class="it">Il progetto</span><span class="en d-none">The Project</span></h1>
+
+
+          <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="motivazioni-tab" data-bs-toggle="tab" data-bs-target="#motivazioni" type="button" role="tab" aria-controls="home" aria-selected="true"><span class="it">Motivazioni di ricerca</span><span class="en d-none">Reasons for research</span></button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="documentazione-tab" data-bs-toggle="tab" data-bs-target="#documentazione" type="button" role="tab" aria-controls="profile" aria-selected="false"><span class="it">Documentazione</span><span class="en d-none">Documentation</span></button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="team-tab" data-bs-toggle="tab" data-bs-target="#team" type="button" role="tab" aria-controls="contact" aria-selected="false">Team</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="download-tab" data-bs-toggle="tab" data-bs-target="#download" type="button" role="tab" aria-controls="contact" aria-selected="false">Download</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="credits-tab" data-bs-toggle="tab" data-bs-target="#credits" type="button" role="tab" aria-controls="contact" aria-selected="false">Credits</button>
+            </li>
+          </ul>
+          <!-- Contenuto delle tabs -->
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="motivazioni" role="tabpanel" aria-labelledby="motivazioni-tab">
+              <h6 class="mt-5"><span class="it">Motivazioni di ricerca e obiettivi</span><span class="en d-none">Reasons for research and objectives</span></h6>
+              <p>
+                <span class="it">Intendiamo qui descrivere i motivi che ci hanno spinto a intraprendere la realizzazione di un'edizione digitale degli Statuti di Ascoli. Così come il comune di Ascoli decise di trarre beneficio dalla recente invenzione della stampa a caratteri mobili, pubblicando nel 1496 un'edizione in volgare a stampa degli Statuti del Comune e del Popolo, similmente noi, seguendo lo slancio della comunità scientifica e gli attuali temi di ricerca dell'ambito umanistico-digitale, riteniamo opportuno valorizzare gli Statuti di Ascoli offrendo una nuova veste digitale, che potremmo definire <b>Statuti 3.0.</b><br/>
+                La digitalizzazione degli Statuti può apportare benefici a diversi settori e ambiti, sia all’interno della città che all’esterno. Riteniamo opportuno soffermarci per primo sulla finalità scientifica del prodotto. La digitalizzazione di un testo antico è un'impresa che coinvolge un settore di ricerca giovane, cioè l’informatica umanistica, il cui scopo principe è quello di fornire nuovi strumenti digitali a supporto della ricerca prettamente umanistica, senza dimenticare il rigore scientifico e la metodologia della ricerca tradizionale. La digitalizzazione di un testo richiede l’utilizzo di principi e standard condivisi all’interno dell’ambito scientifico per poter ottenere un testo digitalizzato conforme alle pratiche attuali. Utilizzando standard condivisi per la gestione dei dati scientifici rispondiamo alle esigenze dei principi <a href="https://www.go-fair.org/fair-principles/" target="_blank">FAIR</a>: reperibilità (Findability), accessibilità (Accessibility), interoperabilità (Interoperability) e riutilizzo (Reusability) delle risorse digitali. Per questo motivo, il testo degli Statuti del comune di Ascoli è stato digitalizzato in formato XML (Extensible Markup Language) utilizzando le attuali linee guida proposte da <a href="https://tei-c.org/" target="_blank">TEI</a> (Text Encoding Initiative) nella più recente versione <a href="https://tei-c.org/guidelines/p5/ " target="_blank">P5</a>. Le Linee guida TEI sono ampiamente utilizzate da biblioteche, musei, editori e studiosi per digitalizzare testi per la ricerca, la riproduzione e la conservazione online.</span>
+                <span class="en d-none">We intend to describe here the reasons that led us to undertake the creation of a digital edition of the Statutes of Ascoli. Just as the municipality of Ascoli decided to benefit from the recent invention of movable type printing by publishing in 1496 a printed edition in vernacular of the Statutes of the Municipality and the People, similarly, following the momentum of the scientific community and the current research topics in the digital humanities field, we believe it is appropriate to enhance the Statutes of Ascoli by offering a new digital version, which we could define as <b>Statutes 3.0.</b><br/>
+                The digitization of the Statutes can bring benefits to various sectors and areas, both within and outside the city. We believe it is appropriate to first focus on the scientific purpose of the product. The digitization of an ancient text is a venture that involves a young research sector, namely digital humanities, whose main purpose is to provide new digital tools to support predominantly humanistic research, without forgetting the scientific rigor and methodology of traditional research. The digitization of a text requires the use of principles and standards shared within the scientific community to obtain a digitized text compliant with current practices. By using shared standards for managing scientific data, we meet the needs of the <a href="https://www.go-fair.org/fair-principles/" target="_blank">FAIR</a> principles: Findability, Accessibility, Interoperability, and Reusability of digital resources. For this reason, the text of the Statutes of the municipality of Ascoli has been digitized in XML (Extensible Markup Language) format using the current guidelines proposed by <a href="https://tei-c.org/" target="_blank">TEI</a> (Text Encoding Initiative) in the latest version <a href="https://tei-c.org/guidelines/p5/ " target="_blank">P5</a>. TEI guidelines are widely used by libraries, museums, publishers, and scholars to digitize texts for research, reproduction, and online preservation.    
+                </span>
+              </p>
+            </div>
+            
+            <div class="tab-pane fade" id="documentazione" role="tabpanel" aria-labelledby="documentazione-tab">
+              <h6 class="mt-5">
+                <span class="it">Struttura e schema XML-TEI</span>
+                <span class="en d-none">Structure and XML-TEI schema</span>
+              </h6>
+              <p>
+                <span class="it">Gli Statuti di Ascoli includono l’introduzione, il volume degli Statuti del Comune, il volume degli Statuti del Popolo e la conclusione. Questa macrostruttura è stata riprodotta nello schema XML per la codifica del testo. <br/>
+                Al loro interno, i volumi degli Statuti del Comune e quelli del Popolo hanno una struttura analoga. Essi cominciano con l’introduzione al volume, seguita dai libri (4 per gli Statuti del Comune e 5 per quelli del Popolo). Ogni libro è composto dall’indice, seguito da una breve introduzione che annuncia l’inizio effettivo del contenuto del libro (fatta eccezione per i libri 4 e 5 degli Statuti del Popolo) e dal contenuto, cioè le rubriche. Il numero di rubriche varia per ogni libro, da un minimo di 14 a un massimo di 116. Ogni rubrica contiene il titolo, il numero progressivo e il testo. Inoltre, il volume degli Statuti del Popolo presenta una breve frase conclusiva per decretare la fine del volume.</span>
+                <span class="en d-none">The Statutes of Ascoli include the introduction, the volume of the Municipal Statutes, the volume of the People's Statutes, and the conclusion. This macro-structure has been reproduced in the XML schema for text encoding. <br/>
+                Within them, the volumes of the Municipal Statutes and those of the People have a similar structure. They begin with the introduction to the volume, followed by the books (4 for the Municipal Statutes and 5 for those of the People). Each book consists of an index, followed by a brief introduction announcing the actual start of the book's content (with the exception of books 4 and 5 of the People's Statutes) and the content itself, i.e., the rubrics. The number of rubrics varies for each book, ranging from a minimum of 14 to a maximum of 116. Each rubric contains the title, the progressive number, and the text. Furthermore, the volume of the People's Statutes presents a brief concluding sentence to decree the end of the volume.</span>
+              </p>
+              <p>
+                <span class="it">Di seguito, la macro-struttura degli Statuti di Ascoli utilizzata nel file XML-TEI.</span>
+                <span class="en d-none">Below is the macro-structure of the Statutes of Ascoli used in the XML-TEI file.</span>
+              </p>
+  
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <ul>
+                        <li style="font-weight: bold;">
+                          <span class="it">Introduzione</span>
+                          <span class="en d-none">Introduction</span>
+                        </li>
+                        <li>
+                          <span class="it" style="font-weight: bold;">Statuti del Comune</span>
+                          <span class="en d-none" style="font-weight: bold;">Statutes of the Municipality</span>
+                          <ul>
+                            <span class="it">
+                              <li>Introduzione</li>
+                              <li>Libro I
+                                <ul>
+                                  <li>indice</li>
+                                  <li>introduzione</li>
+                                  <li>contenuto</li>
+                                </ul>
+                              </li>
+                              <li>Libro II
+                                <ul>
+                                  <li>indice</li>
+                                  <li>introduzione</li>
+                                  <li>contenuto</li>
+                                </ul>
+                              </li>
+                              <li>Libro III
+                                <ul>
+                                  <li>indice</li>
+                                  <li>introduzione</li>
+                                  <li>contenuto</li>
+                                </ul>
+                              </li>
+                              <li>Libro IV
+                                <ul>
+                                  <li>indice</li>
+                                  <li>introduzione</li>
+                                  <li>contenuto</li>
+                                </ul>
+                              </li>
+                            </span>
+                            <span class="en d-none">
+                              <li>Introduction</li>
+                              <li>Book I
+                                <ul>
+                                  <li>index</li>
+                                  <li>introduction</li>
+                                  <li>content</li>
+                                </ul>
+                              </li>
+                              <li>Book II
+                                <ul>
+                                  <li>index</li>
+                                  <li>introduction</li>
+                                  <li>content</li>
+                                </ul>
+                              </li>
+                              <li>Book III
+                                <ul>
+                                  <li>index</li>
+                                  <li>introduction</li>
+                                  <li>content</li>
+                                </ul>
+                              </li>
+                              <li>Book IV
+                                <ul>
+                                  <li>index</li>
+                                  <li>introduction</li>
+                                  <li>content</li>
+                                </ul>
+                              </li>
+                            </span>
+                          </ul>
+                        </li>
+                        <li>
+                          <span class="it" style="font-weight: bold;">Statuti del Popolo</span>
+                          <span class="en d-none" style="font-weight: bold;">Statutes of the People</span>
+                          <ul>
+                            <span class="it">
+                              <li>Introduzione</li>
+                              <li>Libro I
+                                <ul>
+                                  <li>indice</li>
+                                  <li>introduzione</li>
+                                  <li>contenuto</li>
+                                </ul>
+                              </li>
+                              <li>Libro II
+                                <ul>
+                                  <li>indice</li>
+                                  <li>introduzione</li>
+                                  <li>contenuto</li>
+                                </ul>
+                              </li>
+                              <li>Libro III
+                                <ul>
+                                  <li>indice</li>
+                                  <li>introduzione</li>
+                                  <li>contenuto</li>
+                                </ul>
+                              </li>
+                              <li>Libro IV
+                                <ul>
+                                  <li>indice</li>
+                                  <li>contenuto</li>
+                                </ul>
+                              </li>
+                              <li>Libro V
+                                <ul>
+                                  <li>indice</li>
+                                  <li>contenuto</li>
+                                </ul>
+                              </li>
+                              <li>Conclusione</li>
+                            </span>
+                            <span class="en d-none">
+                              <li>Introduction</li>
+                              <li>Book I
+                                <ul>
+                                  <li>index</li>
+                                  <li>introduction</li>
+                                  <li>content</li>
+                                </ul>
+                              </li>
+                              <li>Book II
+                                <ul>
+                                  <li>index</li>
+                                  <li>introduction</li>
+                                  <li>content</li>
+                                </ul>
+                              </li>
+                              <li>Book III
+                                <ul>
+                                  <li>index</li>
+                                  <li>introduction</li>
+                                  <li>content</li>
+                                </ul>
+                              </li>
+                              <li>Book IV
+                                <ul>
+                                  <li>index</li>
+                                  <li>content</li>
+                                </ul>
+                              </li>
+                              <li>Book V
+                                <ul>
+                                  <li>index</li>
+                                  <li>content</li>
+                                </ul>
+                              </li>
+                              <li>Conclusion</li>
+                            </span>
+                          </ul>
+                        </li>
+                        <li>
+                          <span class="it" style="font-weight: bold;">Conclusione</span>
+                          <span class="en d-none" style="font-weight: bold;">Conclusion</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="col">
+                      <pre style="background-color: #eee; border: 1px solid #999; padding: 20px;">  
+&lt;body&gt;
+  &lt;div xml:id="statutiAscoli"&gt;
+      &lt;div type="intro" xml:id="statutiAscoli_intro"&gt;&lt;/div&gt;
+
+      &lt;div type="volume" xml:id="statCom"&gt;
+          &lt;div type="intro" xml:id="statCom_intro"&gt;&lt;/div&gt;
+          &lt;div n="1" type="libro" xml:id="statCom_libro1"&gt;
+              &lt;div type="indice" xml:id="statCom_libro1_indice"&gt;&lt;/div&gt;
+              &lt;div type="intro" xml:id="statCom_libro1_intro"&gt;&lt;/div&gt;
+              &lt;div type="content" xml:id="statCom_libro1_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div n="2" type="libro" xml:id="statCom_libro2"&gt;
+              &lt;div type="indice" xml:id="statCom_libro2_indice"&gt;&lt;/div&gt;
+              &lt;div type="intro" xml:id="statCom_libro2_intro"&gt;&lt;/div&gt;
+              &lt;div type="content" xml:id="statCom_libro2_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div n="3" type="libro" xml:id="statCom_libro3"&gt;
+              &lt;div type="indice"&gt;&lt;/div&gt;
+              &lt;div type="intro" xml:id="statCom_libro3_intro"&gt;&lt;/div&gt;
+              &lt;div type="content" xml:id="statCom_libro3_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div n="4" type="libro" xml:id="statCom_libro4"&gt;
+              &lt;div type="indice" xml:id="statCom_libro4_indice"&gt;&lt;/div&gt;
+              &lt;div type="intro" xml:id="statCom_libro4_intro"&gt;&lt;/div&gt;
+              &lt;div type="content" corresp="#statCom_libro4_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;div type="volume" xml:id="statPop"&gt;
+          &lt;div type="intro" xml:id="statPop_intro"&gt;&lt;/div&gt;
+          
+          &lt;div n="1" type="libro" xml:id="statPop_libro1"&gt;
+              &lt;div type="indice" xml:id="statPop_libro1_indice"&gt;&lt;/div&gt;
+              &lt;div type="intro" xml:id="statPop_libro1_intro"&gt;&lt;/div&gt;
+              &lt;div type="content" xml:id="statPop_libro1_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div n="2" type="libro" xml:id="statPop_libro2"&gt;
+              &lt;div type="indice" xml:id="statPop_libro2_indice"&gt;&lt;/div&gt;
+              &lt;div type="intro" xml:id="statPop_libro2_intro"&gt;&lt;/div&gt;
+              &lt;div type="content" corresp="#statPop_libro2_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div n="3" type="libro" xml:id="statPop_libro3"&gt;
+              &lt;div type="indice" xml:id="statPop_libro3_indice"&gt;&lt;/div&gt;
+              &lt;div type="intro" xml:id="statPop_libro3_intro"&gt;&lt;/div&gt;
+              &lt;div type="content" corresp="#statPop_libro3_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div n="4" type="libro" xml:id="statPop_libro4"&gt;
+              &lt;div type="indice" xml:id="statPop_libro4_indice"&gt;&lt;/div&gt;
+              &lt;div type="content" corresp="#statPop_libro4_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div n="5" type="libro" xml:id="statPop_libro5"&gt;
+              &lt;div type="indice" xml:id="statPop_libro5_indice"&gt;&lt;/div&gt;
+              &lt;div type="content" corresp="#statPop_libro5_content"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div type="conclusione" xml:id="statPop_conclusione"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;div type="conclusione" xml:id="StatutiAscoli_conclusione"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+                    </pre>
+                    </div>
+                  </div>
+                </div>
+                  
+                <p>
+                  <span class="it">Il testo dell’edizione digitale coincide con la trascrizione dell’edizione di Zdekauer-Sella. Pertanto sono state applicate le seguenti scelte editoriali:</span>
+                  <span class="en d-none">The text of the digital edition coincides with the transcription of the Zdekauer-Sella edition. Therefore, the following editorial choices have been applied:</span>
+                    <ul>
+                      <span class="it">
+                        <li>il testo è composto di continuo, senza le interruzioni di linea e la divisione in colonne dell’originale;</li>
+                        <li>tutte le abbreviazioni sono risolte in maniera silenziosa;</li>
+                        <li>la forma “&c.” significa “eccetera”. Nell’originale è espressa tramite “[simbolo-et] ceta”;</li>
+                        <li>sono state apportate correzioni così come segnalate nell’edizione di Zdekauer-Sella. Gli errori e le proposte di correzione vengono segnalati attraverso l’elemento <code>&lt;choice&gt;</code> che include <code>&lt;sic&gt;</code> (contiene il testo apparentemente errato o impreciso) e <code>&lt;corr&gt;</code> (mostra la forma corretta di un passaggio apparentemente errato nel testo)</li>
+                        <li>le lettere iniziali delle rubriche sono rappresentate in maiuscolo anche se nell’originale queste mancano poiché sarebbero dovute essere miniate e sono segnalate dall’elemento <code>&lt;hi&gt;</code>.</li>
+                        <li>Le date sono incluse nell’elemento <code>&lt;date&gt;</code> che consente la rappresentazione della data in cifre arabe attraverso l’attributo @when= “anno-mese-giorno”. <code>&lt;date when="03-15"&gt;dì quindici de lu mese de marzo&lt;/date&gt;</code></li>
+                        <li>Le informazioni numeriche sono segnalate dall'elemento <code>&lt;num&gt;</code> che specifica il valore tramite l'attributo @value. <code>&lt;num value="3"&gt;III&lt;/num&gt;</code></li>
+                        <li>Liste di persone, luoghi ed eventi specificati nel testo sono state utilizzate nel teiHeader per raccogliere tali informazioni nel teiHeader.</li>
+                      </span>
+                      <span class="en d-none">
+                        <li>The text is continuous, without the interruptions of lines and the division into columns of the original;</li>
+                        <li>All abbreviations are silently resolved;</li>
+                        <li>The form "&c." means "etcetera". In the original, it is expressed through "[symbol-et] ceta";</li>
+                        <li>Corrections have been made as indicated in the Zdekauer-Sella edition. Errors and correction proposals are signaled through the <code>&lt;choice&gt;</code> element which includes <code>&lt;sic&gt;</code> (containing the apparently incorrect or imprecise text) and <code>&lt;corr&gt;</code> (showing the correct form of an apparently erroneous passage in the text);</li>
+                        <li>The initial letters of the rubrics are represented in uppercase even if in the original these are missing because they should have been illuminated and are signaled by the <code>&lt;hi&gt;</code> element;</li>
+                        <li>Dates are included in the <code>&lt;date&gt;</code> element which allows the representation of the date in Arabic numerals through the @when attribute= "year-month-day". <code>&lt;date when="03-15"&gt;dì quindici de lu mese de marzo&lt;/date&gt;</code></li>
+                        <li>Numerical information is indicated by the <code>&lt;num&gt;</code> element specifying the value through the @value attribute. <code>&lt;num value="3"&gt;III&lt;/num&gt;</code></li>
+                        <li>Lists of people, places, and events specified in the text have been used in the teiHeader to collect such information in the teiHeader.</li>
+                      </span>
+                    </ul>
+                </p>
+            </div>
+            
+            <div class="tab-pane fade" id="team" role="tabpanel" aria-labelledby="team-tab">
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-md">
+                    <div class="text-center">
+                      <img src="img/MichelaParma.jpg" style="border-radius: 50%; width:40%;" alt="Michela Parma">
+                    </div>
+                    <h6 class="team-name">Michela Parma</h6>
+                    <p class="p-2"><a href="https://mittelalter.geschichte.uni-mainz.de/michela-parma/" target="_blank">Michela Parma</a> 
+                      <span class="it">è una ricercatrice laureata in Storia con una specializzazione in Digital Humanities. Si occupa principalmente di manoscritti medievali, edizioni digitali e sviluppo web. Dal 2021 è coinvolta in un progetto di ricerca presso la Johannes Gutenberg Universität Mainz, in Germania.</span>
+                      <span class="en d-none">is a researcher with a degree in History and a specialization in Digital Humanities. She primarily focuses on medieval manuscripts, digital editions, and web development. Since 2021, she has been involved in a research project at Johannes Gutenberg University Mainz in Germany.</span>
+                    </p>
+                  </div>
+                  
+                  <div class="col-md">
+                    <div class="text-center">
+                      <img src="img/FabioMariani.jpg"  style="border-radius: 50%; width:40%" alt="Fabio Mariani">
+                    </div>
+                        <h6 class="team-name">Fabio Mariani</h6>
+                        <p class="p-2"><a href="https://www.leuphana.de/en/institutes/ipk/members/fabio-mariani.html" target="_blank">Fabio Mariani</a> 
+                          <span class="it">è ricercatore associato e dottorando presso la Leuphana University Lüneburg (Germania) dal 2020. Dopo una laurea in Storia, ha conseguito il Master in Digital Humanities presso l'Università di Bologna. Durante i suoi studi ha collaborato a diversi progetti di ricerca presso il Digital Humanities Advanced Research Centre (DH.arc), OpenCitations e l'Istituto di Scienze e Tecnologie Cognitive (ISTC).</span>
+                          <span class="en d-none">is an associated researcher and doctoral student at Leuphana University Lüneburg (Germany) since 2020. After earning a degree in History, he obtained a Master's in Digital Humanities from the University of Bologna. During his studies, he collaborated on various research projects at the Digital Humanities Advanced Research Centre (DH.arc), OpenCitations, and the Institute of Cognitive Sciences and Technologies (ISTC).</span>
+                        </p>
+                    </div>
+                  </div>
+                  
+                </div>
+            
+            </div>
+
+            <div class="tab-pane fade" id="download" role="tabpanel" aria-labelledby="download-tab">
+              <p class="mt-5"></p>
+            </div>
+            
+            <div class="tab-pane fade" id="credits" role="tabpanel" aria-labelledby="credits-tab">
+              <p class="mt-5">
+                <span class="it">Gli Statuti presenti in questa piattaforma sono stati digitalizzati utilizzando l’edizione <i>Statuti di Ascoli Piceno dell’anno MCCCLXXVII</i>, a cura di L. Zdekauer e P. Sella, Roma, Istituto storico italiano, 1910. L’edizione riproduce integralmente il testo in volgare contenuto nell’incunabulo del 1496, conservato attualmente presso la Biblioteca del Senato a Roma. Le immagini degli Statuti sono state gentilmente fornite, ad uso esclusivo di questo sito, dalla <a href="https://www.senato.it/relazioni-con-i-cittadini/biblioteca/la-biblioteca-del-senato-della-repubblica-giovanni-spadolini" target="_blank">Biblioteca del Senato “Giovanni Spadolini”</a>.</span>
+                <span class="en d-none">The statutes available on this platform have been digitized using the edition <i>Statuti di Ascoli Piceno dell’anno MCCCLXXVII</i>, edited by L. Zdekauer and P. Sella, Roma, Istituto storico italiano, 1910. This edition faithfully reproduces the text in the vernacular contained in the incunabulum of 1496, currently preserved at the Biblioteca del Senato in Rome. The images of the statutes have been kindly provided, exclusively for the use of this website, by the <a href="https://www.senato.it/relazioni-con-i-cittadini/biblioteca/la-biblioteca-del-senato-della-repubblica-giovanni-spadolini" target="_blank">Biblioteca del Senato "Giovanni Spadolini"</a>.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <footer class="bg-light text-center py-4 border-top">
+          <div class="container">
+            <span class="mb-3 mb-md-0 text-muted" style="font-size: 12px;">&copy; 2024 Statuti di Ascoli</span>
+            <br/>
+            <span class="mb-3 mb-md-0 text-muted" style="font-size: 12px;">&copy; Immagini della Biblioteca del Senato "Giovanni Spadolini". Tutti i diritti riservati.</span>
+          </div>
+        </footer>
+        <script src="lang.js"></script>
+    </body>
+</html>

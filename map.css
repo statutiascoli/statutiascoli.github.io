@@ -1,0 +1,40 @@
+ .leaflet-marker-icon {
+    color: black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: bottom;
+    box-shadow: 2px 1px 4px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    border-width: 5px;
+    border: 2px solid black;
+    opacity: 1;
+}
+ .leaflet-marker-icon svg {
+    width:70%;
+    hieght:70%
+ }
+
+.leaflet-marker-icon:hover {
+   background-color: black;
+   border: 2px solid white;
+}
+.leaflet-marker-icon:hover svg {
+   fill: white;
+}
+
+.leaflet-marker-icon.selectedMarker {
+   background-color: black;
+   border: 2px solid white;
+}
+.leaflet-marker-icon.selectedMarker svg {
+   fill: white;
+}
+
+g:focus {
+  outline: none;
+}
+
+path:focus {
+  outline: none;
+}
