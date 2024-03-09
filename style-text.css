@@ -1,0 +1,51 @@
+item:after{
+    content: "\a"
+}
+
+item label{
+    font-weight: bold;
+}
+
+persName{
+    color: #ff3399;
+}
+
+placeName{
+    color: #009900;
+}
+
+seg[type="festa"]{
+    color: orange;
+    padding:1px; 
+}
+
+seg[type="internal-link"]{
+    color: blue;
+    padding:1px; 
+}
+
+sic:before{
+    content: "["
+}
+sic:after{
+    content: "] "
+}
+sic{
+    color: #b1b4b4;
+}
+
+corr{
+    text-decoration:underline;
+}
+
+gap{
+    content:"[__lacuna nel codice__]";
+    font-size: 11px;
+    color: #707575;
+    background: #e5e6e6;
+}
+
+
+
+
+

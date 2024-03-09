@@ -17,8 +17,6 @@
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="map.css" media="screen"/>
-
-        
     </head>
     <body>
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
@@ -32,23 +30,29 @@
                   <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                   </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold;">
+                      <span class="it">Statuti</span><span class="en d-none">Statutes</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="percorsi.html"><span class="it">Percorsi</span><span class="en d-none">Tours</span></a></li>
+                      <li><a class="dropdown-item" href="statuti.html"><span class="it">Trascrizioni</span><span class="en d-none">Transcriptions</span></a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="download.html">Download</a></li>
+                    </ul>
+                  </li>
+                  
                   <li class="nav-item">
-                    <a class="nav-link it" href="percorsi.html" style="font-weight: bold;"><span class="it">Percorsi</span><span class="en d-none">Tours</span></a>
+                    <a class="nav-link" href="catasto.html"><span class="it">Catasto</span><span class="en d-none">Land registry</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link it-content" href="statuti.html"><span class="it">Statuti</span><span class="en d-none">Statutes</span></a>
+                    <a class="nav-link" href="storia.html"><span class="it">Storia</span><span class="en d-none">History</span></a>
                   </li>
+                  <!--<li class="nav-item">
+                    <a class="nav-link" href="analisi.html"><span class="it">Analisi</span><span class="en d-none">Analysis</span></a>
+                  </li>-->
                   <li class="nav-item">
-                    <a class="nav-link it-content" href="catasto.html"><span class="it">Catasto</span><span class="en d-none">Land registry</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link it-content" href="storia.html"><span class="it">Storia</span><span class="en d-none">History</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link it-content" href="analisi.html"><span class="it">Analisi</span><span class="en d-none">Analysis</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link it-content" href="progetto.html"><span class="it">Progetto</span><span class="en d-none">Project</span></a>
+                    <a class="nav-link" href="progetto.html"><span class="it">Progetto</span><span class="en d-none">Project</span></a>
                   </li>
                 </ul>
               </div>
@@ -73,9 +77,9 @@
             <li class="nav-item" role="presentation">
               <button class="nav-link" id="category-tab" data-bs-toggle="tab" data-bs-target="#category" type="button" role="tab" aria-controls="contact" aria-selected="false"><span class="it">Categorie</span><span class="en d-none">Categories</span></button>
             </li>
-            <li class="nav-item" role="presentation">
+            <!--<li class="nav-item" role="presentation">
               <button class="nav-link" id="calendar-tab" data-bs-toggle="tab" data-bs-target="#calendar" type="button" role="tab" aria-controls="contact" aria-selected="false"><span class="it">Calendario delle feste</span><span class="en d-none">Holiday Calendar</span></button>
-            </li>
+            </li>-->
           </ul>
           <!-- Contenuto delle tabs -->
           <div class="tab-content" id="myTabContent">
@@ -105,10 +109,9 @@
             
             </div>
 
-            <div class="tab-pane fade" id="calendar" role="tabpanel" aria-labelledby="calendar-tab">
+            <!--<div class="tab-pane fade" id="calendar" role="tabpanel" aria-labelledby="calendar-tab">
               <h6 class="mt-5"><span class="it">Calendario delle feste</span><span class="en d-none">Holiday Calendar</span></h6>
-              
-            </div>
+            </div>-->
           </div>
         </div>
 

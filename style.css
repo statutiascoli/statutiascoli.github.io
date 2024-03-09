@@ -39,11 +39,17 @@ height:auto;
 }
 
 
-
-.en-content {
-  display: none;
+.lang-btns button{
+  border-color: white!important;
+  color: white!important;
 }
-.lang-btn.active {
+.lang-btns button:hover{
+  border-color: white!important;
+  background-color: white;
+  color: #6c1433!important;
+}
+
+.lang-btns button .active {
   background-color: white !important;
   color: #6c1433 !important;
   border-color: white!important;
@@ -147,6 +153,14 @@ h3{
 }
 .html-page{
   padding: 50px;
+}
+.footer-btn{
+  border-color: #6c1433!important;
+  color:#6c1433!important;
+}
+.footer-btn:hover{
+  background-color: #6c1433!important;
+  color: white!important;
 }
 
 @media (max-width: 768px) {

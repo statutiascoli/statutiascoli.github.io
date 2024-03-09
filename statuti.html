@@ -13,10 +13,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
-        
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="statuti.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="style-text.css" media="screen"/>
     </head>
     <body>
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
@@ -30,11 +30,16 @@
                   <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link it-content" href="percorsi.html"><span class="it">Percorsi</span><span class="en d-none">Tours</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link it-content" href="statuti.html" style="font-weight: bold;"><span class="it">Statuti</span><span class="en d-none">Statutes</span></a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold;">
+                      <span class="it">Statuti</span><span class="en d-none">Statutes</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="percorsi.html"><span class="it">Percorsi</span><span class="en d-none">Tours</span></a></li>
+                      <li><a class="dropdown-item" href="statuti.html"><span class="it">Trascrizioni</span><span class="en d-none">Transcriptions</span></a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="download.html">Download</a></li>
+                    </ul>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link it-content" href="catasto.html"><span class="it">Catasto</span><span class="en d-none">Land registry</span></a>
@@ -42,9 +47,9 @@
                   <li class="nav-item">
                     <a class="nav-link it-content" href="storia.html"><span class="it">Storia</span><span class="en d-none">History</span></a>
                   </li>
-                  <li class="nav-item">
+                  <!--<li class="nav-item">
                     <a class="nav-link it-content" href="analisi.html"><span class="it">Analisi</span><span class="en d-none">Analysis</span></a>
-                  </li>
+                  </li>-->
                   <li class="nav-item">
                     <a class="nav-link it-content" href="progetto.html"><span class="it">Progetto</span><span class="en d-none">Project</span></a>
                   </li>
