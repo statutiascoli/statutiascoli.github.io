@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Se il reCAPTCHA è valido, procedi con l'invio dell'email
         if (intval($responseKeys["success"]) === 1) {
             // Configura i dettagli per l'invio dell'email
-            $to = "tu@email.com";
+            $to = "info.ascolicomune@gmail.com";
             $subject = "Nuovo messaggio dal form di contatto";
             $messageBody = "Nome: $name\n";
             $messageBody .= "Email: $email\n";
