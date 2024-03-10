@@ -4,11 +4,6 @@ rubricSelect = document.getElementById('rubric-select');
 contentElement = document.getElementById('content');
 
 
-
-
-
-
-
 fetch('assets/statuti_web.json')
     .then(response => response.json())
     .then(data => {
