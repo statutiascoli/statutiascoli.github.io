@@ -271,6 +271,7 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
             if (headElement){
                 card = document.createElement('div');
                 card.classList.add('card');
+                card.classList.add('mb-3');
                 cardHeader = document.createElement('div');
                 cardHeader.classList.add('card-header');
                 cardBody = document.createElement('div');
