@@ -1,5 +1,9 @@
 contentTitle = document.getElementById('result_title');
-contentElement = document.getElementById('results');
+contentElement = document.getElementById('result_content');
+currentPage = 1
+itemsPerPage = 3
+paginationElement = document.getElementById('pagination');
+
 const parser = new DOMParser();
 
 fetch('assets/statuti_web.json').then(response => response.json()).then(data => {
@@ -207,12 +211,15 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
                 populateResults(null);
              }
         });
-       
+
+       results = [];
 
        function populateResults(feature){
-            feature_id = feature.properties.id
-            contentElement.innerHTML = ""
-            contentTitle.innerHTML = feature_id
+           feature_id = feature.properties.id
+           contentElement.innerHTML = ""
+           paginationElement.innerHTML = ""
+           currentPage = 1
+           contentTitle.innerHTML = feature_id
            results = []
            if (feature_id){
                for (v_i in Object.keys(data)){
@@ -245,45 +252,89 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
                     }
                }
            }
-           results.forEach((doc)=>{
-                const xmlDoc = parser.parseFromString(doc[0], 'text/xml');
-                const headElement = xmlDoc.getElementsByTagName('head')[0];
-                const pElement = xmlDoc.getElementsByTagName('p')[0];
-                if (headElement){
+           displayCurrentPage(results);
+           if (results.length > 3){
+              generatePaginationLinks(results);
+           }
+        }
+      })
+
+    function displayCurrentPage(results) {
+        startIndex = (currentPage - 1) * itemsPerPage;
+        endIndex = startIndex + itemsPerPage;
+        itemsToShow = results.slice(startIndex, endIndex);
+        contentElement.innerHTML = ''; // Clear previous content
+        itemsToShow.forEach((doc) => {
+            xmlDoc = parser.parseFromString(doc[0], 'text/xml');
+            headElement = xmlDoc.getElementsByTagName('h1')[0];
+            pElement = xmlDoc.getElementsByTagName('p')[0];
+            if (headElement){
                 card = document.createElement('div');
                 card.classList.add('card');
-
                 cardHeader = document.createElement('div');
                 cardHeader.classList.add('card-header');
-
                 cardBody = document.createElement('div');
                 cardBody.classList.add('card-body');
-
-                const cardTitle = document.createElement('h5');
+                cardTitle = document.createElement('h5');
                 cardTitle.classList.add('card-title');
                 cardLink = document.createElement('a');
-                cardLink.href = "https://statutiascoli.github.io/statuti.html?id=" + doc[1].join("_");
+                cardLink.href = "https://ascolicomune.it/statuti.html?id=" + doc[1].join("_");
                 cardLink.textContent = headElement.textContent;
                 cardLink.target = "_blank";
                 cardTitle.appendChild(cardLink)
-
                 cardDescription = document.createElement('p');
                 cardDescription.classList.add('card-text');
                 cardDescription.textContent = pElement.textContent.split(" ").slice(0, 25).join(" ") + " [...] "
                 readLink = document.createElement('a');
-                readLink.href = "https://statutiascoli.github.io/statuti.html?id=" + doc[1].join("_");
+                readLink.href = "https://ascolicomune.it/statuti.html?id=" + doc[1].join("_");
                 readLink.textContent = "(Continua)"
                 readLink.target = "_blank";
                 cardDescription.appendChild(readLink)
-
                 cardHeader.appendChild(cardTitle);
                 cardBody.appendChild(cardDescription);
                 card.appendChild(cardHeader);
                 card.appendChild(cardBody);
                 contentElement.appendChild(card)
-                }
-           })
-        }
-      })
+            }
+        });
+    }
 
+
+    // Function to generate pagination links
+    function generatePaginationLinks(results) {
+        pageCount = Math.ceil(results.length / itemsPerPage);
+        paginationElement.innerHTML = ''; // Clear previous pagination links
+        for (let i = 1; i <= pageCount; i++) {
+            li = document.createElement('li');
+            li.classList.add('page-item');
+            button = document.createElement('button');
+            button.classList.add('page-link');
+            button.textContent = i;
+            li.appendChild(button);
+
+            // Add event listener to each pagination button
+            addButtonEventListener(button, i, results);
+
+            paginationElement.appendChild(li);
+            if (i==1){
+                button.classList.add('active');
+            }
+        }
+    }
+    // Function to add event listener to each pagination button
+    function addButtonEventListener(button, page, results) {
+        button.addEventListener('click', () => {
+            currentPage = page;
+            displayCurrentPage(results);
+
+            // Remove 'active' class from all buttons
+            const allButtons = paginationElement.querySelectorAll('.page-link');
+            allButtons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked button
+            button.classList.add('active');
+        });
+    }
 })

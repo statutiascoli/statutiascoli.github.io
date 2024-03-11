@@ -27,7 +27,9 @@ html{
 }
 
 body {
-height:auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #navbar{
@@ -104,6 +106,7 @@ p{
   transform: translate(29.3%) rotate(45deg);
   margin-top:70px;
   padding:5px;
+  z-index: 100;
 }
 
 h6{
@@ -172,6 +175,7 @@ h3{
   font-size: 25px;
 }
 .html-page{
+  flex: 1;
   padding: 50px;
 }
 .footer-btn{
