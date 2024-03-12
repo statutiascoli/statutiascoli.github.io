@@ -6,7 +6,7 @@ item label{
     font-weight: bold;
 }
 
-persName{
+/*persName{
     color: #ff3399;
 }
 
@@ -17,25 +17,25 @@ placeName{
 seg[type="festa"]{
     color: orange;
     padding:1px; 
-}
+}*/
 
 seg[type="internal-link"]{
     color: blue;
     padding:1px; 
 }
 
-sic:before{
+corr:before{
     content: "["
 }
-sic:after{
+corr:after{
     content: "] "
 }
 sic{
-    color: #b1b4b4;
+    text-decoration: line-through;
 }
 
 corr{
-    text-decoration:underline;
+    color: #b1b4b4;
 }
 
 gap{
