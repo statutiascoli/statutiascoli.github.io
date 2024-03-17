@@ -38,3 +38,73 @@ g:focus {
 path:focus {
   outline: none;
 }
+
+.square-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap between cells */
+}
+.square {
+  background-color: #6c1433;
+  flex: 1 1 calc(33.333% - 10px); /* 3 cells per row with 10px gap */
+  max-width: calc(33.333% - 10px); /* 3 cells per row with 10px gap */
+  position: relative;
+  --bs-btn-padding-x: 0 !important;
+  --bs-btn-padding-y: 0 !important;
+  padding-bottom: 0; /* Reset padding */
+}
+.categories button.active{
+  background-color: white;
+  border-color: #6c1433;
+  border-width:5px
+}
+.categories button.active svg{
+  fill: #6c1433;
+}
+
+.categories button:hover{
+  background-color: white;
+  border-color: #6c1433;
+  border-width:5px
+}
+.categories button:hover svg{
+  fill: #6c1433;
+}
+
+.square::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%; /* Maintain square aspect ratio */
+}
+.square svg {
+  fill: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 80%; /* Adjust the size of the SVG icons */
+  max-height: 80%;
+}
+
+@media (max-width: 767.98px) {
+  .square {
+    flex: 1 1 calc(16.7% - 10px); /* 2 cells per row with 10px gap */
+    max-width: calc(16.7% - 10px); /* 2 cells per row with 10px gap */
+  }
+}
+
+@media (min-width: 767.98px) {
+  .square {
+    flex: 1 1 calc(33.333% - 10px); /* 2 cells per row with 10px gap */
+    max-width: calc(33.333% - 10px); /* 2 cells per row with 10px gap */
+  }
+}
+
+@media (min-width: 991.98px) {
+  .square {
+    flex: 1 1 calc(25% - 10px); /* 2 cells per row with 10px gap */
+    max-width: calc(25% - 10px); /* 2 cells per row with 10px gap */
+  }
+}
