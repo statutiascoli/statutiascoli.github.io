@@ -104,6 +104,12 @@ path:focus {
     height: 500px;
 }
 
+@media (max-width: 400px) {
+    #myTab .nav-link {
+    font-size: smaller;
+    }
+}
+
 @media (max-width: 767.98px) {
   .square {
     flex: 1 1 calc(16.7% - 10px); /* 2 cells per row with 10px gap */
@@ -114,6 +120,9 @@ path:focus {
     }
   .results{
     margin-top: 15px;
+  }
+  #myTab .nav-link {
+    padding: 5px !important;
   }
 }
 
