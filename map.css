@@ -1,5 +1,5 @@
  .leaflet-marker-icon {
-    color: black;
+    color: #6c1433;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
@@ -7,16 +7,17 @@
     box-shadow: 2px 1px 4px rgba(0,0,0,0.2);
     border-radius: 30px;
     border-width: 5px;
-    border: 2px solid black;
+    border: 2px solid #6c1433;
     opacity: 1;
 }
  .leaflet-marker-icon svg {
+    fill: #6c1433;
     width:70%;
     hieght:70%
  }
 
 .leaflet-marker-icon:hover {
-   background-color: black;
+   background-color: #6c1433;
    border: 2px solid white;
 }
 .leaflet-marker-icon:hover svg {
@@ -24,7 +25,7 @@
 }
 
 .leaflet-marker-icon.selectedMarker {
-   background-color: black;
+   background-color: #6c1433;
    border: 2px solid white;
 }
 .leaflet-marker-icon.selectedMarker svg {
@@ -86,6 +87,17 @@ path:focus {
   margin: auto;
   max-width: 80%; /* Adjust the size of the SVG icons */
   max-height: 80%;
+}
+
+.active>.page-link, .page-link.active {
+    z-index: 3;
+    color: var(--bs-pagination-active-color);
+    background-color: #6c1433;
+    border-color: #6c1433;
+}
+
+.page-link{
+    color: #6c1433;
 }
 
 @media (max-width: 767.98px) {
