@@ -104,11 +104,6 @@ path:focus {
     height: 500px;
 }
 
-@media (max-width: 400px) {
-    #myTab .nav-link {
-    font-size: smaller;
-    }
-}
 
 @media (max-width: 767.98px) {
   .square {
@@ -122,6 +117,7 @@ path:focus {
     margin-top: 15px;
   }
   #myTab .nav-link {
+    font-size: smaller;
     padding: 5px !important;
   }
 }
