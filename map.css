@@ -100,10 +100,20 @@ path:focus {
     color: #6c1433;
 }
 
+.map{
+    height: 500px;
+}
+
 @media (max-width: 767.98px) {
   .square {
     flex: 1 1 calc(16.7% - 10px); /* 2 cells per row with 10px gap */
     max-width: calc(16.7% - 10px); /* 2 cells per row with 10px gap */
+  }
+  .map{
+    height: 300px;
+    }
+  .results{
+    margin-top: 15px
   }
 }
 
