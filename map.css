@@ -32,6 +32,10 @@
    fill: white;
 }
 
+svg.leaflet-attribution-flag{
+    display:none !important
+}
+
 g:focus {
   outline: none;
 }
