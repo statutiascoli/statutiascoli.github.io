@@ -397,24 +397,58 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
 
    // Function to generate pagination links
    function generatePaginationLinks(results, tab, currentPage) {
-        pageCount = Math.ceil(results.length / itemsPerPage);
-        document.querySelector('.' + tab + ' .pagination').innerHTML = ''; // Clear previous pagination links
-        for (let i = 1; i <= pageCount; i++) {
-            li = document.createElement('li');
-            li.classList.add('page-item');
-            button = document.createElement('button');
-            button.classList.add('page-link');
-            button.textContent = i;
-            li.appendChild(button);
+    var pageCount = Math.ceil(results.length / itemsPerPage);
+    var pagination = document.querySelector('.' + tab + ' .pagination');
+    pagination.innerHTML = ''; // Clear previous pagination links
+    var maxVisibleButtons = 20; // Adjust as needed
 
-            // Add event listener to each pagination button
-            addButtonEventListener(button, i, results, tab, currentPage);
-            document.querySelector('.' + tab + ' .pagination').appendChild(li);
-            if (i==1){
-                button.classList.add('active');
-            }
+    if (window.innerWidth < 768) {
+        maxVisibleButtons = 7; // Adjust for smaller screens
+    }
+
+    var startPage = Math.max(1, currentPage - Math.floor(maxVisibleButtons / 2));
+    var endPage = Math.min(pageCount, startPage + maxVisibleButtons - 1);
+
+    if (endPage - startPage + 1 < maxVisibleButtons) {
+        startPage = Math.max(1, endPage - maxVisibleButtons + 1);
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+        var li = document.createElement('li');
+        li.classList.add('page-item');
+        var button = document.createElement('button');
+        button.classList.add('page-link');
+        button.textContent = i;
+        li.appendChild(button);
+
+        // Add event listener to each pagination button
+        addButtonEventListener(button, i, results, tab, currentPage);
+        pagination.appendChild(li);
+        if (i === currentPage) {
+            button.classList.add('active');
         }
     }
+
+    if (startPage > 1) {
+        var ellipsisLi = document.createElement('li');
+        ellipsisLi.classList.add('page-item');
+        var ellipsisButton = document.createElement('button');
+        ellipsisButton.classList.add('page-link');
+        ellipsisButton.textContent = '...';
+        ellipsisLi.appendChild(ellipsisButton);
+        pagination.insertBefore(ellipsisLi, pagination.firstElementChild);
+    }
+
+    if (endPage < pageCount) {
+        var ellipsisLi = document.createElement('li');
+        ellipsisLi.classList.add('page-item');
+        var ellipsisButton = document.createElement('button');
+        ellipsisButton.classList.add('page-link');
+        ellipsisButton.textContent = '...';
+        ellipsisLi.appendChild(ellipsisButton);
+        pagination.appendChild(ellipsisLi);
+    }
+}
    // Function to add event listener to each pagination button
    function addButtonEventListener(button, page, results, tab, currentPage) {
         button.addEventListener('click', () => {
@@ -429,6 +463,9 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
 
             // Add 'active' class to the clicked button
             button.classList.add('active');
+
+            // Update visible pagination buttons
+            generatePaginationLinks(results, tab, currentPage);
         });
     }
 })

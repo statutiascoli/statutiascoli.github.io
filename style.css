@@ -106,7 +106,7 @@ p{
   transform: translate(29.3%) rotate(45deg);
   margin-top:70px;
   padding:5px;
-  z-index: 100;
+  z-index: 1000;
 }
 
 h6{

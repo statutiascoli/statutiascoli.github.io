@@ -117,8 +117,8 @@ path:focus {
     margin-top: 15px;
   }
   #myTab .nav-link {
-    font-size: smaller;
-    padding: 4px !important;
+    font-size: small;
+    padding: 5px !important;
   }
 }
 
