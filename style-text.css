@@ -45,6 +45,12 @@ gap{
     /*background: #e5e6e6;*/
 }
 
+
+surplus{
+    color: black;
+    text-decoration: wavy;
+}
+
 .titoloRubrica{
     font-size: 17px;
     font-weight: bold;
