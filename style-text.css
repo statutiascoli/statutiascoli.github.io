@@ -24,25 +24,25 @@ seg[type="internal-link"]{
     padding:1px; 
 }
 
+
+sic{
+    text-decoration: line-through;
+}
 corr:before{
     content: "["
 }
 corr:after{
     content: "] "
 }
-sic{
-    text-decoration: line-through;
-}
-
 corr{
     color: #b1b4b4;
 }
 
 gap{
-    content:"[__lacuna nel codice__]";
-    font-size: 11px;
-    color: #707575;
-    background: #e5e6e6;
+    content:"[_lacuna nel codice_]";
+    /*font-size: 11px;*/
+    color: #b1b4b4;
+    /*background: #e5e6e6;*/
 }
 
 .titoloRubrica{
