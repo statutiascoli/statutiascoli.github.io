@@ -1,4 +1,4 @@
- .leaflet-marker-icon {
+.leaflet-marker-icon {
     color: #6c1433;
     font-size: 20px;
     line-height: 20px;
@@ -7,14 +7,24 @@
     box-shadow: 2px 1px 4px rgba(0,0,0,0.2);
     border-radius: 30px;
     border-width: 5px;
-    border: 2px solid #6c1433;
+    border: 2px solid #6c1433 !important;
     opacity: 1;
 }
- .leaflet-marker-icon svg {
+.leaflet-marker-icon svg {
     fill: #6c1433;
     width:70%;
-    hieght:70%
+    height:70%
  }
+
+.leaflet-marker-icon svg.city {
+    fill: white !important;
+    width:70%;
+    height:70%
+ }
+.leaflet-marker-icon:has(svg.city) {
+   background-color: black !important;
+   border: 2px solid black !important;
+}
 
 .leaflet-marker-icon:hover {
    background-color: #6c1433;
