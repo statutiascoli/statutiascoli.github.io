@@ -1,0 +1,151 @@
+.leaflet-marker-icon {
+    color: #6c1433;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: bottom;
+    box-shadow: 2px 1px 4px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    border-width: 5px;
+    border: 2px solid #6c1433 !important;
+    opacity: 1;
+}
+.leaflet-marker-icon svg {
+    fill: #6c1433;
+    width:70%;
+    height:70%
+ }
+
+.leaflet-marker-icon svg.city {
+    fill: white !important;
+    width:70%;
+    height:70%
+ }
+.leaflet-marker-icon:has(svg.city) {
+   background-color: black !important;
+   border: 2px solid black !important;
+}
+
+.leaflet-marker-icon:hover {
+   background-color: #6c1433;
+   border: 2px solid white;
+}
+.leaflet-marker-icon:hover svg {
+   fill: white;
+}
+
+.leaflet-marker-icon.selectedMarker {
+   background-color: #6c1433;
+   border: 2px solid white;
+}
+.leaflet-marker-icon.selectedMarker svg {
+   fill: white;
+}
+
+svg.leaflet-attribution-flag{
+    display:none !important
+}
+
+g:focus {
+  outline: none;
+}
+
+path:focus {
+  outline: none;
+}
+
+.square-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap between cells */
+}
+.square {
+  background-color: #6c1433;
+  flex: 1 1 calc(33.333% - 10px); /* 3 cells per row with 10px gap */
+  max-width: calc(33.333% - 10px); /* 3 cells per row with 10px gap */
+  position: relative;
+  --bs-btn-padding-x: 0 !important;
+  --bs-btn-padding-y: 0 !important;
+  padding-bottom: 0; /* Reset padding */
+}
+.categories button.active{
+  background-color: white;
+  border-color: #6c1433;
+  border-width:5px
+}
+.categories button.active svg{
+  fill: #6c1433;
+}
+
+.categories button:hover{
+  background-color: white;
+  border-color: #6c1433;
+  border-width:5px
+}
+.categories button:hover svg{
+  fill: #6c1433;
+}
+
+.square::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%; /* Maintain square aspect ratio */
+}
+.square svg {
+  fill: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 80%; /* Adjust the size of the SVG icons */
+  max-height: 80%;
+}
+
+.active>.page-link, .page-link.active {
+    z-index: 3;
+    color: var(--bs-pagination-active-color);
+    background-color: #6c1433;
+    border-color: #6c1433;
+}
+
+.page-link{
+    color: #6c1433;
+}
+
+.map{
+    height: 500px;
+}
+
+
+@media (max-width: 767.98px) {
+  .square {
+    flex: 1 1 calc(16.7% - 10px); /* 2 cells per row with 10px gap */
+    max-width: calc(16.7% - 10px); /* 2 cells per row with 10px gap */
+  }
+  .map{
+    height: 300px;
+    }
+  .results{
+    margin-top: 15px;
+  }
+  #myTab .nav-link {
+    font-size: small;
+    padding: 5px !important;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .square {
+    flex: 1 1 calc(33.333% - 10px); /* 2 cells per row with 10px gap */
+    max-width: calc(33.333% - 10px); /* 2 cells per row with 10px gap */
+  }
+}
+
+@media (min-width: 991.98px) {
+  .square {
+    flex: 1 1 calc(25% - 10px); /* 2 cells per row with 10px gap */
+    max-width: calc(25% - 10px); /* 2 cells per row with 10px gap */
+  }
+}
