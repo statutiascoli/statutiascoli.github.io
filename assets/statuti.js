@@ -3,10 +3,32 @@ bookSelect = document.getElementById('book-select');
 rubricSelect = document.getElementById('rubric-select');
 contentElement = document.getElementById('content');
 
+function fillContent(contentText){
+    let elementStat = `
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="transcription-tab" data-bs-toggle="tab" data-bs-target="#transcription" type="button" role="tab">Transcrizione</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="digital-tab" data-bs-toggle="tab" data-bs-target="#digital" type="button" role="tab">Riproduzione Digitale</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="abstract-tab" data-bs-toggle="tab" data-bs-target="#abstract" type="button" role="tab">Sinossi</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active mt-3" id="transcription" role="tabpanel">${contentText}</div>
+      <div class="tab-pane fade mt-3" id="digital" role="tabpanel"></div>
+      <div class="tab-pane fade mt-3" id="abstract" role="tabpanel"></div>
+    </div>`
+    contentElement.innerHTML = elementStat;
+}
 
 fetch('assets/statuti_web.json')
     .then(response => response.json())
     .then(data => {
+        var textsArray = []
+
         // Function to generate navigation based on volumes
         function generateNavigation() {
             volumes = Object.keys(data);
@@ -25,7 +47,7 @@ fetch('assets/statuti_web.json')
             volume_selected = data[volume_selected_key];
             if (typeof volume_selected === "string") {
                 updateURLParams(selectedVolume, null, null); // Update URL params
-                contentElement.innerHTML = volume_selected;
+                fillContent(volume_selected)
             } else {
                 books = Object.keys(volume_selected);
                 for (b_i in books) {
@@ -51,7 +73,7 @@ fetch('assets/statuti_web.json')
             book_selected = data[volume_selected_key][book_selected_key];
             if (typeof book_selected === "string") {
                 updateURLParams(selectedVolume, selectedBook, null); // Update URL params
-                contentElement.innerHTML = book_selected;
+                 fillContent(book_selected)
             } else {
                 rubrics = Object.keys(book_selected);
                 for (r_i in rubrics) {
@@ -67,7 +89,7 @@ fetch('assets/statuti_web.json')
                 updateURLParams(selectedVolume, selectedBook, selectedRubric); // Update URL params
                 rubric_key = Object.keys(data[volume_selected_key][book_selected_key])[selectedRubric];
                 rubricText = data[volume_selected_key][book_selected_key][rubric_key]
-                contentElement.innerHTML = rubricText;
+                fillContent(rubricText)
                 document.querySelectorAll(".linkRubrica").forEach(function(element) {
                     element.innerHTML = '<svg class="index_link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>'
                 });
@@ -119,7 +141,7 @@ fetch('assets/statuti_web.json')
             book_selected_key = Object.keys(data[volume_selected_key])[selectedBook]
             rubric_key = Object.keys(data[volume_selected_key][book_selected_key])[selectedRubric];
             rubricText = data[volume_selected_key][book_selected_key][rubric_key]
-            contentElement.innerHTML = rubricText;
+            fillContent(rubricText)
             document.querySelectorAll(".linkRubrica").forEach(function(element) {
                 element.innerHTML = '<svg class="index_link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>'
             });
