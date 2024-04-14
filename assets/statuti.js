@@ -4,24 +4,40 @@ rubricSelect = document.getElementById('rubric-select');
 contentElement = document.getElementById('content');
 
 function fillContent(contentText){
+    let contentDiv = document.createElement('div');
+    contentDiv.innerHTML = contentText;
+    let noteElement = contentDiv.querySelector('div.summary');
+    let abstractDiv = null
+    if (noteElement) {
+      noteElement.parentNode.removeChild(noteElement);
+    }
+
     let elementStat = `
     <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="transcription-tab" data-bs-toggle="tab" data-bs-target="#transcription" type="button" role="tab">Transcrizione</button>
+      <li class="nav-item" id="transcriptionTab" role="presentation">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#transcription" type="button" role="tab">Transcrizione</button>
       </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="digital-tab" data-bs-toggle="tab" data-bs-target="#digital" type="button" role="tab">Riproduzione Digitale</button>
+      <li class="nav-item" id="digitalTab" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#digital" type="button" role="tab">Riproduzione Digitale</button>
       </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="abstract-tab" data-bs-toggle="tab" data-bs-target="#abstract" type="button" role="tab">Sinossi</button>
+      <li class="nav-item" id="abstractTab" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#abstract" type="button" role="tab">Sinossi</button>
       </li>
     </ul>
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active mt-3" id="transcription" role="tabpanel">${contentText}</div>
+    <div class="tab-content" id="textTb">
+      <div class="tab-pane fade show active mt-3" id="transcription" role="tabpanel"></div>
       <div class="tab-pane fade mt-3" id="digital" role="tabpanel"></div>
       <div class="tab-pane fade mt-3" id="abstract" role="tabpanel"></div>
     </div>`
     contentElement.innerHTML = elementStat;
+    document.getElementById('transcription').appendChild(contentDiv)
+    if (noteElement){
+        document.getElementById('abstract').appendChild(noteElement)
+    }
+    else{
+        document.getElementById("abstract").remove();
+        document.getElementById("abstractTab").remove();
+    }
 }
 
 fetch('assets/statuti_web.json')
@@ -73,7 +89,7 @@ fetch('assets/statuti_web.json')
             book_selected = data[volume_selected_key][book_selected_key];
             if (typeof book_selected === "string") {
                 updateURLParams(selectedVolume, selectedBook, null); // Update URL params
-                 fillContent(book_selected)
+                fillContent(book_selected)
             } else {
                 rubrics = Object.keys(book_selected);
                 for (r_i in rubrics) {
