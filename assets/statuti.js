@@ -18,6 +18,7 @@ function decrypt(data, key) {
 
 
 async function fillContent(contentText){
+    let imgModal = new bootstrap.Modal(document.getElementById('imageModal'))
     let contentDiv = document.createElement('div');
     contentDiv.innerHTML = contentText;
     contentDiv = contentDiv.firstChild
@@ -38,7 +39,7 @@ async function fillContent(contentText){
         let data = await response.text();
         let decryptedImageSrc = decrypt(data, domain);
         let outerDiv = document.createElement('div');
-        outerDiv.classList.add('col');
+        outerDiv.classList.add('col', 'imageFac');
         let innerDiv = document.createElement('div');
         innerDiv.classList.add('card', 'h-100');
         let img = document.createElement('img');
@@ -53,6 +54,11 @@ async function fillContent(contentText){
         innerDiv.appendChild(img); // Append image to inner div
         innerDiv.appendChild(cardBodyDiv); // Append card body to inner div
         outerDiv.appendChild(innerDiv); // Append inner div to outer div
+        outerDiv.addEventListener('click', () => {
+            imgModal.show()
+            document.getElementById('imageModalLabel').textContent = imgLabel
+            document.getElementById('imageModalImg').src = "data:image/png;base64, " + decryptedImageSrc;
+        });
         facsDiv.appendChild(outerDiv)
     }
 
@@ -81,7 +87,7 @@ async function fillContent(contentText){
     </div>`
     contentElement.innerHTML = elementStat;
     document.getElementById('transcription').appendChild(contentDiv)
-        document.getElementById('digital').appendChild(facsDiv)
+    document.getElementById('digital').appendChild(facsDiv)
 
     if (noteElement){
         document.getElementById('abstract').appendChild(noteElement)

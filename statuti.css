@@ -4,3 +4,7 @@
     vertical-align: -0.125em;
     fill: #561028;
 }
+
+.imageFac {
+  cursor: pointer; /* Set default cursor style */
+}
