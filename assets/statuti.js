@@ -110,7 +110,7 @@ fetch('assets/statuti_web.json')
         }
 
         // Function to populate books and content
-        function populateBooksAndContent(selectedVolume, addContent) {
+        function populateBooksAndContent(selectedVolume, addContent=true) {
             volume_selected_key = Object.keys(data)[selectedVolume]
             volume_selected = data[volume_selected_key];
             if (typeof volume_selected === "string" && addContent) {
@@ -135,7 +135,7 @@ fetch('assets/statuti_web.json')
         }
 
         // Function to populate rubrics and content
-        function populateRubricsAndContent(selectedVolume, selectedBook, addContent) {
+        function populateRubricsAndContent(selectedVolume, selectedBook, addContent=true) {
             volume_selected_key = Object.keys(data)[selectedVolume]
             book_selected_key = Object.keys(data[volume_selected_key])[selectedBook]
             book_selected = data[volume_selected_key][book_selected_key];
