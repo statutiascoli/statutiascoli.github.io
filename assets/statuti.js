@@ -17,7 +17,7 @@ function decrypt(data, key) {
 }
 
 
-async function fillContent(contentText){
+async function fillContent(contentText) {
     let imgModal = new bootstrap.Modal(document.getElementById('imageModal'))
     let contentDiv = document.createElement('div');
     contentDiv.innerHTML = contentText;
@@ -25,16 +25,10 @@ async function fillContent(contentText){
     let facsList = contentDiv.getAttribute("facs").split(" ")
     let facsDiv = document.createElement('div');
     facsDiv.classList.add('row', 'row-cols-1', 'row-cols-md-4', 'g-4');
-    for (let fIm of facsList){
-        let imgTit = fIm.split(".jpg")[0]
-        let imgLabel
-        if (imgTit.includes("r")){
-            imgLabel = "Carta " + imgTit.split("r")[0] + " Recto"
-        }
-        if (imgTit.includes("v")){
-            imgLabel = "Carta " + imgTit.split("v")[0] + " Verso"
-        }
-        let imgPath = "assets/path/" + imgTit
+    // Fetch images in parallel
+    let fetchPromises = facsList.map(async fIm => {
+        let imgTit = fIm.split(".jpg")[0];
+        let imgPath = "assets/path/" + imgTit;
         let response = await fetch(imgPath);
         let data = await response.text();
         let decryptedImageSrc = decrypt(data, domain);
@@ -47,25 +41,27 @@ async function fillContent(contentText){
         img.src = "data:image/png;base64, " + decryptedImageSrc;
         let cardBodyDiv = document.createElement('div');
         cardBodyDiv.classList.add('card-body');
+        let imgLabel = getImageLabel(imgTit);
         let heading = document.createElement('h5');
         heading.classList.add('card-title');
-        heading.textContent = imgLabel; // Set the text content of the heading
-        cardBodyDiv.appendChild(heading); // Append heading to card body
-        innerDiv.appendChild(img); // Append image to inner div
-        innerDiv.appendChild(cardBodyDiv); // Append card body to inner div
-        outerDiv.appendChild(innerDiv); // Append inner div to outer div
+        heading.textContent = imgLabel;
+        cardBodyDiv.appendChild(heading);
+        innerDiv.appendChild(img);
+        innerDiv.appendChild(cardBodyDiv);
+        outerDiv.appendChild(innerDiv);
         outerDiv.addEventListener('click', () => {
-            imgModal.show()
-            document.getElementById('imageModalLabel').textContent = imgLabel
+            imgModal.show();
+            document.getElementById('imageModalLabel').textContent = imgLabel;
             document.getElementById('imageModalImg').src = "data:image/png;base64, " + decryptedImageSrc;
         });
         facsDiv.appendChild(outerDiv)
-    }
+    })
 
+    await Promise.all(fetchPromises);
     let noteElement = contentDiv.querySelector('div.summary');
-    let abstractDiv = null
+
     if (noteElement) {
-      noteElement.parentNode.removeChild(noteElement);
+        noteElement.parentNode.removeChild(noteElement);
     }
 
     let elementStat = `
@@ -84,18 +80,28 @@ async function fillContent(contentText){
       <div class="tab-pane fade show active mt-3" id="transcription" role="tabpanel"></div>
       <div class="tab-pane fade mt-3" id="digital" role="tabpanel"></div>
       <div class="tab-pane fade mt-3" id="abstract" role="tabpanel"></div>
-    </div>`
+    </div>`;
     contentElement.innerHTML = elementStat;
-    document.getElementById('transcription').appendChild(contentDiv)
-    document.getElementById('digital').appendChild(facsDiv)
+    document.getElementById('transcription').appendChild(contentDiv);
+    document.getElementById('digital').appendChild(facsDiv);
 
-    if (noteElement){
-        document.getElementById('abstract').appendChild(noteElement)
-    }
-    else{
+    if (noteElement) {
+        document.getElementById('abstract').appendChild(noteElement);
+    } else {
         document.getElementById("abstract").remove();
         document.getElementById("abstractTab").remove();
     }
+}
+
+function getImageLabel(imgTit) {
+    let imgLabel;
+    if (imgTit.includes("r")) {
+        imgLabel = "Carta " + imgTit.split("r")[0] + " Recto";
+    }
+    if (imgTit.includes("v")) {
+        imgLabel = "Carta " + imgTit.split("v")[0] + " Verso";
+    }
+    return imgLabel;
 }
 
 fetch('assets/statuti_web.json')
