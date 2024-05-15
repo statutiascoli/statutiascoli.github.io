@@ -211,4 +211,10 @@ h3{
   .hp-subtitle{
     font-size:15px;
   }
+  .parallax{
+    display: none;
+  }
+  .ascoliComune-img{
+    width: 90% !important;;
+  }
 }
