@@ -11,13 +11,27 @@
         <link href="assets/bs5/bootstrap.min.css" rel="stylesheet">
         <script src="assets/bs5/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="assets/font-awesome/font-awesome.min.css">
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.0.6/wordcloud2.min.js"></script>
+
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-        
+        <link rel="stylesheet" type="text/css" href="percorsi.css" media="screen"/>
+        <style>
+            .canvas-container {
+                position: relative;
+                width: 100%;
+                padding-bottom: 50%; /* Aspect ratio 2:1 (400px/800px) */
+            }
+
+            .canvas-container canvas {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
     </head>
     <body>
-        <nav class="navbar navbar-dark bg-dark  navbar-expand-lg fixed-top" id="navbar">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="img/logoAcerchio.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,27 +40,19 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <span class="it">Statuti</span><span class="en d-none">Statutes</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="percorsi.html"><span class="it">Percorsi</span><span class="en d-none">Tours</span></a></li>
-                      <li><a class="dropdown-item" href="statuti.html"><span class="it">Trascrizioni</span><span class="en d-none">Transcriptions</span></a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="download.html">Download</a></li>
-                    </ul>
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link it-content" href="catasto.html"><span class="it">Catasto</span><span class="en d-none">Land registry</span></a>
+                    <a class="nav-link it-content" href="percorsi.html"><span class="it">Percorsi</span><span class="en d-none">Tours</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link it-content" href="storia.html"><span class="it">Storia</span><span class="en d-none">History</span></a>
+                    <a class="nav-link it-content" href="statuti.html"><span class="it">Statuti</span><span class="en d-none">Statutes</span></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link it-content" href="analisi.html" style="font-weight: bold;"><span class="it">Analisi</span><span class="en d-none">Analysis</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link it-content" href="storia.html"><span class="it">Storia</span><span class="en d-none">History</span></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link it-content" href="progetto.html"><span class="it">Progetto</span><span class="en d-none">Project</span></a>
@@ -55,17 +61,82 @@
                 <div class="lang-btns">
                   <button type="button" id="it-btn" class="btn btn-outline-primary mx-2 btn-sm">IT</button>
                   <button type="button" id="en-btn" class="btn btn-outline-primary btn-sm">EN</button>
-                </div> 
+                </div>
               </div>
             </div>
         </nav>
 
         <div class="container-fluid html-page">
+          <div class="beta-version">Beta Version</div>
           <h1 class="title"><span class="it">Analisi</span><span class="en d-none">Analysis</span></h1>
-          
 
-          
+          <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="citymap-tab" data-bs-toggle="tab" data-bs-target="#frequency-page" type="button" role="tab" aria-controls="home" aria-selected="true"><span class="it">Frequenza Lessicale</span><span class="en d-none">Word Frequency</span></button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="language-tab" data-bs-toggle="tab" data-bs-target="#language-page" type="button" role="tab" aria-controls="profile" aria-selected="false"><span class="it">Evoluzione Linguistica</span><span class="en d-none">Language Evolution</span></button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="distant-tab" data-bs-toggle="tab" data-bs-target="#distant-page" type="button" role="tab" aria-controls="contact" aria-selected="false"><span class="it">TF-IDF</span><span class="en d-none">Distant Reading</span></button>
+            </li>
+          </ul>
+          <!-- Contenuto delle tabs -->
+          <div class="tab-content mt-4">
+            <div class="tab-pane fade show active" id="frequency-page" role="tabpanel" aria-labelledby="citymap-tab">
+                <div class="row">
+                    <div class="col-md-6">
+                        <canvas id="wordFrequencyChart"></canvas>
+                        <div class="row mt-3">
+                            <div class="col text-center">
+                                <form>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="scale" id="linearScale" value="linear">
+                                        <label class="form-check-label" for="linearScale"><span class="it">Lineare</span><span class="en d-none">Linear</span></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="scale" id="logarithmicScale" value="logarithmic" checked>
+                                        <label class="form-check-label" for="logarithmicScale"><span class="it">Logaritmica</span><span class="en d-none">Logarithmic</span></label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="canvas-container">
+                            <canvas id="wordCloudCanvas" width="800" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="tab-pane fade" id="language-page" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-6">
+                        <canvas id="languageBar"></canvas>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="distant-page" role="tabpanel">
+                <div class="row" id="charts-container"></div>
+            </div>
+          </div>
         </div>
 
         <footer class="bg-light text-center py-4 border-top">
@@ -81,6 +152,9 @@
             </div>
           </div>
         </footer>
-        <script src="lang.js"></script>
     </body>
+    <script src="lang.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/analisi.js"></script>
 </html>
+

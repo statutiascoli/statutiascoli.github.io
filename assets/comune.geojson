@@ -32,7 +32,7 @@
         { "type": "Feature", "properties": { "id": "portaRomana", "title": "portaRomana", "type": "porta" }, "geometry": { "type": "Point", "coordinates": [ 13.566716577570899, 42.854777344668577 ] } },
         { "type": "Feature", "properties": { "id": "portaPonteSolestà", "title": "portaPonteSolestà", "type": "porta" }, "geometry": { "type": "Point", "coordinates": [ 13.572085776049873, 42.858254962851852 ] } },
         { "type": "Feature", "properties": { "id": "portaPonteTufillo", "title": "portaPonteTufillo", "type": "porta" }, "geometry": { "type": "Point", "coordinates": [ 13.578270521770875, 42.856954318132075 ] } },
-        { "type": "Feature", "properties": { "id": "portaPonteMaggiore", "title": "portaPonteMaggiore", "type": "porta" }, "geometry": { "type": "Point", "coordinates": [ 13.584923970720896, 42.853999396404923 ] } },
+        { "type": "Feature", "properties": { "id": "portaPonteMaggiore", "title": "portaPonteMaggiore", "type": "porta" }, "geometry": { "type": "Point", "coordinates": [ 13.58487, 42.85420 ] } },
         { "type": "Feature", "properties": { "id": "portaTornasacco", "title": "portaTornasacco", "type": "porta" }, "geometry": { "type": "Point", "coordinates": [ 13.577248183442874, 42.851941193825212 ] } },
         { "type": "Feature", "properties": { "id": "portaSantoSpirito", "title": "portaSantoSpirito", "type": "porta" }, "geometry": { "type": "Point", "coordinates": [ 13.57221321566127, 42.849390777792287 ] } },
         { "type": "Feature", "properties": { "id": "portaMonte", "title": "portaMonte", "type": "porta" }, "geometry": { "type": "Point", "coordinates": [ 13.567384321450906, 42.851526844789802 ] } },
