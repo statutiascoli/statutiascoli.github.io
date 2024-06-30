@@ -35,6 +35,7 @@ fetch('assets/analysis_data.json')
             },
             options: {
                 responsive:true,
+                maintainAspectRatio: false,
                 spanGaps: true,
                 animation: false,
                 scales: {
@@ -124,6 +125,7 @@ fetch('assets/analysis_data.json')
                 },
               options: {
                 responsive:true,
+                maintainAspectRatio: false,
                 scales: {
                   y: {
                     beginAtZero: true
@@ -163,6 +165,7 @@ fetch('assets/analysis_data.json')
             },
           options: {
             responsive:true,
+            maintainAspectRatio: false,
             indexAxis: 'y',
             scales: {
               x: {
@@ -243,6 +246,7 @@ fetch('assets/analysis_data.json')
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     scales: {
                         x: {
                             beginAtZero: true,
