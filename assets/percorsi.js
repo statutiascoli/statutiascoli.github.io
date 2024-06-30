@@ -328,7 +328,9 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
        document.querySelector('.' + tab + ' .pagination').innerHTML = ""
        currentPage = 1
        document.querySelector('.' + tab + ' .result-title').innerHTML = ""
-       document.querySelector('.' + tab + ' .result-quartiere').innerHTML = ""
+       if (tab === "city-results"){
+          document.querySelector('.' + tab + ' .result-quartiere').innerHTML = ""
+       }
        results = []
        if (identifier){
            document.querySelector('.' + tab + ' .result-title').innerHTML = title
