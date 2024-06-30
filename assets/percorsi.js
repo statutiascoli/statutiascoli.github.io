@@ -81,7 +81,7 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
                 weight: 2,
                 color: 'white',
                 dashArray: '3',
-                fillOpacity: 0.5,
+                fillOpacity: 0.7,
             });
         }
 
@@ -90,7 +90,7 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
                 weight: 2,
                 color: 'black',
                 dashArray: '',
-                fillOpacity: 0.7,
+                fillOpacity: 1,
             });
         }
         sestieri = geoJSONdata.features.slice(0, 24);
@@ -139,7 +139,7 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
                     opacity: 1,
                     color: 'white',
                     dashArray: '3',
-                    fillOpacity: 0.5,
+                    fillOpacity: 0.7,
                 };
             }
         }).addTo(cityMap);
