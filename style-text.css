@@ -26,23 +26,13 @@ seg[type="internal-link"]{
 
 
 sic{
-    text-decoration: line-through;
-}
-corr:before{
-    content: "["
-}
-corr:after{
-    content: "] "
-}
-corr{
-    color: #b1b4b4;
+    display: none;
 }
 
-gap{
-    content:"[_lacuna nel codice_]";
-    /*font-size: 11px;*/
+gap::before{
+    content:"[lacuna nel codice]";
+    font-family: 'Courier New', Courier, monospace;
     color: #b1b4b4;
-    /*background: #e5e6e6;*/
 }
 
 
