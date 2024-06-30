@@ -46,13 +46,13 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
 
         function getColor(variable) {
             switch (variable) {
-                case "1":
+                case "Quartiere Sancto Emidio":
                     return 'green'; // Fill color for variable 1
-                case "2":
+                case "Quartiere Sancta Maria":
                     return 'blue'; // Fill color for variable 2
-                case "3":
+                case "Quartiere Sancto Venantio":
                     return 'red'; // Fill color for variable 3
-                case "4":
+                case "Quartiere Sancto Jacobo":
                     return 'yellow'; // Fill color for variable 4
                 default:
                     return 'gray'; // Default fill color
@@ -105,7 +105,7 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
                             selectedLayer.bringToBack();
                         }
                         selectedLayer = layer; // Update the selected layer
-                        populateResults(feature.properties.id, feature.properties.title, "city-results", cityCurrentPage, cityResults)
+                        populateResults(feature.properties.id, feature.properties.title, "city-results", cityCurrentPage, cityResults, feature.properties.quartiere)
                         selectSestiere(layer)
                         e.target.bringToFront();
                     }
@@ -323,14 +323,18 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
        }
    }
 
-   function populateResults(identifier, title, tab, currentPage, results){
+   function populateResults(identifier, title, tab, currentPage, results, quartiere=null){
        document.querySelector('.' + tab + ' .result-content').innerHTML = ""
        document.querySelector('.' + tab + ' .pagination').innerHTML = ""
        currentPage = 1
        document.querySelector('.' + tab + ' .result-title').innerHTML = ""
+       document.querySelector('.' + tab + ' .result-quartiere').innerHTML = ""
        results = []
        if (identifier){
            document.querySelector('.' + tab + ' .result-title').innerHTML = title
+           if (quartiere){
+              document.querySelector('.' + tab + ' .result-quartiere').innerHTML = quartiere
+           }
            for (v_i in Object.keys(data)){
                 v_key = Object.keys(data)[v_i]
                 volume_content = data[v_key];
