@@ -14,6 +14,26 @@
         
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+        <style>
+          .btn-custom {
+              border: 1px solid #6c1433;
+              color: #6c1433;
+              background-color: transparent;
+              padding: 10px 20px;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              transition: background-color 0.3s, color 0.3s;
+          }
+          .btn-custom:hover {
+              background-color: #6c1433;
+              color: white;
+          }
+          .btn-custom a {
+              color: inherit;
+              text-decoration: none;
+          }
+      </style>
     </head>
     <body>
       <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
@@ -52,7 +72,26 @@
           <div class="beta-version">Beta Version</div>
           <h1 class="title">Download</h1>
 
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-4 mt-4 d-flex flex-column align-items-center">
+                <p>Scarica il file <b>PDF</b> degli Statuti di Ascoli del 1496.</p>
+                <button type="button" class="btn btn-custom" disabled><a href="statutiAscoli1496.xml" download="statutiAscoli1496.xml">Download PDF</a></button>
+              </div>
+              <div class="col-md-4 mt-4 d-flex flex-column align-items-center">
+                <p>Scarica il file <b>ePub</b> degli Statuti di Ascoli del 1496.</p>
+                <button type="button" class="btn btn-custom" disabled><a href="statutiAscoli1496.xml" download="statutiAscoli1496.xml">Download E-BOOK</a></button>
+              </div>
+              <div class="col-md-4 mt-4 d-flex flex-column align-items-center">
+                <p>Scarica il file <b>XML</b> degli Statuti di Ascoli del 1496.</p>
+                <button type="button" class="btn btn-custom"><a href="statutiAscoli1496.xml" download="statutiAscoli1496.xml">Download XML</a></button>
+              </div>
+            </div>
+          </div>
+
           
+
+        
 
         </div>
 
