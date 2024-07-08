@@ -31,14 +31,14 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
 
    fetch('assets/comune.geojson').then(response => response.json()).then(geoJSONdata => {
         //city map
-        var cityMapBounds = [[42.84455370395206, 13.556849956512453], [42.86343017090419,13.593156337738039]];
+        var cityMapBounds = [[42.832855972, 13.542545443], [42.875313139, 13.617094353]];
 
         var cityMap = L.map('map_city', {
-            maxBounds: cityMapBounds,
+            maxBounds: [[42.84455370395206, 13.556849956512453], [42.86343017090419,13.593156337738039]],
             maxBoundsViscosity: 1.0,
             minZoom: 15,
             maxZoom: 17}).setView([42.854, 13.575], 15)
-        var cityMapimage = L.imageOverlay('assets/img.png', cityMapBounds).addTo(cityMap);
+        var cityMapimage = L.imageOverlay('assets/city.png', cityMapBounds).addTo(cityMap);
 
         cityMapCenter = cityMap.getBounds().getCenter();
         cityMap.setView(cityMapCenter, 15)
