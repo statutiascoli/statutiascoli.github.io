@@ -26,7 +26,7 @@
     { "type": "Feature", "properties": { "id": "castelloCastorano", "title": "Castello Castorano", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.726516920847383, 42.898489430527285 ] } },
     { "type": "Feature", "properties": { "id": "castelloMonteCretaccio", "title": "Castello Monte Cretaccio", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.873637706905495, 42.919077055967222 ] } },
     { "type": "Feature", "properties": { "id": "castelloMontecalvo", "title": "Castello Monte Calvo", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.444616001860977, 42.738353278319551 ] } },
-    { "type": "Feature", "properties": { "id": "castelloPortoMare", "title": "Castello Porto ad mare", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.889262328600136, 42.913632196801984 ] } },
+    { "type": "Feature", "properties": { "id": "castelloPortoMare", "title": "Castello Porto ad Mare", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.889262328600136, 42.913632196801984 ] } },
     { "type": "Feature", "properties": { "id": "castelloVecchio", "title": "Castello Vechio", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.767030035789537, 42.876323566554191 ] } },
     { "type": "Feature", "properties": { "id": "castelloCastiglione", "title": "Castello Castiglione", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.643707134662463, 42.9324323249825 ] } },
     { "type": "Feature", "properties": { "id": "castelloMonsampoloTronto", "title": "Castello Monte Santo Polo", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.794336568103201, 42.897661852560319 ] } },
