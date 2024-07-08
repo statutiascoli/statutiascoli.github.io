@@ -118,6 +118,9 @@ path:focus {
     height: 500px;
 }
 
+.leaflet-container {
+    background-color: white;
+}
 
 @media (max-width: 767.98px) {
   .square {

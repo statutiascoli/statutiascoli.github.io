@@ -18,13 +18,13 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
    document.getElementById('citymap-tab').addEventListener('click', function(){
         if (window.cityMap) {
             window.cityMap.invalidateSize();
-            window.cityMap.setView(cityMapCenter, 15)
+            setMapViewCity();
         }
    });
    document.getElementById('regionmap-tab').addEventListener('click', function(){
         if (window.regionMap) {
             window.regionMap.invalidateSize();
-            window.regionMap.setView(regionMapCenter, 10)
+            setMapViewRegion();
         }
    });
 
@@ -44,16 +44,13 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
         cityMap.setView(cityMapCenter, 15)
         window.cityMap = cityMap
 
-        function setMapView() {
-            var isMobile = window.innerWidth <= 768;
-            var maxZoom = isMobile ? 14 : 15;
-            window.cityMap.setMinZoom(maxZoom);
-            window.cityMap.setZoom(maxZoom);
-        }
-        setMapView()
+        setMapViewCity()
         window.addEventListener('resize', function() {
             if (window.cityMap) {
-                setMapView();
+                setMapViewCity();
+            }
+            if (window.regionMap) {
+                setMapViewRegion();
             }
         });
 
@@ -208,21 +205,18 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
 
    fetch('assets/territorio.geojson').then(response => response.json()).then(geoJSONdata => {
         //region map
-        var regionMapBounds = [[42.601619944327965, 13.009185791015627], [43.104993581605505,14.140777587890627]];
+        var regionMapBounds = [[42.321619480, 12.644150122], [43.293500927,14.540690849]];
 
         var regionMap = L.map('map_territory', {
-            maxBounds: regionMapBounds,
+            maxBounds: [[42.601619944327965, 13.009185791015627], [43.104993581605505,14.140777587890627]],
             maxBoundsViscosity: 1.0,
             zoom: 10,
             minZoom: 10,
-            maxZoom: 11}).setView([42.85499758703556, 13.57538174536857], 10)
-        var regionMapimage = L.imageOverlay('assets/region.png', regionMapBounds).addTo(regionMap);
-        /*L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain_background/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(regionMap);*/
+            maxZoom: 12}).setView([42.85499758703556, 13.57538174536857], 10)
+        var regionMapimage = L.imageOverlay('assets/terr.png', regionMapBounds).addTo(regionMap);
 
         regionMapCenter = regionMap.getBounds().getCenter();
-        regionMap.setView(regionMapCenter, 10)
+        setMapViewRegion
 
         window.regionMap = regionMap
 
@@ -462,4 +456,18 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
             button.classList.add('active');
         });
     }
+
+   function setMapViewCity() {
+        let isMobile = window.innerWidth <= 768;
+        let minZoom = isMobile ? 14 : 15;
+        window.cityMap.setMinZoom(minZoom);
+        window.cityMap.setZoom(minZoom);
+   }
+   function setMapViewRegion() {
+        let isMobile = window.innerWidth <= 768;
+        let minZoom = isMobile ? 9 : 10;
+        window.regionMap.setMinZoom(minZoom);
+        window.regionMap.setZoom(minZoom);
+   }
 })
+
