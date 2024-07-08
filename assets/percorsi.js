@@ -44,6 +44,19 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
         cityMap.setView(cityMapCenter, 15)
         window.cityMap = cityMap
 
+        function setMapView() {
+            var isMobile = window.innerWidth <= 768;
+            var maxZoom = isMobile ? 14 : 15;
+            window.cityMap.setMinZoom(maxZoom);
+            window.cityMap.setZoom(maxZoom);
+        }
+        setMapView()
+        window.addEventListener('resize', function() {
+            if (window.cityMap) {
+                setMapView();
+            }
+        });
+
         function getColor(variable) {
             switch (variable) {
                 case "Quartiere Sancto Emidio":
