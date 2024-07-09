@@ -216,9 +216,9 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
         var regionMapimage = L.imageOverlay('assets/terr.png', regionMapBounds).addTo(regionMap);
 
         regionMapCenter = regionMap.getBounds().getCenter();
-        setMapViewRegion
-
+        regionMap.setView(regionMapCenter, 10)
         window.regionMap = regionMap
+        setMapViewRegion()
 
         var marker = L.marker([42.85499758703556, 13.57538174536857], {
             interactive: false,  // Make the marker non-interactive

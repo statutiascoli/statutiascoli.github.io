@@ -203,4 +203,13 @@ h3{
   .ascoliComune-img{
     width: 90% !important;;
   }
+  .nav-link {
+    border: none !important
+  }
+  .nav-link.active {
+    text-decoration: underline;
+  }
+  .nav-tabs .nav-link:last-child {
+    margin-bottom: 3px
+  }
 }

@@ -133,10 +133,6 @@ path:focus {
   .results{
     margin-top: 15px;
   }
-  #myTab .nav-link {
-    font-size: small;
-    padding: 5px !important;
-  }
 }
 
 @media (min-width: 767.98px) {
