@@ -182,8 +182,14 @@ path:focus {
     border-color: white !important;
 }
 
- .clickable-day {
+.clickable-day {
     cursor: pointer;
     background-color: #6c1433;
     color: white;
+}
+ .clickable-day:hover {
+    cursor: pointer;
+    border-color: #6c1433;
+    background-color: white;
+    color: #6c1433;
 }
