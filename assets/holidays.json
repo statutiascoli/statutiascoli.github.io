@@ -1,0 +1,386 @@
+[
+    {
+        "month": 0,
+        "day": 1,
+        "title": "Circoncisione di Gesù Cristo",
+        "id": "festaCirconcisione"
+    },
+    {
+        "month": 0,
+        "day": 6,
+        "title": "Epifania",
+        "id": "festaEpifania"
+    },
+    {
+        "month": 1,
+        "day": 1,
+        "title": "Santa Brigida",
+        "id": "festaSantaBrigida"
+    },
+    {
+        "month": 1,
+        "day": 3,
+        "title": "San Biagio",
+        "id": "festaSanBiagio"
+    },
+    {
+        "month": 2,
+        "day": 7,
+        "title": "Sant Tommaso d'Aquino",
+        "id": "festaSanTommasoAquino"
+    },
+    {
+        "month": 1,
+        "day": 5,
+        "title": "Sant'Agata",
+        "id": "festaSantAgata"
+    },
+    {
+        "month": 2,
+        "day": 21,
+        "title": "San Benedetto",
+        "id": "festaSanBenedetto"
+    },
+    {
+        "month": 3,
+        "day": 23,
+        "title": "San Giorgio",
+        "id": "festaSanGiorgio"
+    },
+    {
+        "month": 4,
+        "day": 5,
+        "title": "Sant'Angelo",
+        "id": "festaSantAngelo"
+    },
+    {
+        "month": 4,
+        "day": 12,
+        "title": "San Pancrazio",
+        "id": "festaSanPancrazio"
+    },
+    {
+        "month": 4,
+        "day": 18,
+        "title": "San Venanzio",
+        "id": "festaSanVenanzio"
+    },
+    {
+        "month": 4,
+        "day": 31,
+        "title": "Santa Petronilla",
+        "id": "festaSantaPetronilla"
+    },
+    {
+        "month": 5,
+        "day": 12,
+        "title": "Sant'Onofrio",
+        "id": "festaSantOnofrio"
+    },
+    {
+        "month": 5,
+        "day": 24,
+        "title": "San Giovanni Battista",
+        "id": "festaSanGiovanniBattista"
+    },
+    {
+        "month": 6,
+        "day": 20,
+        "title": "Santa Margherita",
+        "id": "festaSantaMargherita"
+    },
+    {
+        "month": 6,
+        "day": 22,
+        "title": "Santa Maria Maddalena",
+        "id": "festaSantaMariaMaddalena"
+    },
+    {
+        "month": 7,
+        "day": 5,
+        "title": "Sant'Emidio",
+        "id": "festaSantEmidio"
+    },
+    {
+        "month": 7,
+        "day": 6,
+        "title": "Santo Salvatore",
+        "id": "festaSantoSalvatore"
+    },
+    {
+        "month": 7,
+        "day": 8,
+        "title": "San Domenico",
+        "id": "festaSanDomenico"
+    },
+    {
+        "month": 7,
+        "day": 10,
+        "title": "San Lorenzo",
+        "id": "festaSanLorenzo"
+    },
+    {
+        "month": 7,
+        "day": 19,
+        "title": "San Ludovico",
+        "id": "festaSanLudovico"
+    },
+    {
+        "month": 7,
+        "day": 28,
+        "title": "Sant'Agostino",
+        "id": "festaSantAgostino"
+    },
+    {
+        "month": 7,
+        "day": 29,
+        "title": "Decollazione di San Giovanni Battista",
+        "id": "festaDecapitazioneSanGiovanniBattista"
+    },
+    {
+        "month": 8,
+        "day": 1,
+        "title": "Sant'Egidio",
+        "id": "festaSantEgidio"
+    },
+    {
+        "month": 8,
+        "day": 3,
+        "title": "San Gregorio",
+        "id": "festaSanGregorio"
+    },
+    {
+        "month": 8,
+        "day": 14,
+        "title": "Croce (Esaltazione della s.)",
+        "id": "festaSantaCroce"
+    },
+    {
+        "month": 8,
+        "day": 29,
+        "title": "San Michele",
+        "id": "festaSanMichele"
+    },
+    {
+        "month": 8,
+        "day": 30,
+        "title": "San Girolamo",
+        "id": "festaSanGirolamo"
+    },
+    {
+        "month": 9,
+        "day": 4,
+        "title": "San Francesco",
+        "id": "festaSanFrancesco"
+    },
+    {
+        "month": 10,
+        "day": 1,
+        "title": "Ognissanti",
+        "id": "festaTuttiSanti"
+    },
+    {
+        "month": 10,
+        "day": 6,
+        "title": "San Leonardo",
+        "id": "festaSanLeonardo"
+    },
+    {
+        "month": 10,
+        "day": 11,
+        "title": "San Martino",
+        "id": "festaSanMartino"
+    },
+    {
+        "month": 10,
+        "day": 25,
+        "title": "Santa Caterina",
+        "id": "festaSantaCaterina"
+    },
+    {
+        "month": 11,
+        "day": 6,
+        "title": "San Nicolò",
+        "id": "festaSanNicolò"
+    },
+    {
+        "month": 11,
+        "day": 7,
+        "title": "Sant'Ambrogio",
+        "id": "festaSantAmbrogio"
+    },
+    {
+        "month": 11,
+        "day": 13,
+        "title": "Santa Lucia",
+        "id": "festaSantaLucia"
+    },
+    {
+        "month": 11,
+        "day": 24,
+        "title": "Vigilia di Natale",
+        "id": "festaVigiliaNatale"
+    },
+    {
+        "month": 11,
+        "day": 25,
+        "title": "Natale",
+        "id": "festaNatale"
+    },
+    {
+        "month": 11,
+        "day": 31,
+        "title": "San Silvestro",
+        "id": "festaSanSilvestro"
+    },
+    {
+        "month": 0,
+        "day": 1,
+        "title": "Maria madre di Dio",
+        "id": "festaMariaMadre"
+    },
+    {
+        "month": 7,
+        "day": 15,
+        "title": "Assunzione di Maria",
+        "id": "festaAssunzioneMaria"
+    },
+    {
+        "month": 11,
+        "day": 8,
+        "title": "Immacolata Concezione",
+        "id": "festaImmacolataConcezione"
+    },
+    {
+        "month": 4,
+        "day": 1,
+        "title": "San Filippo",
+        "id": "festaSanFilippo"
+    },
+    {
+        "month": 4,
+        "day": 1,
+        "title": "San Giacomo",
+        "id": "festaSanGiacomoMinore"
+    },
+    {
+        "month": 5,
+        "day": 29,
+        "title": "San Pietro",
+        "id": "festaSanPietro"
+    },
+    {
+        "month": 5,
+        "day": 29,
+        "title": "San Paolo",
+        "id": "festaSanPaolo"
+    },
+    {
+        "month": 5,
+        "day": 11,
+        "title": "San Barnaba",
+        "id": "festaSanBarnaba"
+    },
+    {
+        "month": 9,
+        "day": 28,
+        "title": "San Simone",
+        "id": "festaSanSimone"
+    },
+    {
+        "month": 9,
+        "day": 28,
+        "title": "San Giuda Taddeo",
+        "id": "festaSanGiudaTaddeo"
+    },
+    {
+        "month": 1,
+        "day": 24,
+        "title": "San Mattia",
+        "id": "festaSanMattia"
+    },
+    {
+        "month": 6,
+        "day": 25,
+        "title": "San Giacomo",
+        "id": "festaSanGiacomoMaggiore"
+    },
+    {
+        "month": 7,
+        "day": 24,
+        "title": "San Bartolomeo",
+        "id": "festaSanBartolomeo"
+    },
+    {
+        "month": 10,
+        "day": 30,
+        "title": "Sant'Andrea",
+        "id": "festaSantAndrea"
+    },
+    {
+        "month": 11,
+        "day": 21,
+        "title": "San Tommaso",
+        "id": "festaSanTommaso"
+    },
+    {
+        "month": 3,
+        "day": 25,
+        "title": "San Marco",
+        "id": "festaSanMarco"
+    },
+    {
+        "month": 8,
+        "day": 21,
+        "title": "San Matteo Aposto ed Evangelista",
+        "id": "festaSanMatteo"
+    },
+    {
+        "month": 9,
+        "day": 18,
+        "title": "San Luca",
+        "id": "festaSanLuca"
+    },
+    {
+        "month": 11,
+        "day": 27,
+        "title": "San Giovanni",
+        "id": "festaSanGiovanni"
+    },
+    {
+        "month": 3,
+        "day": 3,
+        "title": "Pasqua",
+        "id": "festaResurrezione"
+    },
+    {
+        "month": 4,
+        "day": 12,
+        "title": "Ascensione di Gesù Cristo",
+        "id": "festaAscensioneGesù"
+    },
+    {
+        "month": 4,
+        "day": 22,
+        "title": "Pentecoste",
+        "id": "festaPentecoste"
+    },
+    {
+        "month": 4,
+        "day": 26,
+        "title": "Corpus Domini",
+        "id": "festaCorpusDomini"
+    },
+    {
+        "month": 3,
+        "day": 1,
+        "title": "Venerdì santo",
+        "id": "festaVenerdìSanto"
+    },
+    {
+        "month": 1,
+        "day": 15,
+        "title": "Martedì grasso",
+        "id": "festaMartedìGrasso"
+    }
+]

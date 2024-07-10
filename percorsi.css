@@ -124,8 +124,8 @@ path:focus {
 
 @media (max-width: 767.98px) {
   .square {
-    flex: 1 1 calc(16.7% - 10px); /* 2 cells per row with 10px gap */
-    max-width: calc(16.7% - 10px); /* 2 cells per row with 10px gap */
+    flex: 1 1 calc(16.7% - 10px); /* 6 cells per row with 10px gap */
+    max-width: calc(16.7% - 10px); /* 6 cells per row with 10px gap */
   }
   .map{
     height: 300px;
@@ -137,14 +137,53 @@ path:focus {
 
 @media (min-width: 767.98px) {
   .square {
-    flex: 1 1 calc(33.333% - 10px); /* 2 cells per row with 10px gap */
-    max-width: calc(33.333% - 10px); /* 2 cells per row with 10px gap */
+    flex: 1 1 calc(33.333% - 10px); /* 3 cells per row with 10px gap */
+    max-width: calc(33.333% - 10px); /* 3 cells per row with 10px gap */
   }
 }
 
 @media (min-width: 991.98px) {
   .square {
-    flex: 1 1 calc(25% - 10px); /* 2 cells per row with 10px gap */
-    max-width: calc(25% - 10px); /* 2 cells per row with 10px gap */
+    flex: 1 1 calc(25% - 10px); /* 4 cells per row with 10px gap */
+    max-width: calc(25% - 10px); /* 4 cells per row with 10px gap */
   }
+}
+
+.calendar-header button{
+  background-color: #6c1433;
+  border-width: 3px;
+  color: white;
+}
+
+.calendar-header button:hover{
+  border-color: #6c1433;
+  border-width: 3px;
+  color: #6c1433;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.calendar-days div {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.calendar-head {
+    color: white;
+    background-color: grey;
+    border-color: white !important;
+}
+
+ .clickable-day {
+    cursor: pointer;
+    background-color: #6c1433;
+    color: white;
 }

@@ -4,6 +4,8 @@ regionCurrentPage = 1
 regionResults = []
 categoryCurrentPage = 1
 categoryResults = []
+calendarCurrentPage = 1
+calendarResults = []
 var itemsPerPage = 3; // Adjust as needed
 if (window.innerWidth < 767.98) {
     itemsPerPage = 4; // Adjust for smaller screens
@@ -469,5 +471,94 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
         window.regionMap.setMinZoom(minZoom);
         window.regionMap.setZoom(minZoom);
    }
+
+   fetch('assets/holidays.json').then(response => response.json()).then(calendarData => {
+       const months = [
+            "Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno",
+            "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"
+        ];
+
+        // Days in each month for the year 1496
+        const daysInMonth = [
+            31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 // Leap year February
+        ];
+
+        const dayNames = ["Lu", "Ma", "Me", "Gi", "Ve", "Sa", "Do"];
+
+        let currentMonth = 0; // January
+        // January 1, 1496 was a Friday
+        const startDay = 4; // Friday
+
+
+        function getStartDayOfMonth(month) {
+            let dayOffset = startDay;
+            for (let i = 0; i < month; i++) {
+                dayOffset += daysInMonth[i];
+            }
+            return dayOffset % 7;
+        }
+
+        function loadCalendar(month) {
+            const firstDay = getStartDayOfMonth(month);
+            const monthDays = daysInMonth[month];
+            const calendarDays = document.querySelector('.calendar-days');
+            calendarDays.innerHTML = '';
+
+            // Add day names
+            dayNames.forEach(day => {
+                const dayDiv = document.createElement('div');
+                dayDiv.textContent = day;
+                dayDiv.classList.add('calendar-head');
+                calendarDays.appendChild(dayDiv);
+            });
+
+            // Add empty slots for days of the previous month
+            for (let i = 0; i < firstDay; i++) {
+                const emptyDiv = document.createElement('div');
+                calendarDays.appendChild(emptyDiv);
+            }
+
+            // Add days of the current month
+            for (let i = 1; i <= monthDays; i++) {
+                const dayDiv = document.createElement('div');
+                dayDiv.textContent = i;
+
+                // Check if the day is clickable
+                if (calendarData.some(d => d.month === month && d.day === i)) {
+                    let dayData = calendarData.find(d => d.month === month && d.day === i);
+                    dayDiv.classList.add('clickable-day');
+                    dayDiv.setAttribute('data-target', dayData.id);
+                    dayDiv.setAttribute('data-title', dayData.title);
+                    dayDiv.addEventListener('click', () => {
+                        populateResults(dayDiv.getAttribute('data-target'), dayDiv.getAttribute('data-title'), "calendar-results", calendarCurrentPage, calendarResults)
+                    });
+                }
+
+                calendarDays.appendChild(dayDiv);
+            }
+
+            // Update month and year display
+            document.getElementById('monthYear').textContent = `${months[month]} 1496`;
+        }
+
+        document.getElementById('prevMonth').addEventListener('click', () => {
+            currentMonth--;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+            }
+            loadCalendar(currentMonth);
+        });
+
+        document.getElementById('nextMonth').addEventListener('click', () => {
+            currentMonth++;
+            if (currentMonth > 11) {
+                currentMonth = 0;
+            }
+            loadCalendar(currentMonth);
+        });
+
+        // Initial load
+        loadCalendar(currentMonth);
+    })
 })
 
