@@ -62,9 +62,9 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
                     return 'green'; // Fill color for variable 1
                 case "Quartiere Sancta Maria":
                     return 'blue'; // Fill color for variable 2
-                case "Quartiere Sancto Venantio":
-                    return 'red'; // Fill color for variable 3
                 case "Quartiere Sancto Jacobo":
+                    return 'red'; // Fill color for variable 3
+                case "Quartiere Sancto Venantio":
                     return 'yellow'; // Fill color for variable 4
                 default:
                     return 'gray'; // Default fill color
