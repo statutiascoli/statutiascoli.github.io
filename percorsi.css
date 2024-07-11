@@ -193,3 +193,13 @@ path:focus {
     background-color: white;
     color: #6c1433;
 }
+
+.historical-day {
+    background-color: #ffc107 !important;
+}
+
+.historical-day:hover {
+    background-color: white !important;
+    border-color: #ffc107 !important;
+    color: #ffc107 !important;
+}

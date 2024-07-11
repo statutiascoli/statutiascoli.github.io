@@ -522,7 +522,13 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
             for (let i = 1; i <= monthDays; i++) {
                 const dayDiv = document.createElement('div');
                 dayDiv.textContent = i;
-
+                if (month==3 && i==9){
+                    dayDiv.classList.add('clickable-day');
+                    dayDiv.classList.add('historical-day');
+                    dayDiv.addEventListener('click', () => {
+                        populateResultsHistorical("calendar-results", calendarCurrentPage, calendarResults)
+                    });
+                }
                 // Check if the day is clickable
                 if (calendarData.some(d => d.month === month && d.day === i)) {
                     let dayData = calendarData.find(d => d.month === month && d.day === i);
@@ -559,6 +565,47 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
 
         // Initial load
         loadCalendar(currentMonth);
+
+        function populateResultsHistorical(tab, currentPage, results){
+           document.querySelector('.' + tab + ' .result-content').innerHTML = ""
+           document.querySelector('.' + tab + ' .pagination').innerHTML = ""
+           currentPage = 1
+           document.querySelector('.' + tab + ' .result-title').innerHTML = ""
+           results = []
+           document.querySelector('.' + tab + ' .result-title').innerHTML = "Stampa degli Statuti del 1496"
+           rubric_content = data["Conclusione"];
+           xmlDoc = parser.parseFromString(rubric_content, 'text/xml');
+           document.querySelector('.' + tab + ' .result-content').innerHTML = ''; // Clear previous content
+            pElement = xmlDoc.getElementsByTagName('p')[1].textContent;
+            card = document.createElement('div');
+            card.classList.add('card');
+            card.classList.add('mb-3');
+            cardHeader = document.createElement('div');
+            cardHeader.classList.add('card-header');
+            cardBody = document.createElement('div');
+            cardBody.classList.add('card-body');
+            cardTitle = document.createElement('h5');
+            cardTitle.classList.add('card-title');
+            cardLink = document.createElement('a');
+            cardLink.href = "https://ascolicomune.it/statuti.html?id=3";
+            cardLink.textContent =  "Conclusione"
+            cardLink.target = "_blank";
+            cardTitle.appendChild(cardLink)
+            cardDescription = document.createElement('p');
+            cardDescription.classList.add('card-text');
+            console.log(pElement)
+            cardDescription.textContent = "[...]" + pElement;
+            readLink = document.createElement('a');
+            readLink.href = "https://ascolicomune.it/statuti.html?id=3";
+            readLink.textContent = " (Leggi Conclusione)"
+            readLink.target = "_blank";
+            cardDescription.appendChild(readLink)
+            cardHeader.appendChild(cardTitle);
+            cardBody.appendChild(cardDescription);
+            card.appendChild(cardHeader);
+            card.appendChild(cardBody);
+            document.querySelector('.' + tab + ' .result-content').appendChild(card)
+       }
     })
 })
 

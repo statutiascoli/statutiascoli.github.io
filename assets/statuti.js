@@ -3,18 +3,6 @@ bookSelect = document.getElementById('book-select');
 rubricSelect = document.getElementById('rubric-select');
 contentElement = document.getElementById('content');
 
-const urlString = window.location.href;
-const url = new URL(urlString);
-const domain = url.hostname;
-
-function decrypt(data, key) {
-    let decryptedData = '';
-    let keyLength = key.length;
-    for (let i = 0; i < data.length; i++) {
-        decryptedData += String.fromCharCode(data.charCodeAt(i) ^ key.charCodeAt(i % keyLength));
-    }
-    return decryptedData;
-}
 
 
 async function fillContent(contentText) {
@@ -31,14 +19,13 @@ async function fillContent(contentText) {
         let imgPath = "assets/path/" + imgTit;
         let response = await fetch(imgPath);
         let data = await response.text();
-        let decryptedImageSrc = decrypt(data, domain);
         let outerDiv = document.createElement('div');
         outerDiv.classList.add('col', 'imageFac');
         let innerDiv = document.createElement('div');
         innerDiv.classList.add('card', 'h-100');
         let img = document.createElement('img');
         img.classList.add('card-img-top');
-        img.src = "data:image/png;base64, " + decryptedImageSrc;
+        img.src = "data:image/png;base64, " + data;
         let cardBodyDiv = document.createElement('div');
         cardBodyDiv.classList.add('card-body');
         let imgLabel = getImageLabel(imgTit);
@@ -52,7 +39,7 @@ async function fillContent(contentText) {
         outerDiv.addEventListener('click', () => {
             imgModal.show();
             document.getElementById('imageModalLabel').textContent = imgLabel;
-            document.getElementById('imageModalImg').src = "data:image/png;base64, " + decryptedImageSrc;
+            document.getElementById('imageModalImg').src = "data:image/png;base64, " + data;
         });
         facsDiv.appendChild(outerDiv)
     })
