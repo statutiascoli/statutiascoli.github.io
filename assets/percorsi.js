@@ -4,6 +4,8 @@ regionCurrentPage = 1
 regionResults = []
 categoryCurrentPage = 1
 categoryResults = []
+calendarCurrentPage = 1
+calendarResults = []
 var itemsPerPage = 3; // Adjust as needed
 if (window.innerWidth < 767.98) {
     itemsPerPage = 4; // Adjust for smaller screens
@@ -18,23 +20,23 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
    document.getElementById('citymap-tab').addEventListener('click', function(){
         if (window.cityMap) {
             window.cityMap.invalidateSize();
-            window.cityMap.setView(cityMapCenter, 15)
+            setMapViewCity();
         }
    });
    document.getElementById('regionmap-tab').addEventListener('click', function(){
         if (window.regionMap) {
             window.regionMap.invalidateSize();
-            window.regionMap.setView(regionMapCenter, 10)
+            setMapViewRegion();
         }
    });
 
 
    fetch('assets/comune.geojson').then(response => response.json()).then(geoJSONdata => {
         //city map
-        var cityMapBounds = [[42.84455370395206, 13.556849956512453], [42.86343017090419,13.593156337738039]];
+        var cityMapBounds = [[42.832855972, 13.542545443], [42.875313139, 13.617094353]];
 
         var cityMap = L.map('map_city', {
-            maxBounds: cityMapBounds,
+            maxBounds: [[42.84455370395206, 13.556849956512453], [42.86343017090419,13.593156337738039]],
             maxBoundsViscosity: 1.0,
             minZoom: 15,
             maxZoom: 17}).setView([42.854, 13.575], 15)
@@ -44,15 +46,25 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
         cityMap.setView(cityMapCenter, 15)
         window.cityMap = cityMap
 
+        setMapViewCity()
+        window.addEventListener('resize', function() {
+            if (window.cityMap) {
+                setMapViewCity();
+            }
+            if (window.regionMap) {
+                setMapViewRegion();
+            }
+        });
+
         function getColor(variable) {
             switch (variable) {
                 case "Quartiere Sancto Emidio":
                     return 'green'; // Fill color for variable 1
                 case "Quartiere Sancta Maria":
                     return 'blue'; // Fill color for variable 2
-                case "Quartiere Sancto Venantio":
-                    return 'red'; // Fill color for variable 3
                 case "Quartiere Sancto Jacobo":
+                    return 'red'; // Fill color for variable 3
+                case "Quartiere Sancto Venantio":
                     return 'yellow'; // Fill color for variable 4
                 default:
                     return 'gray'; // Default fill color
@@ -195,23 +207,20 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
 
    fetch('assets/territorio.geojson').then(response => response.json()).then(geoJSONdata => {
         //region map
-        var regionMapBounds = [[42.601619944327965, 13.009185791015627], [43.104993581605505,14.140777587890627]];
+        var regionMapBounds = [[42.321619480, 12.644150122], [43.293500927,14.540690849]];
 
         var regionMap = L.map('map_territory', {
-            maxBounds: regionMapBounds,
+            maxBounds: [[42.601619944327965, 13.009185791015627], [43.104993581605505,14.140777587890627]],
             maxBoundsViscosity: 1.0,
             zoom: 10,
             minZoom: 10,
-            maxZoom: 11}).setView([42.85499758703556, 13.57538174536857], 10)
-        var regionMapimage = L.imageOverlay('assets/region.png', regionMapBounds).addTo(regionMap);
-        /*L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain_background/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(regionMap);*/
+            maxZoom: 12}).setView([42.85499758703556, 13.57538174536857], 10)
+        var regionMapimage = L.imageOverlay('assets/terr.png', regionMapBounds).addTo(regionMap);
 
         regionMapCenter = regionMap.getBounds().getCenter();
         regionMap.setView(regionMapCenter, 10)
-
         window.regionMap = regionMap
+        setMapViewRegion()
 
         var marker = L.marker([42.85499758703556, 13.57538174536857], {
             interactive: false,  // Make the marker non-interactive
@@ -449,4 +458,154 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
             button.classList.add('active');
         });
     }
+
+   function setMapViewCity() {
+        let isMobile = window.innerWidth <= 768;
+        let minZoom = isMobile ? 14 : 15;
+        window.cityMap.setMinZoom(minZoom);
+        window.cityMap.setZoom(minZoom);
+   }
+   function setMapViewRegion() {
+        let isMobile = window.innerWidth <= 768;
+        let minZoom = isMobile ? 9 : 10;
+        window.regionMap.setMinZoom(minZoom);
+        window.regionMap.setZoom(minZoom);
+   }
+
+   fetch('assets/holidays.json').then(response => response.json()).then(calendarData => {
+       const months = [
+            "Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno",
+            "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"
+        ];
+
+        // Days in each month for the year 1496
+        const daysInMonth = [
+            31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 // Leap year February
+        ];
+
+        const dayNames = ["Lu", "Ma", "Me", "Gi", "Ve", "Sa", "Do"];
+
+        let currentMonth = 0; // January
+        // January 1, 1496 was a Friday
+        const startDay = 4; // Friday
+
+
+        function getStartDayOfMonth(month) {
+            let dayOffset = startDay;
+            for (let i = 0; i < month; i++) {
+                dayOffset += daysInMonth[i];
+            }
+            return dayOffset % 7;
+        }
+
+        function loadCalendar(month) {
+            const firstDay = getStartDayOfMonth(month);
+            const monthDays = daysInMonth[month];
+            const calendarDays = document.querySelector('.calendar-days');
+            calendarDays.innerHTML = '';
+
+            // Add day names
+            dayNames.forEach(day => {
+                const dayDiv = document.createElement('div');
+                dayDiv.textContent = day;
+                dayDiv.classList.add('calendar-head');
+                calendarDays.appendChild(dayDiv);
+            });
+
+            // Add empty slots for days of the previous month
+            for (let i = 0; i < firstDay; i++) {
+                const emptyDiv = document.createElement('div');
+                calendarDays.appendChild(emptyDiv);
+            }
+
+            // Add days of the current month
+            for (let i = 1; i <= monthDays; i++) {
+                const dayDiv = document.createElement('div');
+                dayDiv.textContent = i;
+                if (month==3 && i==9){
+                    dayDiv.classList.add('clickable-day');
+                    dayDiv.classList.add('historical-day');
+                    dayDiv.addEventListener('click', () => {
+                        populateResultsHistorical("calendar-results", calendarCurrentPage, calendarResults)
+                    });
+                }
+                // Check if the day is clickable
+                if (calendarData.some(d => d.month === month && d.day === i)) {
+                    let dayData = calendarData.find(d => d.month === month && d.day === i);
+                    dayDiv.classList.add('clickable-day');
+                    dayDiv.setAttribute('data-target', dayData.id);
+                    dayDiv.setAttribute('data-title', dayData.title);
+                    dayDiv.addEventListener('click', () => {
+                        populateResults(dayDiv.getAttribute('data-target'), dayDiv.getAttribute('data-title'), "calendar-results", calendarCurrentPage, calendarResults)
+                    });
+                }
+
+                calendarDays.appendChild(dayDiv);
+            }
+
+            // Update month and year display
+            document.getElementById('monthYear').textContent = `${months[month]} 1496`;
+        }
+
+        document.getElementById('prevMonth').addEventListener('click', () => {
+            currentMonth--;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+            }
+            loadCalendar(currentMonth);
+        });
+
+        document.getElementById('nextMonth').addEventListener('click', () => {
+            currentMonth++;
+            if (currentMonth > 11) {
+                currentMonth = 0;
+            }
+            loadCalendar(currentMonth);
+        });
+
+        // Initial load
+        loadCalendar(currentMonth);
+
+        function populateResultsHistorical(tab, currentPage, results){
+           document.querySelector('.' + tab + ' .result-content').innerHTML = ""
+           document.querySelector('.' + tab + ' .pagination').innerHTML = ""
+           currentPage = 1
+           document.querySelector('.' + tab + ' .result-title').innerHTML = ""
+           results = []
+           document.querySelector('.' + tab + ' .result-title').innerHTML = "Stampa degli Statuti del 1496"
+           rubric_content = data["Conclusione"];
+           xmlDoc = parser.parseFromString(rubric_content, 'text/xml');
+           document.querySelector('.' + tab + ' .result-content').innerHTML = ''; // Clear previous content
+            pElement = xmlDoc.getElementsByTagName('p')[1].textContent;
+            card = document.createElement('div');
+            card.classList.add('card');
+            card.classList.add('mb-3');
+            cardHeader = document.createElement('div');
+            cardHeader.classList.add('card-header');
+            cardBody = document.createElement('div');
+            cardBody.classList.add('card-body');
+            cardTitle = document.createElement('h5');
+            cardTitle.classList.add('card-title');
+            cardLink = document.createElement('a');
+            cardLink.href = "https://ascolicomune.it/statuti.html?id=3";
+            cardLink.textContent =  "Conclusione"
+            cardLink.target = "_blank";
+            cardTitle.appendChild(cardLink)
+            cardDescription = document.createElement('p');
+            cardDescription.classList.add('card-text');
+            console.log(pElement)
+            cardDescription.textContent = "[...]" + pElement;
+            readLink = document.createElement('a');
+            readLink.href = "https://ascolicomune.it/statuti.html?id=3";
+            readLink.textContent = " (Leggi Conclusione)"
+            readLink.target = "_blank";
+            cardDescription.appendChild(readLink)
+            cardHeader.appendChild(cardTitle);
+            cardBody.appendChild(cardDescription);
+            card.appendChild(cardHeader);
+            card.appendChild(cardBody);
+            document.querySelector('.' + tab + ' .result-content').appendChild(card)
+       }
+    })
 })
+

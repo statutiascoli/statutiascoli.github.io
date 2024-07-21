@@ -95,20 +95,6 @@ p{
   color: #561028;
 }
 
-.beta-version{
-  position: fixed;
-  background: grey;
-  box-shadow: 0 0 0 999px grey;
-  color:white;
-  clip-path: inset(0 -100%);
-  inset: 0 0 auto auto;
-  transform-origin: 0 0;
-  transform: translate(29.3%) rotate(45deg);
-  margin-top:70px;
-  padding:5px;
-  z-index: 1000;
-}
-
 h6{
   font-size: 20px;
   font-weight: bold;
@@ -216,5 +202,14 @@ h3{
   }
   .ascoliComune-img{
     width: 90% !important;;
+  }
+  .nav-link {
+    border: none !important
+  }
+  .nav-link.active {
+    text-decoration: underline;
+  }
+  .nav-tabs .nav-link:last-child {
+    margin-bottom: 3px
   }
 }
