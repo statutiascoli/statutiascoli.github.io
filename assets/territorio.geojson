@@ -20,7 +20,7 @@
     { "type": "Feature", "properties": { "id": "castelloRotella", "title": "Castello Rotella", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.56069615007014, 42.954648838457281 ] } },
     { "type": "Feature", "properties": { "id": "castelloQuintoDecimo", "title": "Castello Quinto Decimo", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.383315785109803, 42.762978875731548 ] } },
     { "type": "Feature", "properties": { "id": "castelloRovetino", "title": "Castello Rovetino", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.541909020802672, 42.963287195386144 ] } },
-    { "type": "Feature", "properties": { "id": "castelloMontalto", "title": "Castello Monte Alto", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.607097739694936, 42.987367819584733 ] } },
+    { "type": "Feature", "properties": { "id": "castelloMonteAlto", "title": "Castello Monte Alto", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.607097739694936, 42.987367819584733 ] } },
     { "type": "Feature", "properties": { "id": "castelloPorchia", "title": "Castello Porchia", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.628930989501621, 42.996806413407235 ] } },
     { "type": "Feature", "properties": { "id": "castelloMontePassillo", "title": "Castello Monte Paxillo", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.414373793350663, 42.965107016839141 ] } },
     { "type": "Feature", "properties": { "id": "castelloCastorano", "title": "Castello Castorano", "type": "castello" }, "geometry": { "type": "Point", "coordinates": [ 13.726516920847383, 42.898489430527285 ] } },

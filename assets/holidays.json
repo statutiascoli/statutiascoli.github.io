@@ -3,384 +3,448 @@
         "month": 0,
         "day": 1,
         "title": "Circoncisione di Gesù Cristo",
+        "desc": null,
         "id": "festaCirconcisione"
     },
     {
         "month": 0,
         "day": 6,
         "title": "Epifania",
+        "desc": null,
         "id": "festaEpifania"
     },
     {
         "month": 1,
         "day": 1,
         "title": "Santa Brigida",
+        "desc": "Badessa di Kildare in Irlanda, †523",
         "id": "festaSantaBrigida"
     },
     {
         "month": 1,
         "day": 3,
         "title": "San Biagio",
+        "desc": "Vescovo di Sebastopoli e martire, †316",
         "id": "festaSanBiagio"
     },
     {
         "month": 2,
         "day": 7,
         "title": "Sant Tommaso d'Aquino",
+        "desc": "Frate domenicano e dottore della Chiesa, †1247",
         "id": "festaSanTommasoAquino"
     },
     {
         "month": 1,
         "day": 5,
         "title": "Sant'Agata",
+        "desc": "Vergine e martire, †251",
         "id": "festaSantAgata"
     },
     {
         "month": 2,
         "day": 21,
         "title": "San Benedetto",
+        "desc": "Benedetto da Norcia, fondatore dell'ordine monastico d'occidente, †543",
         "id": "festaSanBenedetto"
     },
     {
         "month": 3,
         "day": 23,
         "title": "San Giorgio",
+        "desc": "Guerriero e martire a Lydda in Palestina, †303",
         "id": "festaSanGiorgio"
     },
     {
         "month": 4,
         "day": 5,
         "title": "Sant'Angelo",
+        "desc": "Sacerdote carmelitano e martire, †1220",
         "id": "festaSantAngelo"
     },
     {
         "month": 4,
         "day": 12,
         "title": "San Pancrazio",
+        "desc": "Martire a Roma, †304",
         "id": "festaSanPancrazio"
     },
     {
         "month": 4,
         "day": 18,
         "title": "San Venanzio",
+        "desc": "Martire a Camerino, III sec.",
         "id": "festaSanVenanzio"
     },
     {
         "month": 4,
         "day": 31,
         "title": "Santa Petronilla",
+        "desc": "Martire e pretesa figlia di s. Pietro, I sec.",
         "id": "festaSantaPetronilla"
     },
     {
         "month": 5,
         "day": 12,
         "title": "Sant'Onofrio",
+        "desc": "Anacoreta del IV sec.",
         "id": "festaSantOnofrio"
     },
     {
         "month": 5,
         "day": 24,
         "title": "San Giovanni Battista",
+        "desc": "Precursore di Cristo.",
         "id": "festaSanGiovanniBattista"
     },
     {
         "month": 6,
         "day": 20,
         "title": "Santa Margherita",
+        "desc": "Vergine e martire ad Antiochia, fine del III sec.",
         "id": "festaSantaMargherita"
     },
     {
         "month": 6,
         "day": 22,
         "title": "Santa Maria Maddalena",
+        "desc": "Discepola di Gesù, I sec.",
         "id": "festaSantaMariaMaddalena"
     },
     {
         "month": 7,
         "day": 5,
         "title": "Sant'Emidio",
+        "desc": "Vescovo e martire, IV sec.",
         "id": "festaSantEmidio"
     },
     {
         "month": 7,
         "day": 6,
         "title": "Santo Salvatore",
+        "desc": "Giorno della trasfigurazione di Gesù Cristo sul Monte Tabor.",
         "id": "festaSantoSalvatore"
     },
     {
         "month": 7,
         "day": 8,
         "title": "San Domenico",
+        "desc": "Domenico di Guzmán, fondatore dell'ordine dei predicatori, †06/08/1221",
         "id": "festaSanDomenico"
     },
     {
         "month": 7,
         "day": 10,
         "title": "San Lorenzo",
+        "desc": "Arcidiacono di Roma e martire, †258",
         "id": "festaSanLorenzo"
     },
     {
         "month": 7,
         "day": 19,
         "title": "San Ludovico",
+        "desc": "Luigi d'Anjou, vescovo di Tolosa, †1297",
         "id": "festaSanLudovico"
     },
     {
         "month": 7,
         "day": 28,
         "title": "Sant'Agostino",
+        "desc": "Vescovo d'Ippona, †430",
         "id": "festaSantAgostino"
     },
     {
         "month": 7,
         "day": 29,
         "title": "Decollazione di San Giovanni Battista",
+        "desc": null,
         "id": "festaDecapitazioneSanGiovanniBattista"
     },
     {
         "month": 8,
         "day": 1,
         "title": "Sant'Egidio",
+        "desc": "Abate in Liguadoca, †721",
         "id": "festaSantEgidio"
     },
     {
         "month": 8,
         "day": 3,
         "title": "San Gregorio",
+        "desc": "Gregorio I detto papa Gregorio Magno ovvero il Grande, †604",
         "id": "festaSanGregorio"
     },
     {
         "month": 8,
         "day": 14,
         "title": "Croce (Esaltazione della s.)",
+        "desc": "In memoria del ritrovamento della s. Croce nel 326, per opera di s. Elena, madre dell'imperatore Costantino.",
         "id": "festaSantaCroce"
     },
     {
         "month": 8,
         "day": 29,
         "title": "San Michele",
+        "desc": "Arcangelo",
         "id": "festaSanMichele"
     },
     {
         "month": 8,
         "day": 30,
         "title": "San Girolamo",
+        "desc": "Padre e Dottore della Chiesa, †420",
         "id": "festaSanGirolamo"
     },
     {
         "month": 9,
         "day": 4,
         "title": "San Francesco",
+        "desc": "Francesco d'Assisi, istitutore dei frati minori, †1226",
         "id": "festaSanFrancesco"
     },
     {
         "month": 10,
         "day": 1,
         "title": "Ognissanti",
+        "desc": "Celebrazione della gloria e dell'onore di tutti i santi.",
         "id": "festaTuttiSanti"
     },
     {
         "month": 10,
         "day": 6,
         "title": "San Leonardo",
+        "desc": "Eremita e abate di Noblac, †559",
         "id": "festaSanLeonardo"
     },
     {
         "month": 10,
         "day": 11,
         "title": "San Martino",
+        "desc": "Vescovo di Tours, †397",
         "id": "festaSanMartino"
     },
     {
         "month": 10,
         "day": 25,
         "title": "Santa Caterina",
+        "desc": "Vergine e martire ad Alessandria, IV sec.",
         "id": "festaSantaCaterina"
     },
     {
         "month": 11,
         "day": 6,
         "title": "San Nicolò",
+        "desc": "Nicola o Nicolò di Bari, vescovo di Mira, IV sec.",
         "id": "festaSanNicolò"
     },
     {
         "month": 11,
         "day": 7,
         "title": "Sant'Ambrogio",
+        "desc": "Vescovo di Milano, †04/04/397",
         "id": "festaSantAmbrogio"
     },
     {
         "month": 11,
         "day": 13,
         "title": "Santa Lucia",
+        "desc": "Vergine e martire a Siracusa, †304",
         "id": "festaSantaLucia"
     },
     {
         "month": 11,
         "day": 24,
         "title": "Vigilia di Natale",
+        "desc": null,
         "id": "festaVigiliaNatale"
     },
     {
         "month": 11,
         "day": 25,
         "title": "Natale",
+        "desc": null,
         "id": "festaNatale"
     },
     {
         "month": 11,
         "day": 31,
         "title": "San Silvestro",
+        "desc": "Silvestro I, 33° papa di Roma, †337",
         "id": "festaSanSilvestro"
     },
     {
         "month": 0,
         "day": 1,
         "title": "Maria madre di Dio",
+        "desc": null,
         "id": "festaMariaMadre"
     },
     {
         "month": 7,
         "day": 15,
         "title": "Assunzione di Maria",
+        "desc": null,
         "id": "festaAssunzioneMaria"
     },
     {
         "month": 11,
         "day": 8,
         "title": "Immacolata Concezione",
+        "desc": null,
         "id": "festaImmacolataConcezione"
     },
     {
         "month": 4,
         "day": 1,
         "title": "San Filippo",
+        "desc": "Apostolo e martire, onorato con s. Giacomo il Minore, I sec.",
         "id": "festaSanFilippo"
     },
     {
         "month": 4,
         "day": 1,
         "title": "San Giacomo",
+        "desc": "Giacomo il Minore, apostolo e vescovo di Gerusalemme, onorato con s. Filippo, †62 (martirio)",
         "id": "festaSanGiacomoMinore"
     },
     {
         "month": 5,
         "day": 29,
         "title": "San Pietro",
+        "desc": "Simon Pietro, apostolo e primo papa di Roma, onorato con s. Paolo, †67 (martirio)",
         "id": "festaSanPietro"
     },
     {
         "month": 5,
         "day": 29,
         "title": "San Paolo",
+        "desc": "Paolo di Tarso, riconosciuto come apostolo anche se non facente parte del gruppo dei 12 scelti da Gesù, onorato con s. Pietro, †67 (martirio)",
         "id": "festaSanPaolo"
     },
     {
         "month": 5,
         "day": 11,
         "title": "San Barnaba",
+        "desc": "Giuseppe di Cipro, riconosciuto come apostolo anche se non facente parte del gruppo dei 12 scelti da Gesù, martire a Cipro, I sec.",
         "id": "festaSanBarnaba"
     },
     {
         "month": 9,
         "day": 28,
         "title": "San Simone",
+        "desc": "Lo Zelota, apostolo, onorato con s. Giuda Taddeo, I sec.",
         "id": "festaSanSimone"
     },
     {
         "month": 9,
         "day": 28,
         "title": "San Giuda Taddeo",
+        "desc": "Apostolo, onorato con s. Simone, I sec.",
         "id": "festaSanGiudaTaddeo"
     },
     {
         "month": 1,
         "day": 24,
         "title": "San Mattia",
+        "desc": "Apostolo, I sec.",
         "id": "festaSanMattia"
     },
     {
         "month": 6,
         "day": 25,
         "title": "San Giacomo",
+        "desc": "Giacomo il Maggiore, apostolo e martire, †44",
         "id": "festaSanGiacomoMaggiore"
     },
     {
         "month": 7,
         "day": 24,
         "title": "San Bartolomeo",
+        "desc": "Apostolo e martire, †47",
         "id": "festaSanBartolomeo"
     },
     {
         "month": 10,
         "day": 30,
         "title": "Sant'Andrea",
+        "desc": "Apostolo, I sec",
         "id": "festaSantAndrea"
     },
     {
         "month": 11,
         "day": 21,
         "title": "San Tommaso",
+        "desc": "Apostolo e martire",
         "id": "festaSanTommaso"
     },
     {
         "month": 3,
         "day": 25,
         "title": "San Marco",
+        "desc": "Evangelista e martire, †68",
         "id": "festaSanMarco"
     },
     {
         "month": 8,
         "day": 21,
         "title": "San Matteo Aposto ed Evangelista",
+        "desc": "Apostolo ed evangelista, I sec.",
         "id": "festaSanMatteo"
     },
     {
         "month": 9,
         "day": 18,
         "title": "San Luca",
+        "desc": "Evangelista, I sec",
         "id": "festaSanLuca"
     },
     {
         "month": 11,
         "day": 27,
         "title": "San Giovanni",
+        "desc": "Apostolo ed evangelista, †101",
         "id": "festaSanGiovanni"
     },
     {
         "month": 3,
         "day": 3,
         "title": "Pasqua",
+        "desc": "La Pasqua di Resurrezione è celebrata dalla chiesa nella I domenica dopo il plenilunio di marzo. È pertanto una festa mobile da cui dipendono le altre feste mobili dell'anno.",
         "id": "festaResurrezione"
     },
     {
         "month": 4,
         "day": 12,
         "title": "Ascensione di Gesù Cristo",
+        "desc": "Festa mobile che la chiesa celebra 40 giorni dopo Pasqua.",
         "id": "festaAscensioneGesù"
     },
     {
         "month": 4,
         "day": 22,
         "title": "Pentecoste",
+        "desc": "Celebrazione della discesa dello Spirito Santo nel Cenacolo, sugli Apostoli e la Vergine. Cade nel cinquantesimo giorno a partire dal giorno di Pasqua compreso, di domenica, ed è quindi una festa mobile dipendente dalla data della Pasqua.",
         "id": "festaPentecoste"
     },
     {
         "month": 4,
         "day": 26,
         "title": "Corpus Domini",
+        "desc": "Solennità del Santissimo Corpo e Sangue di Cristo. È una festa mobile e si celebra il giovedì dopo la domenica della ss. Trinità.",
         "id": "festaCorpusDomini"
     },
     {
         "month": 3,
         "day": 1,
         "title": "Venerdì santo",
+        "desc": "Venerdì che precede la Paqua, detto anche Parasceve.",
         "id": "festaVenerdìSanto"
     },
     {
         "month": 1,
         "day": 15,
         "title": "Martedì grasso",
+        "desc": "Ultimo giorno di Carnevale (chiamato anche Carnasciale), prima del Mercolì delle Ceneri che apre la Quaresima.",
         "id": "festaMartedìGrasso"
     }
 ]
