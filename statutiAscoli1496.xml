@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/css" href="style.css"?>
+<!--<?xml-stylesheet type="text/css" href="style.css"?>-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title xml:lang="it">Statuti della città di Ascoli del 1496</title>
                 <respStmt>
-                    <persName>
+                    <persName type="author">
                         <forename>Michela</forename>
                         <surname>Parma</surname>
                     </persName>
                     <resp xml:lang="it">Trascrizione e markup in XML-TEI</resp>
                 </respStmt>
                 <respStmt>
-                    <persName>
+                    <persName type="co-author">
                         <forename>Fabio</forename>
                         <surname>Mariani</surname>
                     </persName>
@@ -560,10 +560,10 @@
                         <place xml:id="castelloQuintoDecimo">
                             <placeName type="castello">castello de Quinto Decimo</placeName>
                         </place>
-                        <place xml:id="castelloRoventino">
-                            <placeName type="castello">castello de Roventino</placeName>
+                        <place xml:id="castelloRovetino">
+                            <placeName type="castello">castello de Rovetino</placeName>
                         </place>
-                        <place xml:id="castelloMontalto">
+                        <place xml:id="castelloMonteAlto">
                             <placeName type="castello">castello de Monte Alto</placeName>
                         </place>
                         <place xml:id="castelloMontePassillo">
@@ -1271,13 +1271,7 @@
                         </div>
                         <div type="content" xml:id="statCom_libro1_content">
                             <div corresp="#statCom_libro1_rubrica1" n="1" type="rubrica" ana="#famiglia">
-                                <head type="titoloRubrica">de li contracti de li figlioli de
-                                    fameglia et de li minuri de <measure quantity="25" type="età"
-                                        unit="anni"><num value="25">vinticinqui</num>
-                                    anni</measure>, et de chi gl'è interdicta la administratione de
-                                    li beni. <label type="numeroRubrica">rubrica <num value="1"
-                                            >prima</num>.</label>
-                                </head>
+                                <head type="titoloRubrica">de li contracti de li figlioli de fameglia et de li minuri de <measure quantity="25" type="età" unit="anni"><num value="25">vinticinqui</num> anni</measure>, et de chi gl'è interdicta la administratione de li beni. <label type="numeroRubrica">rubrica <num value="1">prima</num>.</label></head>
                                 <p><hi rend="capitals">IN</hi> prima ordinemo che nisiuno faccia
                                     contracto, né alcuna obligatione con alcuno figliolo de fameglia
                                     non administrante bene, lu quale non facesse mercatantia
@@ -6340,8 +6334,7 @@
                                         value="2">doi</num> cande, ciascuno delinquente sia punito
                                     in la <num value="4">quarta</num> parte più de le dicte pene. Et
                                     se la bactaglia se facesse con le prete overo con arme in
-                                        <placeName corresp="">Guallo</placeName>, <placeName
-                                        corresp="">in Larhenqua</placeName> overo in <placeName
+                                        Guallo, in Larhenqua overo in <placeName
                                         corresp="#campoParignano">Parignano</placeName> overo in ne
                                     lu <placeName corresp="#fiumeCastellano">fiume de
                                         Castellano</placeName>, <placeName corresp="#fiumeTronto">de
@@ -16186,8 +16179,8 @@
                                         Gregorio</seg>; la <seg corresp="#festaSanSilvestro"
                                         type="festa">festa de sancto Silvestro</seg>; la <seg
                                         corresp="#festaSanBenedetto" type="festa">festa del sancto
-                                        abate Benedicto</seg>; la <seg corresp="" type="festa">festa
-                                        de sancto Dio</seg>; la <seg corresp="#festaSantOnofrio"
+                                        abate Benedicto</seg>; la <seg corresp="#festaSantEgidio">festa
+                                            de sancto Ilio</seg>; la <seg corresp="#festaSantOnofrio"
                                         type="festa">festa de sancto Honofrio</seg>; la <seg
                                         corresp="#festaSanPancrazio" type="festa">festa de sancto
                                         Pangratio</seg>; la <seg corresp="#festaSanLorenzo"
@@ -17046,17 +17039,17 @@
                                     d'Asculi debia stare li castellani con lu numero de li
                                     infrascripti surgenti tanto et non più, ma con minore, se parerà
                                     a lu consiglo generale, che siano acti ad portare l'arme da fare
-                                    la guardia. Cioè: lu castellano de lu castello de Rovetino con
-                                        <num value="12">dudici</num> surgenti tanto da elegerse per
-                                    ipso castellano; lu castellano de Monte Alto con <num value="8"
+                                    la guardia. Cioè: lu castellano de lu <placeName corresp="#castelloRovetino">castello de Rovetino</placeName> con
+                                    <num value="12">dudici</num> surgenti tanto da elegerse per
+                                    ipso castellano; lu castellano de <placeName corresp="#castelloMonteAlto">Monte Alto</placeName> con <num value="8"
                                         >octo</num> surgenti da elegerse per ipso; lu castellano de
-                                    monte Paxillo con <num value="9">nove</num> surgenti da elegerse
-                                    per ipso; lu castellano de lu castello de Castorano con <num
+                                    <placeName corresp="#castelloMontePassillo">monte Paxillo</placeName> con <num value="9">nove</num> surgenti da elegerse
+                                    per ipso; lu castellano de lu <placeName corresp="#castelloCastorano">castello de Castorano</placeName> con <num
                                         value="8">octo</num> surgenti da elegerse per ipso; lu
-                                    castellano de monte Cretaccio con <num value="8">octo</num>
-                                    surgenti da elegerse per ipso; lu castellano de lu Porto ad mare
+                                    castellano de <placeName corresp="#castelloMonteCretaccio">monte Cretaccio</placeName> con <num value="8">octo</num>
+                                    surgenti da elegerse per ipso; lu castellano de lu <placeName corresp="#castelloPortoMare">Porto ad mare</placeName>
                                     con <num value="12">dudici</num> surgenti da elegerse per ipso;
-                                    lu castellano de monte Calvo con <num value="6">sei</num>
+                                    lu castellano de <placeName corresp="#castelloMontecalvo">monte Calvo</placeName> con <num value="6">sei</num>
                                     surgenti da elegerse per ipso. Pur che in ne lu numero de li
                                     surgenti con alcuno castellano overo commestavalo non possa
                                     essere alcuno che sia habitatore de lu castello, a la guardia de
@@ -17109,8 +17102,8 @@
                                     debiase fare per uno mese nante lo fine de lu castellano
                                     precessore. Et che li recturi de la ciptà d'Asculi, potestà,
                                     capitanio et ciascuno de ipsi siano tenuti et debiano infra
-                                        <measure quantity="10" type="tempo" unit="giorni"><num
-                                            value="10">dece</num> dì</measure> da lu principio de lu
+                                    <measure quantity="10" type="tempo" unit="giorni"><num
+                                        value="10">dece</num> dì</measure> da lu principio de lu
                                     soi regime andare et mandare a le dicte castella et videre li
                                     castellani et surgenti et persone de quilli, se sonno acti ad
                                     fare la guardia et a portare l'arme, referire in scriptis li
@@ -22152,9 +22145,8 @@
                                     parte debia essere presente et de li consigleri del consiglo
                                     generale sia presenti tanti quanti se recercha devere essere,
                                     secundo la forma de lu statuto posto socto la rubrica de lu
-                                    primo libro de li statuti del populo <seg corresp=""
-                                        type="internal-link">«de la balìa de quactrocento
-                                        consigleri»</seg>. Li quali consigleri et merchatanti se
+                                    primo libro de li statuti del populo «de la balìa de quactrocento
+                                        consigleri». Li quali consigleri et merchatanti se
                                     recerche ne lu dicto consiglo, sì che altre persone non ce possa
                                     essere presenti, et quello che serrà obtenuto per le tre parte
                                     de li predicti, se serrà presenti, per lu partito da farse a
