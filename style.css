@@ -1,26 +1,7 @@
 @font-face {
-    font-family: BrandonGrotesqueLight;
-    src: url(font/brandon-grotesque-light.otf);
+    font-family: Montserrat-Regular;
+    src: url(font/Montserrat-Regular.ttf);
   }
-  @font-face {
-    font-family: BrandonGrotesqueRegular;
-    src: url(font/brandon-grotesque-regular.otf);
-  }
- 
-  @font-face {
-    font-family: Rotunda;
-    src: url(/font/rotunda.medium.ttf);
-  }
-
-  @font-face {
-    font-family: Dukeplus;
-    src: url(font/Duke.ttf);
-    src: url(font/Duke.otf);
-    src: url(font/Duke.woff);
-    src: url(font/Duke.woff2);
-  }
-
-  
 
 html{
     scroll-padding-top: 70px;
@@ -142,9 +123,7 @@ a{
 
 
 .team-name{
-	/*font-family: BrandonGrotesqueRegular  !important;*/
-  
-  text-align: center;
+	text-align: center;
   margin-top:15px;
   color: #6c1433;
   
@@ -152,12 +131,11 @@ a{
 
 .title{
   padding-top: 45px;
-  font-size: 50px;
-   font-family: BrandonGrotesqueRegular;
+  font-size: 45px;
+   font-family: Montserrat-Regular;
 }
 
 h3{
-  /*font-family: BrandonGrotesqueRegular;*/
   padding-top: 45px;
   font-size: 25px;
 }
