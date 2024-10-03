@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Statuti</title>
+        <title>Progetto</title>
         <link rel="icon" type="image/png" href="img/logoAcerchio.png" sizes="32x32">
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no"/>
         <meta name="google" content="notranslate"/>
-        <meta name="description" content="Leggi gli Statuti di Ascoli. Usa l'interfaccia per selezionare l'Introduzione, gli Statuti del Comune, gli Statuti del Popolo o la Conclusione. Puoi anche scegliere il numero del libro e della rubrica che desideri consultare.">
-        <meta name="keywords" content="Statuti, Statuti del Comune, Statuti del Popolo, Ascoli, Ascoli Comune, Ascoli Piceno, Comune di Ascoli Piceno">
+        <meta name="description" content="Il progetto Ascoli Comune intende valorizzare gli Statuti di Ascoli offrendo una nuova veste digitale utilizzando standard condivisi per la gestione dei dati scientifici e rispondendo alle esigenze dei principi FAIR: reperibilità (Findability), accessibilità (Accessibility), interoperabilità (Interoperability) e riutilizzo (Reusability) delle risorse digitali. Il testo degli Statuti del comune di Ascoli è stato digitalizzato in formato XML utilizzando le attuali linee guida proposte da TEI P5.">
+        <meta name="keywords" content="Progetto, Motivazioni di ricerca, Documentazione, Team, Credits, Statuti, Ascoli, Ascoli Comune, Ascoli Piceno, Comune di Ascoli Piceno">
         <meta name="author" content="Michela Parma, Fabio Mariani">
         <meta name="robots" content="index, follow">
+
 
         <!--Bootstrap-->
         <link href="assets/bs5/bootstrap.min.css" rel="stylesheet">
         <script src="assets/bs5/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="assets/font-awesome/font-awesome.min.css">
-
+        
+        
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="statuti.css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="style-text.css" media="screen"/>
+        
     </head>
     <body>
       <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
@@ -70,43 +71,15 @@
           </div>
         </div>
     </nav>
+
         <div class="container-fluid html-page">
-           <h1 class="title"><span class="it">Gli Statuti di Ascoli</span><span class="en d-none">The Statutes of Ascoli</span></h1>
-            <div class="row mb-3">
-                <div class="col-md-4">
-                    <label for="volume-select" class="form-label"><span class="it">Seleziona Statuti:</span><span class="en d-none">Select Statutes:</span></label>
-                    <select id="volume-select" class="form-select"></select>
-                </div>
-                <div class="col-md-4">
-                    <label for="book-select" class="form-label"><span class="it">Seleziona Libro:</span><span class="en d-none">Select Book:</span></label>
-                    <select id="book-select" class="form-select"></select>
-                </div>
-                <div class="col-md-4">
-                    <label for="rubric-select" class="form-label"><span class="it">Seleziona Rubrica:</span><span class="en d-none">Select Rubric:</span></label>
-                    <select id="rubric-select" class="form-select"></select>
-                </div>
-            </div>
+          <h1 class="title"><span class="it">Credits</span><span class="en d-none">Credits</span></h1>
 
-            <div class="card">
-                <div class="card-body">
-                    <div id="content"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade modal-xl" id="imageModal" tabindex="-1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="imageModalLabel">Image Modal</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                <img src="" id="imageModalImg" class="img-fluid">
-              </div>
-            </div>
-          </div>
+              <p class="mt-5">
+                <span class="it">Gli Statuti presenti in questa piattaforma sono stati digitalizzati utilizzando l’edizione <i>Statuti di Ascoli Piceno dell’anno MCCCLXXVII</i>, a cura di L. Zdekauer e P. Sella, Roma, Istituto storico italiano, 1910. L’edizione riproduce integralmente il testo in volgare contenuto nell’incunabulo del 1496, conservato attualmente presso la Biblioteca del Senato a Roma. Le immagini degli Statuti sono state fornite, ad uso esclusivo di questo sito, dalla <a href="https://www.senato.it/relazioni-con-i-cittadini/biblioteca/la-biblioteca-del-senato-della-repubblica-giovanni-spadolini" target="_blank">Biblioteca del Senato “Giovanni Spadolini”</a>.</span>
+                <span class="en d-none">The statutes available on this platform have been digitized using the edition <i>Statuti di Ascoli Piceno dell’anno MCCCLXXVII</i>, edited by L. Zdekauer and P. Sella, Roma, Istituto storico italiano, 1910. This edition faithfully reproduces the text in the vernacular contained in the incunabulum of 1496, currently preserved at the Biblioteca del Senato in Rome. The images of the statutes have been provided, exclusively for the use of this website, by the <a href="https://www.senato.it/relazioni-con-i-cittadini/biblioteca/la-biblioteca-del-senato-della-repubblica-giovanni-spadolini" target="_blank">Biblioteca del Senato "Giovanni Spadolini"</a>.</span>
+              </p>
+            
         </div>
 
         <footer class="bg-light text-center py-4 border-top">
@@ -129,7 +102,6 @@
             </div>
           </div>
         </footer>
+        <script src="lang.js"></script>
     </body>
-    <script src="assets/statuti.js"></script>
-    <script src="lang.js"></script>
 </html>

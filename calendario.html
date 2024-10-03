@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Statuti</title>
+        <title>Percorsi</title>
         <link rel="icon" type="image/png" href="img/logoAcerchio.png" sizes="32x32">
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no"/>
         <meta name="google" content="notranslate"/>
-        <meta name="description" content="Leggi gli Statuti di Ascoli. Usa l'interfaccia per selezionare l'Introduzione, gli Statuti del Comune, gli Statuti del Popolo o la Conclusione. Puoi anche scegliere il numero del libro e della rubrica che desideri consultare.">
-        <meta name="keywords" content="Statuti, Statuti del Comune, Statuti del Popolo, Ascoli, Ascoli Comune, Ascoli Piceno, Comune di Ascoli Piceno">
+        <meta name="description" content="Esplora gli Statuti di Ascoli del 1496 attraverso il calendario degli eventi religiosi e civili.">
+        <meta name="keywords" content="Calendario, Statuti, Ascoli, Ascoli Comune, Ascoli Piceno, Comune di Ascoli Piceno">
         <meta name="author" content="Michela Parma, Fabio Mariani">
         <meta name="robots" content="index, follow">
 
@@ -15,11 +15,11 @@
         <link href="assets/bs5/bootstrap.min.css" rel="stylesheet">
         <script src="assets/bs5/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="assets/font-awesome/font-awesome.min.css">
-
+        
+        
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="statuti.css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="style-text.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="percorsi.css" media="screen"/>
     </head>
     <body>
       <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
@@ -70,41 +70,53 @@
           </div>
         </div>
     </nav>
+
         <div class="container-fluid html-page">
-           <h1 class="title"><span class="it">Gli Statuti di Ascoli</span><span class="en d-none">The Statutes of Ascoli</span></h1>
-            <div class="row mb-3">
-                <div class="col-md-4">
-                    <label for="volume-select" class="form-label"><span class="it">Seleziona Statuti:</span><span class="en d-none">Select Statutes:</span></label>
-                    <select id="volume-select" class="form-select"></select>
+          <h1 class="title"><span class="it">Calendario</span><span class="en d-none">Calendar</span></h1>
+          <p>
+            <span class="it">Esplora gli Statuti di Ascoli attraverso la <b>mappa della città</b> e la <b>mappa del territorio</b>. Seleziona i sestieri, le chiese e i monasteri, le porte cittadine e i castelli per scoprire le dispozioni in merito.  
+              Utilizza le <b>categorie</b> per consultare gli statuti in base al tema trattato oppure naviga attraverso il <b>calendario</b> per leggere quelli relativi alle feste cittadine.
+            </span>
+            <span class="en">
+              Explore the Statutes of Ascoli through the city and territory maps. Select districts, churches and monasteries, city gates, and castles to discover the related regulations. Use the categories to consult statutes based on specific themes, or navigate the calendar to read those connected to the city holidays.</span>
+          </p>
+          <ul class="nav nav-tabs mt-5 d-flex flex-column flex-sm-row" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="calendar-tab" data-bs-toggle="tab" data-bs-target="#calendar-page" type="button" role="tab" aria-selected="false"><span class="it">Calendario</span><span class="en d-none">Calendar</span></button>
+            </li>
+          </ul>
+          <!-- Contenuto delle tabs -->
+          <div class="tab-content mt-4">
+            <div class="tab-pane fade" id="calendar-page" role="tabpanel" aria-labelledby="calendar-tab">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="container p-0 p-md-3">
+                            <div class="calendar-header mb-3 w-100">
+                                <button class="btn" id="prevMonth">&lt;</button>
+                                <h3 id="monthYear" class="mb-0 p-0">Gennaio 1496</h3>
+                                <button class="btn" id="nextMonth">&gt;</button>
+                            </div>
+                            <div class="calendar-days">
+                                <!-- Calendar days will be inserted here dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results col-lg-6 calendar-results">
+                        <h2 class="result-title"> </h2>
+                        <hr>
+                        <div>
+                            <div class="mt-4 result-content">
+                              <!-- Cards will be appended here -->
+                            </div>
+                            <!-- Pagination -->
+                            <nav aria-label="Page navigation">
+                              <ul class="pagination justify-content-center">
+                                <!-- Pagination items will be appended here -->
+                              </ul>
+                            </nav>
+                         </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <label for="book-select" class="form-label"><span class="it">Seleziona Libro:</span><span class="en d-none">Select Book:</span></label>
-                    <select id="book-select" class="form-select"></select>
-                </div>
-                <div class="col-md-4">
-                    <label for="rubric-select" class="form-label"><span class="it">Seleziona Rubrica:</span><span class="en d-none">Select Rubric:</span></label>
-                    <select id="rubric-select" class="form-select"></select>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <div id="content"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade modal-xl" id="imageModal" tabindex="-1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="imageModalLabel">Image Modal</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                <img src="" id="imageModalImg" class="img-fluid">
-              </div>
             </div>
           </div>
         </div>
@@ -130,6 +142,9 @@
           </div>
         </footer>
     </body>
-    <script src="assets/statuti.js"></script>
+    <link rel="stylesheet" href="assets/leaflet/leaflet.css" />
+    <script src="assets/leaflet/leaflet.js"></script>
+    <script src="assets/percorsi.js"></script>
     <script src="lang.js"></script>
 </html>
+

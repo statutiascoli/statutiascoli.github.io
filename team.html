@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Statuti</title>
+        <title>Team</title>
         <link rel="icon" type="image/png" href="img/logoAcerchio.png" sizes="32x32">
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no"/>
         <meta name="google" content="notranslate"/>
-        <meta name="description" content="Leggi gli Statuti di Ascoli. Usa l'interfaccia per selezionare l'Introduzione, gli Statuti del Comune, gli Statuti del Popolo o la Conclusione. Puoi anche scegliere il numero del libro e della rubrica che desideri consultare.">
-        <meta name="keywords" content="Statuti, Statuti del Comune, Statuti del Popolo, Ascoli, Ascoli Comune, Ascoli Piceno, Comune di Ascoli Piceno">
+        <meta name="description" content="Il progetto Ascoli Comune intende valorizzare gli Statuti di Ascoli offrendo una nuova veste digitale utilizzando standard condivisi per la gestione dei dati scientifici e rispondendo alle esigenze dei principi FAIR: reperibilità (Findability), accessibilità (Accessibility), interoperabilità (Interoperability) e riutilizzo (Reusability) delle risorse digitali. Il testo degli Statuti del comune di Ascoli è stato digitalizzato in formato XML utilizzando le attuali linee guida proposte da TEI P5.">
+        <meta name="keywords" content="Team, Statuti, Ascoli, Ascoli Comune, Ascoli Piceno, Comune di Ascoli Piceno">
         <meta name="author" content="Michela Parma, Fabio Mariani">
         <meta name="robots" content="index, follow">
+
 
         <!--Bootstrap-->
         <link href="assets/bs5/bootstrap.min.css" rel="stylesheet">
         <script src="assets/bs5/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="assets/font-awesome/font-awesome.min.css">
-
+        
+        
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="statuti.css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="style-text.css" media="screen"/>
+        
     </head>
     <body>
       <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
@@ -70,43 +71,36 @@
           </div>
         </div>
     </nav>
+
         <div class="container-fluid html-page">
-           <h1 class="title"><span class="it">Gli Statuti di Ascoli</span><span class="en d-none">The Statutes of Ascoli</span></h1>
-            <div class="row mb-3">
-                <div class="col-md-4">
-                    <label for="volume-select" class="form-label"><span class="it">Seleziona Statuti:</span><span class="en d-none">Select Statutes:</span></label>
-                    <select id="volume-select" class="form-select"></select>
-                </div>
-                <div class="col-md-4">
-                    <label for="book-select" class="form-label"><span class="it">Seleziona Libro:</span><span class="en d-none">Select Book:</span></label>
-                    <select id="book-select" class="form-select"></select>
-                </div>
-                <div class="col-md-4">
-                    <label for="rubric-select" class="form-label"><span class="it">Seleziona Rubrica:</span><span class="en d-none">Select Rubric:</span></label>
-                    <select id="rubric-select" class="form-select"></select>
-                </div>
-            </div>
+          <h1 class="title"><span class="it">Team</span><span class="en d-none">Team</span></h1>
 
-            <div class="card">
-                <div class="card-body">
-                    <div id="content"></div>
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-md">
+                  <div class="text-center">
+                    <img src="img/MichelaParma.jpg" style="border-radius: 50%; width:40%;" alt="Michela Parma">
+                  </div>
+                  <h6 class="team-name">Michela Parma</h6>
+                  <p class="p-2"><a href="https://mittelalter.geschichte.uni-mainz.de/michela-parma/" target="_blank">Michela Parma</a> 
+                    <span class="it">è ricercatrice presso Johannes Gutenberg Universität Mainz, in Germania. Ha conseguito la laurea in Storia all'Università di Venezia e il master in Digital Humanities presso l'Università di Bologna. Lavora attualmente allo sviluppo di un'edizione digitale di un manoscritto medievale di diritto canonico con un team multidisciplinare. Inoltre, si occupa dello sviluppo web e dell'implementazione di database per integrare il panorama storico-culturale con le tecnologie informatiche.</span>
+                    <span class="en d-none">is a researcher at Johannes Gutenberg Universität Mainz, Germany. She holds a Bachelor's degree in History from the University of Venice and a Master's degree in Digital Humanities from the University of Bologna. She is currently working on the development of a digital edition of a medieval canon law manuscript with a multidisciplinary team. He is also involved in web development and database implementation to integrate the cultural-historical landscape with information technology.</span>
+                  </p>
                 </div>
-            </div>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade modal-xl" id="imageModal" tabindex="-1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="imageModalLabel">Image Modal</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                
+                <div class="col-md">
+                  <div class="text-center">
+                    <img src="img/FabioMariani.jpg"  style="border-radius: 50%; width:40%" alt="Fabio Mariani">
+                  </div>
+                      <h6 class="team-name">Fabio Mariani</h6>
+                      <p class="p-2"><a href="https://www.leuphana.de/en/institutes/ipk/members/fabio-mariani.html" target="_blank">Fabio Mariani</a> 
+                        <span class="it">è ricercatore associato e dottorando presso la Leuphana University Lüneburg (Germania) dal 2020. Dopo una laurea in Storia, ha conseguito il Master in Digital Humanities presso l'Università di Bologna. Durante i suoi studi ha collaborato a diversi progetti di ricerca presso il Digital Humanities Advanced Research Centre (DH.arc), OpenCitations e l'Istituto di Scienze e Tecnologie Cognitive (ISTC).</span>
+                        <span class="en d-none">is an associated researcher and doctoral student at Leuphana University Lüneburg (Germany) since 2020. After earning a degree in History, he obtained a Master's in Digital Humanities from the University of Bologna. During his studies, he collaborated on various research projects at the Digital Humanities Advanced Research Centre (DH.arc), OpenCitations, and the Institute of Cognitive Sciences and Technologies (ISTC).</span>
+                      </p>
+                  </div>
+                </div>
+                
               </div>
-              <div class="modal-body">
-                <img src="" id="imageModalImg" class="img-fluid">
-              </div>
-            </div>
-          </div>
         </div>
 
         <footer class="bg-light text-center py-4 border-top">
@@ -129,7 +123,6 @@
             </div>
           </div>
         </footer>
+        <script src="lang.js"></script>
     </body>
-    <script src="assets/statuti.js"></script>
-    <script src="lang.js"></script>
 </html>
