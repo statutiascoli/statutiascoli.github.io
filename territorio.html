@@ -80,14 +80,9 @@
             <span class="en">
               Explore the Statutes of Ascoli through the city and territory maps. Select districts, churches and monasteries, city gates, and castles to discover the related regulations. Use the categories to consult statutes based on specific themes, or navigate the calendar to read those connected to the city holidays.</span>
           </p>
-          <ul class="nav nav-tabs mt-5 d-flex flex-column flex-sm-row" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="regionmap-tab" data-bs-toggle="tab" data-bs-target="#regionmap-page" type="button" role="tab" aria-selected="false"><span class="it">Mappa Territorio</span><span class="en d-none">Territory Map</span></button>
-            </li>            
-          </ul>
           <!-- Contenuto delle tabs -->
-          <div class="tab-content mt-4">
-            <div class="tab-pane fade" id="regionmap-page" role="tabpanel" aria-labelledby="regionmap-tab">
+          <div class="mt-5">
+            <div id="regionmap-page">
                 <div class="row">
                     <div class="col-lg-6">
                       <div id="map_territory" class="map"></div>
@@ -135,7 +130,7 @@
     </body>
     <link rel="stylesheet" href="assets/leaflet/leaflet.css" />
     <script src="assets/leaflet/leaflet.js"></script>
-    <script src="assets/percorsi.js"></script>
+    <script src="assets/region.js"></script>
     <script src="lang.js"></script>
 </html>
 
