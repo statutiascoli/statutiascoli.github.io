@@ -20,7 +20,16 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
             zoom: 10,
             minZoom: 10,
             maxZoom: 12}).setView([42.85499758703556, 13.57538174536857], 10)
-        var regionMapimage = L.imageOverlay('assets/terr.png', regionMapBounds).addTo(regionMap);
+
+        var lowResOverlay = L.imageOverlay('assets/terrLOW.png', regionMapBounds).addTo(regionMap);
+        function loadHighResImage() {
+            var highResOverlay = L.imageOverlay('assets/terr.png', regionMapBounds);
+            highResOverlay.on('load', function() {
+                regionMap.removeLayer(lowResOverlay);
+            });
+            highResOverlay.addTo(regionMap);
+        }
+        loadHighResImage();
 
         regionMapCenter = regionMap.getBounds().getCenter();
         regionMap.setView(regionMapCenter, 10)

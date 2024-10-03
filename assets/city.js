@@ -19,7 +19,16 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
             maxBoundsViscosity: 1.0,
             minZoom: 15,
             maxZoom: 17}).setView([42.854, 13.575], 15)
-        var cityMapimage = L.imageOverlay('assets/city.png', cityMapBounds).addTo(cityMap);
+
+        var lowResOverlay = L.imageOverlay('assets/cityLOW.png', cityMapBounds).addTo(cityMap);
+        function loadHighResImage() {
+            var highResOverlay = L.imageOverlay('assets/city.png', cityMapBounds);
+            highResOverlay.on('load', function() {
+                cityMap.removeLayer(lowResOverlay);
+            });
+            highResOverlay.addTo(cityMap);
+        }
+        loadHighResImage();
 
         cityMapCenter = cityMap.getBounds().getCenter();
         cityMap.setView(cityMapCenter, 15)
