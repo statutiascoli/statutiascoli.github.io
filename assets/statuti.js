@@ -54,7 +54,7 @@ async function fillContent(contentText) {
     let elementStat = `
     <ul class="nav nav-tabs d-flex flex-column flex-sm-row" id="myTab" role="tablist">
       <li class="nav-item" id="transcriptionTab" role="presentation">
-        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#transcription" type="button" role="tab">Transcrizione</button>
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#transcription" type="button" role="tab">Trascrizione</button>
       </li>
       <li class="nav-item" id="digitalTab" role="presentation">
         <button class="nav-link" data-bs-toggle="tab" data-bs-target="#digital" type="button" role="tab">Riproduzione Digitale</button>
