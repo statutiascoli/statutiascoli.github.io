@@ -157,7 +157,7 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
                 cardTitle = document.createElement('h5');
                 cardTitle.classList.add('card-title');
                 cardLink = document.createElement('a');
-                cardLink.href = "https://ascolicomune.it/statuti.html?id=" + doc[1].join("_");
+                cardLink.href = "https://statutiascoli.it/statuti.html?id=" + doc[1].join("_");
                 cardLink.textContent =  resultElementVolume + ", " + resultElementBook + ", " + resultElementRubric
                 cardLink.target = "_blank";
                 cardTitle.appendChild(cardLink)
@@ -165,7 +165,7 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
                 cardDescription.classList.add('card-text');
                 cardDescription.textContent = headElement.textContent;
                 readLink = document.createElement('a');
-                readLink.href = "https://ascolicomune.it/statuti.html?id=" + doc[1].join("_");
+                readLink.href = "https://statutiascoli.it/statuti.html?id=" + doc[1].join("_");
                 readLink.textContent = " (Leggi Rubrica)"
                 readLink.target = "_blank";
                 cardDescription.appendChild(readLink)
