@@ -54,6 +54,26 @@ path:focus {
   outline: none;
 }
 
+
+
+.result-title{
+  color: #6c1433;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: CormorantSC-Regular;
+}
+.result-quartiere{
+  color: #6c1433;
+  font-size: 28px;
+  font-family: Cormorant-Medium;
+}
+
+.custom-tooltip .tooltip-inner {
+  font-family: Cormorant-Medium;
+  font-size: 17px;
+  color: white; 
+}
+
 .square-container {
   display: flex;
   flex-wrap: wrap;
@@ -149,6 +169,11 @@ path:focus {
   }
 }
 
+#calendar-page{
+  font-family: Cormorant-Medium;
+  font-size: 18px;
+}
+
 .calendar-header button{
   background-color: #6c1433;
   border-width: 3px;
@@ -165,6 +190,8 @@ path:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: CormorantSC-Regular;
+    color: #6c1433;
 }
 .calendar-days {
     display: grid;

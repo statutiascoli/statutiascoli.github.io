@@ -3,6 +3,16 @@
     src: url(font/Montserrat-Regular.ttf);
   }
 
+@font-face {
+  font-family: CormorantSC-Regular;
+  src: url(font/CormorantSC-Regular.ttf);
+}
+
+@font-face {
+  font-family: Cormorant-Medium;
+  src: url(font/Cormorant-Medium.ttf);
+}
+
 html{
     scroll-padding-top: 70px;
 }
@@ -16,96 +26,31 @@ body {
 #navbar{
     /*background-color: #990000;*/
     background-color: #6c1433!important;
+    font-family: CormorantSC-Regular!important;
+     font-size: 20px!important;
 }
 #navbar .nav-link{
     color: white !important;
+    font-family: CormorantSC-Regular!important;
+     font-size: 20px!important;
+}
+
+#navbar .dropdown-item{
+    font-family: Cormorant-Medium;
+    font-size: 17px;
 }
 
 
 .hp-bg {
-  background-image: url(img/download5.svg); /* Replace with your image URL */
+  background-image: url(img/scritta2.png); /* Replace with your image URL */
   background-size: cover;
   background-position: center;
   height: 400px; /* Adjust height as needed */
+  margin-left: 150px;
+  margin-right: 150px;
+  background-color: black;
   margin-top:50px;
 }
-
-
-
-/*TEST COUNTER*/
-.counter {
-  font-size: 2.5rem; /* Numero più grande */
-  font-weight: bold;
-  color: white;
-  margin-bottom: 10px; /* Distanza tra il numero e il testo */
-}
-.label {
-  font-size: 1.2rem;
-  color: rgb(215, 213, 213);
-}
-.counter-box {
-  text-align: center;
-  padding: 5px;
-  background-color: #6c1433;
-  color: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/*-----------------------------------------------------------------------------------------*/
-
-/*TEST FLIP CARDS*/
-
-.flip-card {
-  background-color: transparent;
-  height: 170px;
-   /* perspective: 1000px;Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: white;
-  color: black;
-  border-radius: 8px;
-  border: solid #6c1433 1px;
-
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: #6c1433;
-  color: white;
-  transform: rotateY(180deg);
-  border-radius: 8px;
-  border: solid #6c1433 1px;
-}
-/*--------------------------------------------------------------------------*/
 
 
 .lang-btns button{
@@ -125,79 +70,112 @@ body {
 }
 
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 20px 0;
+.figure-caption{
+  font-family: Cormorant-Medium;
+  font-size: 16px;
 }
 
 
 #myTab .nav-link{
-  color: #561028 !important;
+  color: #6c1433 !important;
   font-weight: bold;
+  font-family: CormorantSC-Regular;
+  font-size: 20px;
 }
 
 p{
   text-align: justify;
+  font-family: Cormorant-Medium;
+  font-size: 18px;
 }
 
+ul{
+  text-align: justify;
+  font-family: Cormorant-Medium;
+  font-size: 18px;
+}
 
 .hp-subtitle{
 	font-size:25px;  
   text-align: justify;
   font-style: italic;
   margin-top:30px;
-  color: #561028;
+  color: #6c1433;
+  font-family: Cormorant-Medium;
 }
 .en-rubric{
-  font-size:14px; 
+  font-size:19px; 
   text-align: justify; 
   font-style: italic; 
-  color: #561028;
+  color: #6c1433;
+  font-family: Cormorant-Medium;
 }
 
 h6{
   font-size: 20px;
   font-weight: bold;
+  font-family: Cormorant-Medium;
 }
 
 
 .cit-title{
-  font-size: 18px; 
-  color:#6c1433;
+  font-size: 20px; 
+  color: #6c1433;
   font-style: italic;
+  font-family: Cormorant-Medium;
 }
 .cit-text{
-  color:#6c1433;
+  font-size: 19px; 
+  color: #6c1433;
   font-style: italic;
+  font-family: Cormorant-Medium;
 }
 .cit-reference{
   text-align: right; 
-  color:#6c1433;
+  font-size: 18px; 
+  color: #6c1433;
+  font-family: Cormorant-Medium;
 }
 .cit-reference a{
   text-align: right; 
-  color:#6c1433;
+  color: #6c1433;
+  font-family: Cormorant-Medium;
 } 
 
 .title{
-  color: #561028;
+  color: #6c1433;
   text-align: center;
-  font-size:70px;
+  font-size:80px;
+  font-family: CormorantSC-Regular;
+}
+
+.index-section-title{
+  font-family: CormorantSC-Regular;
+  color: #6c1433;
+  font-size:50px;
 }
 
 .page-title{
-  padding-top: 45px;
-  font-size: 45px;
-  color: #561028;
-    text-align: center;
+  padding-top: 50px;
+  font-size: 50px;
+  color: #6c1433;
+  text-align: center;
+  font-family: CormorantSC-Regular;
 }
 .card-title{
-  color: #561028;
+  color: #6c1433;
   text-align: center;
-  font-size: larger;
+  font-size: 25px;
   font-weight: bold;
+  font-family: CormorantSC-Regular;
+}
+
+
+
+.index-cards a{
+  color: #6c1433;
+  font-family: Cormorant-Medium;
+   font-size: 18px;
 }
 
 .card-btn{
@@ -213,9 +191,8 @@ h6{
 }
 
 
-
 a{
-  color: #561028;
+  color: #6c1433;
 }
 
 
@@ -223,8 +200,23 @@ a{
 	text-align: center;
   margin-top:15px;
   color: #6c1433;
+  font-family: CormorantSC-Regular;
+  font-size: 25px;
   
 }
+
+
+.statuti-selettori{
+  color: #6c1433;
+  font-family: Cormorant-Medium;
+  font-size: 20px;
+}
+
+.struttura-testo{
+  font-family: Cormorant-Medium;
+  font-size: 18px;
+}
+
 
 
 
@@ -236,9 +228,17 @@ h3{
   flex: 1;
   padding: 50px;
 }
+
+.footer {
+  font-family: Cormorant-Medium;
+}
+.footer-copyright{
+  font-size: 14px;
+}
 .footer-btn{
   border-color: #6c1433!important;
   color:#6c1433!important;
+  font-size: 16px;
 }
 .footer-btn:hover{
   background-color: #6c1433!important;
@@ -278,4 +278,25 @@ h3{
   .nav-tabs .nav-link:last-child {
     margin-bottom: 3px
   }
+}
+
+#carouselExampleCaptions .carousel-inner {
+  height: 70vh;
+}
+
+#carouselExampleCaptions .carousel-item {
+  height: 100%;
+}
+
+#carouselExampleCaptions .carousel-item img {
+  height: 100%;
+  object-fit: cover; /* Ensures images cover the space properly */
+}
+
+.carousel-caption h5{
+  font-size: xx-large;
+}
+
+.carousel-caption p{
+  font-size:x-large;
 }

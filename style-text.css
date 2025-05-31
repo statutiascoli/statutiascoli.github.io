@@ -42,8 +42,17 @@ surplus{
 }
 
 .titoloRubrica{
-    font-size: 17px;
+    
     font-weight: bold;
+  color: #6c1433;
+  font-family: Cormorant-Medium;
+  font-size: 20px;
+}
+
+
+ol{
+    font-family: Cormorant-Medium;
+  font-size: 18px;
 }
 
 
