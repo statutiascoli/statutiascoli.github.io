@@ -260,7 +260,13 @@ h3{
     padding-right: 30px!important;
   }
   .title{
-    font-size:40px;
+    font-size:59px;
+  }
+  .mappaAscoli{
+    width: 100%;
+  }
+  .annunciazioneCrivelli{
+    width:70%;
   }
 
   .hp-subtitle{
