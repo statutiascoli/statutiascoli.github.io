@@ -6,6 +6,10 @@ if (window.innerWidth < 767.98) {
     itemsPerPage = 4; // Adjust for smaller screens
 }
 
+function safeText(text) {
+  return (text || '').toString().replace(/\s+/g, ' ').trim();
+}
+
 const parser = new DOMParser();
 
 fetch('assets/statuti_web.json').then(response => response.json()).then(data => {
@@ -15,7 +19,9 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
     categoriesButtons.forEach(function(button) {
         button.addEventListener('click', function() {
             var target = this.getAttribute('data-target');
-            var title = this.getAttribute('data-title');
+            setUrlParam(target);
+            var title = `<span class="it${lingua === 'en' ? ' d-none' : ''}">${this.getAttribute('data-title-it')}</span><span class="en${lingua === 'it' ? ' d-none' : ''}">${this.getAttribute('data-title-en')}</span>`;
+
             var activeButton = document.querySelector('.categories button.active');
             // Remove 'active' class from previously active button, if any
             if (activeButton) {
@@ -148,5 +154,32 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
             button.classList.add('active');
         });
     }
+
+    function setUrlParam(categoryID) {
+         const url = new URL(window.location.href);
+        if (categoryID) {
+        url.searchParams.set('id', categoryID);
+        } else {
+        url.searchParams.delete('id');
+        }
+        window.history.replaceState({}, '', url.toString());
+    }
+
+    function getCategoryIdFromUrl() {
+        try {
+            const url = new URL(window.location.href);
+            const raw = url.searchParams.get('id');
+            return safeText(raw); // trims + normalizes whitespace
+        } catch (e) {
+            return '';
+        }
+    }
+
+    const cid = getCategoryIdFromUrl();
+    if (cid){
+        const btn = document.querySelector(`.categories button[data-target="${CSS.escape(cid)}"]`);
+        if (btn) btn.click();
+    }
+
 })
 

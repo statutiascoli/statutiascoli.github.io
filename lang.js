@@ -47,4 +47,13 @@ function mostraContenuto(lingua) {
       element.classList.remove('d-none');
     });
   }
+
+  document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => {
+    const it = el.getAttribute('data-title-it') || '';
+    const en = el.getAttribute('data-title-en') || '';
+    const title = (lingua === 'en' ? en : it) || it || en;
+    el.setAttribute('data-bs-title', title);
+    const inst = bootstrap.Tooltip.getInstance(el);
+    if (inst) inst.setContent({ '.tooltip-inner': title });
+  });
 }

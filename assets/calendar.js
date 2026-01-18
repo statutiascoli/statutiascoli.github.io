@@ -8,7 +8,10 @@ if (window.innerWidth < 767.98) {
 
 const parser = new DOMParser();
 
-fetch('assets/statuti_web.json').then(response => response.json()).then(data => {
+Promise.all([
+  fetch('assets/statuti_web.json').then(r => r.json()),
+  fetch('assets/holidays.json').then(r => r.json())
+]).then(([data, calendarData]) => {
 
    function populateResults(identifier, title, tab, currentPage, results, quartiere=null){
        document.querySelector('.' + tab + ' .result-content').innerHTML = ""
@@ -136,141 +139,197 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
             button.classList.add('active');
         });
     }
+    const LABELS = {
+        months: {
+            it: ["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"],
+            en: ["January","February","March","April","May","June","July","August","September","October","November","December"]
+        },
+        days: {
+            it: ["Lu","Ma","Me","Gi","Ve","Sa","Do"],
+            en: ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
+        }
+    };
 
-   fetch('assets/holidays.json').then(response => response.json()).then(calendarData => {
-       const months = [
-            "Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno",
-            "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"
-        ];
+    // Days in each month for the year 1496
+    const daysInMonth = [
+        31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 // Leap year February
+    ];
 
-        // Days in each month for the year 1496
-        const daysInMonth = [
-            31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 // Leap year February
-        ];
+    const dayNames = ["Lu", "Ma", "Me", "Gi", "Ve", "Sa", "Do"];
 
-        const dayNames = ["Lu", "Ma", "Me", "Gi", "Ve", "Sa", "Do"];
-
-        let currentMonth = 0; // January
-        // January 1, 1496 was a Friday
-        const startDay = 4; // Friday
+    let currentMonth = 0; // January
+    // January 1, 1496 was a Friday
+    const startDay = 4; // Friday
 
 
-        function getStartDayOfMonth(month) {
-            let dayOffset = startDay;
-            for (let i = 0; i < month; i++) {
-                dayOffset += daysInMonth[i];
-            }
-            return dayOffset % 7;
+    function getStartDayOfMonth(month) {
+        let dayOffset = startDay;
+        for (let i = 0; i < month; i++) {
+            dayOffset += daysInMonth[i];
+        }
+        return dayOffset % 7;
+    }
+
+    function loadCalendar(month) {
+        const firstDay = getStartDayOfMonth(month);
+        const monthDays = daysInMonth[month];
+        const calendarDays = document.querySelector('.calendar-days');
+        calendarDays.innerHTML = '';
+
+        // Add day names
+        for (let i = 0; i < 7; i++) {
+            const dayDiv = document.createElement('div');
+            dayDiv.classList.add('calendar-head');
+
+            dayDiv.innerHTML = `
+                <span class="it ${lingua === 'en' ? 'd-none' : ''}">${LABELS.days.it[i]}</span>
+                <span class="en ${lingua === 'it' ? 'd-none' : ''}">${LABELS.days.en[i]}</span>
+            `;
+
+            calendarDays.appendChild(dayDiv);
         }
 
-        function loadCalendar(month) {
-            const firstDay = getStartDayOfMonth(month);
-            const monthDays = daysInMonth[month];
-            const calendarDays = document.querySelector('.calendar-days');
-            calendarDays.innerHTML = '';
-
-            // Add day names
-            dayNames.forEach(day => {
-                const dayDiv = document.createElement('div');
-                dayDiv.textContent = day;
-                dayDiv.classList.add('calendar-head');
-                calendarDays.appendChild(dayDiv);
-            });
-
-            // Add empty slots for days of the previous month
-            for (let i = 0; i < firstDay; i++) {
-                const emptyDiv = document.createElement('div');
-                calendarDays.appendChild(emptyDiv);
-            }
-
-            // Add days of the current month
-            for (let i = 1; i <= monthDays; i++) {
-                const dayDiv = document.createElement('div');
-                dayDiv.textContent = i;
-                if (month==3 && i==9){
-                    dayDiv.classList.add('clickable-day');
-                    dayDiv.classList.add('historical-day');
-                    dayDiv.addEventListener('click', () => {
-                        populateResultsHistorical("calendar-results", calendarCurrentPage, calendarResults)
-                    });
-                }
-                // Check if the day is clickable
-                if (calendarData.some(d => d.month === month && d.day === i)) {
-                    let dayData = calendarData.find(d => d.month === month && d.day === i);
-                    dayDiv.classList.add('clickable-day');
-                    dayDiv.setAttribute('data-target', dayData.id);
-                    dayDiv.setAttribute('data-title', dayData.title);
-                    dayDiv.addEventListener('click', () => {
-                        populateResults(dayDiv.getAttribute('data-target'), dayDiv.getAttribute('data-title'), "calendar-results", calendarCurrentPage, calendarResults)
-                    });
-                }
-
-                calendarDays.appendChild(dayDiv);
-            }
-
-            // Update month and year display
-            document.getElementById('monthYear').textContent = `${months[month]} 1496`;
+        // Add empty slots for days of the previous month
+        for (let i = 0; i < firstDay; i++) {
+            const emptyDiv = document.createElement('div');
+            calendarDays.appendChild(emptyDiv);
         }
 
-        document.getElementById('prevMonth').addEventListener('click', () => {
-            currentMonth--;
-            if (currentMonth < 0) {
-                currentMonth = 11;
+        // Add days of the current month
+        for (let i = 1; i <= monthDays; i++) {
+            const dayDiv = document.createElement('div');
+            dayDiv.textContent = i;
+            if (month==3 && i==9){
+                dayDiv.classList.add('clickable-day');
+                dayDiv.classList.add('historical-day');
+                dayDiv.addEventListener('click', () => {
+                    document.querySelectorAll('.calendar-days .clickable-day.active').forEach(el => el.classList.remove('active'));
+                    dayDiv.classList.add('active');
+                    populateResultsHistorical("calendar-results", calendarCurrentPage, calendarResults)
+                });
             }
-            loadCalendar(currentMonth);
-        });
-
-        document.getElementById('nextMonth').addEventListener('click', () => {
-            currentMonth++;
-            if (currentMonth > 11) {
-                currentMonth = 0;
+            // Check if the day is clickable
+            if (calendarData.some(d => d.month === month && d.day === i)) {
+                let dayData = calendarData.find(d => d.month === month && d.day === i);
+                dayDiv.classList.add('clickable-day');
+                dayDiv.setAttribute('data-target', dayData.id);
+                dayDiv.setAttribute('data-title', dayData.title);
+                dayDiv.addEventListener('click', () => {
+                    const target = dayDiv.getAttribute('data-target');
+                    document.querySelectorAll('.calendar-days .clickable-day.active').forEach(el => el.classList.remove('active'));
+                    dayDiv.classList.add('active');
+                    setParamInUrl('id', target);
+                    populateResults(dayDiv.getAttribute('data-target'), dayDiv.getAttribute('data-title'), "calendar-results", calendarCurrentPage, calendarResults)
+                });
             }
-            loadCalendar(currentMonth);
-        });
 
-        // Initial load
+            calendarDays.appendChild(dayDiv);
+        }
+
+        // Update month and year display
+        document.getElementById('monthYear').innerHTML = `
+            <span class="it ${lingua === 'en' ? 'd-none' : ''}">${LABELS.months.it[month]}</span>
+            <span class="en ${lingua === 'it' ? 'd-none' : ''}">${LABELS.months.en[month]}</span>
+            <span class="year"> 1496</span>
+            `;
+    }
+
+    document.getElementById('prevMonth').addEventListener('click', () => {
+        currentMonth--;
+        if (currentMonth < 0) {
+            currentMonth = 11;
+        }
         loadCalendar(currentMonth);
+    });
 
-        function populateResultsHistorical(tab, currentPage, results){
-           document.querySelector('.' + tab + ' .result-content').innerHTML = ""
-           document.querySelector('.' + tab + ' .pagination').innerHTML = ""
-           currentPage = 1
-           document.querySelector('.' + tab + ' .result-title').innerHTML = ""
-           results = []
-           document.querySelector('.' + tab + ' .result-title').innerHTML = "Stampa degli Statuti del 1496"
-           rubric_content = data["Conclusione"];
-           xmlDoc = parser.parseFromString(rubric_content, 'text/xml');
-           document.querySelector('.' + tab + ' .result-content').innerHTML = ''; // Clear previous content
-            pElement = xmlDoc.getElementsByTagName('p')[1].textContent;
-            card = document.createElement('div');
-            card.classList.add('card');
-            card.classList.add('mb-3');
-            cardHeader = document.createElement('div');
-            cardHeader.classList.add('card-header');
-            cardBody = document.createElement('div');
-            cardBody.classList.add('card-body');
-            cardTitle = document.createElement('h5');
-            cardTitle.classList.add('card-title');
-            cardLink = document.createElement('a');
-            cardLink.href = "https://statutiascoli.it/statuti.html?id=3";
-            cardLink.textContent =  "Conclusione"
-            cardLink.target = "_blank";
-            cardTitle.appendChild(cardLink)
-            cardDescription = document.createElement('p');
-            cardDescription.classList.add('card-text');
-            console.log(pElement)
-            cardDescription.textContent = "[...]" + pElement;
-            readLink = document.createElement('a');
-            readLink.href = "https://statutiascoli.it/statuti.html?id=3";
-            readLink.textContent = " (Leggi Conclusione)"
-            readLink.target = "_blank";
-            cardDescription.appendChild(readLink)
-            cardHeader.appendChild(cardTitle);
-            cardBody.appendChild(cardDescription);
-            card.appendChild(cardHeader);
-            card.appendChild(cardBody);
-            document.querySelector('.' + tab + ' .result-content').appendChild(card)
-       }
-    })
+    document.getElementById('nextMonth').addEventListener('click', () => {
+        currentMonth++;
+        if (currentMonth > 11) {
+            currentMonth = 0;
+        }
+        loadCalendar(currentMonth);
+    });
+
+    function populateResultsHistorical(tab, currentPage, results){
+        document.querySelector('.' + tab + ' .result-content').innerHTML = ""
+        document.querySelector('.' + tab + ' .pagination').innerHTML = ""
+        currentPage = 1
+        document.querySelector('.' + tab + ' .result-title').innerHTML = ""
+        results = []
+        document.querySelector('.' + tab + ' .result-title').innerHTML = "Stampa degli Statuti del 1496"
+        rubric_content = data["Conclusione"];
+        xmlDoc = parser.parseFromString(rubric_content, 'text/xml');
+        document.querySelector('.' + tab + ' .result-content').innerHTML = ''; // Clear previous content
+        pElement = xmlDoc.getElementsByTagName('p')[1].textContent;
+        card = document.createElement('div');
+        card.classList.add('card');
+        card.classList.add('mb-3');
+        cardHeader = document.createElement('div');
+        cardHeader.classList.add('card-header');
+        cardBody = document.createElement('div');
+        cardBody.classList.add('card-body');
+        cardTitle = document.createElement('h5');
+        cardTitle.classList.add('card-title');
+        cardLink = document.createElement('a');
+        cardLink.href = "https://statutiascoli.it/statuti.html?id=3";
+        cardLink.textContent =  "Conclusione"
+        cardLink.target = "_blank";
+        cardTitle.appendChild(cardLink)
+        cardDescription = document.createElement('p');
+        cardDescription.classList.add('card-text');
+        console.log(pElement)
+        cardDescription.textContent = "[...]" + pElement;
+        readLink = document.createElement('a');
+        readLink.href = "https://statutiascoli.it/statuti.html?id=3";
+        readLink.textContent = " (Leggi Conclusione)"
+        readLink.target = "_blank";
+        cardDescription.appendChild(readLink)
+        cardHeader.appendChild(cardTitle);
+        cardBody.appendChild(cardDescription);
+        card.appendChild(cardHeader);
+        card.appendChild(cardBody);
+        document.querySelector('.' + tab + ' .result-content').appendChild(card)
+    }
+
+    function getParamFromUrl(key) {
+        try {
+            const url = new URL(window.location.href);
+            return (url.searchParams.get(key) || '').toString().trim();
+        } catch (e) {
+            return '';
+        }
+    }
+
+    function setParamInUrl(key, value) {
+        try {
+            const url = new URL(window.location.href);
+            if (value) url.searchParams.set(key, value);
+            else url.searchParams.delete(key);
+            window.history.replaceState({}, '', url.toString());
+        } catch (e) {
+            // ignore
+        }
+    }
+
+    function autoOpenFromUrl() {
+        const calId = getParamFromUrl('id');
+        if (!calId) return;
+
+        // Find the day in holidays.json
+        const entry = calendarData.find(d => String(d.id) === String(calId));
+        if (!entry) return;
+
+        if (typeof entry.month === 'number') {
+            currentMonth = entry.month;
+            loadCalendar(currentMonth);
+        }
+        populateResults(String(entry.id), entry.title, "calendar-results", calendarCurrentPage, calendarResults);
+
+        const dayEl = document.querySelector(`.clickable-day[data-target="${CSS.escape(String(entry.id))}"]`);
+        if (dayEl) dayEl.classList.add('active');
+    }
+
+    loadCalendar(currentMonth);
+    autoOpenFromUrl();
 })
 

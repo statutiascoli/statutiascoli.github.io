@@ -53,21 +53,33 @@ async function fillContent(contentText) {
 
     let elementStat = `
     <ul class="nav nav-tabs d-flex flex-column flex-sm-row" id="myTab" role="tablist">
-      <li class="nav-item" id="transcriptionTab" role="presentation">
-        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#transcription" type="button" role="tab">Trascrizione</button>
-      </li>
-      <li class="nav-item" id="digitalTab" role="presentation">
-        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#digital" type="button" role="tab">Riproduzione Digitale</button>
-      </li>
-      <li class="nav-item" id="abstractTab" role="presentation">
-        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#abstract" type="button" role="tab">Sinossi</button>
-      </li>
+    <li class="nav-item" id="transcriptionTab" role="presentation">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#transcription" type="button" role="tab">
+        <span class="it ${lingua === 'en' ? 'd-none' : ''}">Trascrizione</span>
+        <span class="en ${lingua === 'it' ? 'd-none' : ''}">Transcription</span>
+        </button>
+    </li>
+    <li class="nav-item" id="digitalTab" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#digital" type="button" role="tab">
+        <span class="it ${lingua === 'en' ? 'd-none' : ''}">Riproduzione Digitale</span>
+        <span class="en ${lingua === 'it' ? 'd-none' : ''}">Digital Reproduction</span>
+        </button>
+    </li>
+    <li class="nav-item" id="abstractTab" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#abstract" type="button" role="tab">
+        <span class="it ${lingua === 'en' ? 'd-none' : ''}">Sinossi</span>
+        <span class="en ${lingua === 'it' ? 'd-none' : ''}">Summary</span>
+        </button>
+    </li>
     </ul>
+
     <div class="tab-content" id="textTb">
-      <div class="tab-pane fade show active mt-3" id="transcription" role="tabpanel"></div>
-      <div class="tab-pane fade mt-3" id="digital" role="tabpanel"></div>
-      <div class="tab-pane fade mt-3" id="abstract" role="tabpanel"></div>
-    </div>`;
+    <div class="tab-pane fade show active mt-3" id="transcription" role="tabpanel"></div>
+    <div class="tab-pane fade mt-3" id="digital" role="tabpanel"></div>
+    <div class="tab-pane fade mt-3" id="abstract" role="tabpanel"></div>
+    </div>
+    `;
+
     contentElement.innerHTML = elementStat;
     document.getElementById('transcription').appendChild(contentDiv);
     document.getElementById('digital').appendChild(facsDiv);
@@ -97,7 +109,6 @@ function getImageLabel(imgTit) {
 fetch('assets/statuti_web.json')
     .then(response => response.json())
     .then(data => {
-        var textsArray = []
 
         // Function to generate navigation based on volumes
         function generateNavigation() {

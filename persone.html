@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="it">
     <head>
-        <title>Mappa del territorio</title>
+        <title>Persone</title>
         <link rel="icon" type="image/png" href="img/logoAcerchio.png" sizes="32x32">
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no"/>
         <meta name="google" content="notranslate"/>
-        <meta name="description" content="Esplora gli Statuti di Ascoli del 1496 attraverso la mappa del territorio.">
-        <meta name="keywords" content="Mappa del territorio, Territorio Ascoli, Statuti Ascoli, Statuti Ascoli Piceno, Statuti, Ascoli, Ascoli Piceno, 1377, 1496">
+        <meta name="description" content="">
+        <meta name="keywords" content="Persone, Statuti Ascoli, Statuti Ascoli Piceno, Statuti, Ascoli, Ascoli Piceno, 1377, 1496">
         <meta name="author" content="Michela Parma, Fabio Mariani">
         <meta name="robots" content="index, follow">
 
@@ -16,10 +16,10 @@
         <script src="assets/bs5/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="assets/font-awesome/font-awesome.min.css">
         
-        
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="percorsi.css" media="screen"/>
+        
     </head>
     <body>
       <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
@@ -34,7 +34,7 @@
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page" style="font-weight: bold;"><span class="it">Percorsi</span><span class="en d-none">Paths</span></a>
+                <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="it">Percorsi</span><span class="en d-none">Paths</span></a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="città.html"><span class="it">Mappa della città</span><span class="en d-none">City map</span></a></li>
                   <li><a class="dropdown-item" href="territorio.html"><span class="it">Mappa del territorio</span><span class="en d-none">Territory map</span></a></li>
@@ -47,7 +47,7 @@
                 <a class="nav-link it-content" href="statuti.html"><span class="it">Statuti</span><span class="en d-none">Statutes</span></a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="it">Storia</span><span class="en d-none">History</span></a>
+                <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page" style="font-weight: bold;"><span class="it">Storia</span><span class="en d-none">History</span></a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="storia.html"><span class="it">Cenni storici</span><span class="en d-none">Historical background</span></a></li>
                   <li><a class="dropdown-item" href="strutturaTesto.html"><span class="it">Struttura del testo</span><span class="en d-none">Text structure</span></a></li>
@@ -73,42 +73,41 @@
     </nav>
 
         <div class="container-fluid html-page">
-          <h1 class="page-title"><span class="it">Mappa del Territorio</span><span class="en d-none">Territory Map</span></h1>
+          <h1 class="page-title"><span class="it">Persone e Figure Storiche</span><span class="en d-none">People and Historical Figures</span></h1>  
           <p>
-            <span class="it">Esplora gli Statuti di Ascoli attraverso la <b>mappa del territorio</b>: seleziona i castelli per scoprire le dispozioni in merito. <br/>
-              Prosegui la navigazione attraverso la <a href="città.html">mappa della città</a>, le <a href="categorie.html">categorie</a>, le <a href="persone.html">persone</a> e il <a href="calendario.html">calendario delle feste</a>. 
+            <span class="it">Scopri le <b>persone</b> nominate negli Statuti di Ascoli. <br/>
+              Prosegui la navigazione attraverso la <a href="città.html">mappa della citta</a>, la <a href="territorio.html">mappa del territorio</a>, le <a href="categorie.html">categorie</a href> e il <a href="calendario.html">calendario delle feste</a>.
             </span>
-            <span class="en">Explore the Statutes of Ascoli through the <b>territory map</b>: select the castles to discover the related regulations. <br/>
-              Continue browsing through the <a href="città.html">city map</a>, the <a href="categorie.html">categories</a>, the <a href="persone.html">people</a> and the <a href="calendario.html">calendar of festivities</a>.
-              </span>
-          </p>
-          <!-- Contenuto delle tabs -->
-          <div class="mt-5">
-            <div id="regionmap-page">
-                <div class="row">
-                    <div class="col-lg-6">
-                      <div id="map_territory" class="map"></div>
-                    </div>
-                    <div class="results col-lg-6 region-results">
-                        <h2 class="result-title"> </h2>
-                        <hr>
-                        <div>
-                            <div class="mt-4 result-content">
-                              <!-- Cards will be appended here -->
-                            </div>
-                            <!-- Pagination -->
-                            <nav aria-label="Page navigation">
-                              <ul class="pagination justify-content-center">
-                                <!-- Pagination items will be appended here -->
-                              </ul>
-                            </nav>
-                         </div>
-                    </div>
+            <span class="en">Explore the <b>people</b> mentioned in the Statutes of Ascoli. <br/> Continue browsing through the <a href="città.html">city map</a>, the <a href="territorio.html">territory map</a>, the <a href="categorie.html">categories</a href>, and the <a href="calendario.html">calendar of festivities</a>.</span>
+          </p>  
+
+          <div class="mt-5" id="people-page">
+            <div class="row">
+              <div class="col-md-4 col-lg-3">
+                <div class="people-list list-group" style="max-height: 70vh; overflow-y: auto;"></div>
+              </div>
+
+              <div class="results col-md-8 col-lg-9 people-results">
+                <h2 class="result-title"> </h2>
+                <p class="result-meta mb-3"></p>
+                <hr>
+                <div>
+                  <div class="mt-4 result-content">
+                    <!-- Cards will be appended here -->
+                  </div>
+                  <!-- Pagination -->
+                  <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                      <!-- Pagination items will be appended here -->
+                    </ul>
+                  </nav>
                 </div>
+              </div>
             </div>
           </div>
 
-          <div>
+
+          <div class="mt-5">
             <h3 class="page-section-title"><span class="it">Aiutaci a migliorare il progetto</span><span class="en d-none">Help us improve the project</span></h3>
             
             <p><span class="it">
@@ -142,10 +141,7 @@
             </div>
           </div>
         </footer>
+        <script src="assets/persone.js"></script>
+        <script src="lang.js"></script>
     </body>
-    <link rel="stylesheet" href="assets/leaflet/leaflet.css" />
-    <script src="assets/leaflet/leaflet.js"></script>
-    <script src="assets/region.js"></script>
-    <script src="lang.js"></script>
 </html>
-

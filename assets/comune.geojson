@@ -57,6 +57,7 @@
         { "type": "Feature", "properties": { "id": "chiesaSantErasmo", "title": "Chiesa Sancto Rasino", "type": "chiesa" }, "geometry": { "type": "Point", "coordinates": [ 13.584119603662515, 42.854056407015868 ] } },
         { "type": "Feature", "properties": { "id": "chiesaMaggiore", "title": "Chiesa Majore", "type": "chiesa" }, "geometry": { "type": "Point", "coordinates": [ 13.578707585210818, 42.853476008662696 ] } },
         { "type": "Feature", "properties": { "id": "chiesaSantaMariaVergine", "title": "Chiesa Sancta Maria de le Virgene", "type": "chiesa" }, "geometry": { "type": "Point", "coordinates": [ 13.5822716159684, 42.855378630616833 ] } },
+        { "type": "Feature", "properties": { "id": "chiesaSantaMariaSolestà", "title": "Chiesa Sancta Maria de Solistano", "type": "chiesa" }, "geometry": { "type": "Point", "coordinates": [ 13.5683, 42.8584 ] } },
 
         { "type": "Feature", "properties": { "id": "palazzoPopolo", "title": "Palazzo del Popolo", "type": "palazzo" }, "geometry": { "type": "Point", "coordinates": [ 13.575156243029131, 42.854569108340755 ] } },
         { "type": "Feature", "properties": { "id": "palazzoComune", "title": "Palazzo del Comune", "type": "palazzo" }, "geometry": { "type": "Point", "coordinates": [ 13.577323648615225, 42.85328336327548 ] } },

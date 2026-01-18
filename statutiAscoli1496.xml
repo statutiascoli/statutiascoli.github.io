@@ -213,7 +213,7 @@
                         </persName>
                     </person>
                     <person xml:id="Galeotto_Malatesta">
-                        <persName>
+                        <persName ref="https://www.wikidata.org/wiki/Q3757583">
                             <forename>Galiocto</forename>
                             <surname>de Malatesta</surname>
                         </persName>
@@ -233,7 +233,7 @@
                     </person>
                     <person xml:id="Angelo_deMartino">
                         <persName>
-                            <forename>Agnelo</forename>
+                            <forename>Angnelo</forename>
                             <surname>de Martino</surname>
                         </persName>
                     </person>
@@ -9476,8 +9476,7 @@
                                             >XV</num>. «de li quarteri et sexteri de la ciptà», che
                                         lu <placeName corresp="#sestierePonteMaggiore">sexterio de
                                             Ponte majore</placeName> se extenda et vada per fine a
-                                        la via appresso a la casa jà de Muctio de
-                                            Johanni de Bernardo et per fine a lu fosso
+                                        la via appresso a la casa jà de <persName corresp="#Muctio_deJohanni_deBernardo">Muctio de Johanni de Bernardo</persName> et per fine a lu fosso
                                         jà de la ciptadella et perfine a la <placeName
                                             corresp="#chiesaSantaMariaVergine">ecclesia de Sancta
                                             Maria de le virgene</placeName>. Et quello ch'è adjuncto
