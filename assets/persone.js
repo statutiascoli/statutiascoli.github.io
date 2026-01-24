@@ -88,7 +88,7 @@ Promise.all([
       `).join('');
 
     if (person && person.id) {
-      const needle = `#${person.id}`;
+      const identifier = person.id;
 
       for (const v_i of Object.keys(data).keys ? [] : Object.keys(data)) {
         // This block intentionally left blank; kept for older environments
@@ -108,27 +108,21 @@ Promise.all([
               for (let r_i = 0; r_i < rubrics.length; r_i++) {
                 const r_key = rubrics[r_i];
                 const rubric_content = book_content[r_key];
-
                 const rubricDoc = parser.parseFromString(rubric_content, 'text/xml');
-
                 if (r_key!="Indice"){
-                  // match <persName corresp="#ID">
-                  const hits = rubricDoc.querySelectorAll(`persName[corresp="${needle}"]`);
-                  if (hits && hits.length > 0) {
-                    results.push([rubricDoc, [v_i, b_i, r_i]]);
-                  }
+                   if(rubric_content.includes(identifier)){
+                        results.push([rubricDoc, [v_i, b_i, r_i]]);
+                    }
                 }
               }
             }
           }
         }
         else {
-          const specialDoc = parser.parseFromString(data[v_key], 'text/xml');
-
-          // match <persName corresp="#ID">
-          const hits = specialDoc.querySelectorAll(`persName[corresp="${needle}"]`);
-          if (hits && hits.length > 0) {
-            results.push([specialDoc, [v_i, null, null]]);
+          const special_content = data[v_key]
+          const specialDoc = parser.parseFromString(special_content, 'text/xml');
+          if(special_content.includes(identifier)){
+              results.push([specialDoc, [v_i, null, null]]);
           }
         }
       }

@@ -8,6 +8,7 @@ contentElement = document.getElementById('content');
 async function fillContent(contentText) {
     let imgModal = new bootstrap.Modal(document.getElementById('imageModal'))
     let contentDiv = document.createElement('div');
+    console.log(contentText)
     contentDiv.innerHTML = contentText;
     contentDiv = contentDiv.firstChild
     let facsList = contentDiv.getAttribute("facs").split(" ")

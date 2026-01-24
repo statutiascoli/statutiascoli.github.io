@@ -286,9 +286,9 @@ Promise.all([
                     }
                 }
                 else {
-                    const specialDoc = parser.parseFromString(data[v_key], 'text/xml');
-                    const hits = specialDoc.querySelectorAll(`placeName[corresp="#${identifier}"]`);
-                    if (hits && hits.length > 0) {
+                    const special_content = data[v_key]
+                    const specialDoc = parser.parseFromString(special_content, 'text/xml');
+                    if(special_content.includes(identifier)){
                         results.push([specialDoc, [v_i, null, null]]);
                     }
                 }
