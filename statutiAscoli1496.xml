@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -709,6 +710,18 @@
                         <place xml:id="Forca">
                             <placeName>Forcha</placeName>
                         </place>
+                        <place xml:id="Guallo">
+                            <placeName>Guallo</placeName>
+                        </place>
+                        <place xml:id="Larhenqua">
+                            <placeName>Larhenqua</placeName>
+                        </place>
+                        <place xml:id="Lisiano">
+                            <placeName>Lisiano</placeName>
+                        </place>
+                        <place xml:id="Rosara">
+                            <placeName>Rosara</placeName>
+                        </place>
                     </listPlace>
                 </listPlace>
                 <listEvent>
@@ -840,10 +853,8 @@
                             xml:id="festaDecapitazioneSanGiovanniBattista">
                             <label>Decollazione di San Giovanni Battista</label>
                         </event>
-                        <event ref="https://www.wikidata.org/wiki/Q149727" when="--09-01"
-                            xml:id="festaSantEgidio">
-                            <label>Sant'Egidio</label>
-                            <note>Abate in Liguadoca, <g>&#8224;</g>721</note>
+                        <event xml:id="festaSantIlio">
+                            <label>Sant'Ilio</label>
                         </event>
                         <event ref="https://www.wikidata.org/wiki/Q42827" when="--09-03"
                             xml:id="festaSanGregorio">
@@ -3394,8 +3405,9 @@
                                         evangelista</seg>; <seg corresp="#festaSantEmidio"
                                         type="festa">del beato Migno</seg> patrone, protectore et
                                     defensore de lu comune et del populo Ascolano, con lo dì
-                                    precedente et seguente; lo dì precedente la festa de la
-                                    venerabile et sancta Spina; et in li dì de la festività de li
+                                    precedente et seguente; lo dì precedente la <seg
+                                        corresp="#festaSpina" type="festa">festa de la
+                                    venerabile et sancta Spina</seg>; et in li dì de la festività de li
                                     sancti: de <seg corresp="#festaSanFrancesco" type="festa">sancto
                                         Francisco</seg>; de <seg corresp="#festaSanDomenico"
                                         type="festa">sancto Dominico</seg>; de <seg
@@ -6793,7 +6805,7 @@
                                         value="2">doi</num> cande, ciascuno delinquente sia punito
                                     in la <num value="4">quarta</num> parte più de le dicte pene. Et
                                     se la bactaglia se facesse con le prete overo con arme in
-                                        Guallo, in Larhenqua overo in <placeName
+                                    <placeName corresp="#Guallo">Guallo</placeName>, in <placeName corresp="#Larhenqua">Larhenqua</placeName> overo in <placeName
                                         corresp="#campoParignano">Parignano</placeName> overo in ne
                                     lu <placeName corresp="#fiumeCastellano">fiume de
                                         Castellano</placeName>, <placeName corresp="#fiumeTronto">de
@@ -10580,8 +10592,7 @@
                                         Appognano</placeName>. Et lu deputato a lu dicto castello
                                     non possa loco stare, salvo per <measure quantity="2"
                                         type="tempo" unit="mesi"><num value="2">doi</num>
-                                        misi</measure> tanto; li quali finiti, allora lu <persName
-                                        corresp="#podestà">potestate</persName> mande l'altro de li
+                                        misi</measure> tanto; li quali finiti, allora lu potestate mande l'altro de li
                                     judici de le cause civile, lu quale mandato non possa loco
                                     stare, salvo per altri <measure quantity="2" type="tempo"
                                         unit="mesi"><num value="2">doi</num> misi</measure> tanto.
@@ -11955,8 +11966,7 @@
                                     ciptà che sollicitamente exercite lu loro et de ciascuno de ipsi
                                     officio, administrando justicia ad omne uno che lo adomanda et
                                     secundo la forma de li statuti et ordinamenti de la dicta ciptà.
-                                    Et farrà continua residentia in el dicto <placeName
-                                        corresp="#palazzoComune">palazo</placeName> et de ipso non
+                                    Et farrà continua residentia in el dicto palazo et de ipso non
                                     absentarà, salvo ne li casi permissi da lu statuto; et non
                                     revelarà li facti secreti del comune. Et generalemente farrà et
                                     observarà tucte singole cose, le quale serranno tenute et
@@ -12785,10 +12795,10 @@
                                     debia assignare, intervenendoce lu basio de la pace, ne lu
                                     generale consiglio de li doicento et de lu stato de la Ecclesia,
                                     ad uno ad uno et separatamente. Et prima a lu capitanio de lu
-                                    quartero de Sancto Emidio; a lu secundo a lu capitanio de Sancta
-                                    Maria inter vigna; tertio a lu capitanio de lu quartero de
-                                    Sancto Venanzo; quarto a lu capitanio de lu quartero de Sancto
-                                    Jacobo. Et che al tempo de lu rumore siano tenuti et debia li
+                                    <placeName ref="#quartiereSantEmidio">quartero de Sancto Emidio</placeName>; a lu secundo a lu capitanio de <placeName corresp="#quartiereSantaMariaInterVigna">Sancta
+                                        Maria inter vigna</placeName>; tertio a lu capitanio de lu <placeName corresp="#quartiereSanVenanzio">quartero de
+                                            Sancto Venanzo</placeName>; quarto a lu capitanio de lu <placeName corresp="#quartiereSanGiacomo">quartero de Sancto
+                                                Jacobo</placeName>. Et che al tempo de lu rumore siano tenuti et debia li
                                     fideli de ciaschuno quarteri trare a lu soi capitanio de dì et
                                     de nocte, armati overo non armati, como de ipsi capitanii serrà
                                     voluntà. Et siano tenuti ipsi capitanei trare ad certi lochi ne
@@ -17346,7 +17356,7 @@
                                         Gregorio</seg>; la <seg corresp="#festaSanSilvestro"
                                         type="festa">festa de sancto Silvestro</seg>; la <seg
                                         corresp="#festaSanBenedetto" type="festa">festa del sancto
-                                            abate Benedicto</seg>; la <seg corresp="#festaSantEgidio">festa
+                                            abate Benedicto</seg>; la <seg corresp="#festaSantIlio">festa
                                                 de sancto Ilio</seg>; la <seg corresp="#festaSantOnofrio"
                                         type="festa">festa de sancto Honofrio</seg>; la <seg
                                         corresp="#festaSanPancrazio" type="festa">festa de sancto
@@ -17614,7 +17624,7 @@
                                     la faccia scotere per lu comune contra qualunqua che lu
                                     despreçasse overo non obedesse. Et in de la celebratione d'epsa
                                     festa per lu comune se observe quisto ordine, cioè: che per lu
-                                        <persName corresp="#camerlengo">carmorlingho</persName> de
+                                        carmorlingho de
                                     lu comune se compre a le spese de lu dicto comune <num value="3"
                                         >tre</num> palj, de li quali <num value="2">doi</num> sia de
                                     seta et <num value="1">uno</num> de ipsi doi se offerisca a la
@@ -17633,7 +17643,7 @@
                                     poi l'hora de la nona, ma nante vespero, se faccia tenere
                                     publicamente nante la dicta ecclesia et in ne lu arrengho
                                     publico de la dicta ciptà, accioché qualunqua a cavallo vorrà
-                                    correre da lu piano de porta Romana per la strada dericta
+                                    correre da lu piano de <placeName corresp="#sestierePortaRomana">porta Romana</placeName> per la strada dericta
                                     perfine ad <placeName corresp="#chiesaSantErasmo">Sancto
                                         Rasino</placeName> et de là perfine a la fonte de lu
                                     arrengho dove se tenga lu pallio, recevuto primamente lu signo
@@ -21449,7 +21459,7 @@
                                     li dicti molenari et ciascuno de ipsi, quante fiate serrando
                                     recerchati da li famigli del <placeName
                                         corresp="#monasteroSantAntonio">monasterio de Sancto
-                                        Antonio</placeName> de Paregnano, siano tenuti et debiano
+                                        Antonio</placeName> de <placeName corresp="#campoParignano">Paregnano</placeName>, siano tenuti et debiano
                                     macinare lo biado per lu dicto monasterio et rendere la farina a
                                     quelle sença alcuno preço overo graveça, ad pena de <num
                                         value="20">vinti</num> soldi per ciascuno che contrafacesse
@@ -22338,9 +22348,9 @@
                                         ponte Majore</placeName>, se mene in la ciptà per conducto
                                     perfine in ne lu <placeName corresp="#sestiereCapoChiaviche"
                                         >Capo de le chiaviche</placeName>, como perfine ad mo è
-                                    usato, a le spese de li homini de li sexteri de lu Capo et de lu
-                                    Pede de le chiaviche, se piacerà a la università de ipsi
-                                    sexteri. Et che li homini de Lisiano siano tenuti ad tucte loro
+                                    usato, a le spese de li homini de li <placeName corresp="#sestiereCapoChiaviche">sexteri de lu Capo</placeName> et de lu
+                                    <placeName corresp="#sestierePediChiaviche">Pede de le chiaviche</placeName>, se piacerà a la università de ipsi
+                                    sexteri. Et che li homini de <placeName corresp="#Lisiano">Lisiano</placeName> siano tenuti ad tucte loro
                                     spese retinere tucta et integra l'acqua de Capo de rivo che vene
                                     a la dicta fonte de ponte Majore perfine a lu rivo dove l'acqua
                                     corre per canale. Et che la dicta acqua così se mene coperta per
@@ -23105,7 +23115,7 @@
                                         Habraam</placeName> et dal <placeName corresp="#fiumeTronto"
                                         >fiumo de Trunto</placeName> et da lu <placeName
                                         corresp="#fiumeFluvione">fiumo del Fluione</placeName> oltra
-                                    et da lu puzo de Rosara in sopra et salvo lu castello proprio de
+                                    et da lu puzo de <placeName corresp="#Rosara">Rosara</placeName> in sopra et salvo lu castello proprio de
                                     alcuna spetiale persona che fosse dal fiume de Trunto oltra
                                     verso de <placeName corresp="#Forca">Forcha</placeName> tanto. A
                                     li quali et a ciascuno fumante habitante infra le seinalde et
