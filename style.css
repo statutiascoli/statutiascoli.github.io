@@ -877,132 +877,6 @@ figure img {
   }
 }
 
-/* Responsive */
-@media (max-width: 991px) {
-  .hero {
-    min-height: auto;
-    padding: 8.5rem 0 4rem;
-  }
-
-  #navbar .nav-link::after {
-    display: none;
-  }
-
-  .institution-grid,
-  .team-grid,
-  .download-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .paths-nav-card {
-    position: static;
-    margin-bottom: 1.4rem;
-  }
-
-  .map {
-    min-height: 460px;
-    height: 58vh;
-  }
-
-  .square-container.categories {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  /*.project-nav-card {
-    position: static;
-    margin-bottom: 1.4rem;
-  }*/
-  .download-grid {
-    grid-template-columns: 1fr;
-  }
-  .statuti-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .statuti-nav-card {
-    position: static;
-    max-height: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .title,
-  .page-title,
-  .subpage-title {
-    font-size: 3.8rem;
-  }
-
-  .section {
-    padding: 3.4rem 0;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .sa-btn {
-    justify-content: center;
-  }
-
-  p,
-  ul,
-  ol {
-    font-size: 1.06rem;
-  }
-
-  .card-body,
-  .content-panel,
-  .intro-panel {
-    padding: 1.35rem;
-  }
-
-  .team-photo-wrap img,
-  .team-card img {
-    width: min(190px, 70%);
-  }
-
-  .mappaAscoli,
-  .annunciazioneCrivelli {
-    width: 100% !important;
-  }
-
-
-  .paths-followup-grid,
-  .square-container.categories {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .map {
-    min-height: 360px;
-    height: 52vh;
-  }
-
-  .results {
-    min-height: 300px;
-  }
-
-  .statuti-reader-heading {
-    flex-direction: column;
-  }
-
-  .statuti-reader-actions {
-    justify-content: flex-start;
-  }
-
-  .statuti-book-info {
-    flex-direction: column;
-  }
-
-  .random-rubric-actions {
-    align-items: stretch;
-  }
-
-  .random-rubric-btn,
-  .random-rubric-link {
-    width: 100%;
-    justify-content: center;
-  }
-}
 
 
 .content-shell {
@@ -1381,11 +1255,7 @@ figure img {
   border-radius: 12px;
 }
 
-@media (max-width: 1199px) {
-  .paths-followup-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
+
 
 
 
@@ -1730,3 +1600,171 @@ figure img {
   transform: translateY(8px);
 }
 
+
+
+
+
+
+@media (max-width: 1199px) {
+  .paths-followup-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .hero {
+    min-height: auto;
+    padding: 8.5rem 0 4rem;
+  }
+
+  #navbar .nav-link::after {
+    display: none;
+  }
+
+  .institution-grid,
+  .team-grid,
+  .download-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .paths-nav-card {
+    position: static;
+    margin-bottom: 1.4rem;
+  }
+
+  .map {
+    min-height: 460px;
+    height: 58vh;
+  }
+
+  .square-container.categories {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  /*.project-nav-card {
+    position: static;
+    margin-bottom: 1.4rem;
+  }*/
+  .download-grid {
+    grid-template-columns: 1fr;
+  }
+  .statuti-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .statuti-nav-card {
+    position: static;
+    max-height: none;
+    overflow-y: visible;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .title,
+  .page-title,
+  .subpage-title {
+    font-size: 3rem;
+  }
+
+  .section {
+    padding: 3.4rem 0;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sa-btn {
+    justify-content: center;
+  }
+
+  p,
+  ul,
+  ol {
+    font-size: 1.06rem;
+  }
+
+  .card-body,
+  .content-panel,
+  .intro-panel {
+    padding: 1.35rem;
+  }
+
+  .team-photo-wrap img,
+  .team-card img {
+    width: min(190px, 70%);
+  }
+
+  .mappaAscoli,
+  .annunciazioneCrivelli {
+    width: 100% !important;
+  }
+
+
+  .paths-followup-grid,
+  .square-container.categories {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .map {
+    min-height: 360px;
+    height: 52vh;
+  }
+
+  .results {
+    min-height: 300px;
+  }
+
+  .statuti-reader-heading {
+    flex-direction: column;
+  }
+
+  .statuti-reader-actions {
+    justify-content: flex-start;
+  }
+
+  .statuti-book-info {
+    flex-direction: column;
+  }
+
+  .random-rubric-actions {
+    align-items: stretch;
+  }
+
+  .random-rubric-btn,
+  .random-rubric-link {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .calendar-days {
+    gap: 0.35rem;
+    padding: 0.55rem;
+  }
+
+  .calendar-days > * {
+    min-width: 0;
+    min-height: 34px;
+    padding: 0;
+    font-size: 0.85rem;
+  }
+
+  .calendar-header {
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  .calendar-header .btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .calendar-header h3 {
+    font-size: 1.35rem;
+    text-align: center;
+  }
+}
