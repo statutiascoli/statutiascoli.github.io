@@ -1,149 +1,516 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <title>Statuti</title>
-        <link rel="icon" type="image/png" href="img/logoAcerchio.png" sizes="32x32">
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no"/>
-        <meta name="google" content="notranslate"/>
-        <meta name="description" content="Leggi gli Statuti del Comune e gli Statuti del Popolo di Ascoli.">
-        <meta name="keywords" content="Statuti Ascoli, Statuti del Comune, Statuti del Popolo, Statuti Ascoli Piceno, Statuti, Ascoli, Ascoli Piceno, 1377, 1496">
-        <meta name="author" content="Michela Parma, Fabio Mariani">
-        <meta name="robots" content="index, follow">
+<head>
+  <title>Statuti</title>
+  <link rel="icon" type="image/png" href="img/logoAcerchio.png" sizes="32x32">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+  <meta name="google" content="notranslate"/>
+  <meta name="description" content="Leggi gli Statuti del Comune e gli Statuti del Popolo di Ascoli.">
+  <meta name="keywords" content="Statuti Ascoli, Statuti del Comune, Statuti del Popolo, Statuti Ascoli Piceno, Statuti, Ascoli, Ascoli Piceno, 1377, 1496">
+  <meta name="author" content="Michela Parma, Fabio Mariani">
+  <meta name="robots" content="index, follow">
 
-        <!--Bootstrap-->
-        <link href="assets/bs5/bootstrap.min.css" rel="stylesheet">
-        <script src="assets/bs5/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="assets/font-awesome/font-awesome.min.css">
+  <link href="assets/bs5/bootstrap.min.css" rel="stylesheet">
+  <script src="assets/bs5/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 
-        <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="statuti.css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="style-text.css" media="screen"/>
-    </head>
-    <body>
-      <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="img/logoAcerchio.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="it">Percorsi</span><span class="en d-none">Paths</span></a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="città.html"><span class="it">Mappa della città</span><span class="en d-none">City map</span></a></li>
-                  <li><a class="dropdown-item" href="territorio.html"><span class="it">Mappa del territorio</span><span class="en d-none">Territory map</span></a></li>
-                  <li><a class="dropdown-item" href="categorie.html"><span class="it">Categorie</span><span class="en d-none">Categories</span></a></li>
-                  <li><a class="dropdown-item" href="persone.html"><span class="it">Persone</span><span class="en d-none">People</span></a></li>
-                  <li><a class="dropdown-item" href="calendario.html"><span class="it">Calendario delle feste</span><span class="en d-none">Calendar of festivities</span></a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link it-content" aria-current="page" href="statuti.html" style="font-weight: bold;"><span class="it">Statuti</span><span class="en d-none">Statutes</span></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="it">Storia</span><span class="en d-none">History</span></a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="storia.html"><span class="it">Cenni storici</span><span class="en d-none">Historical background</span></a></li>
-                  <li><a class="dropdown-item" href="strutturaTesto.html"><span class="it">Struttura del testo</span><span class="en d-none">Text structure</span></a></li>
-                  <li><a class="dropdown-item" href="strutturaIstituzionale.html"><span class="it">Struttura istituzionale</span><span class="en d-none">Institutional Structure</span></a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="it">Progetto</span><span class="en d-none">Project</span></a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="motivazioni.html"><span class="it">Motivazioni di ricerca</span><span class="en d-none">Research statement</span></a></li>
-                  <li><a class="dropdown-item" href="documentazione.html"><span class="it">Documentazione</span><span class="en d-none">Documentation</span></a></li>
-                  <li><a class="dropdown-item" href="team.html">Team</a></li>
-                  <li><a class="dropdown-item" href="credits.html"><span class="it">Crediti e Note Legali</span><span class="en d-none">Credits and Legal Notes</span></a></li>
-                </ul>
-              </li>
-            </ul>
-            <div class="lang-btns">
-              <button type="button" id="it-btn" class="btn btn-outline-primary mx-2 btn-sm">IT</button>
-              <button type="button" id="en-btn" class="btn btn-outline-primary btn-sm">EN</button>
-            </div>      
-          </div>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="statuti.css">
+  <link rel="stylesheet" href="style-text.css">
+</head>
+
+<body>
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navbar">
+  <div class="container-fluid px-lg-4">
+    <a class="navbar-brand" href="index.html"><img src="img/logoAcerchio.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="it">Percorsi</span><span class="en d-none">Paths</span></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="città.html"><span class="it">Mappa della città</span><span class="en d-none">City map</span></a></li>
+            <li><a class="dropdown-item" href="territorio.html"><span class="it">Mappa del territorio</span><span class="en d-none">Territory map</span></a></li>
+            <li><a class="dropdown-item" href="categorie.html"><span class="it">Categorie</span><span class="en d-none">Categories</span></a></li>
+            <li><a class="dropdown-item" href="persone.html"><span class="it">Persone</span><span class="en d-none">People</span></a></li>
+            <li><a class="dropdown-item" href="calendario.html"><span class="it">Calendario delle feste</span><span class="en d-none">Calendar</span></a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link it-content active" aria-current="page" href="statuti.html" style="font-weight: bold;"><span class="it">Statuti</span><span class="en d-none">Statutes</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="it">Storia</span><span class="en d-none">History</span></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="storia.html"><span class="it">Cenni storici</span><span class="en d-none">Historical background</span></a></li>
+            <li><a class="dropdown-item" href="strutturaTesto.html"><span class="it">Struttura del testo</span><span class="en d-none">Text structure</span></a></li>
+            <li><a class="dropdown-item" href="strutturaIstituzionale.html"><span class="it">Struttura istituzionale</span><span class="en d-none">Institutional Structure</span></a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="it">Progetto</span><span class="en d-none">Project</span></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="motivazioni.html"><span class="it">Motivazioni di ricerca</span><span class="en d-none">Research statement</span></a></li>
+            <li><a class="dropdown-item" href="documentazione.html"><span class="it">Documentazione</span><span class="en d-none">Documentation</span></a></li>
+            <li><a class="dropdown-item" href="team.html">Team</a></li>
+            <li><a class="dropdown-item" href="credits.html"><span class="it">Crediti e Note Legali</span><span class="en d-none">Credits and Legal Notes</span></a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="lang-btns">
+        <button type="button" id="it-btn" class="btn btn-outline-primary mx-2 btn-sm">IT</button>
+        <button type="button" id="en-btn" class="btn btn-outline-primary btn-sm">EN</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="subpage-hero statuti-hero">
+  <div class="container px-4">
+    <div class="subpage-hero-content reveal">
+      <span class="eyebrow" style="color:#f4d18a;"><span class="it">Testo digitale</span><span class="en d-none">Digital text</span></span>
+      <h1 class="subpage-title"><span class="it">Statuti di Ascoli</span><span class="en d-none">Statutes of Ascoli</span></h1>
+      <p class="subpage-subtitle"><span class="it">Consulta gli Statuti attraverso una navigazione gerarchica per libri e rubriche.</span><span class="en d-none">Browse the Statutes through a hierarchical navigation by books and rubrics.</span></p>
+    </div>
+  </div>
+</header>
+
+<main class="subpage-main statuti-main">
+  <div class="container-fluid px-4 px-xl-5">
+    <div class="statuti-layout">
+      <aside class="statuti-nav-card reveal" aria-label="Indice degli Statuti">
+        <div class="statuti-nav-header">
+          <span class="eyebrow"><span class="it">Indice</span><span class="en d-none">Index</span></span>
+          <p><span class="it">Apri un volume, scegli un libro e seleziona una rubrica.</span><span class="en d-none">Open a volume, choose a book and select a rubric.</span></p>
         </div>
-    </nav>
-        <div class="container-fluid html-page">
-           <h1 class="page-title"><span class="it">Statuti di Ascoli</span><span class="en d-none">Statutes of Ascoli</span></h1>
-            <div class="row mb-3 statuti-selettori">
-                <div class="col-md-4">
-                    <label for="volume-select" class="form-label"><span class="it">Seleziona Statuti:</span><span class="en d-none">Select Statutes:</span></label>
-                    <select id="volume-select" class="form-select"></select>
-                </div>
-                <div class="col-md-4">
-                    <label for="book-select" class="form-label"><span class="it">Seleziona Libro:</span><span class="en d-none">Select Book:</span></label>
-                    <select id="book-select" class="form-select"></select>
-                </div>
-                <div class="col-md-4">
-                    <label for="rubric-select" class="form-label"><span class="it">Seleziona Rubrica:</span><span class="en d-none">Select Rubric:</span></label>
-                    <select id="rubric-select" class="form-select"></select>
-                </div>
-            </div>
+        <div id="statuti-tree" class="statuti-tree" aria-live="polite"></div>
+      </aside>
 
-            <div class="card testo-statuti">
-                <div class="card-body">
-                    <div id="content"></div>
-                </div>
-            </div>
-
+      <section class="statuti-reader-card reveal">
+        <div class="statuti-reader-header">
+          <div class="statuti-reader-heading">
             <div>
-              <h3 class="page-section-title"><span class="it">Aiutaci a migliorare il progetto</span><span class="en d-none">Help us improve the project</span></h3>
-              
-              <p><span class="it">
-                Hai trovato errori o refusi nelle trascrizioni? 
-                Possiedi informazioni su persone o luoghi citati negli Statuti? Contattaci: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a> 
-              </span>
-              <span class="en d-none">
-                Have you found errors or typos in the transcriptions?
-                Do you have information about people or places mentioned in the Statutes? Contact us: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span>
-              </p>
+              <!--<h2 id="statuti-current-title"><span class="it">Seleziona una sezione</span><span class="en d-none">Select a section</span></h2>-->
+              <h2 id="statuti-current-path" class="statuti-current-path"></h2>
             </div>
-        </div>
 
-        <!-- Modal -->
-        <div class="modal fade modal-xl" id="imageModal" tabindex="-1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="imageModalLabel">Image Modal</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                <img src="" id="imageModalImg" class="img-fluid">
-              </div>
+            <div class="statuti-reader-actions" aria-label="Azioni di condivisione">
+              <button type="button" class="statuti-action-btn" id="copy-link-btn">
+                <i class="fa-solid fa-link" aria-hidden="true"></i>
+                <span class="it">Copia link</span>
+                <span class="en d-none">Copy link</span>
+              </button>
+              <button type="button" class="statuti-action-btn statuti-action-btn-primary" id="copy-citation-btn">
+                <i class="fa-solid fa-quote-right" aria-hidden="true"></i>
+                <span class="it">Cita</span>
+                <span class="en d-none">Cite</span>
+              </button>
             </div>
           </div>
         </div>
 
-        <footer class="footer bg-light text-center py-4 border-top">
-          <div class="container">
-            <div>
-              <a href="download.html" class="footer-btn btn btn-outline-danger btn-sm">Download</a>
-            </div>
-
-            <div class="mt-3">
-              <span class="it" style="font-size: 14px;">Contattaci: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span>
-              <span class="en" style="font-size: 14px;">Contact us: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span>
-            </div>
-
-            <div class="mt-3 footer-copyright">
-              <span class="mb-3 mb-md-0 text-muted"><span class="it">&copy; 2025 Statuti Ascoli. Tutti i diritti riservati.</span><span class="en d-none">&copy; 2025 Statuti Ascoli. All rights reserved.</span></span>
-              <br/>
-              <span class="mb-3 mb-md-0 text-muted"><span class="it">&copy; Immagini della Biblioteca del Senato "Giovanni Spadolini". Tutti i diritti riservati.</span><span class="en d-none">&copy; Images of the Biblioteca del Senato "Giovanni Spadolini". All rights reserved.</span></span>
-              <br/>
-              <span class="mb-3 mb-md-0 text-muted"><a href="sitemap.xml" target="_blank">XML Sitemap</a></span>
-            </div>
+        <aside id="statuti-book-info" class="statuti-book-info d-none" aria-live="polite">
+          <!--<div class="statuti-book-info-icon">
+            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+          </div>-->
+          <div class="statuti-book-info-body">
+            <span class="statuti-book-info-kicker"><span class="it">Contenuto del <span id="statuti-book-info-title"></span></span><span class="en d-none">Book contents</span></span>
+            <!--<h3 id="statuti-book-info-title"></h3>-->
+            <span id="statuti-book-info-text"></span>
           </div>
-        </footer>
-    </body>
-    <script src="assets/statuti.js"></script>
-    <script src="lang.js"></script>
+        </aside>
+
+        <div class="statuti-selettori visually-hidden" aria-hidden="true">
+          <label for="volume-select"><span class="it">Seleziona Statuti:</span><span class="en d-none">Select Statutes:</span></label>
+          <select id="volume-select"></select>
+          <label for="book-select"><span class="it">Seleziona Libro:</span><span class="en d-none">Select Book:</span></label>
+          <select id="book-select"></select>
+          <label for="rubric-select"><span class="it">Seleziona Rubrica:</span><span class="en d-none">Select Rubric:</span></label>
+          <select id="rubric-select"></select>
+        </div>
+
+        <div class="testo-statuti">
+          <div id="content"></div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<section class="section pt-0">
+  <div class="container px-4">
+    <div class="help-panel reveal">
+      <h3 class="page-section-title mt-0 pt-0"><span class="it">Aiutaci a migliorare il progetto</span><span class="en d-none">Help us improve the project</span></h3>
+      <p><span class="it">Hai trovato errori o refusi nelle trascrizioni? Possiedi informazioni su persone o luoghi citati negli Statuti? <br>Contattaci: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span><span class="en d-none">Have you found errors or typos in the transcriptions? Do you have information about people or places mentioned in the Statutes? <br>Contact us: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span></p>
+    </div>
+  </div>
+</section>
+
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1080">
+  <div id="statuti-copy-toast" class="toast statuti-copy-toast" role="status" aria-live="polite" aria-atomic="true">
+    <div class="toast-body">
+      <i class="fa-solid fa-check" aria-hidden="true"></i>
+      <span class="it">Copiato negli appunti.</span>
+      <span class="en d-none">Copied to clipboard.</span>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modal-xl" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">Image Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="" id="imageModalImg" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer text-center py-4 border-top">
+  <div class="container">
+    <div><a href="download.html" class="footer-btn btn btn-outline-danger btn-sm">Download</a></div>
+    <div class="mt-3">
+      <span class="it" style="font-size: 14px;">Contattaci: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span>
+      <span class="en d-none" style="font-size: 14px;">Contact us: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span>
+    </div>
+    <div class="mt-3 footer-copyright">
+      <span class="mb-3 mb-md-0 text-muted"><span class="it">&copy; 2025 Statuti Ascoli. Tutti i diritti riservati.</span><span class="en d-none">&copy; 2025 Statuti Ascoli. All rights reserved.</span></span>
+      <br/>
+      <span class="mb-3 mb-md-0 text-muted"><span class="it">&copy; Immagini della Biblioteca del Senato "Giovanni Spadolini". Tutti i diritti riservati.</span><span class="en d-none">&copy; Images of the Biblioteca del Senato "Giovanni Spadolini". All rights reserved.</span></span>
+      <br/>
+      <span class="mb-3 mb-md-0 text-muted"><a href="sitemap.xml" target="_blank">XML Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/statuti.js"></script>
+<script>
+(function () {
+  const treeElement = document.getElementById('statuti-tree');
+  const titleElement = document.getElementById('statuti-current-title');
+  const pathElement = document.getElementById('statuti-current-path');
+  const copyLinkButton = document.getElementById('copy-link-btn');
+  const copyCitationButton = document.getElementById('copy-citation-btn');
+  const copyToastElement = document.getElementById('statuti-copy-toast');
+  const bookInfoElement = document.getElementById('statuti-book-info');
+  const bookInfoTitleElement = document.getElementById('statuti-book-info-title');
+  const bookInfoTextElement = document.getElementById('statuti-book-info-text');
+  const volumeSelect = document.getElementById('volume-select');
+  const bookSelect = document.getElementById('book-select');
+  const rubricSelect = document.getElementById('rubric-select');
+
+  const isEnglish = () => document.documentElement.lang === 'en' || document.body.classList.contains('lang-en');
+
+  const bookDescriptions = {
+    "1_1": {
+      it: "Norme di diritto privato, tra cui contratti di famiglia, dote, testamenti, eredità e successioni.",
+      en: "Rules of private law, including family contracts, dowries, wills, inheritance and succession."
+    },
+    "1_2": {
+      it: "Procedura delle cause civili, detto Libro de li judici.",
+      en: "Procedure of civil cases, known as Libro de li judici."
+    },
+    "1_3": {
+      it: "Diritto penale: procedura penale, esecuzione delle pene e lista dei reati.",
+      en: "Criminal law: penal procedure, execution of sentences and list of offences."
+    },
+    "1_4": {
+      it: "Norme di diritto pubblico e privato e relative all'Università.",
+      en: "Regulations on public and private law and on the University."
+    },
+    "2_1": {
+      it: "Norme di carattere costituzionale e amministrativo: elezione, doveri e compiti degli Anziani e degli altri offici e magistrature.",
+      en: "Constitutional and administrative regulations: election, duties and tasks of the Elders and other offices and magistracies."
+    },
+    "2_2": {
+      it: "Norme sulle feste della città, sulla guardia e difesa di mura e porte cittadine e sulla difesa dei castelli soggetti ad Ascoli.",
+      en: "Regulations on city festivals, the guard and defence of city walls and gates, and the defence of castles subject to Ascoli."
+    },
+    "2_3": {
+      it: "Norme di varia natura: decoro urbano, urbanistica e abusi edilizi, difesa della proprietà privata e delle zone coltivate, commercio.",
+      en: "Regulations of various kinds: urban decorum, urban planning and building abuses, defence of private property and cultivated areas, commerce."
+    },
+    "2_4": {
+      it: "Doveri del Podestà e del Capitano, politiche per i castelli, aiuti ed esenzioni, trasferimenti ad Ascoli e pacificatori di sestiere.",
+      en: "Duties of the Podestà and Captain, policies for castles, aid and exemptions, relocation to Ascoli and neighbourhood peacemakers."
+    },
+    "2_5": {
+      it: "Norme sulle attività lavorative e disposizioni finali sugli Statuti: modifiche, cancellazioni, conservazione e validità.",
+      en: "Rules on work activities and final provisions on the Statutes: amendments, cancellations, preservation and validity."
+    }
+  };
+
+  function getBookDescription(volume, book) {
+    if (volume === null || volume === undefined || book === null || book === undefined || book === '') return null;
+    return bookDescriptions[`${volume}_${book}`] || null;
+  }
+
+  function updateBookInfoUi() {
+    if (!bookInfoElement || !bookInfoTitleElement || !bookInfoTextElement) return;
+
+    const current = getCurrentPath();
+    const info = getBookDescription(current.volume, current.book);
+    const bookLabel = getOptionLabel(bookSelect);
+
+    if (!info || !bookLabel) {
+      bookInfoElement.classList.add('d-none');
+      bookInfoTitleElement.textContent = '';
+      bookInfoTextElement.innerHTML = '';
+      return;
+    }
+
+    bookInfoTitleElement.textContent = bookLabel;
+    bookInfoTextElement.innerHTML = `
+      <span class="it">${info.it}</span>
+      <span class="en d-none">${info.en}</span>
+    `;
+    bookInfoElement.classList.remove('d-none');
+
+    if (typeof window.updateLanguage === 'function') {
+      window.updateLanguage();
+    } else {
+      const englishVisible = document.querySelector('.en:not(.d-none)') !== null;
+      bookInfoTextElement.querySelectorAll('.it').forEach(el => el.classList.toggle('d-none', englishVisible));
+      bookInfoTextElement.querySelectorAll('.en').forEach(el => el.classList.toggle('d-none', !englishVisible));
+    }
+  }
+
+  function getOptionLabel(select) {
+    if (!select || select.selectedIndex < 0 || !select.options[select.selectedIndex]) return '';
+    return select.options[select.selectedIndex].textContent.trim();
+  }
+
+  function getCanonicalUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id') || '0';
+    const url = new URL(window.location.href);
+    url.search = '';
+    url.searchParams.set('id', id);
+    return url.toString();
+  }
+
+  function getCurrentCitation() {
+    const volume = getOptionLabel(volumeSelect);
+    const book = getOptionLabel(bookSelect);
+    const rubric = getOptionLabel(rubricSelect);
+    const parts = [volume, book, rubric].filter(Boolean);
+    const url = getCanonicalUrl();
+    return {
+      text: parts.length ? `${parts.join(', ')}, ${url}` : url,
+      link: url,
+      path: parts.join(' · ')
+    };
+  }
+
+  async function copyTextToClipboard(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+      return;
+    }
+
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.setAttribute('readonly', '');
+    textarea.style.position = 'fixed';
+    textarea.style.left = '-9999px';
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+  }
+
+  function showCopyToast() {
+    if (!copyToastElement || typeof bootstrap === 'undefined') return;
+    const toast = bootstrap.Toast.getOrCreateInstance(copyToastElement, { delay: 1800 });
+    toast.show();
+  }
+
+  function updateCitationUi() {
+    const citation = getCurrentCitation();
+    if (pathElement) pathElement.textContent = citation.path;
+    updateBookInfoUi();
+  }
+
+
+  function waitForOptions(select, callback, attempts = 0) {
+    if (select && select.options && select.options.length > 0) {
+      callback();
+      return;
+    }
+    if (attempts > 80) return;
+    window.setTimeout(() => waitForOptions(select, callback, attempts + 1), 50);
+  }
+
+  function getCurrentPath() {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id') || '0';
+    const parts = id.split('_').filter(Boolean);
+    return {
+      volume: parts[0] || '0',
+      book: parts[1] || null,
+      rubric: parts[2] || null
+    };
+  }
+
+  function setReaderTitle(label) {
+    if (!titleElement) return;
+    titleElement.textContent = label || (isEnglish() ? 'Select a section' : 'Seleziona una sezione');
+  }
+
+  function activateTreeButton(path, label) {
+    document.querySelectorAll('.statuti-tree-button').forEach(btn => btn.classList.remove('active'));
+    const selector = `.statuti-tree-button[data-path="${CSS.escape(path)}"]`;
+    const current = document.querySelector(selector);
+    if (current) {
+      current.classList.add('active');
+      setReaderTitle(label || current.textContent.trim());
+      updateCitationUi();
+      current.closestAll?.('details').forEach(d => d.open = true);
+      let parent = current.parentElement;
+      while (parent) {
+        if (parent.tagName && parent.tagName.toLowerCase() === 'details') parent.open = true;
+        parent = parent.parentElement;
+      }
+    }
+  }
+
+  function dispatchChange(select) {
+    select.dispatchEvent(new Event('change', { bubbles: true }));
+  }
+
+  function selectStatute(volume, book, rubric, label) {
+    waitForOptions(volumeSelect, () => {
+      volumeSelect.value = String(volume);
+      dispatchChange(volumeSelect);
+
+      if (book === null || book === undefined) {
+        activateTreeButton(String(volume), label);
+        return;
+      }
+
+      waitForOptions(bookSelect, () => {
+        bookSelect.value = String(book);
+        dispatchChange(bookSelect);
+
+        if (rubric === null || rubric === undefined) {
+          activateTreeButton(`${volume}_${book}`, label);
+          return;
+        }
+
+        waitForOptions(rubricSelect, () => {
+          rubricSelect.value = String(rubric);
+          dispatchChange(rubricSelect);
+          activateTreeButton(`${volume}_${book}_${rubric}`, label);
+        });
+      });
+    });
+  }
+
+  function button(label, path, volume, book, rubric, depth) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = `statuti-tree-button statuti-depth-${depth}`;
+    btn.dataset.path = path;
+    btn.innerHTML = `<span>${label}</span>`;
+    btn.addEventListener('click', () => selectStatute(volume, book, rubric, label));
+    return btn;
+  }
+
+  function makeDetails(label, depth) {
+    const details = document.createElement('details');
+    details.className = `statuti-tree-group statuti-depth-${depth}`;
+    const summary = document.createElement('summary');
+    summary.innerHTML = `<span>${label}</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i>`;
+    details.appendChild(summary);
+    return details;
+  }
+
+  function buildTree(data) {
+    const volumes = Object.keys(data);
+    const current = getCurrentPath();
+    treeElement.innerHTML = '';
+
+    volumes.forEach((volumeLabel, volumeIndex) => {
+      const volumeValue = data[volumeLabel];
+      const volumePath = String(volumeIndex);
+
+      if (typeof volumeValue === 'string') {
+        const item = button(volumeLabel, volumePath, volumeIndex, null, null, 0);
+        treeElement.appendChild(item);
+        return;
+      }
+
+      const volumeDetails = makeDetails(volumeLabel, 0);
+      if (String(volumeIndex) === current.volume) volumeDetails.open = true;
+
+      Object.keys(volumeValue).forEach((bookLabel, bookIndex) => {
+        const bookValue = volumeValue[bookLabel];
+        const bookPath = `${volumeIndex}_${bookIndex}`;
+
+        if (typeof bookValue === 'string') {
+          volumeDetails.appendChild(button(bookLabel, bookPath, volumeIndex, bookIndex, null, 1));
+          return;
+        }
+
+        const bookDetails = makeDetails(bookLabel, 1);
+        if (String(volumeIndex) === current.volume && String(bookIndex) === current.book) bookDetails.open = true;
+
+        Object.keys(bookValue).forEach((rubricLabel, rubricIndex) => {
+          const rubricPath = `${volumeIndex}_${bookIndex}_${rubricIndex}`;
+          bookDetails.appendChild(button(rubricLabel, rubricPath, volumeIndex, bookIndex, rubricIndex, 2));
+        });
+
+        volumeDetails.appendChild(bookDetails);
+      });
+
+      treeElement.appendChild(volumeDetails);
+    });
+
+    const activePath = [current.volume, current.book, current.rubric].filter(v => v !== null && v !== undefined).join('_');
+    window.setTimeout(() => activateTreeButton(activePath), 250);
+  }
+
+
+  if (copyLinkButton) {
+    copyLinkButton.addEventListener('click', async () => {
+      await copyTextToClipboard(getCurrentCitation().link);
+      showCopyToast();
+    });
+  }
+
+  if (copyCitationButton) {
+    copyCitationButton.addEventListener('click', async () => {
+      await copyTextToClipboard(getCurrentCitation().text);
+      showCopyToast();
+    });
+  }
+
+  [volumeSelect, bookSelect, rubricSelect].forEach(select => {
+    if (select) select.addEventListener('change', () => window.setTimeout(updateCitationUi, 50));
+  });
+
+  ['it-btn', 'en-btn'].forEach(id => {
+    const languageButton = document.getElementById(id);
+    if (languageButton) languageButton.addEventListener('click', () => window.setTimeout(updateBookInfoUi, 80));
+  });
+
+  fetch('assets/statuti_web.json')
+    .then(response => response.json())
+    .then(buildTree)
+    .catch(() => {
+      treeElement.innerHTML = '<p class="statuti-tree-error">Indice non disponibile.</p>';
+    });
+})();
+</script>
+<script src="lang.js"></script>
+</body>
 </html>

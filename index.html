@@ -1,223 +1,558 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <title>Statuti Ascoli</title>
-        <link rel="icon" type="image/png" href="img/logoAcerchio.png" sizes="32x32">
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no"/>
-        <meta name="google" content="notranslate"/>
-        <meta name="description" content="Statuti Ascoli è un'iniziativa dedicata alla digitalizzazione degli Statuti di Ascoli del 1496.">
-        <meta name="keywords" content="Statuti Ascoli, Statuti Ascoli Piceno, Statuti, Ascoli, Ascoli Piceno, 1377, 1496, Michela Parma, Fabio Mariani, Parma, Mariani">
-        <meta name="author" content="Michela Parma, Fabio Mariani">
-        <meta name="robots" content="index, follow">
+<head>
+  <title>Statuti Ascoli</title>
+  <link rel="icon" type="image/png" href="img/logoAcerchio.png" sizes="32x32">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+  <meta name="google" content="notranslate"/>
+  <meta name="description" content="Statuti Ascoli è un'iniziativa dedicata alla digitalizzazione degli Statuti di Ascoli del 1496.">
+  <meta name="keywords" content="Statuti Ascoli, Statuti Ascoli Piceno, Statuti, Ascoli, Ascoli Piceno, 1377, 1496, Michela Parma, Fabio Mariani, Parma, Mariani">
+  <meta name="author" content="Michela Parma, Fabio Mariani">
+  <meta name="robots" content="index, follow">
 
-        <!--Bootstrap-->
-        <link href="assets/bs5/bootstrap.min.css" rel="stylesheet">
-        <script src="assets/bs5/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="assets/font-awesome/font-awesome.min.css">
+  <!-- Bootstrap -->
+  <link href="assets/bs5/bootstrap.min.css" rel="stylesheet">
+  <script src="assets/bs5/bootstrap.bundle.min.js"></script>
 
-        <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-    </head>
-    <body>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navbar">
+    <div class="container-fluid px-lg-4">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logoAcerchio.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" style="font-weight: bold;">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="it">Percorsi</span><span class="en d-none">Paths</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="città.html"><span class="it">Mappa della città</span><span class="en d-none">City map</span></a></li>
+              <li><a class="dropdown-item" href="territorio.html"><span class="it">Mappa del territorio</span><span class="en d-none">Territory map</span></a></li>
+              <li><a class="dropdown-item" href="categorie.html"><span class="it">Categorie</span><span class="en d-none">Categories</span></a></li>
+              <li><a class="dropdown-item" href="persone.html"><span class="it">Persone</span><span class="en d-none">People</span></a></li>
+              <li><a class="dropdown-item" href="calendario.html"><span class="it">Calendario delle feste</span><span class="en d-none">Calendar</span></a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link it-content" href="statuti.html"><span class="it">Statuti</span><span class="en d-none">Statutes</span></a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="it">Storia</span><span class="en d-none">History</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="storia.html"><span class="it">Cenni storici</span><span class="en d-none">Historical background</span></a></li>
+              <li><a class="dropdown-item" href="strutturaTesto.html"><span class="it">Struttura del testo</span><span class="en d-none">Text structure</span></a></li>
+              <li><a class="dropdown-item" href="strutturaIstituzionale.html"><span class="it">Struttura istituzionale</span><span class="en d-none">Institutional Structure</span></a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="it">Progetto</span><span class="en d-none">Project</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="motivazioni.html"><span class="it">Motivazioni di ricerca</span><span class="en d-none">Research statement</span></a></li>
+              <li><a class="dropdown-item" href="documentazione.html"><span class="it">Documentazione</span><span class="en d-none">Documentation</span></a></li>
+              <li><a class="dropdown-item" href="team.html">Team</a></li>
+              <li><a class="dropdown-item" href="credits.html"><span class="it">Crediti e Note Legali</span><span class="en d-none">Credits and Legal Notes</span></a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="lang-btns">
+          <button type="button" id="it-btn" class="btn btn-outline-primary mx-2 btn-sm">IT</button>
+          <button type="button" id="en-btn" class="btn btn-outline-primary btn-sm">EN</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container px-4">
+        <div class="hero-content reveal">
+          <h1 class="title">Statuti Ascoli</h1>
+
+          <p class="hp-subtitle">
+            "Quisti sono li statuti de lu magnifico comuno et populo de la ciptà d’Ascoli [...]"
+          </p>
+
+          <span class="en d-none en-rubric">
+            "Here are the statutes of the magnificent municipality and people of the city of Ascoli [...]"
+          </span>
+
+          <!--<p class="cit-reference">
+            <span class="it">(<a href="https://statutiascoli.it/statuti.html?id=0" target="_blank">Introduzione</a>)</span>
+            <span class="en d-none">(<a href="https://statutiascoli.it/statuti.html?id=0" target="_blank">Introduction</a>)</span>
+          </p>-->
+
+          <!--<div class="hero-actions">
+            <a href="statuti.html" class="sa-btn sa-btn-primary">
+              <i class="fa-solid fa-book-open"></i>
+              <span class="it">Esplora gli Statuti</span>
+              <span class="en d-none">Explore the Statutes</span>
+            </a>
+
+            <a href="#esplora" class="sa-btn sa-btn-secondary">
+              <i class="fa-solid fa-compass"></i>
+              <span class="it">Scopri i percorsi</span>
+              <span class="en d-none">Discover the paths</span>
+            </a>
+          </div>-->
+        </div>
+      </div>
+
       
-      <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
-          <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src="img/logoAcerchio.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html" style="font-weight: bold;">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="it">Percorsi</span><span class="en d-none">Paths</span></a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="città.html"><span class="it">Mappa della città</span><span class="en d-none">City map</span></a></li>
-                    <li><a class="dropdown-item" href="territorio.html"><span class="it">Mappa del territorio</span><span class="en d-none">Territory map</span></a></li>
-                    <li><a class="dropdown-item" href="categorie.html"><span class="it">Categorie</span><span class="en d-none">Categories</span></a></li>
-                    <li><a class="dropdown-item" href="persone.html"><span class="it">Persone</span><span class="en d-none">People</span></a></li>
-                    <li><a class="dropdown-item" href="calendario.html"><span class="it">Calendario delle feste</span><span class="en d-none">Calendar</span></a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link it-content" href="statuti.html"><span class="it">Statuti</span><span class="en d-none">Statutes</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="it">Storia</span><span class="en d-none">History</span></a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="storia.html"><span class="it">Cenni storici</span><span class="en d-none">Historical background</span></a></li>
-                    <li><a class="dropdown-item" href="strutturaTesto.html"><span class="it">Struttura del testo</span><span class="en d-none">Text structure</span></a></li>
-                    <li><a class="dropdown-item" href="strutturaIstituzionale.html"><span class="it">Struttura istituzionale</span><span class="en d-none">Institutional Structure</span></a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="it">Progetto</span><span class="en d-none">Project</span></a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="motivazioni.html"><span class="it">Motivazioni di ricerca</span><span class="en d-none">Research statement</span></a></li>
-                    <li><a class="dropdown-item" href="documentazione.html"><span class="it">Documentazione</span><span class="en d-none">Documentation</span></a></li>
-                    <li><a class="dropdown-item" href="team.html">Team</a></li>
-                    <li><a class="dropdown-item" href="credits.html"><span class="it">Crediti e Note Legali</span><span class="en d-none">Credits and Legal Notes</span></a></li>
-                  </ul>
-                </li>
-              </ul>
-              <div class="lang-btns">
-                <button type="button" id="it-btn" class="btn btn-outline-primary mx-2 btn-sm">IT</button>
-                <button type="button" id="en-btn" class="btn btn-outline-primary btn-sm">EN</button>
-              </div>      
+    </header>
+
+    <!-- INTRO -->
+    <!--<section class="section">
+      <div class="container px-4">
+        <div class="row g-4 align-items-stretch">
+          
+            <div class="intro-panel reveal h-100">
+              <span class="eyebrow">
+                <span class="it">Un patrimonio da esplorare</span>
+                <span class="en d-none">A heritage to explore</span>
+              </span>
+
+              <div class="it mt-4">
+                <p>Benvenuti in <b>Statuti Ascoli</b>, l’iniziativa che rende accessibile online il prezioso corpus normativo della città di Ascoli Piceno risalente al XIV e XV secolo. Attraverso la digitalizzazione degli Statuti, vogliamo aprire una finestra sul passato, offrendo uno strumento unico per scoprire le istituzioni, le consuetudini e le dinamiche sociali ed economiche del tempo.</p>
+
+                <p>Gli Statuti di Ascoli sono suddivisi in due volumi, <b>Statuti del Comune</b> e <b>Statuti del Popolo</b>, e sono stati originariamente redatti in latino nel 1377. Nel 1496 sono stati tradotti in lingua volgare e pubblicati a stampa. Essi regolano ogni aspetto della vita cittadina: dai diritti e doveri dei cittadini alle procedure giudiziarie, dal commercio all'amministrazione pubblica. Un patrimonio storico ora alla portata di tutti.</p>
+              </div>
+
+              <div class="en d-none mt-4">
+                <p>Welcome to <b>Statuti Ascoli</b>, the initiative that makes available online the precious body of Ascoli Piceno's laws from the 14th and 15th centuries. By digitising the Statutes, we aim to open a window on the past, offering a unique tool for discovering the institutions, customs and social and economic dynamics of the period.</p>
+
+                <p>The Ascoli Statutes are divided into two volumes, <b>Statuti del Comune</b> and <b>Statuti del Popolo</b>, and were originally written in Latin in 1377. They were translated into the vernacular and published in print in 1496. They regulate every aspect of city life: from the rights and duties of citizens to legal procedures, from trade to public administration. A historical heritage that is now within everyone's reach.</p>
+              </div>
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </section>-->
+
+    <!-- PROJECT DESCRIPTION + DISCOVERY -->
+    <section class="section">
+      <div class="container px-4">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-7">
+           <!--<span class="eyebrow">
+              <span class="it">Il progetto</span>
+              <span class="en d-none">The project</span>
+            </span>-->
+
+            <h2 class="page-section-title mt-3">
+              <span class="it">Gli Statuti di Ascoli, oggi</span>
+              <span class="en d-none">The Statutes of Ascoli, today</span>
+            </h2>
+
+            <div class="text-column mt-4">
+
+              <p>
+                <span class="it">
+                  Benvenuti in <b>Statuti Ascoli</b>, il progetto che rende accessibile online il prezioso corpus normativo della città di Ascoli Piceno risalente al XIV e XV secolo.
+                </span>
+                <span class="en d-none">Welcome to <b>Statuti Ascoli</b>, a project dedicated to making the valuable legal corpus of the city of Ascoli Piceno from the 14th and 15th centuries accessible online.</span>
+              </p>
+              <p>
+                <span class="it">
+                  Gli Statuti, suddivisi nei volumi <b>Statuti del Comune</b> e <b>Statuti del Popolo</b>, furono originariamente redatti in latino nel 1377 e tradotti in volgare nell'edizione a stampa nel 1496.</span>
+                  <span class="en d-none">The Statutes, divided into the volumes <b>Statuti del Comune</b> and <b>Statuti del Popolo</b>, were originally written in Latin in 1377 and later translated into the vernacular for the printed edition of 1496.</span>
+              </p>
+              <p>
+                  <span class="it">Attraverso la <b>digitalizzazione del testo</b>, vogliamo valorizzare e diffondere un patrimonio storico di straordinaria importanza, offrendo uno strumento per esplorare le istituzioni, le consuetudini e la vita sociale ed economica dell’<b>Ascoli medievale</b>.</span>
+                <span class="en d-none">Through the <b>digitization of the text</b>, we aim to preserve and share a historical heritage of extraordinary importance, offering a tool to explore the institutions, customs, and social and economic life of <b>medieval Ascoli</b>.</span>
+              </p>
             </div>
           </div>
-      </nav>
 
-        <div class="container-fluid p-0">
-          
-          <!--<div class="hp-bg d-flex flex-column justify-content-center align-items-center text-center"></div>-->
+          <div class="col-lg-5">
+            <aside class="discovery-card reveal">
+              <span class="eyebrow">
+                <span class="it">Inizia da qui</span>
+                <span class="en d-none">Start here</span>
+              </span>
 
-          <div class="px-5" style="margin-top:100px;">
-            <h1 class="title" style="display: flex; justify-content: center;">Statuti Ascoli</h1>
-            <p class="hp-subtitle" style="display: flex; justify-content: center; ">"Quisti sono li statuti de lu magnifico comuno et populo de la ciptà d’Ascoli [...]" </p>
-            <span class="en d-none en-rubric" style="display: flex; justify-content: center; ">
-              "Here are the statutes of the magnificent municipality and people of the city of Ascoli [...]"</span>
-            <p class="cit-reference"><span class="it">(<a href="https://statutiascoli.it/statuti.html?id=0" target="_blank">Introduzione</a>)</span><span class="en d-none">(<a href="https://statutiascoli.it/statuti.html?id=0" target="_blank">Introduction</a>)</span></p>
-          </div>
+              <div class="discovery-list">
+                <a class="discovery-link" href="città.html">
+                  <span><span class="it">Attraversa la città</span><span class="en d-none">Move through the city</span></span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
 
-          <div class="mx-5 mt-5">
-            <span class="it">
-              <p>Benvenuti in <b>Statuti Ascoli</b>, l’iniziativa che rende accessibile online il prezioso corpus normativo della città di Ascoli Piceno risalente al XIV e XV secolo. Attraverso la digitalizzazione degli Statuti, vogliamo aprire una finestra sul passato, offrendo uno strumento unico per scoprire le istituzioni, le consuetudini e le dinamiche sociali ed economiche del tempo.</p>
-              <p>Gli Statuti di Ascoli sono suddivisi in due volumi, <b>Statuti del Comune</b> e <b>Statuti del Popolo</b>, e sono stati originariamente redatti in latino nel 1377. Nel 1496 sono stati tradotti in lingua volgare e pubblicati a stampa. Essi regolano ogni aspetto della vita cittadina: dai diritti e doveri dei cittadini alle procedure giudiziarie, dal commercio all'amministrazione pubblica. Un patrimonio storico ora alla portata di tutti.</p>
-            </span>
-            <span class="en d-none">
-              <p>Welcome to <b>Statuti Ascoli</b>, the initiative that makes available online the precious body of Ascoli Piceno's laws from the 14th and 15th centuries. By digitising the Statutes, we aim to open a window on the past, offering a unique tool for discovering the institutions, customs and social and economic dynamics of the period.</p>
-              <p>The Ascoli Statutes are divided into two volumes, <b>Statuti del Comune</b> and <b>Statuti del Popolo</b>, and were originally written in Latin in 1377. They were translated into the vernacular and published in print in 1496. They regulate every aspect of city life: from the rights and duties of citizens to legal procedures, from trade to public administration. A historical heritage that is now within everyone's reach.</p>
-            </span>
-          </div>
+                <a class="discovery-link" href="persone.html">
+                  <span><span class="it">Incontra le persone citate</span><span class="en d-none">Meet the people mentioned</span></span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
 
-          <div class="container-fluid p-5" style="background-color: rgb(243, 243, 243);">
-            <h6 class="cit-title">Che li homini de la ciptà d'Ascoli siano uniti et amaturi de lu pacifico populare stato.</h6>
-            <p  class="cit-text">AD questo, ad ciò la pace sia perpetualmente in la ciptà d'Ascoli, ordenemo che tucti homini, maschi et femene, de la ciptà d'Ascoli et del soi districto, de qualuncha conditione se fosse, siano et esser debiano perpetualmente amaturi del pacifico et bono stato de la ciptà predicta, del soi contade et destrecto, con puro animo et dericto core et siano tenuti et debiano amare la perpetuale pace et pacifico stato de la ciptà [...]</p>
+                <a class="discovery-link" href="categorie.html">
+                  <span><span class="it">Scopri le norme per tema</span><span class="en d-none">Discover laws by theme</span></span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
 
-            <span class="en d-none en-rubric"><b>That the people of the city of Ascoli be united and lovers of the peaceful commonwealth.</b><br/>
-              For this reason, in order that peace may be perpetually in the city of Ascoli, we order that all people, male and female, of the city of Ascoli and its district, of whatever condition they may be, are and should perpetually be lovers of the peaceful and good state of the aforesaid city, its country and district, with pure and upright heart, and that they may be expected and must love the perpetual peace and peaceful state of the city [...].
-            </span>
-            <p class="cit-reference"><span class="it">(<a href="https://statutiascoli.it/statuti.html?id=1_3_21" target="_blank">Statuti del Comune, Libro 3, Rubrica 20</a>)</span><span class="en d-none">(<a href="https://statutiascoli.it/statuti.html?id=1_3_21" target="_blank">Statuti del Comune, Book 3, Rubric 20</a>)</span></p>
-          </div>
-            
-          <div class="mx-5 mt-4">
-            <h2 class="index-section-title"><span class="it">Esplora la Piattaforma</span><span class="en d-none">Explore the Platform</span></h2>
-            <p><span class="it">
-              Per valorizzare e rendere fruibile a un pubblico più ampio il patrimonio culturale della città di Ascoli Piceno, abbiamo digitalizzato il testo utilizzando la versione degli <b>Statuti di Ascoli stampata nel 1496</b> e conservata presso la <b>Biblioteca del Senato</b> a Roma.
-              Questa piattaforma offre un'esperienza di navigazione intuitiva grazie a percorsi mirati all'indetificazione di specifiche regolamentazioni. Per utenti esperti è possibile navigare il testo integrale e consultare tutte le rubriche degli Statuti. Ti invitiamo a leggere il contesto storico-culturale che ha portato alla stesura del corpus normativo, e a scoprire di più sul nostro progetto di ricerca.
-              
-            </span>
-            <span class="en d-none">In order to enhance the cultural heritage of the city of Ascoli Piceno and make it accessible to a wider audience, we digitised the text using the version of the <b>Statutes of Ascoli printed in 1496</b> and preserved in the <b>Biblioteca del Senato</b> in Rome.
-              This platform offers an intuitive browsing experience thanks to targeted paths to the identification of specific regulations. Expert users can navigate the full text and consult all the rubrics of the Statutes. We invite you to read about the historical and cultural context that led to the drafting of the Statutes and to find out more about our research project.</span></p>
-          </div>
+                <a class="discovery-link" href="calendario.html">
+                  <span><span class="it">Sfoglia il calendario</span><span class="en d-none">Browse the calendar</span></span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
 
-          <div class="container pt-4 ">
-            <!--<div class="row row-cols-1 g-4 index-cards">-->
-              <div class="row row-cols-1 g-4 index-cards">
-                <div class="col-md-3">
-                  <div class="card text-center h-100">
-                    <div class="card-body">
-                      <h5 class="card-title"><span class="it">Percorsi</span><span class="en d-none">Paths</span></h5>
-                      <p class="card-text"><span class="it">Esplora gli Statuti attraverso rubriche selezionate.</span><span class="en d-none">Explore the Statutes through selected rubrics.</span></p>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="città.html" class="card-link"><span class="it">Mappa della città</span><span class="en d-none">City map</span></a></li>
-                        <li class="list-group-item"><a href="territorio.html" class="card-link"><span class="it">Mappa del territorio</span><span class="en d-none">Territory map</span></a></li>
-                        <li class="list-group-item"><a href="categorie.html" class="card-link"><span class="it">Categorie</span><span class="en d-none">Categories</span></a></li>
-                        <li class="list-group-item"><a href="persone.html" class="card-link"><span class="it">Persone</span><span class="en d-none">People</span></a></li>
-                        <li class="list-group-item"><a href="calendario.html" class="card-link"><span class="it">Calendario delle feste</span><span class="en d-none">Calendar of festivities</span></a></li>
-                      </ul>                     
-                    </div>
-                  </div>
-                </div>
-        
-                <div class="col-md-3">
-                  <div class="card text-center h-100">
-                    <div class="card-body">
-                      <h5 class="card-title"><span class="it">Statuti</span><span class="en d-none">Statutes</span></h5>
-                      <p class="card-text"><span class="it">Naviga il testo integrale degli Statuti: seleziona i libri e le rubriche, consulta le immagini del documento originale e comprendi il testo tramite la sinossi.</span><span class="en d-none">Browse the full text of the Statutes: select books and rubrics, consult images of the original document and understand the text with the synopsis.</span></p>
-                      <a href="statuti.html" class="card-link"><span class="it">Esplora gli statuti</span><span class="en d-none">Explore the Statutes</span></a>
-                    </div>
-                  </div>
-                </div>
-        
-                <div class="col-md-3">
-                  <div class="card text-center h-100">
-                    <div class="card-body">
-                      <h5 class="card-title"><span class="it">Storia</span><span class="en d-none">History</span></h5>
-                      <p class="card-text"><span class="it">Leggi il contesto storico-culturale e istituzionale di Ascoli del XV secolo e approfondisci il testo degli Statuti.</span><span class="en d-none">Read the historical, cultural and institutional context of Ascoli in the 15th century and delve into the text of the Statutes.</span></p>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="storia.html" class="card-link"><span class="it">Cenni storici</span><span class="en d-none">Historical background</span></a></li>
-                        <li class="list-group-item"><a href="strutturaTesto.html" class="card-link"><span class="it">Struttura del testo</span><span class="en d-none">Text structure</span></a></li>
-                        <li class="list-group-item"><a href="strutturaIstituzionale.html" class="card-link"><span class="it">Struttura istituzionale</span><span class="en d-none">Institutional structure</span></a></li>
-                      </ul>     
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-3">
-                  <div class="card text-center h-100">
-                    <div class="card-body">
-                      <h5 class="card-title"><span class="it">Progetto</span><span class="en d-none">Project</span></h5>
-                      <p class="card-text"><span class="it">Scopri di più sul progetto <i>Statuti Ascoli</i>.</span><span class="en d-none">Find out more about the <i>Statuti Ascoli</i> project.</span></p>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="motivazioni.html" class="card-link"><span class="it">Motivazioni di ricerca</span><span class="en d-none">Research statement</span></a></li>
-                        <li class="list-group-item"><a href="documentazione.html" class="card-link"><span class="it">Documentazione</span><span class="en d-none">Documentation</span></a></li>
-                        <li class="list-group-item"><a href="team.html" class="card-link"><span class="it">Team</span><span class="en d-none">Team</span></a></li>
-                        <li class="list-group-item"><a href="credits.html" class="card-link"><span class="it">Credits</span><span class="en d-none">Credits</span></a></li>
-                      </ul>     
-                    </div>
-                  </div>
-                </div>   
+                <a class="discovery-link" href="statuti.html">
+                  <span><span class="it">Consulta il testo integrale</span><span class="en d-none">Read the complete text</span></span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
               </div>
-          </div>
-        
-          <div class="mx-5 mb-5">
-            <h3 class="page-section-title"><span class="it">Aiutaci a migliorare il progetto</span><span class="en d-none">Help us improve the project</span></h3>
-            
-
-            <p><span class="it">
-              Hai trovato errori o refusi nelle trascrizioni? 
-              Possiedi informazioni su persone o luoghi citati negli Statuti? Contattaci: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a> 
-            </span>
-            <span class="en d-none">
-              Have you found errors or typos in the transcriptions?
-              Do you have information about people or places mentioned in the Statutes? Contact us: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span>
-            </p>
+            </aside>
           </div>
         </div>
+      </div>
+    </section>
 
+    <!-- RANDOM RUBRIC -->
+    <section class="quote-band random-rubric-section">
+      <div class="container px-4">
+        <div class="quote-card reveal" id="random-rubric-card">
+          <span class="random-rubric-eyebrow">
+            <span class="it">Dagli Statuti</span>
+            <span class="en d-none">From the Statutes</span>
+          </span>
 
-      
+          <h2 class="cit-title" id="random-rubric-title">
+            Che li homini de la ciptà d'Ascoli siano uniti et amaturi de lu pacifico populare stato.
+          </h2>
 
-            
-          
-          
+          <p class="cit-text" id="random-rubric-text">
+            AD questo, ad ciò la pace sia perpetualmente in la ciptà d'Ascoli, ordenemo che tucti homini, maschi et femene, de la ciptà d'Ascoli et del soi districto, de qualuncha conditione se fosse, siano et esser debiano perpetualmente amaturi del pacifico et bono stato de la ciptà predicta [...]
+          </p>
+<p class="cit-reference">
+            <span class="it">
+              (<a id="random-rubric-link-it" href="statuti.html?id=1_3_21" target="_blank">Statuti del Comune, Libro 3, Rubrica 20</a>)
+            </span>
+            <span class="en d-none">
+              (<a id="random-rubric-link-en" href="statuti.html?id=1_3_21" target="_blank">Statuti del Comune, Book 3, Rubric 20</a>)
+            </span>
+          </p>
 
-        <footer class="footer bg-light text-center py-4 border-top">
-          <div class="container">
-            <div>
-              <a href="download.html" class="footer-btn btn btn-outline-danger btn-sm">Download</a>
-            </div>
+          <div class="random-rubric-actions">
+            <a class="random-rubric-link" id="random-rubric-read-link" href="statuti.html?id=1_3_21">
+              <span class="it">Leggi la rubrica completa</span>
+              <span class="en d-none">Read the full rubric</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
 
-            <div class="mt-3">
-              <span class="it" style="font-size: 14px;">Contattaci: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span>
-              <span class="en" style="font-size: 14px;">Contact us: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span>
-            </div>
+            <button class="random-rubric-btn" id="random-rubric-btn" type="button">
+              <i class="fa-solid fa-shuffle" aria-hidden="true"></i>
+              <span class="it">Scopri un'altra rubrica</span>
+              <span class="en d-none">Discover another rubric</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="mt-3 footer-copyright">
-              <span class="mb-3 mb-md-0 text-muted"><span class="it">&copy; 2025 Statuti Ascoli. Tutti i diritti riservati.</span><span class="en d-none">&copy; 2025 Statuti Ascoli. All rights reserved.</span></span>
-              <br/>
-              <span class="mb-3 mb-md-0 text-muted"><span class="it">&copy; Immagini della Biblioteca del Senato "Giovanni Spadolini". Tutti i diritti riservati.</span><span class="en d-none">&copy; Images of the Biblioteca del Senato "Giovanni Spadolini". All rights reserved.</span></span>
-              <br/>
-              <span class="mb-3 mb-md-0 text-muted"><a href="sitemap.xml" target="_blank">XML Sitemap</a></span>
+    <!-- EXPLORE -->
+    <section class="section explore-section" id="esplora">
+      <div class="container px-4">
+        <div class="row mb-4 align-items-end">
+          <div class="col-lg-7">
+            <span class="eyebrow">
+              <span class="it">Esplora la piattaforma</span>
+              <span class="en d-none">Explore the platform</span>
+            </span>
+
+            <!--<h2 class="index-section-title mt-3">
+              <span class="it">Scegli un percorso</span>
+              <span class="en d-none">Choose a path</span>
+            </h2>-->
+          </div>
+
+          <!--<div class="col-lg-5">
+            <p class="mb-0">
+              <span class="it">Naviga il testo integrale, scopri persone e luoghi, oppure entra negli Statuti attraverso mappe, categorie e rubriche selezionate.</span>
+              <span class="en d-none">Browse the full text, discover people and places, or enter the Statutes through maps, categories and selected rubrics.</span>
+            </p>
+          </div>-->
+        </div>
+
+        <div class="row row-cols-1 g-4 index-cards">
+          <div class="col-md-3">
+            <div class="card text-center h-100 reveal">
+              <div class="card-body">
+                <div class="card-icon"><i class="fa-solid fa-route"></i></div>
+                <h5 class="card-title"><span class="it">Percorsi</span><span class="en d-none">Paths</span></h5>
+                <p class="card-text"><span class="it">Esplora gli Statuti attraverso rubriche selezionate.</span><span class="en d-none">Explore the Statutes through selected rubrics.</span></p>
+
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="città.html" class="card-link"><span class="it">Mappa della città</span><span class="en d-none">City map</span></a></li>
+                  <li class="list-group-item"><a href="territorio.html" class="card-link"><span class="it">Mappa del territorio</span><span class="en d-none">Territory map</span></a></li>
+                  <li class="list-group-item"><a href="categorie.html" class="card-link"><span class="it">Categorie</span><span class="en d-none">Categories</span></a></li>
+                  <li class="list-group-item"><a href="persone.html" class="card-link"><span class="it">Persone</span><span class="en d-none">People</span></a></li>
+                  <li class="list-group-item"><a href="calendario.html" class="card-link"><span class="it">Calendario delle feste</span><span class="en d-none">Calendar of festivities</span></a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </footer>
-        <script src="lang.js"></script>
-    </body>
+
+          <div class="col-md-3">
+            <div class="card text-center h-100 reveal">
+              <div class="card-body">
+                <div class="card-icon"><i class="fa-solid fa-scroll"></i></div>
+                <h5 class="card-title"><span class="it">Statuti</span><span class="en d-none">Statutes</span></h5>
+                <p class="card-text"><span class="it">Naviga il testo integrale degli Statuti: seleziona i libri e le rubriche, consulta le immagini del documento originale e comprendi il testo tramite la sinossi.</span><span class="en d-none">Browse the full text of the Statutes: select books and rubrics, consult images of the original document and understand the text with the synopsis.</span></p>
+
+                <a href="statuti.html" class="card-cta">
+                  <span class="it">Esplora gli statuti</span>
+                  <span class="en d-none">Explore the Statutes</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card text-center h-100 reveal">
+              <div class="card-body">
+                <div class="card-icon"><i class="fa-solid fa-landmark"></i></div>
+                <h5 class="card-title"><span class="it">Storia</span><span class="en d-none">History</span></h5>
+                <p class="card-text"><span class="it">Leggi il contesto storico-culturale e istituzionale di Ascoli del XV secolo e approfondisci il testo degli Statuti.</span><span class="en d-none">Read the historical, cultural and institutional context of Ascoli in the 15th century and delve into the text of the Statutes.</span></p>
+
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="storia.html" class="card-link"><span class="it">Cenni storici</span><span class="en d-none">Historical background</span></a></li>
+                  <li class="list-group-item"><a href="strutturaTesto.html" class="card-link"><span class="it">Struttura del testo</span><span class="en d-none">Text structure</span></a></li>
+                  <li class="list-group-item"><a href="strutturaIstituzionale.html" class="card-link"><span class="it">Struttura istituzionale</span><span class="en d-none">Institutional structure</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card text-center h-100 reveal">
+              <div class="card-body">
+                <div class="card-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+                <h5 class="card-title"><span class="it">Progetto</span><span class="en d-none">Project</span></h5>
+                <p class="card-text"><span class="it">Scopri di più sul progetto <i>Statuti Ascoli</i>.</span><span class="en d-none">Find out more about the <i>Statuti Ascoli</i> project.</span></p>
+
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="motivazioni.html" class="card-link"><span class="it">Motivazioni di ricerca</span><span class="en d-none">Research statement</span></a></li>
+                  <li class="list-group-item"><a href="documentazione.html" class="card-link"><span class="it">Documentazione</span><span class="en d-none">Documentation</span></a></li>
+                  <li class="list-group-item"><a href="team.html" class="card-link"><span class="it">Team</span><span class="en d-none">Team</span></a></li>
+                  <li class="list-group-item"><a href="credits.html" class="card-link"><span class="it">Credits</span><span class="en d-none">Credits</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- HELP -->
+    <section class="section pt-0">
+      <div class="container px-4">
+        <div class="help-panel reveal">
+          <h3 class="page-section-title mt-0 pt-0">
+            <span class="it">Aiutaci a migliorare il progetto</span>
+            <span class="en d-none">Help us improve the project</span>
+          </h3>
+
+          <p>
+            <span class="it">Hai trovato errori o refusi nelle trascrizioni? Possiedi informazioni su persone o luoghi citati negli Statuti? <br>Contattaci: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span>
+            <span class="en d-none">Have you found errors or typos in the transcriptions? Do you have information about people or places mentioned in the Statutes? <br>Contact us: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer text-center py-4 border-top">
+    <div class="container">
+      <div>
+        <a href="download.html" class="footer-btn btn btn-outline-danger btn-sm">Download</a>
+      </div>
+
+      <div class="mt-3">
+        <span class="it" style="font-size: 14px;">Contattaci: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span>
+        <span class="en d-none" style="font-size: 14px;">Contact us: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span>
+      </div>
+
+      <div class="mt-3 footer-copyright">
+        <span class="mb-3 mb-md-0 text-muted"><span class="it">&copy; 2025 Statuti Ascoli. Tutti i diritti riservati.</span><span class="en d-none">&copy; 2025 Statuti Ascoli. All rights reserved.</span></span>
+        <br/>
+        <span class="mb-3 mb-md-0 text-muted"><span class="it">&copy; Immagini della Biblioteca del Senato "Giovanni Spadolini". Tutti i diritti riservati.</span><span class="en d-none">&copy; Images of the Biblioteca del Senato "Giovanni Spadolini". All rights reserved.</span></span>
+        <br/>
+        <span class="mb-3 mb-md-0 text-muted"><a href="sitemap.xml" target="_blank">XML Sitemap</a></span>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+  (function () {
+    const card = document.getElementById('random-rubric-card');
+    const button = document.getElementById('random-rubric-btn');
+    const titleEl = document.getElementById('random-rubric-title');
+    const textEl = document.getElementById('random-rubric-text');
+    const linkIt = document.getElementById('random-rubric-link-it');
+    const linkEn = document.getElementById('random-rubric-link-en');
+    const readLink = document.getElementById('random-rubric-read-link');
+
+    if (!card || !button || !titleEl || !textEl || !linkIt || !linkEn || !readLink) return;
+
+    let rubrics = [];
+    let currentIndex = -1;
+
+    function normalizeText(value) {
+      return (value || '')
+        .replace(/\s+/g, ' ')
+        .replace(/\s+([.,;:!?])/g, '$1')
+        .trim();
+    }
+
+    function truncateText(value, maxLength) {
+      const clean = normalizeText(value);
+      if (clean.length <= maxLength) return clean;
+      const slice = clean.slice(0, maxLength);
+      const lastSpace = slice.lastIndexOf(' ');
+      return `${slice.slice(0, lastSpace > 80 ? lastSpace : maxLength).trim()} [...]`;
+    }
+
+    function htmlToDocument(html) {
+      const template = document.createElement('template');
+      template.innerHTML = html;
+      return template.content;
+    }
+
+    function extractRubricHtml(html) {
+      const fragment = htmlToDocument(html);
+      const root = fragment.firstElementChild;
+      if (!root || !root.classList || !root.classList.contains('rubrica')) return null;
+
+      const clonedRoot = root.cloneNode(true);
+      clonedRoot.querySelectorAll('a, button').forEach(el => {
+        const span = document.createElement('span');
+        span.textContent = el.textContent || '';
+        el.replaceWith(span);
+      });
+
+      const titleNode = clonedRoot.querySelector('.titoloRubrica, h1');
+      const summaryNode = clonedRoot.querySelector('.summary');
+      const firstParagraph = clonedRoot.querySelector('p');
+
+      const title = titleNode ? normalizeText(titleNode.textContent) : '';
+      const summary = summaryNode ? normalizeText(summaryNode.textContent) : '';
+      const text = firstParagraph ? truncateText(firstParagraph.textContent, 520) : '';
+
+      if (!title || !text) return null;
+
+      return { title, text, summary };
+    }
+
+    function walkStatutes(node, path = [], labels = []) {
+      if (typeof node === 'string') {
+        const extracted = extractRubricHtml(node);
+        if (!extracted) return;
+
+        const id = path.join('_');
+        if (!id || path.length < 3) return;
+
+        const volumeLabel = labels[0] || 'Statuti';
+        const bookLabel = labels[1] || '';
+        const rubricLabel = labels[2] || '';
+
+        rubrics.push({
+          ...extracted,
+          id,
+          link: `statuti.html?id=${id}`,
+          refIt: [volumeLabel, bookLabel, rubricLabel].filter(Boolean).join(', '),
+          refEn: [
+            volumeLabel.replace('Statuti del Comune', 'Statuti del Comune').replace('Statuti del Popolo', 'Statuti del Popolo'),
+            bookLabel.replace('Libro', 'Book'),
+            rubricLabel.replace('Rubrica', 'Rubric')
+          ].filter(Boolean).join(', ')
+        });
+        return;
+      }
+
+      if (!node || typeof node !== 'object') return;
+
+      Object.keys(node).forEach((key, index) => {
+        walkStatutes(node[key], [...path, String(index)], [...labels, key]);
+      });
+    }
+
+    function setRubric(rubric) {
+      card.classList.add('random-rubric-changing');
+
+      window.setTimeout(() => {
+        titleEl.textContent = rubric.title;
+        textEl.textContent = rubric.text;
+
+        linkIt.textContent = rubric.refIt;
+        linkEn.textContent = rubric.refEn;
+        linkIt.href = rubric.link;
+        linkEn.href = rubric.link;
+        readLink.href = rubric.link;
+
+        card.classList.remove('random-rubric-changing');
+      }, 220);
+    }
+
+    function chooseRandomRubric() {
+      if (!rubrics.length) return;
+
+      let nextIndex = currentIndex;
+      while (nextIndex === currentIndex && rubrics.length > 1) {
+        nextIndex = Math.floor(Math.random() * rubrics.length);
+      }
+
+      currentIndex = nextIndex;
+      setRubric(rubrics[currentIndex]);
+    }
+
+    button.addEventListener('click', chooseRandomRubric);
+
+    fetch('assets/statuti_web.json')
+      .then(response => response.json())
+      .then(data => {
+        walkStatutes(data);
+        rubrics = rubrics.filter(r => r.id !== '1_3_21');
+
+        if (rubrics.length) {
+          button.disabled = false;
+          button.classList.remove('disabled');
+        }
+      })
+      .catch(() => {
+        button.disabled = true;
+        button.classList.add('disabled');
+      });
+  })();
+  </script>
+
+  <script src="lang.js"></script>
+</body>
 </html>

@@ -266,3 +266,35 @@ path:focus {
   height: 18px;
   display: block;
 }
+
+
+
+
+
+
+
+#category-page .square-container.categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  max-width: 420px;
+}
+
+#category-page .square {
+  width: 100%;
+  max-width: none;
+  flex: none;
+  aspect-ratio: 1 / 1;
+  padding: 0 !important;
+}
+
+#category-page .square::before {
+  display: none;
+}
+
+#category-page .square svg {
+  width: 72%;
+  height: 72%;
+  max-width: 72%;
+  max-height: 72%;
+}

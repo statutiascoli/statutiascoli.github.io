@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
+<head>
         <title>Struttura del testo</title>
         <link rel="icon" type="image/png" href="img/logoAcerchio.png" sizes="32x32">
         <meta charset="UTF-8"/>
@@ -14,15 +14,14 @@
         <!--Bootstrap-->
         <link href="assets/bs5/bootstrap.min.css" rel="stylesheet">
         <script src="assets/bs5/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="assets/font-awesome/font-awesome.min.css">
         
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-        
-    </head>
-    <body>
-      <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
-        <div class="container-fluid">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navbar">
+        <div class="container-fluid px-lg-4">
             <a class="navbar-brand" href="index.html"><img src="img/logoAcerchio.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,7 +45,7 @@
                 <a class="nav-link it-content" href="statuti.html"><span class="it">Statuti</span><span class="en d-none">Statutes</span></a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page" style="font-weight: bold;"><span class="it">Storia</span><span class="en d-none">History</span></a>
+                <a class="nav-link dropdown-toggle it-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" ><span class="it">Storia</span><span class="en d-none">History</span></a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="storia.html"><span class="it">Cenni storici</span><span class="en d-none">Historical background</span></a></li>
                   <li><a class="dropdown-item" href="strutturaTesto.html"><span class="it">Struttura del testo</span><span class="en d-none">Text structure</span></a></li>
@@ -70,11 +69,26 @@
           </div>
         </div>
     </nav>
-        
-    <div class="container-fluid html-page">
-          <h1 class="page-title"><span class="it">Struttura del Testo</span><span class="en d-none">Text Structure</span></h1>
 
-            <p>
+  
+
+  <header class="subpage-hero">
+  <div class="container px-4">
+    <div class="subpage-hero-content reveal">
+      <span class="eyebrow" style="color:#f4d18a;"><span class="it">Storia</span><span class="en d-none">History</span></span>
+      <h1 class="subpage-title"><span class="it">Struttura del Testo</span><span class="en d-none">Text Structure</span></h1>
+      <p class="subpage-subtitle"><span class="it">Una guida alla composizione dei due corpora normativi: Statuti del Comune e Statuti del Popolo.</span><span class="en d-none">A guide to the composition of the two legal corpora: Statuti del Comune and Statuti del Popolo.</span></p>
+    </div>
+  </div>
+</header>
+
+  <main>
+
+    <section class="section">
+      <div class="container px-4">
+        <div class="row g-4 align-items-start">    
+            <article class="content-panel reveal">
+<p>
               <span class="it">Gli statuti del 1377 sono stati un punto di riferimento giuridico di tutti i membri della comunità, tanto da essere stati rimasti in vigore per tutto il secolo successivo ed essere stati tradotti dal latino in volgare e pubblicati a stampa nel 1496. Il corpo normativo del 1377 comprende gli Statuti del Comune e gli Statuti del Popolo, suddivisi secondo la seguente struttura:</span>
               <span class="en d-none">The Statutes of 1377 were a legal reference point for all members of the community, to the point that they remained effective throughout the following century and were translated from Latin into the vernacular and published in print in 1496. The body of legislation from 1377 comprises the Statuti del Comune and the Statuti del Popolo, divided according to the following structure:</span>
             </p>
@@ -114,10 +128,14 @@
                 </span>
               </ul>
             </p>
-            
+            </article> 
         </div>
+      </div>
+    </section>
 
-        <footer class="footer bg-light text-center py-4 border-top">
+  </main>
+
+<footer class="footer text-center py-4 border-top">
           <div class="container">
             <div>
               <a href="download.html" class="footer-btn btn btn-outline-danger btn-sm">Download</a>
@@ -125,7 +143,7 @@
 
             <div class="mt-3">
               <span class="it" style="font-size: 14px;">Contattaci: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span>
-              <span class="en" style="font-size: 14px;">Contact us: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span>
+              <span class="en d-none" style="font-size: 14px;">Contact us: <a href="mailto:statutiascoli@gmail.com">statutiascoli@gmail.com</a></span>
             </div>
 
             <div class="mt-3 footer-copyright">
@@ -137,6 +155,6 @@
             </div>
           </div>
         </footer>
-        <script src="lang.js"></script>
-    </body>
+  <script src="lang.js"></script>
+</body>
 </html>
