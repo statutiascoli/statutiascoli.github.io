@@ -423,6 +423,9 @@
                         <place xml:id="portaTorricella">
                             <placeName type="porta">porta de Torrecelle</placeName>
                         </place>
+                        <place xml:id="portaTornasacco">
+                            <placeName type="porta">porta Tornasacco</placeName>
+                        </place>
                         
                     </listPlace>
 
@@ -12765,7 +12768,7 @@
                                         >rubrica .<num value="23">XXIII</num>.</label>
                                 </head>
                                 <p><hi rend="capitals">ORDENEMO</hi> che se elegano <num value="4"
-                                        >quactro</num> capitanii papulari ecclesiastici per li
+                                        >quactro</num> capitanii populari ecclesiastici per li
                                     signuri antiani et l'ordine ad scrutinio, cioè lu <num value="1"
                                         >primo</num> dì de domenica del <num value="1">primo</num>
                                     mese de lu officio de li signuri antiani, innante che se faccia
@@ -18484,8 +18487,8 @@
                                         corresp="#portaMonte">porta de lu Monte</placeName>; la
                                         <placeName corresp="#portaSantoSpirito">porta de Sancto
                                         Spirito</placeName>, de <placeName
-                                        corresp="#portaTorricella">Torrecelle et
-                                            Tornasacco</placeName>. Et la electione de ipsi overo la
+                                        corresp="#portaTorricella">Torrecelle</placeName> et
+                                            <placeName corresp="#portaTornasacco">Tornasacco</placeName>. Et la electione de ipsi overo la
                                     renovatione se facia et debiase fare per lu dicto tempo de
                                         <measure quantity="6" type="tempo" unit="mesi"><num
                                             value="6">sei</num> misi</measure> per <measure

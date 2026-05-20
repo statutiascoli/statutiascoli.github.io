@@ -58,8 +58,22 @@ fetch('assets/statuti_web.json').then(response => response.json()).then(data => 
                                 rubricDoc = parser.parseFromString(rubric_content, 'text/xml');
                                 if (rubricDoc.querySelector("div").hasAttribute('ana')) {
                                     var rubric_category = rubricDoc.querySelector("div").getAttribute('ana');
-                                    if (rubric_category.includes(category)) {
+                                    /*if (rubric_category.includes(category)) {
                                         results.push([rubricDoc, [v_i,b_i,r_i]])
+                                    }*/
+                                   function normalizeCategory(value) {
+                                        return (value || '')
+                                            .normalize('NFD')
+                                            .replace(/[\u0300-\u036f]/g, '')
+                                            .toLowerCase()
+                                            .trim();
+                                    }
+
+                                    if (
+                                        normalizeCategory(rubric_category)
+                                            .includes(normalizeCategory(category))
+                                    ) {
+                                        results.push([rubricDoc, [v_i,b_i,r_i]]);
                                     }
                                 }
                             }
