@@ -2,10 +2,18 @@ volumeSelect = document.getElementById('volume-select');
 bookSelect = document.getElementById('book-select');
 rubricSelect = document.getElementById('rubric-select');
 contentElement = document.getElementById('content');
+let currentRenderToken = 0;
 
 
-
+/*async function fillContent(contentText) {
+    let imgModal = new bootstrap.Modal(document.getElementById('imageModal'))
+    let contentDiv = document.createElement('div');
+    console.log(contentText)
+    contentDiv.innerHTML = contentText;
+    contentDiv = contentDiv.firstChild*/
 async function fillContent(contentText) {
+    const renderToken = ++currentRenderToken;
+
     let imgModal = new bootstrap.Modal(document.getElementById('imageModal'))
     let contentDiv = document.createElement('div');
     console.log(contentText)
@@ -46,6 +54,7 @@ async function fillContent(contentText) {
     })
 
     await Promise.all(fetchPromises);
+    if (renderToken !== currentRenderToken) return;
     let noteElement = contentDiv.querySelector('div.summary');
 
     if (noteElement) {
@@ -127,7 +136,7 @@ fetch('assets/statuti_web.json')
         function populateBooksAndContent(selectedVolume, addContent=true) {
             volume_selected_key = Object.keys(data)[selectedVolume]
             volume_selected = data[volume_selected_key];
-            if (typeof volume_selected === "string" && addContent) {
+            /*if (typeof volume_selected === "string" && addContent) {
                 updateURLParams(selectedVolume, null, null); // Update URL params
                 fillContent(volume_selected)
             } else {
@@ -138,13 +147,38 @@ fetch('assets/statuti_web.json')
                     option.textContent = books[b_i];
                     bookSelect.appendChild(option);
                 }
+            }*/
+           if (typeof volume_selected === "string") {
+                if (addContent) {
+                    updateURLParams(selectedVolume, null, null);
+                    fillContent(volume_selected);
+                }
+                return;
+            }
+
+            books = Object.keys(volume_selected);
+            for (b_i in books) {
+                option = document.createElement('option');
+                option.value = b_i;
+                option.textContent = books[b_i];
+                bookSelect.appendChild(option);
             }
             // Trigger book change event if books are available
-            if (bookSelect.options.length > 0 && addContent) {
+            //if (bookSelect.options.length > 0 && addContent) {
+            /*if (bookSelect.options.length > 0 && addContent === true) {
                 bookSelect.selectedIndex = 0; // Select the first book by default
                 selectedBook = bookSelect.value;
                 updateURLParams(selectedVolume, selectedBook, null); // Update URL params
                 populateRubricsAndContent(selectedVolume, selectedBook);
+            }*/
+
+            if (bookSelect.options.length > 0) {
+                if (addContent) {
+                    bookSelect.selectedIndex = 0;
+                    selectedBook = bookSelect.value;
+                    updateURLParams(selectedVolume, selectedBook, null);
+                    populateRubricsAndContent(selectedVolume, selectedBook);
+                }
             }
         }
 
@@ -153,7 +187,7 @@ fetch('assets/statuti_web.json')
             volume_selected_key = Object.keys(data)[selectedVolume]
             book_selected_key = Object.keys(data[volume_selected_key])[selectedBook]
             book_selected = data[volume_selected_key][book_selected_key];
-            if (typeof book_selected === "string" && addContent) {
+            /*if (typeof book_selected === "string" && addContent) {
                 updateURLParams(selectedVolume, selectedBook, null); // Update URL params
                 fillContent(book_selected)
             } else {
@@ -164,34 +198,84 @@ fetch('assets/statuti_web.json')
                     option.textContent = rubrics[r_i];
                     rubricSelect.appendChild(option);
                 }
+            }*/
+           if (typeof book_selected === "string") {
+                if (addContent) {
+                    updateURLParams(selectedVolume, selectedBook, null);
+                    fillContent(book_selected);
+                }
+                return;
             }
-            if (rubricSelect.options.length > 0 && addContent) {
+
+            rubrics = Object.keys(book_selected);
+            for (r_i in rubrics) {
+                option = document.createElement('option');
+                option.value = r_i;
+                option.textContent = rubrics[r_i];
+                rubricSelect.appendChild(option);
+            }
+            /*if (rubricSelect.options.length > 0 && addContent) {
                 rubricSelect.selectedIndex = 0; // Select the first rubric by default
                 selectedRubric = rubricSelect.value;
                 updateURLParams(selectedVolume, selectedBook, selectedRubric); // Update URL params
                 rubric_key = Object.keys(data[volume_selected_key][book_selected_key])[selectedRubric];
                 rubricText = data[volume_selected_key][book_selected_key][rubric_key]
                 fillContent(rubricText)
+            }*/
+           if (rubricSelect.options.length > 0) {
+                if (addContent) {
+                    rubricSelect.selectedIndex = 0;
+                    selectedRubric = rubricSelect.value;
+                    updateURLParams(selectedVolume, selectedBook, selectedRubric);
+
+                    rubric_key = Object.keys(data[volume_selected_key][book_selected_key])[selectedRubric];
+                    rubricText = data[volume_selected_key][book_selected_key][rubric_key];
+
+                    fillContent(rubricText);
+                }
             }
         }
 
         // Function to programmatically select volume, book, and rubric
-        function selectDocument(volume, book, rubric) {
+       /* function selectDocument(volume, book, rubric) {
             volumeSelect.value = volume;
             handleVolumeChange({ target: volumeSelect }, addContent=false);
-            if (book && rubric) {
+            //if (book && rubric) {
+            if (book !== null && rubric !== null) {
                 bookSelect.value = book;
                 handleBookChange({ target: bookSelect }, addContent=false);
                 rubricSelect.value = rubric;
                 handleRubricChange({ target: rubricSelect }, addContent=false);
-            } else if (book) {
+            //} else if (book) {
+            } else if (book !== null) {
                 bookSelect.value = book;
                 handleBookChange({ target: bookSelect }, addContent=false);
             }
-            if (rubric){
+            //if (rubric){
+            if (rubric !== null) {
                 handleRubricChange({ target: rubricSelect });
             }
-            else if (book) {
+            //else if (book) {
+            else if (hasValue(book)) {
+                handleBookChange({ target: bookSelect });
+            }
+            else {
+                handleVolumeChange({ target: volumeSelect });
+            }
+        }*/
+        function selectDocument(volume, book = null, rubric = null) {
+            volumeSelect.value = volume;
+            handleVolumeChange({ target: volumeSelect }, false);
+
+            if (hasValue(book) && hasValue(rubric)) {
+                bookSelect.value = book;
+                handleBookChange({ target: bookSelect }, false);
+
+                rubricSelect.value = rubric;
+                handleRubricChange({ target: rubricSelect });
+            }
+            else if (hasValue(book)) {
+                bookSelect.value = book;
                 handleBookChange({ target: bookSelect });
             }
             else {
@@ -237,8 +321,12 @@ fetch('assets/statuti_web.json')
             }
         }
 
+        function hasValue(value) {
+            return value !== null && value !== undefined && value !== '';
+        }
+
         // Function to update URL parameters
-        function updateURLParams(volume, book, rubric) {
+        /*function updateURLParams(volume, book, rubric) {
             params = new URLSearchParams(window.location.search);
             params.delete('id'); // Clear existing volume param
             id_p = ""
@@ -253,6 +341,27 @@ fetch('assets/statuti_web.json')
             }
             params.set('id', id_p);
             window.history.replaceState({}, '', `${location.pathname}?${params}`);
+        }*/
+        function updateURLParams(volume, book, rubric) {
+            params = new URLSearchParams(window.location.search);
+            params.delete('id');
+
+            id_p = "";
+
+            if (hasValue(volume)) {
+                id_p += volume;
+
+                if (hasValue(book)) {
+                    id_p += '_' + book;
+                }
+
+                if (hasValue(rubric)) {
+                    id_p += '_' + rubric;
+                }
+            }
+
+            params.set('id', id_p || '0');
+            window.history.replaceState({}, '', `${location.pathname}?${params}`);
         }
 
         // Function to get URL parameters
@@ -263,7 +372,8 @@ fetch('assets/statuti_web.json')
 
             params = new URLSearchParams(window.location.search);
             id_p = params.get('id');
-            if (id_p){
+            //if (id_p){
+            if (hasValue(id_p)) {
                 pathSegments = id_p.split('_')
                 if (pathSegments.length >= 1) {
                     volume = pathSegments[0];
@@ -288,7 +398,8 @@ fetch('assets/statuti_web.json')
 
         // Check URL parameters and update selections accordingly
         var { volume, book, rubric } = getURLParams();
-        if (volume) {
+        //if (volume) {
+        if (hasValue(volume)) {
             try{
                 selectDocument(volume, book, rubric);
             }

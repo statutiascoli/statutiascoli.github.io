@@ -387,6 +387,31 @@
     select.dispatchEvent(new Event('change', { bubbles: true }));
   }
 
+  
+
+
+  function isMobileStatutiLayout() {
+    return window.matchMedia('(max-width: 991.98px)').matches;
+  }
+
+  function closeMobileIndexAndScrollToReader() {
+    if (!isMobileStatutiLayout()) return;
+
+    document.querySelectorAll('.statuti-tree-group').forEach(details => {
+      details.open = false;
+    });
+
+    const reader = document.querySelector('.statuti-reader-card');
+    if (reader) {
+      window.setTimeout(() => {
+        reader.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 150);
+    }
+  }
+
   function selectStatute(volume, book, rubric, label) {
     waitForOptions(volumeSelect, () => {
       volumeSelect.value = String(volume);
@@ -406,10 +431,12 @@
           return;
         }
 
+        
         waitForOptions(rubricSelect, () => {
           rubricSelect.value = String(rubric);
           dispatchChange(rubricSelect);
           activateTreeButton(`${volume}_${book}_${rubric}`, label);
+          closeMobileIndexAndScrollToReader();
         });
       });
     });
@@ -476,7 +503,15 @@
     });
 
     const activePath = [current.volume, current.book, current.rubric].filter(v => v !== null && v !== undefined).join('_');
-    window.setTimeout(() => activateTreeButton(activePath), 250);
+    //window.setTimeout(() => activateTreeButton(activePath), 250);
+    window.setTimeout(() => {
+      activateTreeButton(activePath);
+
+      const currentPath = getCurrentPath();
+      if (currentPath.book !== null || currentPath.rubric !== null) {
+        closeMobileIndexAndScrollToReader();
+      }
+    }, 250);
   }
 
 
