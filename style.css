@@ -619,7 +619,6 @@ figure img {
   color: var(--sa-muted);
 }
 
-.content-panel ul,
 .sa-list-card {
   background: rgba(255,255,255,0.42);
   border: 1px solid rgba(108,20,51,0.08);
@@ -633,7 +632,7 @@ figure img {
 }
 
 .content-panel li::marker {
-  color: var(--sa-gold);
+  color: var(--sa-burgundy);
 }
 
 /* Institution and text-structure cards */
@@ -1018,7 +1017,7 @@ figure img {
 .pagination .page-link {
   color: var(--sa-burgundy);
   border-color: rgba(108,20,51,0.16);
-  background: rgba(255,250,242,0.72);
+  /*background: rgba(255,250,242,0.72);*/
 }
 
 .pagination .page-item.active .page-link,

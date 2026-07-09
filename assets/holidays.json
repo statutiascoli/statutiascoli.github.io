@@ -235,7 +235,7 @@
         "day": 6,
         "title": "San Nicolò",
         "desc": "Nicola o Nicolò di Bari, vescovo di Mira, IV sec.",
-        "id": "festaSanNicolò"
+        "id": "festaSanNicolo"
     },
     {
         "month": 11,
@@ -417,7 +417,7 @@
         "day": 12,
         "title": "Ascensione di Gesù Cristo",
         "desc": "Festa mobile che la chiesa celebra 40 giorni dopo Pasqua.",
-        "id": "festaAscensioneGesù"
+        "id": "festaAscensioneGesu"
     },
     {
         "month": 4,
@@ -438,13 +438,13 @@
         "day": 1,
         "title": "Venerdì santo",
         "desc": "Venerdì che precede la Paqua, detto anche Parasceve.",
-        "id": "festaVenerdìSanto"
+        "id": "festaVenerdiSanto"
     },
     {
         "month": 1,
         "day": 15,
         "title": "Martedì grasso",
         "desc": "Ultimo giorno di Carnevale (chiamato anche Carnasciale), prima del Mercolì delle Ceneri che apre la Quaresima.",
-        "id": "festaMartedìGrasso"
+        "id": "festaMartediGrasso"
     }
 ]

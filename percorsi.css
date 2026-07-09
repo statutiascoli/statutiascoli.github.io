@@ -251,6 +251,10 @@ path:focus {
 .leaflet-control.legend .legend-title {
   font-weight: 700;
   margin-bottom: 8px;
+  color: var(--sa-burgundy);
+}
+.legend-label{
+  color: var(--sa-burgundy);
 }
 
 .leaflet-control.legend .legend-item {
@@ -264,6 +268,8 @@ path:focus {
   width: 18px;
   height: 18px;
   display: block;
+  color: var(--sa-burgundy);
+  fill: #6c1433;
 }
 
 
