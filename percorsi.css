@@ -7,7 +7,7 @@
     box-shadow: 2px 1px 4px rgba(0,0,0,0.2);
     border-radius: 30px;
     border-width: 5px;
-    border: 2px solid #6c1433 !important;
+    border: 1px solid #6c1433 !important;
     opacity: 1;
 }
 .leaflet-marker-icon svg {
@@ -89,18 +89,18 @@ path:focus {
   padding-bottom: 0; /* Reset padding */
 }
 .categories button.active{
-  background-color: white;
+  background-color: rgba(108,20,51,0.09);
   border-color: #6c1433;
-  border-width:5px
+  border-width:1px
 }
 .categories button.active svg{
   fill: #6c1433;
 }
 
 .categories button:hover{
-  background-color: white;
+  background-color: rgba(108,20,51,0.09);
   border-color: #6c1433;
-  border-width:5px
+  border-width:1px
 }
 .categories button:hover svg{
   fill: #6c1433;
@@ -223,9 +223,8 @@ path:focus {
 
 .clickable-day.active {
     cursor: pointer;
-    outline: 3px solid #6c1433;
-    outline-offset: -3px;
-    background-color: rgb(212, 212, 212);
+    outline: 1px solid #6c1433;
+    background-color: rgba(108,20,51,0.09);
     color: #6c1433;
     font-weight: 700;
 }
