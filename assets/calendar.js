@@ -150,6 +150,85 @@ Promise.all([
         }
     };
 
+
+    //NEW
+    function showDayEvents(dayEvents, month, day, tab) {
+        const resultTitle = document.querySelector(
+            '.' + tab + ' .result-title'
+        );
+
+        const resultContent = document.querySelector(
+            '.' + tab + ' .result-content'
+        );
+
+        const pagination = document.querySelector(
+            '.' + tab + ' .pagination'
+        );
+
+        resultContent.innerHTML = '';
+        pagination.innerHTML = '';
+
+        // Column title
+        const monthName = lingua === 'en'
+            ? LABELS.months.en[month]
+            : LABELS.months.it[month];
+
+        resultTitle.textContent = `${day} ${monthName} 1496`;
+
+        // Create a separate card for each event in that day
+        dayEvents.forEach(event => {
+            const card = document.createElement('div');
+            card.classList.add('card', 'mb-3');
+
+            const cardBody = document.createElement('div');
+            cardBody.classList.add('card-body');
+
+            const cardTitle = document.createElement('h5');
+            cardTitle.classList.add('card-title');
+            cardTitle.textContent = event.title;
+
+            cardBody.appendChild(cardTitle);
+
+            // Show descriptions only if present in the JSON
+            /*if (event.desc) {
+                const cardDescription = document.createElement('p');
+                cardDescription.classList.add('card-text');
+                cardDescription.textContent = event.desc;
+
+                cardBody.appendChild(cardDescription);
+            }*/
+
+            const openButton = document.createElement('button');
+            openButton.type = 'button';
+            openButton.classList.add('btn', 'btn-outline-primary');
+
+            openButton.innerHTML = `
+                <span class="it ${lingua === 'en' ? 'd-none' : ''}">
+                    Consulta le rubriche
+                </span>
+                <span class="en ${lingua === 'it' ? 'd-none' : ''}">
+                    Browse the statutes
+                </span>
+            `;
+
+            openButton.addEventListener('click', () => {
+                setParamInUrl('id', event.id);
+
+                populateResults(
+                    event.id,
+                    event.title,
+                    tab,
+                    calendarCurrentPage,
+                    calendarResults
+                );
+            });
+
+            cardBody.appendChild(openButton);
+            card.appendChild(cardBody);
+            resultContent.appendChild(card);
+        });
+    }
+
     // Days in each month for the year 1496
     const daysInMonth = [
         31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 // Leap year February
@@ -199,7 +278,7 @@ Promise.all([
         for (let i = 1; i <= monthDays; i++) {
             const dayDiv = document.createElement('div');
             dayDiv.textContent = i;
-            if (month==3 && i==9){
+            /*if (month==3 && i==9){
                 dayDiv.classList.add('clickable-day');
                 dayDiv.classList.add('historical-day');
                 dayDiv.addEventListener('click', () => {
@@ -207,9 +286,9 @@ Promise.all([
                     dayDiv.classList.add('active');
                     populateResultsHistorical("calendar-results", calendarCurrentPage, calendarResults)
                 });
-            }
+            }*/
             // Check if the day is clickable
-            if (calendarData.some(d => d.month === month && d.day === i)) {
+           /* if (calendarData.some(d => d.month === month && d.day === i)) {
                 let dayData = calendarData.find(d => d.month === month && d.day === i);
                 dayDiv.classList.add('clickable-day');
                 dayDiv.setAttribute('data-target', dayData.id);
@@ -220,6 +299,65 @@ Promise.all([
                     dayDiv.classList.add('active');
                     setParamInUrl('id', target);
                     populateResults(dayDiv.getAttribute('data-target'), dayDiv.getAttribute('data-title'), "calendar-results", calendarCurrentPage, calendarResults)
+                });
+            }*/
+
+           // Retrieve all events associated to this day
+            const dayEvents = calendarData.filter(
+                d => d.month === month && d.day === i
+            );
+
+            if (dayEvents.length > 0) {
+                dayDiv.classList.add('clickable-day');
+
+                dayDiv.setAttribute('data-month', month);
+                dayDiv.setAttribute('data-day', i);
+
+                const isHistoricalDay = dayEvents.some(
+                    event => event.id === 'stampaStatuti'
+                );
+
+                if (isHistoricalDay) {
+                    dayDiv.classList.add('historical-day');
+                }
+
+                dayDiv.addEventListener('click', () => {
+                    document
+                        .querySelectorAll('.calendar-days .clickable-day.active')
+                        .forEach(el => el.classList.remove('active'));
+
+                    dayDiv.classList.add('active');
+
+                    if (dayEvents.length === 1) {
+                        const event = dayEvents[0];
+
+                        setParamInUrl('id', event.id);
+
+                        if (event.id === 'stampaStatuti') {
+                            populateResultsHistorical(
+                                "calendar-results",
+                                calendarCurrentPage,
+                                calendarResults
+                            );
+                        } else {
+                            populateResults(
+                                event.id,
+                                event.title,
+                                "calendar-results",
+                                calendarCurrentPage,
+                                calendarResults
+                            );
+                        }
+                    } else {
+                        setParamInUrl('id', '');
+
+                        showDayEvents(
+                            dayEvents,
+                            month,
+                            i,
+                            "calendar-results"
+                        );
+                    }
                 });
             }
 
@@ -256,7 +394,7 @@ Promise.all([
         currentPage = 1
         document.querySelector('.' + tab + ' .result-title').innerHTML = ""
         results = []
-        document.querySelector('.' + tab + ' .result-title').innerHTML = "Stampa degli Statuti del 1496"
+        document.querySelector('.' + tab + ' .result-title').innerHTML = "Stampa degli Statuti"
         rubric_content = data["Conclusione"];
         xmlDoc = parser.parseFromString(rubric_content, 'text/xml');
         document.querySelector('.' + tab + ' .result-content').innerHTML = ''; // Clear previous content
@@ -323,10 +461,32 @@ Promise.all([
             currentMonth = entry.month;
             loadCalendar(currentMonth);
         }
-        populateResults(String(entry.id), entry.title, "calendar-results", calendarCurrentPage, calendarResults);
+        
+        if (entry.id === 'stampaStatuti') {
+            populateResultsHistorical(
+                "calendar-results",
+                calendarCurrentPage,
+                calendarResults
+            );
+        } else {
+            populateResults(
+                String(entry.id),
+                entry.title,
+                "calendar-results",
+                calendarCurrentPage,
+                calendarResults
+            );
+        }
 
-        const dayEl = document.querySelector(`.clickable-day[data-target="${CSS.escape(String(entry.id))}"]`);
-        if (dayEl) dayEl.classList.add('active');
+       /* const dayEl = document.querySelector(`.clickable-day[data-target="${CSS.escape(String(entry.id))}"]`);
+        if (dayEl) dayEl.classList.add('active');*/
+        const dayEl = document.querySelector(
+            `.clickable-day[data-month="${entry.month}"][data-day="${entry.day}"]`
+        );
+
+        if (dayEl) {
+            dayEl.classList.add('active');
+        }
     }
 
     loadCalendar(currentMonth);

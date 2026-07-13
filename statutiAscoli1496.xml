@@ -728,7 +728,7 @@
                     </listPlace>
                 </listPlace>
                 <listEvent>
-                        <event when="--04-09"
+                        <event when="1496-04-09"
                             xml:id="stampaStatuti">
                             <label>Stampa degli Statuti del 1496</label>
                         </event>
@@ -1072,6 +1072,7 @@
                         </event>
                         <event xml:id="festaSpina">
                             <label>festa de la Spina</label>
+                            <note>Festa legata alla reliquia della Sacra Spina conservata nella chiesa di San Pietro Martire di Ascoli Piceno. La data della celebrazione nel 1496 non è stata identificata.</note>
                         </event>
                         <event ref="https://www.wikidata.org/wiki/Q40317" xml:id="festaVenerdiSanto"
                             when="1496-04-01">
@@ -1084,10 +1085,6 @@
                             <label>Martedì grasso</label>
                             <note>Ultimo giorno di Carnevale (chiamato anche Carnasciale), prima del
                                 Mercolì delle Ceneri che apre la Quaresima.</note>
-                        </event>
-
-                        <event xml:id="festaVenerdiMarzo">
-                            <label>Venerdì di marzo</label>
                         </event>
 
                         <event ref="https://www.wikidata.org/wiki/Q131080"
@@ -3408,9 +3405,8 @@
                                         evangelista</seg>; <seg corresp="#festaSantEmidio"
                                         type="festa">del beato Migno</seg> patrone, protectore et
                                     defensore de lu comune et del populo Ascolano, con lo dì
-                                    precedente et seguente; lo dì precedente la <seg
-                                        corresp="#festaSpina" type="festa">festa de la
-                                    venerabile et sancta Spina</seg>; et in li dì de la festività de li
+                                    precedente et seguente; lo dì precedente la festa de la
+                                    venerabile et sancta Spina; et in li dì de la festività de li
                                     sancti: de <seg corresp="#festaSanFrancesco" type="festa">sancto
                                         Francisco</seg>; de <seg corresp="#festaSanDomenico"
                                         type="festa">sancto Dominico</seg>; de <seg
@@ -8190,8 +8186,7 @@
                                         >venardì sancto</seg>; et lu dì de la <seg
                                         corresp="#festaResurrezione" type="festa">domenica de la
                                         Rexurrectione de pascha</seg> con li <num value="2"
-                                        >doi</num> dì seguenti. Anche lu dì precedente de la <seg
-                                        corresp="#festaSpina" type="festa">Sancta Spina</seg> et
+                                        >doi</num> dì seguenti. Anche lu dì precedente de la Sancta Spina et
                                     ipso dì de la festa. Ancho mo, lu dì precedente de la festa de
                                         <seg corresp="#festaSantEmidio" type="festa">sancto
                                         Migno</seg> et ipso dì. Et ne li maleficii commissi in
@@ -17182,8 +17177,8 @@
                                             value="7">VII</num>.</label>
                                 </item>
                                 <item n="8" xml:id="statPop_libro2_rubrica8">De lu palio da darse in
-                                    ne la <seg corresp="#festaSpina" type="festa">festa de la
-                                        Spina</seg>. <label type="numeroRubrica">rubrica .<num
+                                    ne la festa de la
+                                        Spina. <label type="numeroRubrica">rubrica .<num
                                             value="8">VIII</num>.</label>
                                 </item>
                                 <item n="9" xml:id="statPop_libro2_rubrica9">De lu ciro da darse in
@@ -17294,14 +17289,12 @@
                                     singule feste infrascripte se debiano guardare et con reverentia
                                     celebrare da tucte persone in la ciptà d'Asculi. Et non se
                                     faccia alcuno servitio et non se tenga alcuna cosa in banche in
-                                    ne li dì d'epse feste, excepto ne la <seg corresp="#festaSpina"
-                                        type="festa">festa de la Spina</seg>, in ne la quale se
+                                    ne li dì d'epse feste, excepto ne la festa de la Spina, in ne la quale se
                                     possa retinere le banche et in quelle ponere ad vendere tucto
                                     quello che vorrai. Et in simil modo se possa in omne festa che
                                     venerà overo accaderà celebrarse ne lu dì de lu sabato, excepto
                                     ne la <seg corresp="#festaSantEmidio" type="festa">festa de
-                                        sancto Emidio</seg>; in ne la quale <seg
-                                        corresp="#festaSpina" type="festa">festa de la Spina</seg>
+                                        sancto Emidio</seg>; in ne la quale festa de la Spina
                                     overo ne lu dì precedente et ne la octava nisiuno possa stare ad
                                     vendere candele ne la <placeName corresp="#piazzaSotto">piaza de
                                         socta</placeName> et ne la <placeName
@@ -17365,8 +17358,10 @@
                                         corresp="#festaSanPancrazio" type="festa">festa de sancto
                                         Pangratio</seg>; la <seg corresp="#festaSanLorenzo"
                                         type="festa">festa de sancto Laurenzio</seg>; le <seg
-                                        corresp="#festaSanGiovanniBattista #festaDecapitazioneSanGiovanniBattista"
-                                        type="festa">feste de la natività et decollatione del beato
+                                        corresp="#festaSanGiovanniBattista"
+                                        type="festa">feste de la natività</seg> et <seg
+                                        corresp="#festaDecapitazioneSanGiovanniBattista"
+                                        type="festa">decollatione del beato
                                         Johanne Baptista</seg>; la <seg corresp="#festaSanGiorgio"
                                         type="festa">festa de sancto Georgio</seg>; la <seg
                                         corresp="#festaSanMichele" type="festa">festa de sancto
@@ -17495,9 +17490,8 @@
                                     laborare overo fare laborare de quella septimana ne la quale
                                     vene la <seg corresp="#festaNatale" type="festa">festa de la
                                         Natale de lu Signore</seg>; la <seg corresp="#festaEpifania"
-                                        type="festa">festa de la Pasca Epiphania</seg>; la <seg
-                                        corresp="#festaSettimanaSanta" type="festa">septimana
-                                        sancta</seg>; la <seg corresp="#festaResurrezione"
+                                        type="festa">festa de la Pasca Epiphania</seg>; la septimana
+                                        sancta; la <seg corresp="#festaResurrezione"
                                         type="festa">festa de la Pascha de la rexurrectione</seg> et
                                     tucta l'altra septimana; la <seg corresp="#festaAscensioneGesu"
                                         type="festa">festa de la Ascencione de lu Signore</seg> et
@@ -17751,14 +17745,12 @@
                             </div>
                             <div corresp="#statPop_libro2_rubrica8" n="8" type="rubrica"
                                 ana="#feste" facs="179r.jpg">
-                                <head type="titoloRubrica">De lu palio da darse in ne la <seg
-                                        corresp="#festaSpina" type="festa">festa de la Spina</seg>.
+                                <head type="titoloRubrica">De lu palio da darse in ne la festa de la Spina.
                                         <label type="numeroRubrica">rubrica .<num value="8"
                                             >VIII</num>.</label>
                                 </head>
                                 <p><hi rend="capitals">ORDINEMO</hi>, ad reverentia de Jesu Cripsto,
-                                    che omne anno in ne la <seg corresp="#festaSpina" type="festa"
-                                        >festa de la Spina</seg> se dia per li antiani, che serrando
+                                    che omne anno in ne la festa de la Spina se dia per li antiani, che serrando
                                     per li tempi, uno pallio de valore de <measure quantity="100"
                                         type="denaro" unit="soldi"><num value="100">cento</num>
                                         soldi</measure> de lo havere del comune a la <placeName

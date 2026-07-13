@@ -1,5 +1,12 @@
 [
     {
+        "month": 3,
+        "day": 9,
+        "title": "Stampa degli Statuti",
+        "desc": null,
+        "id": "stampaStatuti"
+    },
+    {
         "month": 0,
         "day": 1,
         "title": "Circoncisione di Gesù Cristo",
@@ -159,13 +166,6 @@
         "title": "Decollazione di San Giovanni Battista",
         "desc": null,
         "id": "festaDecapitazioneSanGiovanniBattista"
-    },
-    {
-        "month": 8,
-        "day": 1,
-        "title": "Sant'Egidio",
-        "desc": "Abate in Liguadoca, †721",
-        "id": "festaSantEgidio"
     },
     {
         "month": 8,
