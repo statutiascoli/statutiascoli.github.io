@@ -435,17 +435,17 @@
                             <placeName>campo de Paregnano</placeName>
                         </place>
                         <place xml:id="palazzoPopolo">
-                            <placeName type="palazzo">Palazzo del Popolo</placeName>
+                            <placeName type="palazzo" ref="https://www.wikidata.org/wiki/Q3891189">Palazzo del Popolo</placeName>
                         </place>
                         <place xml:id="piazzaPopolo">
-                            <placeName type="piazza">Piazza del Popolo</placeName>
+                            <placeName type="piazza" ref="https://www.wikidata.org/wiki/Q3382261">Piazza del Popolo</placeName>
                             <note>Piazza del Popolo è anche chiamata 'piaza de sopra'.</note>
                         </place>
                         <place xml:id="piazzaSotto">
                             <placeName type="piazza">Piazza de socta</placeName>
                         </place>
                         <place xml:id="palazzoComune">
-                            <placeName type="palazzo">Palazzo del Comune</placeName>
+                            <placeName type="palazzo" ref="https://www.wikidata.org/wiki/Q3891399">Palazzo del Comune</placeName>
                             <note>Chiamato anche Palazzo dell'Arengo. Comprendeva anche il palazzo del Consiglio degli
                                 Anziani.</note>
                         </place>
@@ -455,6 +455,7 @@
                         </place>
                         <place xml:id="piazzaQuartarola">
                             <placeName type="piazza">Piazza della Quartarola</placeName>
+                            <note>Corrisponde all'odierna Piazza Roma.</note>
                         </place>
                     </listPlace>
 
@@ -464,20 +465,20 @@
                             <placeName type="chiesa">Ecclesia de Sancto Martino</placeName>
                         </place>
                         <place xml:id="chiesaSantAnastasio">
-                            <placeName type="chiesa">Ecclesia de Sancto Anastasio</placeName>
+                            <placeName type="chiesa" ref="https://www.wikidata.org/wiki/Q54868517">Ecclesia de Sancto Anastasio</placeName>
                         </place>
                         <place xml:id="chiesaSanGiacomo">
-                            <placeName type="chiesa">Ecclesia de Sancto Jacobo</placeName>
+                            <placeName type="chiesa" ref="https://www.wikidata.org/wiki/Q28857942">Ecclesia de Sancto Jacobo</placeName>
                         </place>
                         <place xml:id="chiesaSantErasmo">
                             <placeName type="chiesa">Sancto Rasino</placeName>
                         </place>
                         <place xml:id="chiesaSanPietroMartire">
-                            <placeName type="chiesa">Ecclesia de Sancto Petro
+                            <placeName type="chiesa" ref="https://www.wikidata.org/wiki/Q21501051">Ecclesia de Sancto Petro
                                 martire</placeName>
                         </place>
                         <place xml:id="chiesaSanFrancesco">
-                            <placeName type="chiesa">chiesia de Sancto Francisco</placeName>
+                            <placeName type="chiesa" ref="https://www.wikidata.org/wiki/Q3670021">chiesia de Sancto Francisco</placeName>
                         </place>
                         
                         <place xml:id="chiesaSantaMariaPogioMurro">
@@ -496,19 +497,20 @@
                             <placeName type="chiesa">ecclesia majore</placeName>
                         </place>
                         <place xml:id="chiesaSantaMariaSolesta">
-                            <placeName type="chiesa">ecclesia de Sancta Maria de
+                            <placeName type="chiesa" ref="https://www.wikidata.org/wiki/Q63476597">ecclesia de Sancta Maria de
                                 Solistano</placeName>
+                                <note>Oggi denominata Chiesa di San Serafino da Montegranaro, not aanche come chiesa dei Cappuccini.</note>
                         </place>
                         <place xml:id="chiesaSantaMariaInterVigne">
-                            <placeName type="chiesa">chiesa de Sancta Maria inter le
+                            <placeName type="chiesa" ref="https://www.wikidata.org/wiki/Q28229143">chiesa de Sancta Maria inter le
                                 vigne</placeName>
                         </place>
                         
                         <place xml:id="chiesaSantAgostino">
-                            <placeName type="chiesa">Ecclesia de Sancto Augustino</placeName>
+                            <placeName type="chiesa" ref="https://www.wikidata.org/wiki/Q30888041">Ecclesia de Sancto Augustino</placeName>
                         </place>
                         <place xml:id="chiesaSanGregorio">
-                            <placeName type="chiesa">ecclesia de Sancto Gregorio</placeName>
+                            <placeName type="chiesa" ref="https://www.wikidata.org/wiki/Q3670713">ecclesia de Sancto Gregorio</placeName>
                         </place>
                         <place xml:id="chiesaSantoSpirito">
                             <placeName type="chiesa">loco de Sancto Spirito</placeName>
@@ -525,7 +527,7 @@
                         </place>
 
                         <place xml:id="monasteroSantAngeloGrande">
-                            <placeName type="monastero">monasterio de Sancto Angnelo
+                            <placeName type="monastero" ref="https://www.wikidata.org/wiki/Q30880789">monasterio de Sancto Angnelo
                                 grande</placeName>
                         </place>
                         <place xml:id="monasteroSantAntonio">
@@ -654,7 +656,7 @@
                                 >Valle del Tronto</geogName>
                         </place>
                         <place xml:id="valleSanloparia">
-                            <geogName ref="#" type="valle">Valle Sanloparia</geogName>
+                            <geogName type="valle">Valle Sanloparia</geogName>
                         </place>
                         <place xml:id="fiumePescara">
                             <geogName ref="https://www.wikidata.org/wiki/Q71530" type="fiume"
@@ -665,16 +667,16 @@
                                 type="fiume">Fiume Fluvione</geogName>
                         </place>
                         <place xml:id="fiumeChiaro">
-                            <geogName ref="#" type="fiume">Fiume Chiaro</geogName>
+                            <geogName type="fiume">Fiume Chiaro</geogName>
                         </place>
                         <place xml:id="fiumeTenda">
-                            <geogName ref="#" type="fiume">Fiume Tenda</geogName>
+                            <geogName type="fiume">Fiume Tenda</geogName>
                         </place>
                         <place xml:id="rivoSanNicolo">
-                            <geogName ref="#" type="fiume">Rivo de Sancto Nicolò</geogName>
+                            <geogName type="fiume">Rivo de Sancto Nicolò</geogName>
                         </place>
                         <place xml:id="rivoMarino">
-                            <geogName ref="#" type="fiume">Rivo de lu Marino</geogName>
+                            <geogName type="fiume">Rivo de lu Marino</geogName>
                         </place>
                         <place xml:id="montePolesio">
                             <geogName ref="https://www.wikidata.org/wiki/Q2185502"

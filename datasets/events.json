@@ -1,0 +1,1278 @@
+[
+  {
+    "id": "stampaStatuti",
+    "url": "https://statutiascoli.it/calendario.html?id=stampaStatuti",
+    "label": "Stampa degli Statuti del 1496",
+    "date": "1496-04-09",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "StatutiAscoli_conclusione",
+        "url": "https://statutiascoli.it/statuti.html?id=3"
+      }
+    ]
+  },
+  {
+    "id": "festaCirconcisione",
+    "url": "https://statutiascoli.it/calendario.html?id=festaCirconcisione",
+    "label": "Circoncisione di Gesù Cristo",
+    "date": "--01-01",
+    "authority_uri": "https://www.wikidata.org/wiki/Q13510036",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaEpifania",
+    "url": "https://statutiascoli.it/calendario.html?id=festaEpifania",
+    "label": "Epifania",
+    "date": "--01-06",
+    "authority_uri": "https://www.wikidata.org/wiki/Q132001",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      },
+      {
+        "id": "statPop_libro2_rubrica3",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_4"
+      }
+    ]
+  },
+  {
+    "id": "festaSantaBrigida",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSantaBrigida",
+    "label": "Santa Brigida",
+    "date": "--02-01",
+    "authority_uri": "https://www.wikidata.org/wiki/Q80979",
+    "note": "Badessa di Kildare in Irlanda, †523",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanBiagio",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanBiagio",
+    "label": "San Biagio",
+    "date": "--02-03",
+    "authority_uri": "https://www.wikidata.org/wiki/Q151967",
+    "note": "Vescovo di Sebastopoli e martire, †316",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSanTommasoAquino",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanTommasoAquino",
+    "label": "Sant Tommaso d'Aquino",
+    "date": "--03-07",
+    "authority_uri": "https://www.wikidata.org/wiki/Q9438",
+    "note": "Frate domenicano e dottore della Chiesa, †1247",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      }
+    ]
+  },
+  {
+    "id": "festaSantAgata",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSantAgata",
+    "label": "Sant'Agata",
+    "date": "--02-05",
+    "authority_uri": "https://www.wikidata.org/wiki/Q200895",
+    "note": "Vergine e martire, †251",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSanBenedetto",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanBenedetto",
+    "label": "San Benedetto",
+    "date": "--03-21",
+    "authority_uri": "https://www.wikidata.org/wiki/Q44265",
+    "note": "Benedetto da Norcia, fondatore dell'ordine monastico d'occidente, †543",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSanGiorgio",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanGiorgio",
+    "label": "San Giorgio",
+    "date": "--04-23",
+    "authority_uri": "https://www.wikidata.org/wiki/Q48438",
+    "note": "Guerriero e martire a Lydda in Palestina, †303",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSantAngelo",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSantAngelo",
+    "label": "Sant'Angelo",
+    "date": "--05-05",
+    "authority_uri": "https://www.wikidata.org/wiki/Q537686",
+    "note": "Sacerdote carmelitano e martire, †1220",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSanPancrazio",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanPancrazio",
+    "label": "San Pancrazio",
+    "date": "--05-12",
+    "authority_uri": "https://www.wikidata.org/wiki/Q336731",
+    "note": "Martire a Roma, †304",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSanVenanzio",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanVenanzio",
+    "label": "San Venanzio",
+    "date": "--05-18",
+    "authority_uri": "https://www.wikidata.org/wiki/Q4210004",
+    "note": "Martire a Camerino, III sec.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSantaPetronilla",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSantaPetronilla",
+    "label": "Santa Petronilla",
+    "date": "--05-31",
+    "authority_uri": "https://www.wikidata.org/wiki/Q463600",
+    "note": "Martire e pretesa figlia di s. Pietro, I sec.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      }
+    ]
+  },
+  {
+    "id": "festaSantOnofrio",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSantOnofrio",
+    "label": "Sant'Onofrio",
+    "date": "--06-12",
+    "authority_uri": "https://www.wikidata.org/wiki/Q464959",
+    "note": "Anacoreta del IV sec.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSanGiovanniBattista",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanGiovanniBattista",
+    "label": "San Giovanni Battista",
+    "date": "--06-24",
+    "authority_uri": "https://www.wikidata.org/wiki/Q40662",
+    "note": "Precursore di Cristo.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSantaMargherita",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSantaMargherita",
+    "label": "Santa Margherita",
+    "date": "--07-20",
+    "authority_uri": "https://www.wikidata.org/wiki/Q297742",
+    "note": "Vergine e martire ad Antiochia, fine del III sec.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSantaMariaMaddalena",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSantaMariaMaddalena",
+    "label": "Santa Maria Maddalena",
+    "date": "--07-22",
+    "authority_uri": "https://www.wikidata.org/wiki/Q63070",
+    "note": "Discepola di Gesù, I sec.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSantEmidio",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSantEmidio",
+    "label": "Sant'Emidio",
+    "date": "--08-05",
+    "authority_uri": "https://www.wikidata.org/wiki/Q260816",
+    "note": "Vescovo e martire, IV sec.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statCom_libro3_rubrica70",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_71"
+      },
+      {
+        "id": "statPop_libro1_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_3"
+      },
+      {
+        "id": "statPop_libro1_rubrica76",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_77"
+      },
+      {
+        "id": "statPop_libro2_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_0"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica10",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_11"
+      },
+      {
+        "id": "statPop_libro2_rubrica12",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_13"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      },
+      {
+        "id": "statPop_libro2_rubrica3",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_4"
+      },
+      {
+        "id": "statPop_libro2_rubrica5",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_6"
+      },
+      {
+        "id": "statPop_libro2_rubrica6",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_7"
+      }
+    ]
+  },
+  {
+    "id": "festaSantoSalvatore",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSantoSalvatore",
+    "label": "Santo Salvatore",
+    "date": "--08-06",
+    "authority_uri": "https://www.wikidata.org/wiki/Q201201",
+    "note": "Giorno della trasfigurazione di Gesù Cristo sul Monte Tabor.",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSanDomenico",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanDomenico",
+    "label": "San Domenico",
+    "date": "--08-08",
+    "authority_uri": "https://www.wikidata.org/wiki/Q44091",
+    "note": "Domenico di Guzmán, fondatore dell'ordine dei predicatori, †06/08/1221",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_0"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica10",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_11"
+      }
+    ]
+  },
+  {
+    "id": "festaSanLorenzo",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanLorenzo",
+    "label": "San Lorenzo",
+    "date": "--08-10",
+    "authority_uri": "https://www.wikidata.org/wiki/Q17590",
+    "note": "Arcidiacono di Roma e martire, †258",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSanLudovico",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanLudovico",
+    "label": "San Ludovico",
+    "date": "--08-19",
+    "authority_uri": "https://www.wikidata.org/wiki/Q196157",
+    "note": "Luigi d'Anjou, vescovo di Tolosa, †1297",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_0"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica7",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_8"
+      }
+    ]
+  },
+  {
+    "id": "festaSantAgostino",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSantAgostino",
+    "label": "Sant'Agostino",
+    "date": "--08-28",
+    "authority_uri": "https://www.wikidata.org/wiki/Q8018",
+    "note": "Vescovo d'Ippona, †430",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_0"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica9",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_10"
+      }
+    ]
+  },
+  {
+    "id": "festaDecapitazioneSanGiovanniBattista",
+    "url": "https://statutiascoli.it/calendario.html?id=festaDecapitazioneSanGiovanniBattista",
+    "label": "Decollazione di San Giovanni Battista",
+    "date": "--08-29",
+    "authority_uri": "https://www.wikidata.org/wiki/Q2511873",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSanGregorio",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanGregorio",
+    "label": "San Gregorio",
+    "date": "--09-03",
+    "authority_uri": "https://www.wikidata.org/wiki/Q42827",
+    "note": "Gregorio I detto papa Gregorio Magno ovvero il Grande, †604",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSantaCroce",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSantaCroce",
+    "label": "Croce (Esaltazione della s.)",
+    "date": "--09-14",
+    "authority_uri": "https://www.wikidata.org/wiki/Q815520",
+    "note": "In memoria del ritrovamento della s. Croce nel 326, per opera di s. Elena, madre dell'imperatore Costantino.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSanMichele",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanMichele",
+    "label": "San Michele",
+    "date": "--09-29",
+    "authority_uri": "https://www.wikidata.org/wiki/Q45581",
+    "note": "Arcangelo",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica3",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_4"
+      },
+      {
+        "id": "statPop_libro2_rubrica4",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_5"
+      }
+    ]
+  },
+  {
+    "id": "festaSanGirolamo",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanGirolamo",
+    "label": "San Girolamo",
+    "date": "--09-30",
+    "authority_uri": "https://www.wikidata.org/wiki/Q44248",
+    "note": "Padre e Dottore della Chiesa, †420",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanFrancesco",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanFrancesco",
+    "label": "San Francesco",
+    "date": "--10-04",
+    "authority_uri": "https://www.wikidata.org/wiki/Q676555",
+    "note": "Francesco d'Assisi, istitutore dei frati minori, †1226",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaTuttiSanti",
+    "url": "https://statutiascoli.it/calendario.html?id=festaTuttiSanti",
+    "label": "Ognissanti",
+    "date": "--11-01",
+    "authority_uri": "https://www.wikidata.org/wiki/Q587",
+    "note": "Celebrazione della gloria e dell'onore di tutti i santi.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      },
+      {
+        "id": "statPop_libro2_rubrica3",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_4"
+      }
+    ]
+  },
+  {
+    "id": "festaSanLeonardo",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanLeonardo",
+    "label": "San Leonardo",
+    "date": "--11-06",
+    "authority_uri": "https://www.wikidata.org/wiki/Q558148",
+    "note": "Eremita e abate di Noblac, †559",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSanMartino",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanMartino",
+    "label": "San Martino",
+    "date": "--11-11",
+    "authority_uri": "https://www.wikidata.org/wiki/Q133704",
+    "note": "Vescovo di Tours, †397",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSantaCaterina",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSantaCaterina",
+    "label": "Santa Caterina",
+    "date": "--11-25",
+    "authority_uri": "https://www.wikidata.org/wiki/Q179718",
+    "note": "Vergine e martire ad Alessandria, IV sec.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSanNicolo",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanNicolo",
+    "label": "San Nicolò",
+    "date": "--12-06",
+    "authority_uri": "https://www.wikidata.org/wiki/Q44269",
+    "note": "Nicola o Nicolò di Bari, vescovo di Mira, IV sec.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSantAmbrogio",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSantAmbrogio",
+    "label": "Sant'Ambrogio",
+    "date": "--12-07",
+    "authority_uri": "https://www.wikidata.org/wiki/Q43689",
+    "note": "Vescovo di Milano, †04/04/397",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaSantaLucia",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSantaLucia",
+    "label": "Santa Lucia",
+    "date": "--12-13",
+    "authority_uri": "https://www.wikidata.org/wiki/Q183240",
+    "note": "Vergine e martire a Siracusa, †304",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaVigiliaNatale",
+    "url": "https://statutiascoli.it/calendario.html?id=festaVigiliaNatale",
+    "label": "Vigilia di Natale",
+    "date": "--12-24",
+    "authority_uri": "https://www.wikidata.org/wiki/Q106010",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro3_rubrica70",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_71"
+      }
+    ]
+  },
+  {
+    "id": "festaNatale",
+    "url": "https://statutiascoli.it/calendario.html?id=festaNatale",
+    "label": "Natale",
+    "date": "--12-25",
+    "authority_uri": "https://www.wikidata.org/wiki/Q19809",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      },
+      {
+        "id": "statPop_libro2_rubrica3",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_4"
+      },
+      {
+        "id": "statPop_libro2_rubrica5",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_6"
+      }
+    ]
+  },
+  {
+    "id": "festaSanSilvestro",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanSilvestro",
+    "label": "San Silvestro",
+    "date": "--12-31",
+    "authority_uri": "https://www.wikidata.org/wiki/Q47149",
+    "note": "Silvestro I, 33° papa di Roma, †337",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "festaMariaMadre",
+    "url": "https://statutiascoli.it/calendario.html?id=festaMariaMadre",
+    "label": "Maria madre di Dio",
+    "date": "--01-01",
+    "authority_uri": "https://www.wikidata.org/wiki/Q600889",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      },
+      {
+        "id": "statPop_libro2_rubrica3",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_4"
+      }
+    ]
+  },
+  {
+    "id": "festaAssunzioneMaria",
+    "url": "https://statutiascoli.it/calendario.html?id=festaAssunzioneMaria",
+    "label": "Assunzione di Maria",
+    "date": "--08-15",
+    "authority_uri": "https://www.wikidata.org/wiki/Q162691",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro1_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_3"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      },
+      {
+        "id": "statPop_libro2_rubrica3",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_4"
+      },
+      {
+        "id": "statPop_libro2_rubrica6",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_7"
+      }
+    ]
+  },
+  {
+    "id": "festaImmacolataConcezione",
+    "url": "https://statutiascoli.it/calendario.html?id=festaImmacolataConcezione",
+    "label": "Immacolata Concezione",
+    "date": "--12-08",
+    "authority_uri": "https://www.wikidata.org/wiki/Q185606",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      },
+      {
+        "id": "statPop_libro2_rubrica3",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_4"
+      }
+    ]
+  },
+  {
+    "id": "festaSanFilippo",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanFilippo",
+    "label": "San Filippo",
+    "date": "--05-01",
+    "authority_uri": "https://www.wikidata.org/wiki/Q43675",
+    "note": "Apostolo e martire, onorato con s. Giacomo il Minore, I sec.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanGiacomoMinore",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanGiacomoMinore",
+    "label": "San Giacomo",
+    "date": "--05-01",
+    "authority_uri": "https://www.wikidata.org/wiki/Q3245490",
+    "note": "Giacomo il Minore, apostolo e vescovo di Gerusalemme, onorato con s. Filippo, †62 (martirio)",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanPietro",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanPietro",
+    "label": "San Pietro",
+    "date": "--06-29",
+    "authority_uri": "https://www.wikidata.org/wiki/Q33923",
+    "note": "Simon Pietro, apostolo e primo papa di Roma, onorato con s. Paolo, †67 (martirio)",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanPaolo",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanPaolo",
+    "label": "San Paolo",
+    "date": "--06-29",
+    "authority_uri": "https://www.wikidata.org/wiki/Q9200",
+    "note": "Paolo di Tarso, riconosciuto come apostolo anche se non facente parte del gruppo dei 12 scelti da Gesù, onorato con s. Pietro, †67 (martirio)",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanBarnaba",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanBarnaba",
+    "label": "San Barnaba",
+    "date": "--06-11",
+    "authority_uri": "https://www.wikidata.org/wiki/Q185856",
+    "note": "Giuseppe di Cipro, riconosciuto come apostolo anche se non facente parte del gruppo dei 12 scelti da Gesù, martire a Cipro, I sec.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanSimone",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanSimone",
+    "label": "San Simone",
+    "date": "--10-28",
+    "authority_uri": "https://www.wikidata.org/wiki/Q12871",
+    "note": "Lo Zelota, apostolo, onorato con s. Giuda Taddeo, I sec.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanGiudaTaddeo",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanGiudaTaddeo",
+    "label": "San Giuda Taddeo",
+    "date": "--10-28",
+    "authority_uri": "https://www.wikidata.org/wiki/Q43945",
+    "note": "Apostolo, onorato con s. Simone, I sec.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanMattia",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanMattia",
+    "label": "San Mattia",
+    "date": "--02-24",
+    "authority_uri": "https://www.wikidata.org/wiki/Q44020",
+    "note": "Apostolo, I sec.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanGiacomoMaggiore",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanGiacomoMaggiore",
+    "label": "San Giacomo",
+    "date": "--07-25",
+    "authority_uri": "https://www.wikidata.org/wiki/Q43999",
+    "note": "Giacomo il Maggiore, apostolo e martire, †44",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanBartolomeo",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanBartolomeo",
+    "label": "San Bartolomeo",
+    "date": "--08-24",
+    "authority_uri": "https://www.wikidata.org/wiki/Q43982",
+    "note": "Apostolo e martire, †47",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSantAndrea",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSantAndrea",
+    "label": "Sant'Andrea",
+    "date": "--11-30",
+    "authority_uri": "https://www.wikidata.org/wiki/Q43399",
+    "note": "Apostolo, I sec",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanTommaso",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanTommaso",
+    "label": "San Tommaso",
+    "date": "--12-21",
+    "authority_uri": "https://www.wikidata.org/wiki/Q43669",
+    "note": "Apostolo e martire",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanMarco",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanMarco",
+    "label": "San Marco",
+    "date": "--04-25",
+    "authority_uri": "https://www.wikidata.org/wiki/Q31966",
+    "note": "Evangelista e martire, †68",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanMatteo",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanMatteo",
+    "label": "San Matteo Aposto ed Evangelista",
+    "date": "--09-21",
+    "authority_uri": "https://www.wikidata.org/wiki/Q43600",
+    "note": "Apostolo ed evangelista, I sec.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanLuca",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanLuca",
+    "label": "San Luca",
+    "date": "--10-18",
+    "authority_uri": "https://www.wikidata.org/wiki/Q128538",
+    "note": "Evangelista, I sec",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaSanGiovanni",
+    "url": "https://statutiascoli.it/calendario.html?id=festaSanGiovanni",
+    "label": "San Giovanni",
+    "date": "--12-27",
+    "authority_uri": "https://www.wikidata.org/wiki/Q44015",
+    "note": "Apostolo ed evangelista, †101",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaResurrezione",
+    "url": "https://statutiascoli.it/calendario.html?id=festaResurrezione",
+    "label": "Pasqua",
+    "date": "1496-04-03",
+    "authority_uri": "https://www.wikidata.org/wiki/Q21196",
+    "note": "La Pasqua di Resurrezione è celebrata dalla chiesa nella I domenica dopo il plenilunio di marzo. È pertanto una festa mobile da cui dipendono le altre feste mobili dell'anno.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statCom_libro3_rubrica70",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_71"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      },
+      {
+        "id": "statPop_libro2_rubrica3",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_4"
+      }
+    ]
+  },
+  {
+    "id": "festaAscensioneGesu",
+    "url": "https://statutiascoli.it/calendario.html?id=festaAscensioneGesu",
+    "label": "Ascensione di Gesù Cristo",
+    "date": "1496-05-12",
+    "authority_uri": "https://www.wikidata.org/wiki/Q5686605",
+    "note": "Festa mobile che la chiesa celebra 40 giorni dopo Pasqua.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      },
+      {
+        "id": "statPop_libro2_rubrica3",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_4"
+      }
+    ]
+  },
+  {
+    "id": "festaPentecoste",
+    "url": "https://statutiascoli.it/calendario.html?id=festaPentecoste",
+    "label": "Pentecoste",
+    "date": "1496-05-22",
+    "authority_uri": "https://www.wikidata.org/wiki/Q39864",
+    "note": "Celebrazione della discesa dello Spirito Santo nel Cenacolo, sugli Apostoli e la Vergine. Cade nel cinquantesimo giorno a partire dal giorno di Pasqua compreso, di domenica, ed è quindi una festa mobile dipendente dalla data della Pasqua.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "festaCorpusDomini",
+    "url": "https://statutiascoli.it/calendario.html?id=festaCorpusDomini",
+    "label": "Corpus Domini",
+    "date": "1496-05-26",
+    "authority_uri": "https://www.wikidata.org/wiki/Q152395",
+    "note": "Solennità del Santissimo Corpo e Sangue di Cristo. È una festa mobile e si celebra il giovedì dopo la domenica della ss. Trinità.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      },
+      {
+        "id": "statPop_libro2_rubrica5",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_6"
+      }
+    ]
+  },
+  {
+    "id": "festaVenerdiSanto",
+    "url": "https://statutiascoli.it/calendario.html?id=festaVenerdiSanto",
+    "label": "Venerdì santo",
+    "date": "1496-04-01",
+    "authority_uri": "https://www.wikidata.org/wiki/Q40317",
+    "note": "Venerdì che precede la Paqua, detto anche Parasceve.",
+    "text_units": [
+      {
+        "id": "statCom_libro3_rubrica70",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_71"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      },
+      {
+        "id": "statPop_libro2_rubrica5",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_6"
+      }
+    ]
+  },
+  {
+    "id": "festaMartediGrasso",
+    "url": "https://statutiascoli.it/calendario.html?id=festaMartediGrasso",
+    "label": "Martedì grasso",
+    "date": "1496-02-15",
+    "authority_uri": "https://www.wikidata.org/wiki/Q4845365",
+    "note": "Ultimo giorno di Carnevale (chiamato anche Carnasciale), prima del Mercolì delle Ceneri che apre la Quaresima.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica40",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_41"
+      },
+      {
+        "id": "statCom_libro3_rubrica70",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_71"
+      }
+    ]
+  }
+]

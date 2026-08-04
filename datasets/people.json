@@ -1,0 +1,509 @@
+[
+  {
+    "id": "Iohanni_deNello",
+    "url": "https://statutiascoli.it/persone.html?id=Iohanni_deNello",
+    "name": "Iohanni de Nello",
+    "occupations": [
+      "doctore de lege"
+    ],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statutiAscoli_intro",
+        "url": "https://statutiascoli.it/statuti.html?id=0"
+      }
+    ]
+  },
+  {
+    "id": "Migno_deNicola",
+    "url": "https://statutiascoli.it/persone.html?id=Migno_deNicola",
+    "name": "Migno de Nicola",
+    "occupations": [],
+    "residences": [
+      {
+        "label": "quartero Sancto Migno",
+        "place_id": "quartiereSantEmidio",
+        "url": "https://statutiascoli.it/citt%C3%A0.html?id=quartiereSantEmidio"
+      }
+    ],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statutiAscoli_intro",
+        "url": "https://statutiascoli.it/statuti.html?id=0"
+      }
+    ]
+  },
+  {
+    "id": "Iacobo_deBartolomeo",
+    "url": "https://statutiascoli.it/persone.html?id=Iacobo_deBartolomeo",
+    "name": "Iacobo de missere Bartolomeo",
+    "occupations": [
+      "judice d'Ascoli"
+    ],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statutiAscoli_intro",
+        "url": "https://statutiascoli.it/statuti.html?id=0"
+      }
+    ]
+  },
+  {
+    "id": "Cola_deNammiero",
+    "url": "https://statutiascoli.it/persone.html?id=Cola_deNammiero",
+    "name": "Cola de Nammiero",
+    "occupations": [],
+    "residences": [
+      {
+        "label": "quartero de Sancta Maria inter vigna",
+        "place_id": "quartiereSantaMariaInterVigna",
+        "url": "https://statutiascoli.it/citt%C3%A0.html?id=quartiereSantaMariaInterVigna"
+      }
+    ],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statutiAscoli_intro",
+        "url": "https://statutiascoli.it/statuti.html?id=0"
+      }
+    ]
+  },
+  {
+    "id": "Georgio_dePasquale",
+    "url": "https://statutiascoli.it/persone.html?id=Georgio_dePasquale",
+    "name": "Georgio de Pasquale",
+    "occupations": [
+      "judice"
+    ],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statutiAscoli_intro",
+        "url": "https://statutiascoli.it/statuti.html?id=0"
+      }
+    ]
+  },
+  {
+    "id": "Vanni_deMartello",
+    "url": "https://statutiascoli.it/persone.html?id=Vanni_deMartello",
+    "name": "Vanni de Martello",
+    "occupations": [
+      "notaro"
+    ],
+    "residences": [
+      {
+        "label": "quartero de Sancto Venantio",
+        "place_id": "quartiereSanVenanzio",
+        "url": "https://statutiascoli.it/citt%C3%A0.html?id=quartiereSanVenanzio"
+      }
+    ],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statutiAscoli_intro",
+        "url": "https://statutiascoli.it/statuti.html?id=0"
+      }
+    ]
+  },
+  {
+    "id": "Ciuffutu_deNuccio",
+    "url": "https://statutiascoli.it/persone.html?id=Ciuffutu_deNuccio",
+    "name": "Ciuffutu de missere Nuccio",
+    "occupations": [
+      "doctore de lege"
+    ],
+    "residences": [
+      {
+        "label": "quartiere San Giacomo",
+        "place_id": "quartiereSanGiacomo",
+        "url": "https://statutiascoli.it/citt%C3%A0.html?id=quartiereSanGiacomo"
+      }
+    ],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statutiAscoli_intro",
+        "url": "https://statutiascoli.it/statuti.html?id=0"
+      }
+    ]
+  },
+  {
+    "id": "Andriuccio_dePetro",
+    "url": "https://statutiascoli.it/persone.html?id=Andriuccio_dePetro",
+    "name": "Andriuccio de Petro (da Monte Moro)",
+    "occupations": [
+      "notario de li signuri antiani"
+    ],
+    "residences": [
+      {
+        "label": "quartero de Sancto Iacobo",
+        "place_id": "quartiereSanGiacomo",
+        "url": "https://statutiascoli.it/citt%C3%A0.html?id=quartiereSanGiacomo"
+      }
+    ],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_2"
+      },
+      {
+        "id": "statPop_libro1_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_3"
+      },
+      {
+        "id": "statPop_libro1_rubrica94",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_95"
+      },
+      {
+        "id": "statutiAscoli_intro",
+        "url": "https://statutiascoli.it/statuti.html?id=0"
+      }
+    ]
+  },
+  {
+    "id": "Nicolo_deIohanni",
+    "url": "https://statutiascoli.it/persone.html?id=Nicolo_deIohanni",
+    "name": "Nicolo de Iohanni (da Perusia)",
+    "occupations": [
+      "notaro de la reformatione",
+      "cancilleri"
+    ],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica58",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_59"
+      },
+      {
+        "id": "statutiAscoli_intro",
+        "url": "https://statutiascoli.it/statuti.html?id=0"
+      }
+    ]
+  },
+  {
+    "id": "PapaGregorioXI",
+    "url": "https://statutiascoli.it/persone.html?id=PapaGregorioXI",
+    "name": "Pierre Roger (Gregorio XI)",
+    "occupations": [
+      "papa"
+    ],
+    "residences": [],
+    "authority_uri": "https://www.wikidata.org/wiki/Q169594",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statutiAscoli_intro",
+        "url": "https://statutiascoli.it/statuti.html?id=0"
+      }
+    ]
+  },
+  {
+    "id": "Muctio_deJohanni_deBernardo",
+    "url": "https://statutiascoli.it/persone.html?id=Muctio_deJohanni_deBernardo",
+    "name": "Muctio de Johanni de Bernardo",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "Pyrromi_deAmelia",
+    "url": "https://statutiascoli.it/persone.html?id=Pyrromi_deAmelia",
+    "name": "Pyrromi de Amelia",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_3"
+      }
+    ]
+  },
+  {
+    "id": "Massuccio_deJacobo_dePalummero",
+    "url": "https://statutiascoli.it/persone.html?id=Massuccio_deJacobo_dePalummero",
+    "name": "Massuccio de Jacobo de Palummero",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica11",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_12"
+      }
+    ]
+  },
+  {
+    "id": "Leonardo_deVerita",
+    "url": "https://statutiascoli.it/persone.html?id=Leonardo_deVerita",
+    "name": "Leonardo de Verità",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica24",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_25"
+      }
+    ]
+  },
+  {
+    "id": "Joanni_daTheramo",
+    "url": "https://statutiascoli.it/persone.html?id=Joanni_daTheramo",
+    "name": "Joanni (da Theramo)",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "StatutiAscoli_conclusione",
+        "url": "https://statutiascoli.it/statuti.html?id=3"
+      }
+    ]
+  },
+  {
+    "id": "Corradino_dePasqualuccio",
+    "url": "https://statutiascoli.it/persone.html?id=Corradino_dePasqualuccio",
+    "name": "Corradino de Pasqualuccio",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "StatutiAscoli_conclusione",
+        "url": "https://statutiascoli.it/statuti.html?id=3"
+      }
+    ]
+  },
+  {
+    "id": "Barnabeo_deMatheo",
+    "url": "https://statutiascoli.it/persone.html?id=Barnabeo_deMatheo",
+    "name": "Barnabeo de Matheo",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "StatutiAscoli_conclusione",
+        "url": "https://statutiascoli.it/statuti.html?id=3"
+      }
+    ]
+  },
+  {
+    "id": "Morano_deMoranis",
+    "url": "https://statutiascoli.it/persone.html?id=Morano_deMoranis",
+    "name": "Morano de Moranis",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "StatutiAscoli_conclusione",
+        "url": "https://statutiascoli.it/statuti.html?id=3"
+      }
+    ]
+  },
+  {
+    "id": "JoanniAntrea_deSanctucio",
+    "url": "https://statutiascoli.it/persone.html?id=JoanniAntrea_deSanctucio",
+    "name": "Joanni Antrea de Sanctucio",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "StatutiAscoli_conclusione",
+        "url": "https://statutiascoli.it/statuti.html?id=3"
+      }
+    ]
+  },
+  {
+    "id": "Perisancti_deAcquistuccio",
+    "url": "https://statutiascoli.it/persone.html?id=Perisancti_deAcquistuccio",
+    "name": "Perisancti de Acquistuccio",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "StatutiAscoli_conclusione",
+        "url": "https://statutiascoli.it/statuti.html?id=3"
+      }
+    ]
+  },
+  {
+    "id": "AntreaMatheo_deVanni",
+    "url": "https://statutiascoli.it/persone.html?id=AntreaMatheo_deVanni",
+    "name": "Antrea Matheo de Vanni",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "StatutiAscoli_conclusione",
+        "url": "https://statutiascoli.it/statuti.html?id=3"
+      }
+    ]
+  },
+  {
+    "id": "Luca_deJanni_dePelliccionis",
+    "url": "https://statutiascoli.it/persone.html?id=Luca_deJanni_dePelliccionis",
+    "name": "Luca de ser Janni de Pelliccionis",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "StatutiAscoli_conclusione",
+        "url": "https://statutiascoli.it/statuti.html?id=3"
+      }
+    ]
+  },
+  {
+    "id": "papaAlessandroVI",
+    "url": "https://statutiascoli.it/persone.html?id=papaAlessandroVI",
+    "name": "Rodrigo Borgia (Alexandro VI)",
+    "occupations": [
+      "Papa"
+    ],
+    "residences": [],
+    "authority_uri": "https://www.wikidata.org/wiki/Q108316",
+    "note": "",
+    "text_units": [
+      {
+        "id": "StatutiAscoli_conclusione",
+        "url": "https://statutiascoli.it/statuti.html?id=3"
+      }
+    ]
+  },
+  {
+    "id": "Joanni_deVendibene",
+    "url": "https://statutiascoli.it/persone.html?id=Joanni_deVendibene",
+    "name": "Joanni de Vendibene",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica7",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_8"
+      },
+      {
+        "id": "statCom_libro2_rubrica76",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_77"
+      },
+      {
+        "id": "statCom_libro3_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_0"
+      },
+      {
+        "id": "statCom_libro3_rubrica81",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_82"
+      },
+      {
+        "id": "statPop_libro3_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_0"
+      },
+      {
+        "id": "statPop_libro3_rubrica25",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_26"
+      }
+    ]
+  },
+  {
+    "id": "Galeotto_Malatesta",
+    "url": "https://statutiascoli.it/persone.html?id=Galeotto_Malatesta",
+    "name": "Galiocto de Malatesta",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "https://www.wikidata.org/wiki/Q3757583",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica76",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_77"
+      }
+    ]
+  },
+  {
+    "id": "Ioandi_deAmelia",
+    "url": "https://statutiascoli.it/persone.html?id=Ioandi_deAmelia",
+    "name": "Ioandi de Amelia",
+    "occupations": [
+      "cancellerius"
+    ],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro3_rubrica26",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_27"
+      }
+    ]
+  },
+  {
+    "id": "Senuctio_deAngneluctio",
+    "url": "https://statutiascoli.it/persone.html?id=Senuctio_deAngneluctio",
+    "name": "Senuctio de Angneluctio de Ascoli",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_3"
+      }
+    ]
+  },
+  {
+    "id": "Angelo_deMartino",
+    "url": "https://statutiascoli.it/persone.html?id=Angelo_deMartino",
+    "name": "Angnelo de Martino",
+    "occupations": [],
+    "residences": [],
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica68",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_69"
+      }
+    ]
+  }
+]

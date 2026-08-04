@@ -1,0 +1,2495 @@
+[
+  {
+    "id": "Raiano",
+    "url": "https://statutiascoli.it/territorio.html?id=Raiano",
+    "name": "Raiano",
+    "type": "comune",
+    "authority_uri": "https://www.wikidata.org/wiki/Q50131",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_16"
+      }
+    ]
+  },
+  {
+    "id": "contradaPalaretta",
+    "url": "https://statutiascoli.it/territorio.html?id=contradaPalaretta",
+    "name": "contrada de Palarecta",
+    "type": "",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica75",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_76"
+      }
+    ]
+  },
+  {
+    "id": "Parergata",
+    "url": "https://statutiascoli.it/territorio.html?id=Parergata",
+    "name": "Parergata",
+    "type": "",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_16"
+      }
+    ]
+  },
+  {
+    "id": "Amatrice",
+    "url": "https://statutiascoli.it/territorio.html?id=Amatrice",
+    "name": "terra de l'Amatrice",
+    "type": "",
+    "authority_uri": "https://www.wikidata.org/wiki/Q223427",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica57",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_58"
+      },
+      {
+        "id": "statPop_libro2_rubrica12",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_13"
+      },
+      {
+        "id": "statPop_libro3_rubrica34",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_35"
+      }
+    ]
+  },
+  {
+    "id": "Arquata",
+    "url": "https://statutiascoli.it/territorio.html?id=Arquata",
+    "name": "terra de Arquata",
+    "type": "",
+    "authority_uri": "https://www.wikidata.org/wiki/Q56031",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica12",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_13"
+      }
+    ]
+  },
+  {
+    "id": "monteSantoMariIncallo",
+    "url": "https://statutiascoli.it/territorio.html?id=monteSantoMariIncallo",
+    "name": "terra de monte Sancto Mari Incallo",
+    "type": "",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica12",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_13"
+      }
+    ]
+  },
+  {
+    "id": "Montemonaco",
+    "url": "https://statutiascoli.it/territorio.html?id=Montemonaco",
+    "name": "terra de monte Lumonacho",
+    "type": "",
+    "authority_uri": "https://www.wikidata.org/wiki/Q56082",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica12",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_13"
+      }
+    ]
+  },
+  {
+    "id": "Mozzano",
+    "url": "https://statutiascoli.it/territorio.html?id=Mozzano",
+    "name": "Moççano",
+    "type": "",
+    "authority_uri": "https://www.wikidata.org/wiki/Q2401022",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica45",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_46"
+      }
+    ]
+  },
+  {
+    "id": "quartiereSantEmidio",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=quartiereSantEmidio",
+    "name": "quarterio de Sancto Emidio",
+    "type": "quartiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro1_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_3"
+      }
+    ]
+  },
+  {
+    "id": "quartiereSantaMariaInterVigna",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=quartiereSantaMariaInterVigna",
+    "name": "quarterio de Sancta Maria inter vigna",
+    "type": "quartiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro1_rubrica23",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_24"
+      }
+    ]
+  },
+  {
+    "id": "quartiereSanVenanzio",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=quartiereSanVenanzio",
+    "name": "quarterio de Sancto Venantio",
+    "type": "quartiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro1_rubrica23",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_24"
+      },
+      {
+        "id": "statPop_libro3_rubrica68",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_69"
+      }
+    ]
+  },
+  {
+    "id": "quartiereSanGiacomo",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=quartiereSanGiacomo",
+    "name": "quarterio de Sancto Jacobo",
+    "type": "quartiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro1_rubrica23",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_24"
+      }
+    ]
+  },
+  {
+    "id": "sestierePediChiaviche",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestierePediChiaviche",
+    "name": "sexterio de Pedi de le Chiaviche",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro3_rubrica76",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_77"
+      }
+    ]
+  },
+  {
+    "id": "sestiereCapoChiaviche",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereCapoChiaviche",
+    "name": "sexterio de Capo de le Chiaviche",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro3_rubrica76",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_77"
+      },
+      {
+        "id": "statPop_libro4_rubrica5",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_5"
+      }
+    ]
+  },
+  {
+    "id": "sestiereSanBiagio",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereSanBiagio",
+    "name": "sexterio de Sancto Blaxio",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestiereCannera",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereCannera",
+    "name": "sexterio de la Cannera",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestierePedeRinga",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestierePedeRinga",
+    "name": "sexterio de Pede la ringa",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestierePiazza",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestierePiazza",
+    "name": "sexterio de la Piaza",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestierePonteMaggiore",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestierePonteMaggiore",
+    "name": "sexterio de Ponte majore",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestiereSanPietroAdamo",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereSanPietroAdamo",
+    "name": "sexterio de Sancto Petro Adammo",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestiereSanCristoforo",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereSanCristoforo",
+    "name": "sexterio de Sancto Christofaro",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestiereSantaMaria",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereSantaMaria",
+    "name": "sexterio de Sancta Maria",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestiereSanFrancesco",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereSanFrancesco",
+    "name": "sexterio de Sancto Francisco",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestiereSantAnastasio",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereSantAnastasio",
+    "name": "sexterio de Sancto Anastasio",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro1_rubrica4",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_5"
+      }
+    ]
+  },
+  {
+    "id": "sestiereGrotte",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereGrotte",
+    "name": "sexterio de le Grocte",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestiereScaye",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereScaye",
+    "name": "sexterio de le Scaye",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestiereSetteSoglie",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereSetteSoglie",
+    "name": "sexterio de Secte Soglie",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestiereSanVenanzio",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereSanVenanzio",
+    "name": "sexterio de Sancto Venantio",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestiereSantAgostino",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereSantAgostino",
+    "name": "sexterio de Sancto Augustino",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestiereCasaleNovo",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereCasaleNovo",
+    "name": "sexterio Casale novo",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestierePortaRomana",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestierePortaRomana",
+    "name": "sexterio de porta Romana",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro3_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_0"
+      },
+      {
+        "id": "statCom_libro3_rubrica113",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_114"
+      },
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro1_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_16"
+      },
+      {
+        "id": "statPop_libro2_rubrica6",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_7"
+      },
+      {
+        "id": "statPop_libro3_rubrica68",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_69"
+      }
+    ]
+  },
+  {
+    "id": "sestiereLago",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereLago",
+    "name": "sexterio de lu Laco",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestiereSanGiacomo",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereSanGiacomo",
+    "name": "sexterio de Sancto Jacobo",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "sestierePonteSolesta",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestierePonteSolesta",
+    "name": "sexterio de ponte Solestane",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro3_rubrica68",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_69"
+      }
+    ]
+  },
+  {
+    "id": "sestierePedeMercato",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestierePedeMercato",
+    "name": "sexterio da Pede de lu merchato",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro1_rubrica4",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_5"
+      }
+    ]
+  },
+  {
+    "id": "sestiereTribio",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=sestiereTribio",
+    "name": "sexterio lu Tribio",
+    "type": "sestiere",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "portaPonteMaggioreSopra",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=portaPonteMaggioreSopra",
+    "name": "porta de Ponte majore de sopra",
+    "type": "porta",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "portaPonteMaggiore",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=portaPonteMaggiore",
+    "name": "porta de ponte Maiore",
+    "type": "porta",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica23",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_24"
+      },
+      {
+        "id": "statPop_libro3_rubrica32",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_33"
+      }
+    ]
+  },
+  {
+    "id": "portaPonteTufillo",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=portaPonteTufillo",
+    "name": "porta de ponte Tofillo",
+    "type": "porta",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica23",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_24"
+      }
+    ]
+  },
+  {
+    "id": "portaPonteSolesta",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=portaPonteSolesta",
+    "name": "porta de ponte Solestano",
+    "type": "porta",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica23",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_24"
+      },
+      {
+        "id": "statPop_libro3_rubrica32",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_33"
+      }
+    ]
+  },
+  {
+    "id": "portaRomana",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=portaRomana",
+    "name": "porta de Porta Romana",
+    "type": "porta",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro2_rubrica23",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_24"
+      },
+      {
+        "id": "statPop_libro3_rubrica58",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_59"
+      }
+    ]
+  },
+  {
+    "id": "portaMonte",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=portaMonte",
+    "name": "porta de Summa",
+    "type": "porta",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica23",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_24"
+      }
+    ]
+  },
+  {
+    "id": "portaSantoSpirito",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=portaSantoSpirito",
+    "name": "porta de Sancto Spirito",
+    "type": "porta",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro2_rubrica23",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_24"
+      }
+    ]
+  },
+  {
+    "id": "portaTorricella",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=portaTorricella",
+    "name": "porta de Torrecelle",
+    "type": "porta",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica23",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_24"
+      },
+      {
+        "id": "statPop_libro4_rubrica17",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_17"
+      }
+    ]
+  },
+  {
+    "id": "portaTornasacco",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=portaTornasacco",
+    "name": "porta Tornasacco",
+    "type": "porta",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica23",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_24"
+      }
+    ]
+  },
+  {
+    "id": "campoParignano",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=campoParignano",
+    "name": "campo de Paregnano",
+    "type": "",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro3_rubrica31",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_32"
+      },
+      {
+        "id": "statCom_libro3_rubrica99",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_100"
+      },
+      {
+        "id": "statPop_libro3_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_0"
+      },
+      {
+        "id": "statPop_libro3_rubrica13",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_14"
+      },
+      {
+        "id": "statPop_libro3_rubrica27",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_28"
+      },
+      {
+        "id": "statPop_libro3_rubrica49",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_50"
+      },
+      {
+        "id": "statPop_libro3_rubrica64",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_65"
+      }
+    ]
+  },
+  {
+    "id": "palazzoPopolo",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=palazzoPopolo",
+    "name": "Palazzo del Popolo",
+    "type": "palazzo",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_3"
+      },
+      {
+        "id": "statCom_libro3_rubrica114",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_115"
+      },
+      {
+        "id": "statCom_libro3_rubrica31",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_32"
+      },
+      {
+        "id": "statCom_libro3_rubrica63",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_64"
+      },
+      {
+        "id": "statCom_libro3_rubrica70",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_71"
+      },
+      {
+        "id": "statCom_libro3_rubrica74",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_75"
+      },
+      {
+        "id": "statCom_libro3_rubrica94",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_95"
+      },
+      {
+        "id": "statPop_libro1_rubrica23",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_24"
+      },
+      {
+        "id": "statPop_libro1_rubrica29",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_30"
+      },
+      {
+        "id": "statPop_libro1_rubrica32",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_33"
+      },
+      {
+        "id": "statPop_libro1_rubrica43",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_44"
+      },
+      {
+        "id": "statPop_libro1_rubrica62",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_63"
+      },
+      {
+        "id": "statPop_libro1_rubrica69",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_70"
+      },
+      {
+        "id": "statPop_libro1_rubrica70",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_71"
+      },
+      {
+        "id": "statPop_libro1_rubrica77",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_78"
+      },
+      {
+        "id": "statPop_libro1_rubrica82",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_83"
+      },
+      {
+        "id": "statPop_libro2_rubrica11",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_12"
+      },
+      {
+        "id": "statPop_libro3_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_3"
+      },
+      {
+        "id": "statPop_libro3_rubrica37",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_38"
+      },
+      {
+        "id": "statPop_libro4_rubrica18",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_18"
+      },
+      {
+        "id": "statPop_libro4_rubrica25",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_25"
+      },
+      {
+        "id": "statPop_libro5_rubrica10",
+        "url": "https://statutiascoli.it/statuti.html?id=2_5_10"
+      }
+    ]
+  },
+  {
+    "id": "piazzaPopolo",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=piazzaPopolo",
+    "name": "Piazza del Popolo",
+    "type": "piazza",
+    "authority_uri": "",
+    "note": "Piazza del Popolo è anche chiamata 'piaza de sopra'.",
+    "text_units": [
+      {
+        "id": "statCom_libro3_rubrica31",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_32"
+      },
+      {
+        "id": "statCom_libro3_rubrica70",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_71"
+      },
+      {
+        "id": "statCom_libro3_rubrica85",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_86"
+      },
+      {
+        "id": "statCom_libro3_rubrica94",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_95"
+      },
+      {
+        "id": "statPop_libro1_rubrica32",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_33"
+      },
+      {
+        "id": "statPop_libro2_rubrica11",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_12"
+      },
+      {
+        "id": "statPop_libro3_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_3"
+      },
+      {
+        "id": "statPop_libro3_rubrica21",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_22"
+      },
+      {
+        "id": "statPop_libro3_rubrica37",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_38"
+      },
+      {
+        "id": "statPop_libro3_rubrica42",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_43"
+      },
+      {
+        "id": "statPop_libro4_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_0"
+      },
+      {
+        "id": "statPop_libro4_rubrica18",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_18"
+      },
+      {
+        "id": "statPop_libro5_rubrica21",
+        "url": "https://statutiascoli.it/statuti.html?id=2_5_21"
+      }
+    ]
+  },
+  {
+    "id": "piazzaSotto",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=piazzaSotto",
+    "name": "Piazza de socta",
+    "type": "piazza",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro3_rubrica31",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_32"
+      },
+      {
+        "id": "statCom_libro3_rubrica70",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_71"
+      },
+      {
+        "id": "statCom_libro3_rubrica94",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_95"
+      },
+      {
+        "id": "statCom_libro4_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_0"
+      },
+      {
+        "id": "statCom_libro4_rubrica10",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_11"
+      },
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro1_rubrica23",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_24"
+      },
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      }
+    ]
+  },
+  {
+    "id": "palazzoComune",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=palazzoComune",
+    "name": "Palazzo del Comune",
+    "type": "palazzo",
+    "authority_uri": "",
+    "note": "Chiamato anche Palazzo dell'Arengo. Comprendeva anche il palazzo del Consiglio degli Anziani.",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica14",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_15"
+      },
+      {
+        "id": "statCom_libro2_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_3"
+      },
+      {
+        "id": "statCom_libro2_rubrica3",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_4"
+      },
+      {
+        "id": "statCom_libro2_rubrica51",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_52"
+      },
+      {
+        "id": "statCom_libro2_rubrica54",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_55"
+      },
+      {
+        "id": "statCom_libro2_rubrica55",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_56"
+      },
+      {
+        "id": "statCom_libro3_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_2"
+      },
+      {
+        "id": "statCom_libro3_rubrica114",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_115"
+      },
+      {
+        "id": "statCom_libro3_rubrica20",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_21"
+      },
+      {
+        "id": "statCom_libro3_rubrica31",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_32"
+      },
+      {
+        "id": "statCom_libro3_rubrica35",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_36"
+      },
+      {
+        "id": "statCom_libro3_rubrica4",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_5"
+      },
+      {
+        "id": "statCom_libro3_rubrica63",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_64"
+      },
+      {
+        "id": "statCom_libro3_rubrica70",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_71"
+      },
+      {
+        "id": "statCom_libro3_rubrica74",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_75"
+      },
+      {
+        "id": "statCom_libro3_rubrica94",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_95"
+      },
+      {
+        "id": "statPop_libro1_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_2"
+      },
+      {
+        "id": "statPop_libro1_rubrica2",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_3"
+      },
+      {
+        "id": "statPop_libro1_rubrica20",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_21"
+      },
+      {
+        "id": "statPop_libro1_rubrica22",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_23"
+      },
+      {
+        "id": "statPop_libro1_rubrica23",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_24"
+      },
+      {
+        "id": "statPop_libro1_rubrica24",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_25"
+      },
+      {
+        "id": "statPop_libro1_rubrica29",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_30"
+      },
+      {
+        "id": "statPop_libro1_rubrica3",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_4"
+      },
+      {
+        "id": "statPop_libro1_rubrica32",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_33"
+      },
+      {
+        "id": "statPop_libro1_rubrica35",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_36"
+      },
+      {
+        "id": "statPop_libro1_rubrica58",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_59"
+      },
+      {
+        "id": "statPop_libro1_rubrica62",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_63"
+      },
+      {
+        "id": "statPop_libro1_rubrica66",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_67"
+      },
+      {
+        "id": "statPop_libro1_rubrica70",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_71"
+      },
+      {
+        "id": "statPop_libro1_rubrica77",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_78"
+      },
+      {
+        "id": "statPop_libro1_rubrica82",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_83"
+      },
+      {
+        "id": "statPop_libro3_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_2"
+      },
+      {
+        "id": "statPop_libro4_rubrica25",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_25"
+      },
+      {
+        "id": "statPop_libro5_rubrica23",
+        "url": "https://statutiascoli.it/statuti.html?id=2_5_23"
+      }
+    ]
+  },
+  {
+    "id": "piazzaArringo",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=piazzaArringo",
+    "name": "Piazza Arringo",
+    "type": "piazza",
+    "authority_uri": "",
+    "note": "",
+    "text_units": []
+  },
+  {
+    "id": "piazzaQuartarola",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=piazzaQuartarola",
+    "name": "Piazza della Quartarola",
+    "type": "piazza",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_0"
+      },
+      {
+        "id": "statPop_libro1_rubrica57",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_58"
+      },
+      {
+        "id": "statPop_libro3_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_0"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSanMartino",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSanMartino",
+    "name": "Ecclesia de Sancto Martino",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSantAnastasio",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSantAnastasio",
+    "name": "Ecclesia de Sancto Anastasio",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSanGiacomo",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSanGiacomo",
+    "name": "Ecclesia de Sancto Jacobo",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSantErasmo",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSantErasmo",
+    "name": "Sancto Rasino",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica6",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_7"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSanPietroMartire",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSanPietroMartire",
+    "name": "Ecclesia de Sancto Petro martire",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_2"
+      },
+      {
+        "id": "statPop_libro2_rubrica8",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_9"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSanFrancesco",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSanFrancesco",
+    "name": "chiesia de Sancto Francisco",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro3_rubrica116",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_117"
+      },
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro1_rubrica1",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_2"
+      },
+      {
+        "id": "statPop_libro1_rubrica68",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_69"
+      },
+      {
+        "id": "statPop_libro1_rubrica78",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_79"
+      },
+      {
+        "id": "statPop_libro2_rubrica11",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_12"
+      },
+      {
+        "id": "statPop_libro2_rubrica7",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_8"
+      },
+      {
+        "id": "statPop_libro4_rubrica18",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_18"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSantaMariaPogioMurro",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSantaMariaPogioMurro",
+    "name": "Ecclesia de Sancta Maria de lu Pogio ad Murro",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica7",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_8"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSanMichele",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSanMichele",
+    "name": "Ecclesia de Sancto Michele",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica7",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_8"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSantaMariaVergine",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSantaMariaVergine",
+    "name": "Ecclesia de Sancta Maria de le virgene",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      }
+    ]
+  },
+  {
+    "id": "chiesaMaggiore",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaMaggiore",
+    "name": "ecclesia majore",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro2_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_0"
+      },
+      {
+        "id": "statCom_libro2_rubrica20",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_21"
+      },
+      {
+        "id": "statCom_libro3_rubrica33",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_34"
+      },
+      {
+        "id": "statCom_libro3_rubrica35",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_36"
+      },
+      {
+        "id": "statCom_libro3_rubrica70",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_71"
+      },
+      {
+        "id": "statCom_libro3_rubrica94",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_95"
+      },
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statCom_libro4_rubrica7",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_8"
+      },
+      {
+        "id": "statPop_libro2_rubrica12",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_13"
+      },
+      {
+        "id": "statPop_libro2_rubrica6",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_7"
+      },
+      {
+        "id": "statPop_libro3_rubrica68",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_69"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSantaMariaSolesta",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSantaMariaSolesta",
+    "name": "ecclesia de Sancta Maria de Solistano",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "StatutiAscoli_conclusione",
+        "url": "https://statutiascoli.it/statuti.html?id=3"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSantaMariaInterVigne",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSantaMariaInterVigne",
+    "name": "chiesa de Sancta Maria inter le vigne",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro2_rubrica34",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_35"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSantAgostino",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSantAgostino",
+    "name": "Ecclesia de Sancto Augustino",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro3_rubrica35",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_36"
+      },
+      {
+        "id": "statPop_libro2_rubrica9",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_10"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSanGregorio",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSanGregorio",
+    "name": "ecclesia de Sancto Gregorio",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_0"
+      },
+      {
+        "id": "statPop_libro3_rubrica53",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_54"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSantoSpirito",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSantoSpirito",
+    "name": "loco de Sancto Spirito",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica57",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_58"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSanDomenico",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSanDomenico",
+    "name": "ecclesia de Sacto Dominico",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica68",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_69"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSantAbramo",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSantAbramo",
+    "name": "ecclesia de Sancto Habraam",
+    "type": "chiesa",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica94",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_95"
+      }
+    ]
+  },
+  {
+    "id": "chiesaSanGiuliano",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=chiesaSanGiuliano",
+    "name": "(ecclesia de) Sancto Juliano",
+    "type": "chiesa",
+    "authority_uri": "https://www.wikidata.org/wiki/Q3670585",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica57",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_58"
+      }
+    ]
+  },
+  {
+    "id": "monasteroSantAngeloGrande",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=monasteroSantAngeloGrande",
+    "name": "monasterio de Sancto Angnelo grande",
+    "type": "monastero",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica68",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_69"
+      }
+    ]
+  },
+  {
+    "id": "monasteroSantAntonio",
+    "url": "https://statutiascoli.it/citt%C3%A0.html?id=monasteroSantAntonio",
+    "name": "monasterio de Sancto Antonio",
+    "type": "monastero",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica49",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_50"
+      }
+    ]
+  },
+  {
+    "id": "castelloAppignano",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloAppignano",
+    "name": "castello de Appognano",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro2_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_0"
+      },
+      {
+        "id": "statCom_libro2_rubrica19",
+        "url": "https://statutiascoli.it/statuti.html?id=1_2_20"
+      },
+      {
+        "id": "statCom_libro4_rubrica24",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_25"
+      },
+      {
+        "id": "statPop_libro1_rubrica29",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_30"
+      },
+      {
+        "id": "statPop_libro1_rubrica33",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_34"
+      },
+      {
+        "id": "statPop_libro1_rubrica99",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_100"
+      }
+    ]
+  },
+  {
+    "id": "castelloForcia",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloForcia",
+    "name": "castello de Forcia",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica12",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_13"
+      }
+    ]
+  },
+  {
+    "id": "castelloPatrignone",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloPatrignone",
+    "name": "castello de Patregnone",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica12",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_13"
+      }
+    ]
+  },
+  {
+    "id": "castelloPorchia",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloPorchia",
+    "name": "castello de Porchia",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica12",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_13"
+      },
+      {
+        "id": "statPop_libro5_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_5_0"
+      },
+      {
+        "id": "statPop_libro5_rubrica14",
+        "url": "https://statutiascoli.it/statuti.html?id=2_5_14"
+      }
+    ]
+  },
+  {
+    "id": "castelloCossignano",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloCossignano",
+    "name": "castello de Cosignano",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica12",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_13"
+      },
+      {
+        "id": "statPop_libro5_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_5_0"
+      },
+      {
+        "id": "statPop_libro5_rubrica14",
+        "url": "https://statutiascoli.it/statuti.html?id=2_5_14"
+      }
+    ]
+  },
+  {
+    "id": "castelloCastignano",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloCastignano",
+    "name": "castello de Castegnano",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica12",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_13"
+      }
+    ]
+  },
+  {
+    "id": "castelloRotella",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloRotella",
+    "name": "castello de Rotella",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica12",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_13"
+      }
+    ]
+  },
+  {
+    "id": "castelloQuintoDecimo",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloQuintoDecimo",
+    "name": "castello de Quinto Decimo",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica12",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_13"
+      },
+      {
+        "id": "statPop_libro3_rubrica94",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_95"
+      },
+      {
+        "id": "statPop_libro4_rubrica13",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_13"
+      }
+    ]
+  },
+  {
+    "id": "castelloMontePassillo",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloMontePassillo",
+    "name": "castello de Monte Paxillo",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_16"
+      },
+      {
+        "id": "statPop_libro1_rubrica29",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_30"
+      },
+      {
+        "id": "statPop_libro2_rubrica22",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_23"
+      },
+      {
+        "id": "statPop_libro4_rubrica6",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_6"
+      }
+    ]
+  },
+  {
+    "id": "castelloCastorano",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloCastorano",
+    "name": "castello de Castorano",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica22",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_23"
+      },
+      {
+        "id": "statPop_libro4_rubrica6",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_6"
+      }
+    ]
+  },
+  {
+    "id": "castelloMonteCretaccio",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloMonteCretaccio",
+    "name": "castello de monte Cretaccio",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_16"
+      },
+      {
+        "id": "statPop_libro1_rubrica99",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_100"
+      },
+      {
+        "id": "statPop_libro2_rubrica22",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_23"
+      }
+    ]
+  },
+  {
+    "id": "castelloMontecalvo",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloMontecalvo",
+    "name": "castello de monte Calvo",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_16"
+      },
+      {
+        "id": "statPop_libro2_rubrica22",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_23"
+      }
+    ]
+  },
+  {
+    "id": "castelloPortoMare",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloPortoMare",
+    "name": "castello de lu Porto ad mare",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica22",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_23"
+      },
+      {
+        "id": "statPop_libro4_rubrica6",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_6"
+      }
+    ]
+  },
+  {
+    "id": "castelloVecchio",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloVecchio",
+    "name": "castello vechio",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro4_rubrica6",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_6"
+      },
+      {
+        "id": "statPop_libro4_rubrica9",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_9"
+      }
+    ]
+  },
+  {
+    "id": "castelloCastiglione",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloCastiglione",
+    "name": "castello de Castiglione",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_16"
+      },
+      {
+        "id": "statPop_libro4_rubrica6",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_6"
+      }
+    ]
+  },
+  {
+    "id": "castelloMonsampoloTronto",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloMonsampoloTronto",
+    "name": "castello de lu monte Santo Polo",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica29",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_30"
+      },
+      {
+        "id": "statPop_libro4_rubrica6",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_6"
+      }
+    ]
+  },
+  {
+    "id": "castelloMonteprandone",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloMonteprandone",
+    "name": "castello de monte Pranduni",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro4_rubrica6",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_6"
+      },
+      {
+        "id": "statPop_libro4_rubrica9",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_9"
+      }
+    ]
+  },
+  {
+    "id": "castelloMontemoro",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloMontemoro",
+    "name": "castello de monte Moro",
+    "type": "castello",
+    "authority_uri": "https://www.wikidata.org/wiki/Q18496574",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica99",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_100"
+      },
+      {
+        "id": "statPop_libro4_rubrica6",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_6"
+      }
+    ]
+  },
+  {
+    "id": "castelloAncarano",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloAncarano",
+    "name": "castello de Ancharano",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro4_rubrica6",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_6"
+      }
+    ]
+  },
+  {
+    "id": "castelloSanPietroErreto",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloSanPietroErreto",
+    "name": "castello de Sancto Petro in Erreto",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica99",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_100"
+      }
+    ]
+  },
+  {
+    "id": "castelloRipaberarda",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloRipaberarda",
+    "name": "castello de la Ripa Berarda",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica99",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_100"
+      },
+      {
+        "id": "statPop_libro3_rubrica78",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_79"
+      }
+    ]
+  },
+  {
+    "id": "castelloCapradosso",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloCapradosso",
+    "name": "castello de Capradosso",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica99",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_100"
+      }
+    ]
+  },
+  {
+    "id": "castelloCollinaFornace",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloCollinaFornace",
+    "name": "castello de la Collina de la Fornace",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica99",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_100"
+      }
+    ]
+  },
+  {
+    "id": "castelloPortella",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloPortella",
+    "name": "castello de la Portella",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica99",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_100"
+      }
+    ]
+  },
+  {
+    "id": "castelloCasalena",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloCasalena",
+    "name": "castello de Casalena",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica99",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_100"
+      }
+    ]
+  },
+  {
+    "id": "castelloColotoNovo",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloColotoNovo",
+    "name": "castello de Coloto Novo",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica99",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_100"
+      }
+    ]
+  },
+  {
+    "id": "castelloPoggioPaganelli",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloPoggioPaganelli",
+    "name": "castello de lu Pojo de li Paganelli",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica99",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_100"
+      }
+    ]
+  },
+  {
+    "id": "castelloCagnano",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloCagnano",
+    "name": "castello de Cagnano",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_16"
+      }
+    ]
+  },
+  {
+    "id": "castelloAcquaSanta",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloAcquaSanta",
+    "name": "castello de l'Acqua Sancta",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_16"
+      },
+      {
+        "id": "statPop_libro1_rubrica29",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_30"
+      },
+      {
+        "id": "statPop_libro3_rubrica90",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_91"
+      },
+      {
+        "id": "statPop_libro4_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_0"
+      },
+      {
+        "id": "statPop_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_15"
+      },
+      {
+        "id": "statPop_libro4_rubrica16",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_16"
+      }
+    ]
+  },
+  {
+    "id": "castelloPolesio",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloPolesio",
+    "name": "castello de Polexio",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica94",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_95"
+      }
+    ]
+  },
+  {
+    "id": "castelloRovetino",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloRovetino",
+    "name": "castello de Rovetino",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica22",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_23"
+      }
+    ]
+  },
+  {
+    "id": "castelloMonteAlto",
+    "url": "https://statutiascoli.it/territorio.html?id=castelloMonteAlto",
+    "name": "castello de Monte Alto",
+    "type": "castello",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro2_rubrica22",
+        "url": "https://statutiascoli.it/statuti.html?id=2_2_23"
+      }
+    ]
+  },
+  {
+    "id": "fiumeCastellano",
+    "url": "https://statutiascoli.it/territorio.html?id=fiumeCastellano",
+    "name": "Fiume Castellano",
+    "type": "fiume",
+    "authority_uri": "https://www.wikidata.org/wiki/Q3662241",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro3_rubrica31",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_32"
+      },
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro3_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_0"
+      },
+      {
+        "id": "statPop_libro3_rubrica65",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_66"
+      },
+      {
+        "id": "statPop_libro3_rubrica9",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_10"
+      }
+    ]
+  },
+  {
+    "id": "fiumeTronto",
+    "url": "https://statutiascoli.it/territorio.html?id=fiumeTronto",
+    "name": "Fiume Tronto",
+    "type": "fiume",
+    "authority_uri": "https://www.wikidata.org/wiki/Q14087",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro3_rubrica31",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_32"
+      },
+      {
+        "id": "statCom_libro4_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=1_4_16"
+      },
+      {
+        "id": "statPop_libro3_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_0"
+      },
+      {
+        "id": "statPop_libro3_rubrica65",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_66"
+      },
+      {
+        "id": "statPop_libro3_rubrica68",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_69"
+      },
+      {
+        "id": "statPop_libro3_rubrica9",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_10"
+      },
+      {
+        "id": "statPop_libro3_rubrica94",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_95"
+      }
+    ]
+  },
+  {
+    "id": "valleTronto",
+    "url": "https://statutiascoli.it/territorio.html?id=valleTronto",
+    "name": "Valle del Tronto",
+    "type": "valle",
+    "authority_uri": "https://www.wikidata.org/wiki/Q4008146",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro3_rubrica106",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_107"
+      },
+      {
+        "id": "statPop_libro1_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_16"
+      },
+      {
+        "id": "statPop_libro3_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_0"
+      },
+      {
+        "id": "statPop_libro3_rubrica93",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_94"
+      },
+      {
+        "id": "statPop_libro4_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_0"
+      },
+      {
+        "id": "statPop_libro4_rubrica9",
+        "url": "https://statutiascoli.it/statuti.html?id=2_4_9"
+      }
+    ]
+  },
+  {
+    "id": "valleSanloparia",
+    "url": "https://statutiascoli.it/territorio.html?id=valleSanloparia",
+    "name": "Valle Sanloparia",
+    "type": "valle",
+    "authority_uri": "#",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_16"
+      }
+    ]
+  },
+  {
+    "id": "fiumePescara",
+    "url": "https://statutiascoli.it/territorio.html?id=fiumePescara",
+    "name": "Fiume Pescara",
+    "type": "fiume",
+    "authority_uri": "https://www.wikidata.org/wiki/Q71530",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_0"
+      },
+      {
+        "id": "statPop_libro1_rubrica57",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_58"
+      }
+    ]
+  },
+  {
+    "id": "fiumeFluvione",
+    "url": "https://statutiascoli.it/territorio.html?id=fiumeFluvione",
+    "name": "Fiume Fluvione",
+    "type": "fiume",
+    "authority_uri": "https://www.wikidata.org/wiki/Q108479645",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica94",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_95"
+      }
+    ]
+  },
+  {
+    "id": "fiumeChiaro",
+    "url": "https://statutiascoli.it/territorio.html?id=fiumeChiaro",
+    "name": "Fiume Chiaro",
+    "type": "fiume",
+    "authority_uri": "#",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro3_rubrica31",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_32"
+      },
+      {
+        "id": "statPop_libro3_rubrica12",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_13"
+      },
+      {
+        "id": "statPop_libro3_rubrica20",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_21"
+      }
+    ]
+  },
+  {
+    "id": "fiumeTenda",
+    "url": "https://statutiascoli.it/territorio.html?id=fiumeTenda",
+    "name": "Fiume Tenda",
+    "type": "fiume",
+    "authority_uri": "#",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica57",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_58"
+      }
+    ]
+  },
+  {
+    "id": "rivoSanNicolo",
+    "url": "https://statutiascoli.it/territorio.html?id=rivoSanNicolo",
+    "name": "Rivo de Sancto Nicolò",
+    "type": "fiume",
+    "authority_uri": "#",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica20",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_21"
+      }
+    ]
+  },
+  {
+    "id": "rivoMarino",
+    "url": "https://statutiascoli.it/territorio.html?id=rivoMarino",
+    "name": "Rivo de lu Marino",
+    "type": "fiume",
+    "authority_uri": "#",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica44",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_45"
+      }
+    ]
+  },
+  {
+    "id": "montePolesio",
+    "url": "https://statutiascoli.it/territorio.html?id=montePolesio",
+    "name": "Monte de Polexio",
+    "type": "montagna",
+    "authority_uri": "https://www.wikidata.org/wiki/Q2185502",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_16"
+      },
+      {
+        "id": "statPop_libro3_rubrica94",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_95"
+      }
+    ]
+  },
+  {
+    "id": "montiSantaMaria",
+    "url": "https://statutiascoli.it/territorio.html?id=montiSantaMaria",
+    "name": "Monti de Sancta Maria",
+    "type": "montagna",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_16"
+      }
+    ]
+  },
+  {
+    "id": "montePolo",
+    "url": "https://statutiascoli.it/territorio.html?id=montePolo",
+    "name": "Monte de Polo",
+    "type": "montagna",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro1_rubrica15",
+        "url": "https://statutiascoli.it/statuti.html?id=2_1_16"
+      }
+    ]
+  },
+  {
+    "id": "fontePalaretta",
+    "url": "https://statutiascoli.it/territorio.html?id=fontePalaretta",
+    "name": "Fonte de Palarecta",
+    "type": "fonte",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_0"
+      },
+      {
+        "id": "statPop_libro3_rubrica75",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_76"
+      }
+    ]
+  },
+  {
+    "id": "fontePonteMaggiore",
+    "url": "https://statutiascoli.it/territorio.html?id=fontePonteMaggiore",
+    "name": "Fonte de ponte Majore",
+    "type": "fonte",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_0"
+      },
+      {
+        "id": "statPop_libro3_rubrica76",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_77"
+      },
+      {
+        "id": "statPop_libro3_rubrica77",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_78"
+      }
+    ]
+  },
+  {
+    "id": "fonteCastelloRipaberarda",
+    "url": "https://statutiascoli.it/territorio.html?id=fonteCastelloRipaberarda",
+    "name": "Fonte del castello de Ripa Berarda",
+    "type": "fonte",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_0"
+      },
+      {
+        "id": "statPop_libro3_rubrica78",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_79"
+      }
+    ]
+  },
+  {
+    "id": "capoDeRivo",
+    "url": "https://statutiascoli.it/territorio.html?id=capoDeRivo",
+    "name": "Capo de rivo",
+    "type": "",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_indice",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_0"
+      }
+    ]
+  },
+  {
+    "id": "Colundata",
+    "url": "https://statutiascoli.it/territorio.html?id=Colundata",
+    "name": "Colundata",
+    "type": "",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica13",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_14"
+      }
+    ]
+  },
+  {
+    "id": "Forca",
+    "url": "https://statutiascoli.it/territorio.html?id=Forca",
+    "name": "Forcha",
+    "type": "",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica12",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_13"
+      },
+      {
+        "id": "statPop_libro3_rubrica94",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_95"
+      }
+    ]
+  },
+  {
+    "id": "Guallo",
+    "url": "https://statutiascoli.it/territorio.html?id=Guallo",
+    "name": "Guallo",
+    "type": "",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro3_rubrica31",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_32"
+      }
+    ]
+  },
+  {
+    "id": "Larhenqua",
+    "url": "https://statutiascoli.it/territorio.html?id=Larhenqua",
+    "name": "Larhenqua",
+    "type": "",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statCom_libro3_rubrica31",
+        "url": "https://statutiascoli.it/statuti.html?id=1_3_32"
+      }
+    ]
+  },
+  {
+    "id": "Lisiano",
+    "url": "https://statutiascoli.it/territorio.html?id=Lisiano",
+    "name": "Lisiano",
+    "type": "",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica76",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_77"
+      }
+    ]
+  },
+  {
+    "id": "Rosara",
+    "url": "https://statutiascoli.it/territorio.html?id=Rosara",
+    "name": "Rosara",
+    "type": "",
+    "authority_uri": "",
+    "note": "",
+    "text_units": [
+      {
+        "id": "statPop_libro3_rubrica94",
+        "url": "https://statutiascoli.it/statuti.html?id=2_3_95"
+      }
+    ]
+  }
+]

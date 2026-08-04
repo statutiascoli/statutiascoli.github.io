@@ -7,7 +7,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
   <meta name="google" content="notranslate"/>
-  <meta name="description" content="Scarica la versione integrale degli Statuti di Ascoli del 1496 in formato PDF, ePub e XML.">
+  <meta name="description" content="Scarica il file XML-TEI e i dataset di ricerca in formato JSON e CSV dell'edizione digitale degli Statuti di Ascoli del 1496.">
   <meta name="keywords" content="Download, Statuti Ascoli, Statuti Ascoli Piceno, Statuti, Ascoli, Ascoli Piceno, 1377, 1496">
   <meta name="author" content="Michela Parma, Fabio Mariani">
   <meta name="robots" content="index, follow">
@@ -85,40 +85,211 @@
       <div class=" order-lg-1">
         <div class="content-shell">
           
+            <div>
+              <h6>
+                <span class="it">Formati dell'edizione</span>
+                <span class="en d-none">Edition formats</span>
+              </h6>
+
+              <p>
+                <span class="it">
+                  L'edizione digitale degli Statuti di Ascoli è disponibile nei formati XML-TEI, PDF ed ePub.
+                </span>
+                <span class="en d-none">
+                  The digital edition of the Statutes of Ascoli is available in TEI-XML, PDF, and ePub formats.
+                </span>
+              </p>
+
+
+              <div class="row g-4 download-grid">
+                <article class="download-card reveal">
+                    <div class="download-icon"><i class="fa-solid fa-code"></i></div>
+                    <h2 class="card-title">XML</h2>
+                    <p>
+                    <span class="it">Testo integrale dell'edizione codificato secondo le linee guida TEI.</span>
+                    <span class="en d-none">Full text of the edition encoded according to the TEI Guidelines.</span>
+                    </p>
+                    <a class="download-btn" href="statutiAscoli1496.xml" download="statutiAscoli1496.xml"><i class="fa-solid fa-download"></i>XML</a>
+                </article>
             
-            <div class="row g-4 download-grid">
-              <article class="download-card reveal">
-                  <div class="download-icon"><i class="fa-solid fa-code"></i></div>
-                  <h2 class="card-title">XML</h2>
+            
+                <article class="download-card reveal">
+                  <div class="download-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                  <h2 class="card-title">PDF</h2>
                   <p>
-                  <span class="it">Scarica il file <b>XML</b> degli Statuti di Ascoli.</span>
-                  <span class="en d-none">Download the <b>XML</b> file of the Statutes of Ascoli.</span>
+                  <span class="it">Versione dell'edizione in formato PDF per la consultazione e la lettura.</span>
+                  <span class="en d-none">PDF version of the edition for consultation and reading.</span>
                   </p>
-                  <a class="download-btn" href="statutiAscoli1496.xml" download="statutiAscoli1496.xml"><i class="fa-solid fa-download"></i>Download XML</a>
-              </article>
-          
-          
-              <article class="download-card reveal">
-                <div class="download-icon"><i class="fa-solid fa-file-pdf"></i></div>
-                <h2 class="card-title">PDF</h2>
-                <p>
-                <span class="it">Scarica il file <b>PDF</b> degli Statuti di Ascoli.</span>
-                <span class="en d-none">Download the <b>PDF</b> file of the Statutes of Ascoli.</span>
-                </p>
-                    <span class="download-btn disabled"><span class="it">Presto disponibile</span>
-                <span class="en d-none">Available soon</span></span>
-              </article>
-          
-              <article class="download-card reveal">
-                <div class="download-icon"><i class="fa-solid fa-book-open"></i></div>
-                <h2 class="card-title">ePub</h2>
-                <p>
-                <span class="it">Scarica il file <b>ePub</b> degli Statuti di Ascoli.</span>
-                <span class="en d-none">Download the <b>ePub</b> of the Statutes of Ascoli.</span>
-                </p>
-                    <span class="download-btn disabled"><span class="it">Presto disponibile</span>
-                <span class="en d-none">Available soon</span></span>
-              </article>
+                      <span class="download-btn disabled"><span class="it">Presto disponibile</span>
+                  <span class="en d-none">Available soon</span></span>
+                </article>
+            
+                <article class="download-card reveal">
+                  <div class="download-icon"><i class="fa-solid fa-book-open"></i></div>
+                  <h2 class="card-title">ePub</h2>
+                  <p>
+                  <span class="it">Versione dell'edizione in formato ePub per la lettura su dispositivi digitali.</span>
+                  <span class="en d-none">ePub version of the edition for reading on digital devices.</span>
+                  </p>
+                      <span class="download-btn disabled"><span class="it">Presto disponibile</span>
+                  <span class="en d-none">Available soon</span></span>
+                </article>
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <h6>
+                <span class="it">Dataset di ricerca</span>
+                <span class="en d-none">Research datasets</span>
+              </h6>
+
+              <p>
+                <span class="it">
+                  I dataset sono generati a partire dal file XML-TEI dell'edizione e rendono disponibili
+                  in formato JSON e CSV persone, luoghi, eventi, unità testuali, categorie tematiche
+                  e riferimenti interni.
+                </span>
+                <span class="en d-none">
+                  The datasets are generated from the edition's TEI-XML file and provide people,
+                  places, events, textual units, thematic categories, and internal references
+                  in JSON and CSV formats.
+                </span>
+              </p>
+
+              <div class="row g-4 download-grid">
+                <article class="download-card reveal">
+                  <div class="download-icon">
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                  <h2 class="card-title">
+                    <span class="it">Persone</span>
+                    <span class="en d-none">People</span>
+                  </h2>
+                  <p>
+                    <span class="it">Persone menzionate nell'edizione e relative occorrenze testuali.</span>
+                    <span class="en d-none">People mentioned in the edition and their textual occurrences.</span>
+                  </p>
+                  <div class="download-actions">
+                    <a class="download-btn" href="datasets/people.json" download="people.json">
+                      <i class="fa-solid fa-download"></i> JSON
+                    </a>
+                    <a class="download-btn" href="datasets/people.csv" download="people.csv">
+                      <i class="fa-solid fa-download"></i> CSV
+                    </a>
+                  </div>
+                </article>
+
+                <article class="download-card reveal">
+                  <div class="download-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <h2 class="card-title">
+                    <span class="it">Luoghi</span>
+                    <span class="en d-none">Places</span>
+                  </h2>
+                  <p>
+                    <span class="it">Luoghi codificati nell'edizione e relative occorrenze testuali.</span>
+                    <span class="en d-none">Places encoded in the edition and their textual occurrences.</span>
+                  </p>
+                  <div class="download-actions">
+                    <a class="download-btn" href="datasets/places.json" download="places.json">
+                      <i class="fa-solid fa-download"></i> JSON
+                    </a>
+                    <a class="download-btn" href="datasets/places.csv" download="places.csv">
+                      <i class="fa-solid fa-download"></i> CSV
+                    </a>
+                  </div>
+                </article>
+
+                <article class="download-card reveal">
+                  <div class="download-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                  </div>
+                  <h2 class="card-title">
+                    <span class="it">Eventi</span>
+                    <span class="en d-none">Events</span>
+                  </h2>
+                  <p>
+                    <span class="it">Festività ed eventi datati codificati nell'edizione.</span>
+                    <span class="en d-none">Dated festivities and events encoded in the edition.</span>
+                  </p>
+                  <div class="download-actions">
+                    <a class="download-btn" href="datasets/events.json" download="events.json">
+                      <i class="fa-solid fa-download"></i> JSON
+                    </a>
+                    <a class="download-btn" href="datasets/events.csv" download="events.csv">
+                      <i class="fa-solid fa-download"></i> CSV
+                    </a>
+                  </div>
+                </article>
+
+                <article class="download-card reveal">
+                  <div class="download-icon">
+                    <i class="fa-solid fa-align-left"></i>
+                  </div>
+                  <h2 class="card-title">
+                    <span class="it">Unità testuali</span>
+                    <span class="en d-none">Textual units</span>
+                  </h2>
+                  <p>
+                    <span class="it">Rubriche, introduzioni, indici e conclusioni dell'edizione.</span>
+                    <span class="en d-none">Rubrics, introductions, indexes, and conclusions of the edition.</span>
+                  </p>
+                  <div class="download-actions">
+                    <a class="download-btn" href="datasets/text_units.json" download="text_units.json">
+                      <i class="fa-solid fa-download"></i> JSON
+                    </a>
+                    <a class="download-btn" href="datasets/text_units.csv" download="text_units.csv">
+                      <i class="fa-solid fa-download"></i> CSV
+                    </a>
+                  </div>
+                </article>
+
+                <article class="download-card reveal">
+                  <div class="download-icon">
+                    <i class="fa-solid fa-tags"></i>
+                  </div>
+                  <h2 class="card-title">
+                    <span class="it">Categorie tematiche</span>
+                    <span class="en d-none">Thematic categories</span>
+                  </h2>
+                  <p>
+                    <span class="it">Relazioni tra rubriche e categorie tematiche.</span>
+                    <span class="en d-none">Relations between rubrics and thematic categories.</span>
+                  </p>
+                  <div class="download-actions">
+                    <a class="download-btn" href="datasets/rubric_categories.json" download="rubric_categories.json">
+                      <i class="fa-solid fa-download"></i> JSON
+                    </a>
+                    <a class="download-btn" href="datasets/rubric_categories.csv" download="rubric_categories.csv">
+                      <i class="fa-solid fa-download"></i> CSV
+                    </a>
+                  </div>
+                </article>
+
+                <article class="download-card reveal">
+                  <div class="download-icon">
+                    <i class="fa-solid fa-link"></i>
+                  </div>
+                  <h2 class="card-title">
+                    <span class="it">Riferimenti interni</span>
+                    <span class="en d-none">Internal references</span>
+                  </h2>
+                  <p>
+                    <span class="it">Collegamenti interni tra le unità testuali dell'edizione.</span>
+                    <span class="en d-none">Internal links between textual units of the edition.</span>
+                  </p>
+                  <div class="download-actions">
+                    <a class="download-btn" href="datasets/internal_references.json" download="internal_references.json">
+                      <i class="fa-solid fa-download"></i> JSON
+                    </a>
+                    <a class="download-btn" href="datasets/internal_references.csv" download="internal_references.csv">
+                      <i class="fa-solid fa-download"></i> CSV
+                    </a>
+                  </div>
+                </article>
+
+              </div>
             </div>
           </div>
 

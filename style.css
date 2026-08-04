@@ -775,6 +775,17 @@ figure img {
   font-size: 1.45rem;
 }
 
+.download-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.download-actions .download-btn {
+  flex: 1;
+  justify-content: center;
+}
+
 .btn-custom,
 .download-btn {
   display: inline-flex;
